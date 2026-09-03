@@ -29,9 +29,17 @@ changelog.
 
 The human author directed the process (choice of direction, approval of actions, session
 management) and is the author of record, but supplied minimal scientific or technical input.  On 2026-09-03 the finished manuscripts and the whole verification pipeline were critically
-reviewed by a second, much larger model, Claude Fable 5.1, which confirmed the mathematics and
-corrected the defects it found (bibliography, one wrong cross-reference, the CGLMP quantum target,
-literature positioning, wording).  The papers as they stood **before** that review are preserved
+reviewed by a second, much larger model, Claude Fable 5.1, which confirmed every mathematical
+result and corrected the defects it found.  The principal finding of that review was that the main
+paper's headline — the CHSH bound S ≤ 2+8F and its Tsirelson threshold F* = (√2−1)/4 — is a
+re-parametrisation of a result Pütz et al. published in 2014 in a different variable, which the
+model had neither recognised nor cited; the paper's abstract, introduction and conclusion were
+rewritten to say so and to identify what remains new (the model-independent bound for all sources
+and all N, the exact finite-N curves and caps, the two-state no-signalling impossibility, the
+no-signalling cost of the PR box, the one-sided value, and the companion-paper extensions).  The
+other corrections were a wrong quantum target in the companion paper (the CGLMP maximally-entangled
+value taken for the maximum), four defective bibliography entries, a wrong cross-reference, missing
+prior literature, and wording.  The papers as they stood **before** that review are preserved
 unaltered in `paper/original_qwen_2026-09-02/`; the corrected papers are in `paper/`; every change is
 itemised in `paper/CHANGELOG.md` and in `review_2026-09-03/REVIEW_REPORT_fable_2026-09-03.md`.  Each
 paper ends with a "Note on provenance and corrections" saying the same thing in print.
