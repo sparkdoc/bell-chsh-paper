@@ -1,0 +1,583 @@
+================================================================================
+REFEREE PASS — Bell/CHSH minimum-fine-tuning manuscript (Step 4)
+Date: 2026-08-24 | Referee: independent adversarial audit, no prior exposure to
+the authors' reasoning. Scope: RESULTS.md, PROOFS.md, literature_check.out, and
+all re-runnable artifacts in <user>/software/
+bell_chsh/. No existing file was modified; this file is the only output.
+Method: every key step of PROOFS.md re-derived by hand; witness tables
+recomputed independently (plain arithmetic, cross-checked against audit1.out /
+ns_general.out / ns_witness.out); literature claims checked against
+literature_check.out; grep for stale phrasing. No heavy computation re-run.
+================================================================================
+
+SECTION A — OVERCLAIM REGISTER
+Severity: P0 = blocks publication; P1 = must fix before submission;
+P2 = cosmetic (sampled, not exhaustive).
+
+----------------------------- P0 FINDINGS --------------------------------------
+
+P0-1  RESULTS.md L88–L99 — the main curve theorem is FALSE as stated for
+      N ≡ 1,2,3 (mod 4), N ≥ 5.
+      Quote L92: "S_max(N, F) = 2 + 2 · min(N, 4) · F, for 0 ≤ F ≤
+      (S_cap − 2)/(2·min(N,4))" and L99: "N ≥ 4: S_max = 2 + 8F (cap S = 4 at
+      F = 1/4)".
+      Why false: PROOFS.md §6–§8 (Theorems 2–3) prove the curve bends at
+      F = 1/N, not 1/4, for N = 5,6,7: S_max(5,F) = 16/5 + 2F on [1/5, 2/5]
+      so S_max(5, 1/4) = 3.7 < 4; S_max(6,F) = 8/3 + 4F on [1/6, 1/3];
+      S_max(7,F) = 16/7 + 6F on [1/7, 2/7]. The exact cap is F(S=4;N) =
+      ⌈N/4⌉/N = 2/5, 1/3, 2/7 for N = 5,6,7 — not 1/4. Evidence: audit1.out
+      Part A (Fraction certificate over all multisets) and capregion.out
+      (independent LP cross-check: S_max(5,0.25) = 3.7 to 1.8e-15).
+      Note: the headline F* = (√2−1)/min(N,4) is UNAFFECTED (it only uses the
+      curve on [0, F*] ⊂ [0, 1/N]); this finding is about the stated curve and
+      cap, not the headline.
+      Fix: replace L88–L99 with Theorem 3's exact curves (N = 2..8) plus the
+      general statements "S_max(N,F) = 2+8F on [0,1/N] for all N ≥ 4" and
+      "cap F(S=4;N) = ⌈N/4⌉/N (Theorem 2), with the full piecewise-linear
+      curves for N = 5,6,7 in the supplement". This is PROOFS §11 item 1 —
+      not yet applied to RESULTS.md.
+
+----------------------------- P1 FINDINGS --------------------------------------
+
+P1-1  RESULTS.md L116–L118, L146, L161–L164 — the "infinite / all-N class"
+      claim is asserted but not proved as written, and "uniform source, finite
+      or not" is ill-defined.
+      Quote L116–118: "any local deterministic CHSH model (with a uniform
+      source, finite or not) that reaches the maximal quantum violation must
+      fine-tune at least one of its conditional source distributions by ≥
+      ~10.4% in TV"; L161–164: "This 2 + 8F is a genuine theorem about the
+      whole (infinite, all-N) class, not just the finite samples: it is a
+      TV/Lipschitz argument that does not use finiteness of N."
+      Problem: PROOFS.md §5 proves S ≤ 2+8F for FINITE N only (via Theorem 1).
+      The measure-theoretic extension is true but written nowhere. Also a
+      uniform distribution exists only on finite sets; the phrase "uniform
+      source, finite or not" has no meaning for general λ-spaces. Key fact the
+      fix should state: the bound does NOT use uniformity at all — it holds for
+      ANY source ρ with F = max_ab TV(p(·|ab)‖ρ).
+      Fix (one line, add as a proposition to PROOFS.md): for any local
+      deterministic model on an arbitrary probability space (Λ,ρ), S ≤ 2+8F.
+      Proof: pointwise C(q_λ) ∈ {−2,+2} ⇒ S0 = ∫C dρ ≤ 2; and by TV duality,
+      |E[ab] − μ_ab| = |∫ σq (dp_ab − dρ)| ≤ 2·TV(p_ab‖ρ) ≤ 2F for f with
+      range [−1,1]. Then reword RESULTS: "any local deterministic CHSH model,
+      on any hidden-variable space and with any source distribution ρ — the
+      bound does not use uniformity — …". Until written, restrict the claim to
+      finite N. (This is the single true assertion/proof mismatch in the
+      package; see B.6.)
+
+P1-2  RESULTS.md L119–L120 — cap statement loose where Theorem 2 is exact.
+      Quote: "The global cap S ≤ 2 + 8F (independent of N) is tight for all
+      N ≥ 4, so S = 4 (the algebraic maximum) requires F ≥ 1/4 = 25%."
+      Problem: true but not the proved statement; F(S=4;N) = ⌈N/4⌉/N is 2/5
+      (N=5), 1/3 (N=6), 2/7 (N=7). "Requires F ≥ 1/4" understates the cost by
+      up to a factor 8/5 for N ≡ 1,2,3 (mod 4).
+      Fix: "S = 4 requires F ≥ ⌈N/4⌉/N (Theorem 2); in particular F ≥ 1/4,
+      with equality iff 4 | N." (PROOFS §11 item 1.)
+
+P1-3  RESULTS.md L3 and L88 — stale status line and theorem header.
+      Quote L3: "Status: numerically exact, self-verified."; L88: "Theorem
+      (numerically exact, N = 2…6; proof of the global bound below)".
+      Problem: the core is now proved (PROOFS.md Theorems 1–5 + Corollaries)
+      and certified by exact-arithmetic scripts; the writeup still presents it
+      as numerics-only and never cites PROOFS.md anywhere.
+      Fix per PROOFS §11(10a,b): L3 → "Status: proved theorems (PROOFS.md),
+      independently certified by exact-arithmetic scripts (audit1.py,
+      ns_general.py) and re-runnable numerics (verify.py)"; L88 → "Theorem 3
+      (exact curves, N = 2..8) + general theorems for all N".
+
+P1-4  RESULTS.md L133–L137 — NS N=2 evidence stale; unproved interpretation.
+      Quote: "S_max = 2 for *all* F (verified on a grid F ∈ [0, 0.4])" and
+      "Two hidden states + no-signalling + a uniform source is exactly the
+      local polytope".
+      Problem: Theorem 4 (PROOFS §9; audit1.py Part E, exact for ALL F ∈
+      [0,½]) supersedes the grid evidence; "exactly the local polytope" is an
+      interpretation no proof in the folder establishes.
+      Fix per PROOFS §11(2),(10c): "S_NS(2,F) = 2 for all F ∈ [0,½] (Theorem
+      4: no Bell violation at any fine-tuning level under full NS)" and delete
+      the local-polytope sentence.
+
+P1-5  RESULTS.md L203 — author order wrong: "Branciard & Hall 2020".
+      The paper is Hall & Branciard, arXiv:2007.11903 (verified:
+      branciard2020.txt line 3 "Michael J. W. Hall and Cyril Branciard";
+      literature_check.out §A-b flags the same). Fix: "Hall & Branciard 2020".
+
+P1-6  RESULTS.md L202 — Hall 2010 table row: internal convention inconsistency
+      plus unjustified cross-metric numeric identification and ordering.
+      Quotes: "Bound S ≤ min{2+3M, 4} = min{2+6F, 4}" (same row defines F as
+      the RETAINED fraction, F = 1 − M/2); "In my metric Hall's S=4 model would
+      be F = M/2 = 1/3"; "I reach S = 4 at F = 1/4 (cheaper), and S = 2√2 at
+      F = (√2−1)/4 ≈ 0.104 (Hall's comparable cost is ≈ 0.276 in M, i.e. a
+      larger 'distance')".
+      Problems: (i) With F_ret = 1 − M/2, Hall's bound reads S ≤ min{8 − 6F_ret,
+      4}, not min{2+6F, 4} — the latter is correct only for F = M/2 (fraction
+      GIVEN UP). The row as written mixes the two conventions. (ii) "Hall's
+      S=4 model would be F = M/2 = 1/3 in my metric" does not follow: our F is
+      TV from a fixed uniform baseline; Hall's M is pairwise distance between
+      setting-pair sources. No identity holds without the explicit source
+      distributions. (iii) "cheaper" / "larger distance" order values across
+      incommensurable metrics — exactly what literature_check.out §C forbids
+      ("different metrics, different answers — do not present ours as
+      contradicting theirs").
+      Fix: state the three similar numbers side by side with their conventions
+      and no ordering claim: Hall L1 convention M_singlet = 2(√2−1)/3 ≈ 0.276;
+      fraction-of-MI-lost convention (√2−1)/3 ≈ 0.1381 (Hall's S=2√2 cost in
+      that convention, and Alai's η=1 floor); our F* = (√2−1)/4 ≈ 0.1036 in the
+      per-block-TV metric. "The metrics are incommensurable; no ordering of the
+      numbers follows." Also fix (i): write min{8−6F, 4} under the retained-
+      fraction label, or relabel F as M/2.
+
+P1-7  RESULTS.md L209 and L257–L264 — unhedged novelty + stale no-sweep
+      disclaimer.
+      Quote L209: "What is **new** here is:"; L259–263: "I have **not** done a
+      complete exhaustive literature sweep beyond the four works above … There
+      may be subsequent work (2020–2026) using the exact same TV/total-
+      variation metric that I have not seen. I do **not** claim originality
+      against an unsearched 2020–2026 literature."
+      Problem: both are now stale — literature_check.out completed a 2015–
+      2026-08-23 arXiv-centric sweep (its §C gives the exact allowed language).
+      And L209's "new" is unhedged, violating the §C hedge requirement.
+      Fix: rewrite §8 around the COMPLETED sweep with its verdicts and limits:
+      "no prior use found in arXiv-indexed literature through 2026-08-23"
+      (never un-hedged "novel"/"first"); state coverage limits (arXiv-centric;
+      paywalled journal content not mirrored on arXiv not covered; ~16 papers
+      read at full/abstract depth); keep the existing anti-breakthrough
+      sentences (L6, L254) — they are correct and should stay.
+
+P1-8  RESULTS.md §6/§8 — required citations missing (none currently cited):
+      Alai arXiv:2608.18886 ("The exact price of local realism in CHSH
+      experiments", Jul/Aug 2026 — closest prior work: exact minimum MD for
+      CHSH at 2√2 in a Hall-type metric, Q(√2) certificates, η_eff detector-
+      efficiency degrees of freedom; its η=1 floor (√2−1)/3 ≈ 0.1381 must be
+      disambiguated from our F* = (√2−1)/4 ≈ 0.1036), Alai arXiv:2608.00124
+      (exact minimum MD for GHZ-Mermin, same program), Pal et al.
+      arXiv:2601.08290 (first TV-based Bell fine-tuning bound found in the
+      sweep: |S| ≤ 2+6·δ_ens, pairwise drift TV, MI preserved — different
+      mechanism, not claimed tight), Takakura et al. arXiv:2208.13634 (most
+      developed recent exact trade-off program in a Hall-type metric).
+      literature_check.out §C: all four "Must be cited". Add a row/paragraph
+      for each in §6 with the class-(ii) "different metric" positioning.
+
+P1-9  RESULTS.md §7 (L231–L248) — verification record does not point at the
+      exact certificates; bisection artifacts presented as evidence; "exactly"
+      overclaims on LP floats.
+      Quotes: "F*_NS(3) ≈ 0.13812 ≈ (√2−1)/3; F*_NS(4) ≈ 0.10358 ≈
+      (√2−1)/4"; "S_max(6, (√2−1)/4) = 2.82842712 = 2√2 exactly"; "S_max(5,
+      (√2−1)/4) = 2.82842712 = 2√2 exactly and S_max(5,(√2−1)/5) = 2.6627 <
+      2√2 ⇒ F*_NS(5) = (√2−1)/4".
+      Problems: (i) the ≈ values are bisection-resolution artifacts (13
+      iterations on [0,0.5], resolution 6.1e-5) — PROOFS §9.5/§11(7) require
+      stating this explicitly where they appear; RESULTS still presents them as
+      if evidential. (ii) "⇒ F*_NS(5) = (√2−1)/4" concludes an exact equality
+      from two float LP evaluations; the exact statement is Theorem 5 with the
+      ns_general.py certificate. (iii) "= 2√2 exactly" for N=5/6 LP outputs is
+      "to LP tolerance", not exact. (iv) The file list omits audit1.py/
+      audit1.out (the strongest exact-arithmetic certificate), ns_general.py/
+      .out, ns_tight_N{3,4}.out, capregion.out — and RESULTS.md never cites
+      PROOFS.md at all.
+      Fix: restructure §7 as "exact certificates (audit1.py Parts A–E;
+      ns_general.py Parts A–C — Fraction/Q(√2) arithmetic, exit 0) +
+      independent LP cross-checks (verify.py, capregion.out, ns_tight*.out,
+      ns_witness.out)"; annotate the ≈ values as resolution artifacts; point
+      each headline number at its artifact (see D.3 for the mapping).
+
+P1-10 RESULTS.md L269–L285 — stale caveats and next steps.
+      Quotes: "(i) formalize the S ≤ 2+8F TV proof as a standalone theorem …"
+      (done: PROOFS §5, finite N); "(iii) do a targeted literature sweep for
+      2020–2026 …" (done: literature_check.out); "a rigorous ∑-range/TV proof
+      of S ≤ 2+8F for arbitrary (infinite) λ is sketched (Section 4), not
+      written up as a formal theorem" (half-stale: the finite-N theorem exists;
+      the general-measure extension is still missing — see P1-1).
+      Fix: update both lists to current status; keep the honest "not compared
+      to any physical prior" caveat (L277–278) — it is good.
+
+----------------------------- P2 FINDINGS (sampled) ----------------------------
+
+P2-1  RESULTS.md L157 "This is tight for N ≥ 4." → "tight on [0, 1/N] for
+      every N ≥ 4 (Q_N)" (PROOFS §11 item 10d).
+P2-2  RESULTS.md L203 "My TV is a **different (stronger, non-information-
+      theoretic) measure**" — "stronger" is unsubstantiated (TV and MI are not
+      ordered); → "a different, incommensurable, non-information-theoretic
+      measure".
+P2-3  RESULTS.md L75 "solved exactly (HiGHS, exact arithmetic within LP
+      tolerance)" — self-contradictory; HiGHS is floating point. Exactness now
+      rests on PROOFS Theorem 1 + audit1.py's Fraction certificate; the LP
+      pipeline is a cross-check. Reword §3 to say so.
+P2-4  RESULTS.md L232–233, L235 "= 2√2 exactly" for N=5/6 and NS N=5 (LP
+      floats) → "to LP tolerance (≤ 1.8e-15 per capregion.out)".
+P2-5  PROOFS.md L68 "This is the one genuinely new analytic ingredient" —
+      unhedged novelty claim about a standard fact (max of a linear functional
+      over a TV ball); → "the only non-combinatorial ingredient".
+P2-6  PROOFS.md §9.5 L314 "patterns {M_A, M_C, M_D}" — typo. The gauge of
+      ns_solN3_{u,v}.npy gives per-state product patterns {M_A, M_B, M_D}
+      (verified by hand: (−,+,+,−), (+,−,+,−), (+,+,+,+); no CHSH symmetry maps
+      one set to the other). The N=3 table itself is correct (referee re-
+      derived S = 2√2 and all four NS residuals = 0 by hand; see B.8).
+P2-7  PROOFS.md §2 (L63–66) Lemma 1 achievability wording: "move mass δ … if
+      F ≥ m/N take p = point mass on a single +1 entry". Two gaps: (a) for δ ∈
+      (1/N, m/N] the moved mass must be spread over ⌈δN⌉ source states (one
+      state can supply at most 1/N); (b) a point mass has TV = (N−1)/N, which
+      exceeds F when m/N ≤ F < (N−1)/N; the correct saturating p is any
+      distribution supported on the +1 set with total moved mass exactly m/N
+      (TV = m/N). The lemma STATEMENT is correct (referee re-derived it); fix
+      the paragraph.
+P2-8  PROOFS.md §12 L398 lists "Step 3: literature sweep" as remaining, but
+      literature_check.out is complete (dated 2026-08-23) — stale; mark done.
+P2-9  RESULTS.md L31–32 "a precise, falsifiable interpretation of 'how
+      conspiratorial'" — rhetorical overreach; a mathematical minimum is not
+      itself a falsifiable prediction. Optional softening to "a quantitative
+      benchmark".
+P2-10 RESULTS.md L139–142 "This directly addresses a claim in BHL … that some
+      measurement-independence violations are 'signalling in principle.'" —
+      positioning risk: BHL's notion is causal-structure-based (their §7:
+      "Charlie has in principle the ability to prepare the required non-
+      quantum distributions"), while our result concerns OBSERVABLE marginals
+      within a fixed model class. Add one sentence: "Our NS-silence statement
+      concerns observable marginals; it neither refutes nor settles BHL's
+      causal 'signalling in principle' claim." (Supported by literature_check
+      §A-c quotes.)
+
+--------------------- PROOFS.md §11 CHECKLIST COMPLETENESS --------------------
+PROOFS §11 lists 10 corrections owed to RESULTS.md. Against this audit it is
+MISSING the following (all correspond to findings above):
+ (a) the general-measure extension + "uniform source, finite or not" wording
+     (RESULTS L116–118, L146, L161–164) — P1-1;
+ (b) ALL literature/citation updates: Hall & Branciard order (P1-5); missing
+     Alai ×2 / Pal et al. / Takakura et al. citations (P1-8); FGHK venue PRA
+     99, 012121 (2019) and full authorship (Friedman, Guth, Hall, Kaiser &
+     Gallicchio — the "FGHK" initialism drops the fifth author; L205); Hall
+     2010 venue PRL 105, 250404 (2010) (L202); three-number disambiguation
+     (P1-6); stale §8 sweep disclaimer (P1-7). Item 7 covers only the NS
+     wording upgrade;
+ (c) the "exactly" overclaims on LP floats in RESULTS §7 (P2-4) — item 7
+     covers the bisection artifacts but not the word "exactly";
+ (d) internal PROOFS fixes: the {M_A,M_C,M_D} typo (§9.5, P2-6) and the Lemma
+     1 achievability wording (§2, P2-7);
+ (e) stale "Step 3 remaining" in §12 (P2-8).
+Also note: item 8 ("verify.py count is 21, not 23") is vacuous — RESULTS.md
+quotes no count; harmless to keep. Items 1–7 and 10 are accurate as written
+and were checked against the current text of RESULTS.md (none has been applied
+yet).
+
+================================================================================
+SECTION B — PROOF-GAP AUDIT (independent re-derivation)
+Method: each step of PROOFS.md re-derived by hand; witness tables recomputed
+with independent plain arithmetic (python one-liners on the stated constants,
+not the project scripts); audit1.py's certificate logic inspected line by
+line; every .out artifact cross-referenced. No heavy computation re-run.
+
+B.1  Lemma 1 (exact per-row TV optimum) — CORRECT.
+     Upper bounds: with d = p − ρ, Σd = 0: (TV bound) |d·f| ≤ Σ|d_λ| =
+     2·TV(p‖ρ) ≤ 2F; (mass bound) M⁻ := Σ_{f=−1} d_λ ≥ −m/N since each term
+     ≥ −1/N, and d·f = M⁺ − M⁻ = −2M⁻ ⇒ d·f ≤ 2m/N; symmetrically d·f ≥
+     −2k/N. Hence max p·f ≤ μ + 2·min(F, m/N), min by symmetry. Edge cases
+     k=0 or m=0: f constant, p·f ≡ ±1 = μ. All verified.
+     Achievability: correct as a claim; the proof paragraph has the two
+     wording gaps of P2-7 (spreading over ⌈δN⌉ states for δ ∈ (1/N, m/N];
+     point mass has TV (N−1)/N, not m/N). With the corrected construction,
+     d·f = 2δ and TV(p‖ρ) = δ hold exactly. No downstream effect.
+
+B.2  Theorem 1 (exact finite-maximum formula) — ALL FOUR STEPS VERIFIED.
+     (i) Multi-affine ⇒ vertex maximum: standard coordinate-wise linearity;
+         correct. "Swapping the maxima" is a plain max over a product space
+         (no minimax theorem needed); correct.
+     (ii) Gauge reduction: S depends on (u,v) only through q_ab(λ) =
+         u[a,λ]v[b,λ]; per-state simultaneous sign flip fixes all q's; two
+         vertices with the same pattern assignment give identical LP values.
+         Correct.
+     (iii) Realizability: referee verified the construction — set u[0]=+1,
+         v[0]=q00, v[1]=q01, u[1]=q00·q10; then u[1]v[0] = q10 ✓ and
+         u[1]v[1] = q00·q01·q10 = q11 (using even parity) ✓. All 8 even-
+         parity patterns realizable. The "no degeneracy" relabeling-invariance
+         argument is correct (uniform ρ + symmetric TV constraint).
+     (iv) Row separability: the LP decomposes into 4 independent per-row TV-
+         ball LPs; Lemma 1 with f_λ = σ_ab·q_ab(λ) gives exactly g_ab(F) =
+         2·min(F, n_ab/N) for 0 < n_ab < N and 0 otherwise. The "no σ sign"
+         claim is CORRECT: each row is optimized in its own σ_ab-direction, so
+         every contribution to S is non-negative.
+     Multiset counts C(8+N−1,N) = 36/120/330/792/1716/3432/6435 for N=2..8
+     verified by hand; N=9: 11440 ✓ (PROOFS §8).
+     Certificate logic (audit1.py): per-cell affine lines + upper hull via
+     monotone chain — inspected; standard and correct. One dependency to note:
+     the certificate ASSUMES Lemma 1's formula (it does not re-prove it); since
+     the referee has now hand-verified Lemma 1, the chain is sound. The LP
+     pipeline (phase1/2/3.py, verify.py) provides an independent float
+     cross-check of the same formula.
+
+B.3  Theorem 2 (cap F(S=4;N) = ⌈N/4⌉/N) — VERIFIED.
+     Necessity: S=4 ⇔ E[ab] = σ_ab ∀ab (|E[ab]| ≤ 1, equality case of
+     S = Σ σ_ab E[ab] ≤ 4); by Lemma 1 row ab reaches σ_ab iff F ≥ n_ab/N
+     (0 < n_ab < N) or n_ab = 0; hence F(S=4;N) = min_Q max_ab n_ab/N ✓.
+     Parity lemma: prod(σ) = −1 vs prod(q) = +1 ⇒ each λ misses at least one
+     class (an odd number ≥ 1) ⇒ Σ_ab n_ab ≥ N ⇒ max_ab n_ab ≥ ⌈N/4⌉ ✓.
+     Sufficiency: round-robin Q_N has n-entries in {⌊N/4⌋, ⌈N/4⌉}; at F =
+     ⌈N/4⌉/N every row can be supported on its correct class (TV = n_ab/N ≤
+     F) ⇒ S = 4 ✓.
+     Values N=2..8: 1/2, 1/3, 1/4, 2/5, 1/3, 2/7, 1/4 — recomputed by hand;
+     all match audit1.out Part A (which asserts equality with the exhaustive
+     min over multisets).
+
+B.4  Corollary 2 (headline F* = (√2−1)/min(N,4)) — VERIFIED.
+     Lower bound: S ≤ 2+8F and 2 + 8·(√2−1)/4 = 2√2 exactly ✓.
+     Achievability case check N = 4k+r: referee recomputed the thresholds
+     k ≥ (√2−1)/(4(2−√2)) = 0.17678 (r=1), (√2−1)/(2(2−√2)) = 0.35355 (r=2),
+     3(√2−1)/(4(2−√2)) = 0.53033 (r=3); PROOFS's "0.18 / 0.35 / 0.53" are
+     correct roundings and k ≥ 1 in each case (r=0 trivial; the r-cases with
+     k=0 give N=1,2,3 which are handled separately). Hence min(F*, n_ab/N) =
+     F* on all four rows of Q_N and S_max(N,F*) ≥ 2 + 8F* = 2√2 ✓. The
+     feasibility inequality ⌊N/4⌋ ≥ (√2−1)N/4 is machine-verified for N=4..999
+     (ns_general.out Part A). Float cross-check: audit1.out Part B, S_max(N,
+     F*) = 2.828427124746 for N=2..6; margin note (0 for N=2,3,5,6 — multiple
+     optimal Q's; 0.207 for N=4) consistent with the certificate.
+
+B.5  Theorem 3 (exact curves N=2..8) — VERIFIED WHERE CHEAP.
+     All breakpoint values checked by hand: N=5: S(1/5) = 18/5 ✓, segment
+     16/5+2F continuous at 1/5 (16/5+2/5 = 18/5 ✓) and hits 4 at F=2/5
+     (16/5+4/5 = 4 ✓); N=6: S(1/6) = 10/3 ✓, 8/3+4F continuous (8/3+2/3 =
+     10/3 ✓), 4 at F=1/3 ✓; N=7: S(1/7) = 22/7 ✓, 16/7+6F continuous (16/7+
+     6/7 = 22/7 ✓), 4 at F=2/7 ✓; N=8: two cells both on 2+8F (n=(2,2,2,2)
+     stays active through k=1) ✓. All match audit1.out Part A exactly.
+     Independent LP cross-checks exist: capregion.out (N=5 F=0.2/0.25/0.3 →
+     3.6/3.7/3.8, |diff| ≤ 1.8e-15; N=6 F=0.2 → 8/3+4·0.2 to 0.0). The §6
+     statement "S_max(5,¼) = 16/5 + ¼ = 3.7 < 4" is thus confirmed both ways.
+
+B.6  Corollary (global bound S ≤ 2+8F) — VERIFIED FOR FINITE N; EXTENSION
+     MISSING (see A/P1-1).
+     Referee enumerated all 8 even-parity patterns by hand: C(q) ∈ {+2,+2,
+     +2,+2,−2,−2,−2,−2} (the four +2's are exactly the miss-types M_A..M_D)
+     ⇒ S0 = (1/N)Σ C(q_λ) ≤ 2 ✓. Per-row |E[ab] − μ_ab| ≤ 2·min(F, n_ab/N) ≤
+     2F by Lemma 1 (both max and min deviations) ✓. Tightness on [0, 1/N] for
+     every N ≥ 4 via Q_N (all four rows active there) ✓. The measure-
+     theoretic extension to arbitrary λ-spaces is one line — pointwise C(q_λ)
+     ∈ {±2} ⇒ ∫C dρ ≤ 2, and TV duality |∫f dp − ∫f dρ| ≤ 2·TV(p‖ρ) for f
+     with range [−1,1] — but it is NOT written anywhere in PROOFS.md. This is
+     the only true assertion/proof mismatch in the package (RESULTS L161–164
+     asserts the infinite-class form).
+
+B.7  Theorem 4 (NS, N=2: S_NS(2,F) = 2 for ALL F ∈ [0,½]) — CERTIFICATE
+     LOGIC VERIFIED.
+     For each of the 256 vertices: the four NS equations force t-equalities
+     exactly when the corresponding response is nonconstant in that setting
+     (referee checked the derivation, e.g. A-side a=0 with u[0,·] nonconstant
+     ⇔ t_00 = t_01; constant response ⇒ trivially satisfied); union-find
+     closure groups the free variables; S is affine in the group variables over
+     the box [½−F, ½+F]; the max of an affine function over a box is attained
+     at a vertex ⇒ endpoint sign patterns per group suffice (1312 candidates
+     total — consistent with audit1.out L93); an affine A+BF ≤ 2 on [0,½] iff
+     both endpoints ≤ 2 (audit1.py L296) ✓; S = 2 is attained at F = 0 by any
+     local deterministic strategy ✓. Sound. The one-sided-NS side finding is
+     correctly marked "not needed for any claim".
+
+B.8  Theorem 5 (NS headline, all N ≥ 3) — CONSTRUCTION INDEPENDENTLY RE-
+     DERIVED; ONE TYPO FOUND (P2-6).
+     Lower bound: S_NS(N,F) ≤ S_max(N,F) and Corollary 2 ⇒ F*_NS(N) ≥
+     (√2−1)/min(N,4) ✓ (trivial, correct).
+     N≥4 witness — every component verified by hand: the per-class gauge gives
+     patterns M_A, M_B, M_C, M_D for classes 0..3 ✓; row sums: n_r·x[ab,r] =
+     −d with a compensating +d on one other class ⇒ each row sums to 1 ✓;
+     per-row TV = ½(d+d) = d exactly, bang-bang in the σ_ab direction ✓;
+     feasibility p ≥ 0 ⟺ n_r ≥ dN for all r ⟺ ⌊N/4⌋ ≥ (√2−1)N/4 (same case
+     check as B.4) ✓; ALL FOUR NS identities computed explicitly: a=0 side —
+     row 00 over classes {0,1}: −d+d = 0 = row 01's d−d ✓; a=1 side — row 10
+     over {1,2}: d−d = 0 = row 11's 0+0 ✓; b=0 side (class 1): row 00 +d =
+     row 10 +d ✓; b=1 side (class 0): row 01 +d = row 11 +d ✓. Value: S =
+     S0 + 8d = 2 + 8F* = 2√2 with TV_ab = d for all ab ✓. Machine verification:
+     ns_general.out Part A (exact Fractions, N=4..64) and Part C (float spot
+     checks N=5,7,10,24: S to 1e-12, NS residuals ≤ 1.7e-16).
+     N=3 witness — referee re-derived the Q(√2) table by hand using the saved
+     gauge ns_solN3_{u,v}.npy: row sums = 1; per-row TV = (d3, d3, d3/2, d3);
+     E[ab] = (⅓+2d3, ⅓+2d3, 1, −⅓−2d3); S = 2 + 6d3 = 2√2 EXACTLY; all four
+     NS residuals = 0. Matches ns_general.out Part B/C (5.6e-17 vs the saved
+     LP witness).
+     TYPO: PROOFS §9.5 says "patterns {M_A, M_C, M_D}" but the ns_solN3 gauge
+     gives per-state patterns {M_A, M_B, M_D} — state products (−,+,+,−),
+     (+,−,+,−), (+,+,+,+); no CHSH symmetry maps one set to the other. The
+     table and theorem are unaffected (both hand-verified). See P2-6.
+     Gauge caveat paragraph (§9.5): correct and important — NS is not
+     invariant under the per-state sign-flip gauge (it fixes q but changes
+     single-party marginals); witnesses must specify full (u,v). Confirmed.
+
+B.9  Witness tables and stated numerical values — ALL CHECKED VALUES CORRECT.
+     RESULTS §5 N=4 table: recomputed by hand — E[ab] = (√2/2, √2/2, √2/2,
+     −√2/2), S = 2√2, per-row TV = F* = (√2−1)/4 ✓ (also audit1.out Part D in
+     exact Q(√2)).
+     solN{2,3,4} residuals (|S−2√2| = 3.05e-6 / 3.36e-5 / 3.05e-6) correctly
+     attributed to phase1.py's bisection tolerance 1e-5 (audit1.out Part C;
+     PROOFS §10 item 2) ✓. ns_solN{3,4} residuals (≤ 4.4e-16; NS ≤ 5.6e-17)
+     match ns_witness.out ✓. verify_run.log and verify_rerun.log are byte-
+     identical (diffed): 21 [PASS], exit 0 — count matches PROOFS §11(8) ✓.
+     curve_results.txt: N=2,3 follow 2+2NF exactly on the sampled grid; N=5,6
+     follow 2+8F up to F ≈ 0.0845/0.0704 (< 1/N) ✓ consistent with Theorem 3.
+     n5_bisect.out: F*_N5 ≈ 0.10355330 (bisection, tolerance-limited) — valid
+     corroborating evidence; the printed reference "(sqrt2-1)/5" is stale per
+     PROOFS §11(9) ✓ (file correctly not regenerated). n6check.out: S_max(6,
+     0.10355339) = 2+8F = 2.82842712 ✓ (F < 1/6, first segment). ns_gap.out:
+     NS N=2 grid flat at 2 ✓; NS N=5 at F=(√2−1)/5 gives 2.66274170 = 2+8·
+     (√2−1)/5 exactly (first segment) — consistent with Theorem 5's
+     construction, which in fact gives S_NS(N,F) = 2+8F on [0, F*] for all
+     N ≥ 4. capregion.out, ns_tight_N{3,4}.out: as cited ✓.
+
+B.10 SUMMARY OF GAPS.
+     (1) Measure-theoretic extension of S ≤ 2+8F missing from PROOFS.md while
+         asserted in RESULTS.md — P1-1; the only assertion/proof mismatch.
+     (2) Lemma 1 achievability paragraph wording — P2-7 (claim correct).
+     (3) {M_A,M_C,M_D} → {M_A,M_B,M_D} typo in PROOFS §9.5 — P2-6 (table and
+         theorem correct).
+     NO step of any theorem was found to be wrong. All stated numerical values
+     the referee checked by hand (§8 breakpoints, §6 cap table, both witness
+     tables, Corollary 2 case thresholds) are correct.
+
+================================================================================
+SECTION C — PUBLICATION STRUCTURE & VENUE
+
+C.1  Recommended outline (main text ~8–10 pp + supplement ~5 pp, PRA style).
+     Main text:
+       1. Introduction and motivation: the fine-tuning question; place inside
+          the Hall-2010 / FGHK / Hall-Branciard "quantify measurement
+          dependence" program; one paragraph on BHL 2026's "signalling in
+          principle" as the motivation for the NS sub-case (with the P2-10
+          distinction).
+       2. Model and metric: finite model; F = max_ab TV(p(·|ab)‖ρ); state that
+          ρ is arbitrary (the lower bound does not use uniformity);
+          determinism WLOG for fixed p in one line (multi-affine ⇒ vertex, so
+          stochastic responses give no advantage at fixed p).
+       3. Lemma 1 + Theorem 1 (the engine) — short; the per-row TV optimum is
+          the only non-combinatorial ingredient.
+       4. Consequences: Corollary S ≤ 2+8F INCLUDING the one-line general-
+          measure extension (fixes P1-1); Theorem 2 cap ⌈N/4⌉/N; Corollary 2
+          headline F* = (√2−1)/min(N,4) with the N=4-saturation discussion
+          ("the four correlators, not the source size, are the bottleneck").
+       5. NS sub-case: Theorem 4 (N=2 flatness; statement + certificate
+          pointer) and Theorem 5 (NS-silence for N≥3). State the explicit
+          witness family in full — it is a highlight, not boilerplate; keep
+          the gauge caveat.
+       6. Explicit N=4 witness table (the concrete model a reader can check in
+          30 seconds; cite audit1 Part D for the exact Q(√2) identity).
+       7. Comparison with prior work: metric-convention table (Hall M / Hall
+          F_ret / Alai η=1 floor / Pal δ_ens / our F) with the three numbers
+          0.276 / 0.1381 / 0.1036 disambiguated and NO cross-metric ordering;
+          citations: Hall 2010 (PRL 105, 250404), Hall & Branciard 2020
+          (arXiv:2007.11903), Friedman–Guth–Hall–Kaiser–Gallicchio (PRA 99,
+          012121 (2019)), BHL 2026 (arXiv:2602.11300), Alai arXiv:2608.18886 +
+          arXiv:2608.00124, Pal et al. arXiv:2601.08290, Takakura et al.
+          arXiv:2208.13634.
+       8. Honest novelty paragraph with the literature_check §C hedge ("no
+          prior use found in arXiv-indexed literature through 2026-08-23") and
+          its stated coverage limits; keep the explicit not-a-breakthrough
+          sentence.
+     Supplement:
+       - Theorem 3 exact curves N=2..8 + audit1.py certificate description
+         (multiset enumeration, per-cell upper hull, Fraction arithmetic);
+       - Theorem 4 certificate details (union-find over 256 vertices; 1312
+         affine candidates; endpoint check);
+       - full verification of the Theorem 5 row/NS identities and feasibility
+         case check;
+       - numerical cross-check record (verify.py, capregion.out,
+         ns_tight_N{3,4}.out, ns_witness.out) + bisection-history artifact
+         explanation; code/data availability statement.
+
+C.2  Venue recommendation: Physical Review A (first choice).
+     Reasoning: this is exactly where the "relaxed Bell inequalities / quantify
+     measurement dependence" program has been published — Hall PRA 84, 022102
+     (2011); Friedman et al. PRA 99, 012121 (2019); Supic–Bancal–Brunner PRA
+     108, 042207 (2023). The result set (proved theorems + explicit
+     constructions + exact-arithmetic certificates) matches PRA's taste, and a
+     PRA referee will know Hall 2010 and FGHK by heart, so the comparison
+     section can be direct. Alternatives: Foundations of Physics if the authors
+     want to lean into the superdeterminism / NS-silence framing (BHL's
+     audience; the "fine-tuning is NS-silent" message lands better there);
+     Quantum (open access) if code availability and reproducibility are to be
+     emphasized. PRD is acceptable but foundations content usually routes to
+     PRA/FPH; JPA has a thinner foundations audience. A PRL letter is NOT
+     recommended: the package (curves, cap, two NS theorems, witnesses) is too
+     broad for a letter, and Hall's PRL was a single sharp bound.
+     Expected length: 8–10 pages main text + 4–6 pages supplement.
+
+C.3  What a referee at that venue will attack first (ranked):
+     1. Metric choice: why TV from a fixed uniform baseline rather than Hall's
+        baseline-free pairwise M? Pre-empt with the literature_check §C
+        argument (the uniform source IS the MI assumption, so F measures
+        per-setting deviation from MI directly) AND state that the lower bound
+        S ≤ 2+8F holds for ANY ρ — the floor is a statement about all local
+        models, not just uniform-source ones.
+     2. Novelty positioning vs Alai arXiv:2608.18886 (appeared weeks before
+        submission; "exact minimum MD for CHSH" in a Hall-type metric with
+        Q(√2) certificates). Must cite both Alai papers and state clearly:
+        different metric, different model class (Alai includes detector
+        inefficiency/η_eff), different numbers ((√2−1)/3 vs our (√2−1)/4) — no
+        contradiction.
+     3. Model-class questions: (a) deterministic + uniform source — answer:
+        determinism WLOG for fixed p (vertex argument); uniformity not needed
+        for the lower bound; (b) do non-uniform ρ or stochastic responses
+        change F*? — no, by the same two lines; state explicitly.
+     4. NS-silence vs BHL: a foundations-literate referee will check that
+        "NS-silent" (observable marginals) is not conflated with BHL's causal
+        "signalling in principle". Keep the distinction sharp (P2-10).
+     5. Minor: the N=2 "local polytope" interpretation (delete, P1-4); exact
+        curves for N ≥ 9 left to numerics (fine if stated as PROOFS §8 does).
+
+================================================================================
+SECTION D — HONEST VERDICT
+
+D.1  Classification: a REAL, publishable contribution — incremental-to-solid,
+     NOT a breakthrough. Not "not publishable": after the P0/P1 fixes below it
+     is a clean, self-contained package of proved theorems with exact
+     certificates; but it does not open a new direction.
+     Reasoning against literature_check.out: the per-block-TV-from-a-fixed-
+     source metric has no prior use found in arXiv-indexed literature through
+     2026-08-23 (sweep §C, Q1); the exact closed forms F* = (√2−1)/min(N,4)
+     with N=4 saturation, the exact curves for N=2..8, the cap ⌈N/4⌉/N, and —
+     most distinctively — the NS-silence theorems (F*_NS(N) = F*(N) for all
+     N ≥ 3 with explicit algebraic witnesses at every N, plus the N=2 flatness
+     theorem) do not appear in any swept work. But the closest prior work —
+     Alai arXiv:2608.18886 (exact minimum MD for CHSH at 2√2, Hall-type metric,
+     Q(√2) certificates, η_eff degrees of freedom) and Pal et al.
+     arXiv:2601.08290 (first TV-based Bell fine-tuning bound found, |S| ≤
+     2+6·δ_ens, drift mechanism, not claimed tight) — shows that "exact minimum
+     measurement dependence for CHSH" is an ACTIVE 2026 front. The general
+     program is no longer ours to claim; our contribution is a specific metric
+     with clean closed forms plus the NS sub-case, which nothing in the sweep
+     covers. What keeps it above trivial: (i) proved theorems with exact-
+     arithmetic certificates, not numerics; (ii) the NS-silence result answers
+     a question BHL 2026 raises only qualitatively, with explicit witnesses for
+     every N ≥ 3 — the most defensibly new piece; (iii) the N=4 saturation is a
+     clean structural fact. What caps it: the metric is one of several
+     reasonable choices and must be argued for; the headline 0.1036 sits in a
+     cluster of confusable numbers (0.276, 0.1381); two near-identical-spirit
+     papers appeared within ~6 weeks of the sweep date.
+
+D.2  Single strongest defensible contribution statement:
+     "In the per-setting total-variation metric F = max_ab TV(p(·|ab)‖ρ), the
+     minimum fine-tuning for a local deterministic hidden-variable model to
+     reach the maximal quantum CHSH value S = 2√2 is exactly (√2−1)/min(N,4) —
+     decreasing in the number N of hidden states and saturating at N = 4 — and
+     this minimum is achievable without any observable signalling for every
+     N ≥ 3 (while N = 2 admits no Bell violation under no-signalling at any
+     fine-tuning level). To our knowledge — arXiv-indexed literature through
+     2026-08-23, sweep described in the supplement — this metric and these
+     exact values have no prior use."
+
+D.3  Standing-commitment check.
+     - Checkable without trusting prose: every headline number has an artifact
+       — F*: audit1.out Part B + verify.py (D); curves: audit1.out Part A +
+       capregion.out; cap: audit1.out Part A; N=4 witness: verify.py (A) +
+       audit1.out Part D (exact Q(√2)); NS N=2: audit1.out Part E; NS N≥3:
+       ns_general.out Parts A–C + ns_tight_N{3,4}.out + ns_witness.out. ONE
+       GAP: RESULTS.md §7 does not yet point at audit1.py / ns_general.py
+       (P1-9) — fix before submission.
+     - Honest novelty: after the P1-7/P1-8 fixes the novelty language matches
+       literature_check §C. No sentence currently drifts toward "breakthrough"
+       (L6/L254 explicitly disclaim it — keep those sentences).
+     - Numerically right but not proved: exactly ONE — the general-measure
+       (infinite λ) form of S ≤ 2+8F asserted at RESULTS L161–164 (true; one-
+       line proof; not written) — P1-1. Every other claim stated as exact is
+       either proved in PROOFS.md or certified by audit1.py / ns_general.py.
+
+================================================================================
+FINAL COUNTS
+P0: 1   (P0-1: false curve/cap statement, RESULTS L88–L99)
+P1: 10  (P1-1 … P1-10)
+P2: 10  (P2-1 … P2-10, sampled)
+Proof gaps: 3 (one assertion/proof mismatch — the missing measure-theoretic
+extension; two wording/typo issues in PROOFS.md). No theorem step found wrong.
+Verdict: publishable after fixes; best venue PRA; strongest defensible claim
+per D.2.
+END OF REFEREE PASS

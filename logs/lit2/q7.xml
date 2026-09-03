@@ -1,0 +1,1194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/3wxz5gwoBj8dC9Y5AzBZU0JBV3g</id>
+  <title>arXiv Query: search_query=all:"measurement dependence"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T03:38:09Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22measurement+dependence%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>558</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21182v1</id>
+    <title>Matching Urban Flood Sensor Placement to Monitoring Objectives Using Bayesian Optimal Experimental Design</title>
+    <updated>2026-08-21T14:52:39Z</updated>
+    <link href="https://arxiv.org/abs/2608.21182v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21182v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Flood-monitoring sensors are often placed according to coverage, access, or expected inundation. However, the value of a measurement depends on the prediction or decision it is intended to inform. Using tRIBS-Urban simulations and a neural-network surrogate of the August 2014 metropolitan Detroit flood, we examine how this learning target changes single-sensor placement. Across 2,576 candidate locations, we compare parameter-oriented optimal experimental design (PO-OED), which values expected information gain (EIG) about model parameters, with goal-oriented optimal experimental design (GO-OED), which values EIG about specified flood predictions. We also examine how parameter EIG evolves during the event, and illustrate that parameter learning translates unevenly into reductions in predictive uncertainty across locations and lead times. Under GO-OED, point-depth targets favor nearby locations, whereas regional-average and regional maximum-depth targets can favor nonlocal locations. Weighted multi-point objectives retain similar broad spatial patterns, although their computed max-EIG locations differ. Public geospatial data further provide illustrative feasibility and contextual classifications for deployment screening. These results show how monitoring objectives shape sensor placement in optimal experimental design, and motivates an objective-first workflow that defines the intended prediction and priorities, applies field-verified restrictions, and ranks locations by EIG.</summary>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.geo-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T14:52:39Z</published>
+    <arxiv:primary_category term="stat.AP"/>
+    <author>
+      <name>Chen Cheng</name>
+    </author>
+    <author>
+      <name>Vinh Ngoc Tran</name>
+    </author>
+    <author>
+      <name>Jiayuan Dong</name>
+    </author>
+    <author>
+      <name>Sarah Whitaker</name>
+    </author>
+    <author>
+      <name>Shannon Bergt</name>
+    </author>
+    <author>
+      <name>John Ziker</name>
+    </author>
+    <author>
+      <name>Valeriy Y. Ivanov</name>
+    </author>
+    <author>
+      <name>Xun Huan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20732v1</id>
+    <title>Uncovering and Understanding Hidden Dependencies in the LLM API Reseller Ecosystem via Prefix-Cache Side Channels</title>
+    <updated>2026-08-21T04:35:21Z</updated>
+    <link href="https://arxiv.org/abs/2608.20732v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20732v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM API resellers have become an important access layer to modern LLM services. However, multi-level resale creates an opaque supply chain: a user's request may traverse undisclosed upstream resellers, each of which can inspect or modify prompts and responses, inducing ecosystem-level confidentiality and integrity risks. Existing studies audit individual resellers, but provide little visibility into hidden dependencies across resellers. We present CacheTracer, the first API-only measurement of such hidden dependencies. Our key insight is to exploit prefix-cache reuse as a side channel to measure dependency via cache-reach relations. CacheTracer operationalizes this insight with two primitives: Flood populates fresh cache state through one endpoint, and Prove probes whether another can reuse it while excluding probe-created hits.
+  We then conduct a real-world measurement study with CacheTracer on 39 reseller endpoints, sending 1.1 million API requests across 636 endpoint pairs. Our measurements reveal a deep, concentrated cache-reach structure: 37.1% of measured pairs exhibit shared cache reach, the containment order spans seven layers, and one cache reach is contained within at least 31 of other nodes. We further find that the recovered structure is model-specific. We also evaluate the validity of CacheTracer through both real-world consistency checks and controlled experiments. The results show its high reliability and accuracy. These findings reveal substantial hidden dependencies among seemingly independent API resellers. Such deep and concentrated dependencies can create a large potential blast radius, where a confidentiality or integrity failure along a common upstream path may affect users across multiple downstream resellers.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T04:35:21Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Zimo Ji</name>
+    </author>
+    <author>
+      <name>Xin Wei</name>
+    </author>
+    <author>
+      <name>Congying Xu</name>
+    </author>
+    <author>
+      <name>Wenyuan Jiang</name>
+    </author>
+    <author>
+      <name>Xin Yang</name>
+    </author>
+    <author>
+      <name>Zongjie Li</name>
+    </author>
+    <author>
+      <name>Yudong Gao</name>
+    </author>
+    <author>
+      <name>Shuai Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18886v2</id>
+    <title>The exact price of local realism in CHSH experiments: a measurement-dependence-detection trade-off surface, a moiré phase-locking mechanism that saturates it, and an unmeasured fringe in the fourfold coincidence sum</title>
+    <updated>2026-08-21T02:09:51Z</updated>
+    <link href="https://arxiv.org/abs/2608.18886v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18886v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For local hidden-variable accounts of the CHSH experiment that are faithful -- reproducing the observed singles and coincidence rates and unbiased marginals of a polarization singlet with symmetric detector efficiency $η_{\rm eff}$ -- I determine the minimal measurement dependence $M$ (Hall's variational measure) needed to achieve a CHSH value $S$. Linear programming over all local strategies yields, to machine precision at 32 grid points, $M(S,η_{\rm eff})=\max\{0,η_{\rm eff}((S+2)η_{\rm eff}-4)/6\}$, whose edges reproduce Hall's tight bound at $η_{\rm eff}=1$, the Garg-Mermin detection threshold, and the postselection ceiling $S=4/η_{\rm eff}-2$. The quantum point is certified exactly: $M(2\sqrt{2},9/10)=(27\sqrt{2}-33)/100$, with primal and dual certificates in $\mathbb{Q}(\sqrt{2})$ arithmetic. I solve the unique detection profile $D(m)=\sqrt{m}\,h(m)$ under which a deterministic sign model reproduces the singlet exactly, derive the $\sqrt{m}$ edge law, and prove exact quantum correlations and angle-independent coincidence rates jointly impossible for pure-detection models. Surviving local accounts trade off measurement dependence against a $\cos 4(a-b)$ modulation of the fourfold coincidence sum, of relative amplitude up to 12.4%, which vanishes at the CHSH angles and has never been bounded below 1%. A settings-torus protocol reaches $5σ$ sensitivity at 0.1% within hours: a flat result forces $M\gtrsim 95\%$ of Hall's floor; a fringe would contradict the flat-rate prediction of quantum mechanics. Finally I exhibit a local mechanism -- moire phase locking -- with deterministic phase evolution and all randomness quenched in frozen offsets and flight times; with 1024 offsets it attains the certified floor exactly at $η_{\rm eff}=1$ at every tested fidelity, from 10% down to 1%, and its softening of the correlation extremes is a falsifiable fingerprint.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T13:14:52Z</published>
+    <arxiv:comment>10 pages, 5 figures. Code and exact certificates at https://github.com/RandomInternetPreson/moire-phase-space-sampler. v2: offset-ensemble robustness battery added (Sec. 7); with 1024-offset ensembles the mechanism attains Hall's floor at all tested fidelities; fingerprint confirmed lattice-free; code and data extended</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18839v1</id>
+    <title>Quantum Mixedness Testing with Pauli Measurements</title>
+    <updated>2026-08-19T11:58:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.18839v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18839v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider a fundamental problem of \emph{mixedness testing}: Given $n$ copies of an $N$-qubit state $ρ$, determine whether $ρ= \mathbb{I}_d/d$ or $\|ρ-\mathbb{I}_d/d\|_1 \geq \varepsilon$ with high probability, where $d = 2^N$. In particular, we focus on performing this task in the practical setting of single-qubit measurements, where measurements are prepared independently on each qubit. We provide a nearly complete picture of single-qubit mixedness tesing by showing $n = \widetildeΘ\left(\sqrt{10}^N/\varepsilon^2\right)$. To establish our lower bound, we introduce a new measurement-dependent lower bound framework for adaptive single-copy state certification. For the upper bound, we present a randomized Pauli basis measurement protocol, which relies on a new primitive for computationally efficient uniformity testing of correlation-concentrated distributions on the Boolean hypercube.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T11:58:16Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jayadev Acharya</name>
+    </author>
+    <author>
+      <name>Abhilash Dharmavarapu</name>
+    </author>
+    <author>
+      <name>Yuhan Liu</name>
+    </author>
+    <author>
+      <name>Nengkun Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18797v1</id>
+    <title>Comparing Probabilistic Influence-Spreading Centralities to Commonly-Used Centrality Measures in Directed and Weighted Networks</title>
+    <updated>2026-08-19T10:54:59Z</updated>
+    <link href="https://arxiv.org/abs/2608.18797v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18797v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Influence-Spreading Model (ISM) introduces three probabilistic centrality measures: out-centrality, in-centrality, and ISM betweenness centrality. Out-centrality measures the average probability that a node influences others, while in-centrality measures the average probability that others influence a node. ISM betweenness centrality measures the change in total probabilistic influence when a node is removed. These measures depend on edge transmission probabilities and allow walks up to a specified maximum length. We compare the ISM centrality measures to commonly used weighted variants of out-degree, in-degree, closeness, shortest-path betweenness, and Katz centrality in directed, weighted networks using four real-world online social networks and nine synthetic networks generated by Erdős-Rényi, navigable small-world, and directed scale-free models. For the synthetic networks, the edge probabilities are drawn from three beta distributions. We evaluate the similarity in centrality values and their ranking using Pearson correlation and Spearman's rank correlation coefficients. Results show strong correlations between the ISM out-centrality and weighted out-degree and outward Katz centrality, particularly for low edge probabilities. Conversely, relationships between the ISM in-centrality and other measures vary with network topology, sometimes yielding negative correlations. Correlations between the ISM betweenness and the shortest-path betweenness are also topology-dependent and weaken as alternative influence paths become more relevant. Overall, standard centrality measures can approximate the influence of broadcasting influence but often miss the nuances of receiving influence and probabilistic intermediary roles.</summary>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T10:54:59Z</published>
+    <arxiv:primary_category term="cs.SI"/>
+    <author>
+      <name>Juuso Luhtala</name>
+    </author>
+    <author>
+      <name>Vesa Kuikka</name>
+    </author>
+    <author>
+      <name>Kimmo K. Kaski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14422v1</id>
+    <title>UMPIRE-Net: Unrolled Magnitude-Phase Regularization Network for Accelerated MRI</title>
+    <updated>2026-08-14T16:04:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.14422v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14422v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>MRI reconstruction from undersampled k-space measurements is an ill-posed inverse problem. Physics-driven deep learning (PD-DL) methods have shown strong performance for this task by combining the MRI forward model with learned image regularization within algorithm-unrolling frameworks. However, most existing PD-DL methods reconstruct complex-valued images directly, thereby implicitly coupling magnitude and phase within a single learned representation. This coupled regularization may be suboptimal in reconstruction settings where accurate phase modeling plays an important role, such as partial Fourier (PF) imaging, where recovery of the omitted asymmetric k-space measurements depends on the underlying image phase. In such scenarios, explicit modeling of magnitude and phase as separate components may reduce the reliance on externally estimated or predefined phase information. To this end, we propose UMPIRE-Net (Unrolled Magnitude-Phase In REgularization Network), a PD-DL method that introduces separate learned regularizers for magnitude and phase components, together with a novel data-fidelity formulation that enforces measurements consistency. We evaluate UMPIRE-Net for accelerated MRI with PF across different datasets and acceleration factors. Experimental results demonstrate that our proposed method improves reconstruction quality compared with a conventional complex-valued PD-DL baseline, yielding sharper images and reduced artifacts. Code available at: https://github.com/MahdiSaberii/UMPIRE-Net</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-14T16:04:46Z</published>
+    <arxiv:comment>IEEE International Workshop on Machine Learning for Signal Processing (MLSP)</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Mahdi Saberi</name>
+    </author>
+    <author>
+      <name>Toygan Kiliç</name>
+    </author>
+    <author>
+      <name>Mehmet Akçakaya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14103v1</id>
+    <title>Extremal functions and zero sets for the Dirichlet space</title>
+    <updated>2026-08-14T09:06:05Z</updated>
+    <link href="https://arxiv.org/abs/2608.14103v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14103v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the zeros of functions in the Dirichlet space. Using extremal functions, we produce a necessary and sufficient condition for a sequence of points in the unit disk to be a zero set of the classical Dirichlet space. This Shapiro-Shields type condition involves kernels of the harmonic Dirichlet space associated with measures depending on the zero sequence.</summary>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-14T09:06:05Z</published>
+    <arxiv:primary_category term="math.CA"/>
+    <author>
+      <name>Alexander Borichev</name>
+      <arxiv:affiliation>I2M</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Omar El-Fallah</name>
+      <arxiv:affiliation>IMB</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Karim Kellay</name>
+      <arxiv:affiliation>IMB</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.03890v1</id>
+    <title>CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement</title>
+    <updated>2026-08-04T16:23:39Z</updated>
+    <link href="https://arxiv.org/abs/2608.03890v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.03890v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A clinically useful chest X-ray system must go beyond fluent report generation: it should classify findings with tunable decision thresholds, localize them spatially, and derive the anatomical measurements upon which many diagnoses depend. Today's Vision-Language Models (VLMs) treat these as separate problems, if they address them at all, leaving a gap between what radiologists need and what generative models provide. We introduce CARE-X, a chest X-ray VLM that narrows this gap by unifying auxiliary discriminative supervision with reward-aligned generation. CARE-X augments its generative backbone with focal-loss classification and composite-loss grounding heads, co-trained alongside the language-modeling objective. This auxiliary supervision produces discriminative diagnostic predictions with tunable decision thresholds and precise spatial localization while also improving report quality, providing evidence that structured prediction and generation reinforce one another. Building on this foundation, Decoupled Clip and Dynamic Sampling Policy Optimization (DAPO) leverages task-specific reward signals for report generation, visual question answering (VQA), and spatial grounding, directly optimizing the clinical quality metrics that matter in practice. The result is state-of-the-art performance on the majority of metrics across four report-generation benchmarks, 94.0% VQA accuracy on ReXVQA (+6.0 pp over the next-best baseline), and generative spatial decoding that reaches near parity with dedicated detection heads. Separately, to address measurement-dependent diagnoses, we couple Qwen3-VL-4B-Instruct with native tool-calling capabilities for invoking deterministic measurement tools, while retaining full visual access to the image. This hybrid inference yields +43.6 pp average F1 over perception-only baselines across five measurement-dependent conditions.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-04T16:23:39Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Mercy Prasanna Ranjit</name>
+    </author>
+    <author>
+      <name>Anirban Porya</name>
+    </author>
+    <author>
+      <name>Sathvik Joel</name>
+    </author>
+    <author>
+      <name>Niharika Vadlamudi</name>
+    </author>
+    <author>
+      <name>Nikhilesh Chowdary Eathamukkala</name>
+    </author>
+    <author>
+      <name>Prasanth V</name>
+    </author>
+    <author>
+      <name>Abhyuday Kumara Swamy</name>
+    </author>
+    <author>
+      <name>Pranay Narhari Umredkar</name>
+    </author>
+    <author>
+      <name>Pradeep Narayan</name>
+    </author>
+    <author>
+      <name>Vivek Rajagopal</name>
+    </author>
+    <author>
+      <name>Tanuja Ganu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00124v1</id>
+    <title>Exact minimum measurement dependence for faithful local deterministic models of multipartite GHZ-Mermin correlations</title>
+    <updated>2026-07-31T12:12:03Z</updated>
+    <link href="https://arxiv.org/abs/2608.00124v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00124v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell derivations rest on locality, determinism, and measurement independence. Hall [Phys. Rev. Lett. 105, 250404 (2010)] priced the third assumption exactly for the singlet state, and in the Kochen-Specker analysis of Phys. Rev. A 84, 022102 (2011) priced the four tripartite Mermin perfect correlators at a surrendered fraction of 1/3, leaving open the problem of an optimal model for the Mermin state itself. This paper solves the faithful version of that problem -- every full correlator reproduced and every proper-subset marginal vanishing -- and extends it to thirteen parties. A reduction theorem shows the faithfulness constraints are free, so Hall's correlator-only threshold is promoted to the faithful value, F(3) = 1/3; linear-programming optima, certified exactly by an integer-arithmetic squeeze between a proven lower bound and an explicit construction, then give F(5) = 2/5, F(7) = 4/9, F(9) = 8/17, F(11) = 16/33, and F(13) = 32/65, each value through n = 11 repeated at the following even size. All computed points obey the closed law F = R/[2(R+1)] with R = 2^floor((n-1)/2) the Mermin violation ratio, a proven combinatorial lower bound is tight on every computed core, and a universal ceiling F &lt;= 1/2 shows the statistics never require total abandonment of measurement independence at any size. The optimal hidden-variable densities have a closed physical form: uniform measures on the contextual ground states of the prepared state's frustrated stabilizer Hamiltonian, a structure confirmed out of sample on cluster states in three entanglement classes. The floors constitute counterfeiting thresholds for multipartite device-independent certificates and an exact demand curve that any measurement-dependent account of quantum correlations must fund. Complete proofs of all theorems are given in the main text and appendices.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T12:12:03Z</published>
+    <arxiv:comment>9 pages, 1 table; all exact values machine-verifiable from archived code (DOI in paper)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27121v1</id>
+    <title>A 'global' Perspective on the Differential Geometry of Wasserstein Spaces</title>
+    <updated>2026-07-29T16:47:29Z</updated>
+    <link href="https://arxiv.org/abs/2607.27121v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27121v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We develop a global differential calculus on the $L^2$-Wasserstein space over a closed Riemannian manifold, based on derivations of cylinder functions rather than on the standard pointwise approach. Within this framework we define some fundamental geometric tools. In particular, we show that the Levi-Civita connection on the base manifold lifts to the unique torsion-free connection compatible with the 'extended' Otto metric. The corresponding Riemann tensor is exactly the lift of the base Riemann tensor, which shows that - in this framework - the correction terms of the classical gradient formalism are not intrinsic curvature terms, but arise from the projection onto the measure-dependent gradient distribution. This allows us to revisit with a global and purely differential approach the smooth computations by J. Lott, Comm. Math. Phys., 277(2):423-437, 2007, reaching partially different conclusions.</summary>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T16:47:29Z</published>
+    <arxiv:comment>21 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="math.DG"/>
+    <author>
+      <name>Lorenzo Dello Schiavo</name>
+    </author>
+    <author>
+      <name>Andrea Pinamonti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.26414v1</id>
+    <title>Origins and mitigation of double descent in reduced order modeling</title>
+    <updated>2026-07-29T02:56:25Z</updated>
+    <link href="https://arxiv.org/abs/2607.26414v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.26414v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Latent low-dimensional structure in datasets of natural and engineered systems enables their sparse sensing, or full-state reconstruction from historical data and very few carefully chosen localized measurements. Depending on the reconstruction algorithm, sensor locations, and measurement noise, the reconstruction risk curves demonstrate a diversity of patterns including a dramatic peak in error known as double descent in Machine Learning literature. Here we explore those scenarios under a unified Data-Noise Averaging theory. Qualitatively, we formulate sufficient criteria for double descent to emerge through a catastrophic amplification of a pathological signal in reconstruction. Quantitatively, we predict the detailed risk curves at a fraction of computational cost, trace reconstruction instability to individual sensors and their combinations, and provide regularization mechanisms to mitigate the instability. We demonstrate results for both static reconstruction of Sea Surface Temperature patterns and time integration of a reduced order model of a PDE.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T02:56:25Z</published>
+    <arxiv:comment>20 RevTeX pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Andrei A. Klishin</name>
+    </author>
+    <author>
+      <name>J. Nathan Kutz</name>
+    </author>
+    <author>
+      <name>Krithika Manohar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.19643v1</id>
+    <title>Domain Shift in Echocardiography: Interpretable Quantification and Prediction of Cross-Dataset Left Ventricular Segmentation</title>
+    <updated>2026-07-22T00:48:57Z</updated>
+    <link href="https://arxiv.org/abs/2607.19643v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.19643v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cross-dataset generalisation remains a major barrier to clinical deployment of echocardiographic left ventricular segmentation, yet the sources of this shift are rarely disentangled. We examined whether transfer degradation could be estimated before deployment using handcrafted ultrasound descriptors, VAE latent features, and segmentation-derived latent features across six echocardiographic datasets. Geometry-aware preprocessing substantially improved several poor transfer cases, suggesting that much of the apparent domain shift reflects field-of-view and framing inconsistencies rather than intrinsic acoustic differences alone. Intensity z-normalisation changed dataset separability by less than 0.005, indicating that brightness and contrast are not the dominant shift axis. Absolute Dice drop on held-out source-target pairs was predicted with an R-squared value of 0.612, an MAE of 0.082, and a Spearman rho of 0.681. The variant without LV and fan-shaped features retained approximately 70% of this explanatory power, supporting mask-free transfer-risk monitoring. The most informative discrepancy measure depended on the representation, with CMD strongest in z-normalised handcrafted features, with an absolute r of approximately 0.86 and an R-squared value of approximately 0.70; log-Wasserstein strongest in VAE space, with an r of approximately -0.90 and an R-squared value of approximately 0.81; and log-MMD strongest in LV-segmentation latent features, with an r of approximately -0.92 and an R-squared value of approximately 0.84. Apparent vendor effects were largely dataset-confounded. Echocardiographic domain shift is therefore structured and measurable, and its impact on segmentation can be partly reduced through geometry-aware preprocessing and anticipated using representation-specific transfer-risk estimation.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-22T00:48:57Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Soroush Elyasi</name>
+    </author>
+    <author>
+      <name>Nasim Dadashi Serej</name>
+    </author>
+    <author>
+      <name>Julie Wall</name>
+    </author>
+    <author>
+      <name>Massoud Zolgharni</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.03250v2</id>
+    <title>Generating one-way computations with flow: flow-preserving rewriting that ignores the interpretation</title>
+    <updated>2026-07-21T08:09:46Z</updated>
+    <link href="https://arxiv.org/abs/2607.03250v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.03250v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The one-way model is a universal model of quantum computation, driven by successive adaptive single-qubit measurements on an entangled resource state. Measurements are non-deterministic, yet if the computation satisfies one of several related families of conditions known as 'flows', the computation can be made deterministic overall by modifying later measurements depending on the outcomes of earlier ones. Flow properties also enable efficient translation from one-way computations to circuits, motivating research into rewriting one-way computations while preserving the existence of flow. Existing approaches to flow-preserving rewriting are used for compilation or optimisation and preserve both the interpretation and the existence of flow.
+  Here, we broaden our perspective to consider flow-preserving rewriting that does not necessarily preserve the interpretation, with applications to creating test instances for software that works with flow, as well as to generating ansätze for quantum machine learning. We show that a family of just three flow-preserving rewrite rules suffices to generate any diagram with flow from a trivial diagram with the desired number of inputs and outputs. This rule set is nearly the same as the complete set of flow- and interpretation-preserving rewrite rules for one-way computations in which all measurements are Pauli; and just a small subset of the flow- and interpretation-preserving rewrite rules for arbitrary measurements.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-03T12:10:32Z</published>
+    <arxiv:comment>19 pages, v2 fixes an issue in the generation procedure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Miriam Backens</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.18590v1</id>
+    <title>Battery Material Comparisons Should Refocus on Diffusivity with Best Practices</title>
+    <updated>2026-07-20T23:54:35Z</updated>
+    <link href="https://arxiv.org/abs/2607.18590v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.18590v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The continuous demand for improved batteries motivates the discovery and advancement of materials with improved transport. Ionic diffusivity is the relevant material property where its measurement depends on accurate assessment of the active material length-scale, generally from the mass-specific surface area. In this perspective, we argue for renewed focus on diffusivity comparisons. A procedural review of 303 recent open-access publications about battery material development revealed two aspects: (1) 49% of publications support structure-property transport claims using diffusivity values and (2) of those reporting diffusivity values, 15% clearly stated that the length scale was measured after grinding-alone or stated that grinding was not used at all. Diffusivity assessment rationally requires length scale measurement after grinding (grind-measure), rather than the reverse. A range of measurement methods are compared, including SEM, BET, and SAXS as well as the resulting apparent diffusivities. Common errors and pitfalls of each of these approaches are described. As an example, datasets are presented for TiNb2O7 (TNO1) and Ti2Nb10O29 (TNO2) made from sol-gel (SOL) and solid state (SS) techniques using rigorous quantitative measurements to separately compare material diffusivities and galvanostatic performance. Here, the SOL samples had shorter length-scales and lower diffusion coefficients. Galvanostatic cell measurements, however, revealed that the shorter length-scales more than compensated for the lower diffusivities with better overall high-rate capacity retention. This example shows how cell level metrics often differ from underlying diffusivities. We argue that materials development needs renewed focus on property measurements like diffusivity where best-practices are important to derive meaningful insights towards structure-property relationships.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-20T23:54:35Z</published>
+    <arxiv:comment>18 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>CJ Sturgill</name>
+    </author>
+    <author>
+      <name>Roya Rajabi</name>
+    </author>
+    <author>
+      <name>Md Abdullah Al Muhit</name>
+    </author>
+    <author>
+      <name>Hans-Conrad zur Loye</name>
+    </author>
+    <author>
+      <name>Morgan Stefik</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.17195v1</id>
+    <title>Mean-Field Stochastic PDEs: Well-posedness and Quantitative Dimension-Free Propagation of Chaos</title>
+    <updated>2026-07-19T11:18:31Z</updated>
+    <link href="https://arxiv.org/abs/2607.17195v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.17195v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This work investigates the mean-field stochastic PDEs involving a class of pseudo-monotone kernels. We first study the well-posedness -- in both the strong and weak sense -- within the variational framework by introducing a notion of measure-dependent pseudo-monotone operators, which generalizes the classical framework due to Brézis. Furthermore, we establish the quantitative dimension-free propagation of chaos within a $p$-uniformly convex Banach space for general infinite-dimensional weakly interacting systems, obtaining convergence rates that are near-optimal in a suitable sense.
+  Our results reveal a new insight: the convergence rate of the mean-field limit is intrinsically governed by the geometry of the underlying solution space, specifically its modulus of convexity. As applications, we study several finite- and infinite-dimensional interacting particle systems arising in machine learning and fluid mechanics, including stochastic Stein variational gradient descent, mean-field Allen-Cahn equations, and Lagrangian-averaged Burgers equations.</summary>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-19T11:18:31Z</published>
+    <arxiv:comment>73 pages</arxiv:comment>
+    <arxiv:primary_category term="math.PR"/>
+    <author>
+      <name>Wei Hong</name>
+    </author>
+    <author>
+      <name>Wei Liu</name>
+    </author>
+    <author>
+      <name>Luhan Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.16030v1</id>
+    <title>Rethinking Quantum Continual Learning with Quantum Fisher Information</title>
+    <updated>2026-07-17T15:02:32Z</updated>
+    <link href="https://arxiv.org/abs/2607.16030v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.16030v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum continual learning aims to train quantum models on sequential tasks without losing previously learned knowledge. However, variational quantum classifiers (VQCs) are prone to catastrophic forgetting under nonstationary task distributions. We propose quantum elastic weight consolidation (QEWC), a quantum Fisher information (QFI)-informed regularization method for mitigating forgetting. Unlike conventional elastic weight consolidation based on classical Fisher information (CFI), which measures parameter importance through measurement-dependent output statistics, QEWC uses QFI to quantify the intrinsic sensitivity of the parameterized quantum state. This gives an information-geometric view in which important parameters are identified by the local response of the quantum state manifold. We evaluate QEWC on VQCs trained on sequential binary classification tasks, including classical image-classification and quantum phase-classification tasks. Simulations show that sequential training without regularization causes severe forgetting, while both CFI-based EWC and QFI-based QEWC improve retention of previous tasks. Mechanistic analyses further show that the two methods impose different regularization geometries: CFI acts selectively on measurement-sensitive directions, whereas QFI imposes a denser state-geometric constraint over parameter space. Under depolarizing noise, CFI values are strongly suppressed by degraded measurement statistics, while QFI preserves a more stable sensitivity structure of the noisy parameterized quantum state. These results establish QEWC as a physically motivated approach for studying and mitigating forgetting in quantum continual learning through quantum-state geometry.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-17T15:02:32Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yu-Chao Hsu</name>
+    </author>
+    <author>
+      <name>Yu-Cheng Lin</name>
+    </author>
+    <author>
+      <name>Tai-Yue Li</name>
+    </author>
+    <author>
+      <name>Nan-Yow Chen</name>
+    </author>
+    <author>
+      <name>En-Jui Kuo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.15869v1</id>
+    <title>Photoelectrical readout and Ramsey interferometry of single shallowly implanted NV centers in diamond</title>
+    <updated>2026-07-17T11:32:35Z</updated>
+    <link href="https://arxiv.org/abs/2607.15869v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.15869v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Photoelectrical readout of the electronic spin state of the nitrogen-vacancy (NV) center in diamond is attracting significant interest due to the numerous advantages it possesses compared with conventional fluorescence readout. The higher charge carrier rate compared to the photon rate and the integration of the detection scheme on a chip can significantly advance quantum sensing and computing with color centers in diamond. Until now, photoelectric readout has been performed on ensembles of NV centers or single NV centers deep in ultrapure diamond substrates. However, many applications require the artificial creation and precise placement of shallow NV centers, and photoelectric detection of such centers has been challenging. Here we demonstrate photoelectrical readout and coherent control of the electronic spin of implanted shallow ($\sim$10 nm) NV centers buried by diamond overgrowth. The photoelectrically measured Ramsey $T_2^*$ agrees with conventional fluorescence readout and shows no measurable dependence on the readout photocurrent, for both shallow implanted and deep ingrown NV centers. We further find that overgrowth improves photoelectric readout by suppressing the background photocurrent. These results establish photoelectric readout as a viable route to chip-integrated, electrically detected nanoscale sensing and to spin registers based on engineered shallow NV centers.</summary>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-17T11:32:35Z</published>
+    <arxiv:comment>7 pages, 3 figures, Supplemental Material</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mes-hall"/>
+    <author>
+      <name>Ilia Chuprina</name>
+    </author>
+    <author>
+      <name>Christoph Findler</name>
+    </author>
+    <author>
+      <name>Johannes Lang</name>
+    </author>
+    <author>
+      <name>Petr Siyushev</name>
+    </author>
+    <author>
+      <name>Fedor Jelezko</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.11300v2</id>
+    <title>Extending Bell's Theorem: Nonlocality via Measurement Dependence</title>
+    <updated>2026-07-14T18:00:20Z</updated>
+    <link href="https://arxiv.org/abs/2602.11300v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.11300v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Besides well-known conditions of locality or factorisability, deriving the Bell inequalities requires assuming that the distribution of hidden variables and Alice's and Bob's measurement settings be independent of each other. We show that (analogously to violations of locality due to action at a distance) certain violations of this Measurement Independence assumption can be associated with a notion of signalling in principle, thus making them also testable in principle, and spell out the appropriate conditions. Accordingly, we show that by imposing no-signalling one can prove a version of Bell's theorem that does not require the assumption of Measurement Independence. We discuss the "Schulman model" as an example, as well as lessons for "experimental metaphysics".</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-11T19:21:23Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>G. Bacciagaluppi</name>
+    </author>
+    <author>
+      <name>R. Hermens</name>
+    </author>
+    <author>
+      <name>G. Leegwater</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20434v2</id>
+    <title>The Hubble tension: A decade review</title>
+    <updated>2026-07-14T16:58:56Z</updated>
+    <link href="https://arxiv.org/abs/2606.20434v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20434v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Ever since the new millennium, precision cosmology has forged the $Λ$-cold-dark-matter ($Λ$CDM) model as the standard model of concordant cosmology, withstanding various tests except for an ever-enlarging discrepancy between early-Universe observations and late-Universe measurements on the current Hubble expansion rate of our observable Universe. This Hubble-constant tension has likely become a real crisis for modern cosmology, with the discrepancy persisting regardless of whether the early-Universe observations depend on \textit{Planck} CMB or not, and the late-Universe measurements depend on distance ladders at all. If the Hubble tension originates from a different early Universe, its resolutions pertain to shrinking the sound horizon by altering either early expansion or recombination histories, but at the same time necessitating modifications to both primordial and late Universe altogether. Alternatively, if the Hubble tension arises from a different late Universe, its resolutions operate by changing the absolute magnitude of supernovae either intrinsically or effectively, both of which have been strongly constrained by the inverse distance ladders with the cosmic distance duality relation. The remaining options seem to turn to our local Universe, but a local Hubble bubble or cosmic void solution has long been ruled out as a significant contribution to the Hubble tension. In view of this dilemma, we review in this paper alternative resolutions involving interacting dark energy models, either combining early-time and late-time modifications or operating at the transition from inhomogeneity to homogeneity scales.</summary>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T16:12:11Z</published>
+    <arxiv:comment>v1, 76 pages, 5 figures, 1 table, Invited review for RAA (Research in Astronomy and Astrophysics), prepared for invited talk at Special Forum: "Dark Energy and the Hubble Constant Crisis" of 28th Annual Conference of the China Association for Science and Technology; v2, 86 pages, largely extended references (including ones added after acceptance for publication)</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.CO"/>
+    <arxiv:journal_ref>Research in Astronomy and Astrophysics 26 (2026) 084011</arxiv:journal_ref>
+    <author>
+      <name>Rong-Gen Cai</name>
+    </author>
+    <author>
+      <name>Shao-Jiang Wang</name>
+    </author>
+    <arxiv:doi>10.1088/1674-4527/ae842f</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1674-4527/ae842f" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.13090v1</id>
+    <title>Loophole-Robust Certification of Quantum Advantage</title>
+    <updated>2026-07-13T18:12:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.13090v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.13090v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Claims of quantum advantage should remain robust even when classical strategies have access to side information correlated with the benchmark under evaluation, just as Bell certification must account for measurement dependence. We formalize such correlations as benchmark dependence, a task-level generalization of measurement dependence. For every bounded-reward task, we show that the optimal benchmark-dependent classical score obeys $S_η\leq\min\{1,S_{\mathrm{cl}}+η\}$, and construct a family of tasks that saturates this bound, showing that the linear dependence on $η$ is tight without further assumptions. For repeated product tasks with roundwise dependence, we obtain the stronger multiplicative bound $S_η^{(n)}\leq(ω_{\mathrm c}+η)^n$, and extend the framework to finite-sample data, mutual-information constraints, multipartite tasks, and correlations distributed along a causal path. Applying these results to aggregated IBM hardware data, we obtain positive raw-count cycle-product certificates of 0.0812 for CHSH and 0.2178 for Mermin--GHZ, while the nine-context magic-square construction remains uncertified; readout-mitigated values are reported separately as sensitivity estimates. We also analyze a non-Bell quantum-kernel benchmark, where a label-construction variable has measured conditional dependence $\widehatη_λ^{(Y)}=0.5$, above the threshold $η_{\mathrm{req}}=0.375$, required to close the reported score gap, and yields perfect classical classification. The framework therefore converts a quantum--classical score separation into a quantitative lower bound on the benchmark-correlated classical information required to explain the score separation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-13T18:12:04Z</published>
+    <arxiv:comment>18 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Prosanta Pal</name>
+    </author>
+    <author>
+      <name>Gargee Sharma</name>
+    </author>
+    <author>
+      <name>Ramakrishna Podila</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.11005v1</id>
+    <title>Actor-Critic Learning for Extended Mean Field Control with Deterministic Policies</title>
+    <updated>2026-07-13T02:10:07Z</updated>
+    <link href="https://arxiv.org/abs/2607.11005v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.11005v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper develops a model-free reinforcement learning framework for continuous--time extended mean field control problems, where both the dynamics and reward may depend on the joint distribution of states and controls. We adopt deterministic feedback policies, under which the state--action distribution is induced directly as a push--forward of the state law. This avoids optimization over stochastic kernels and bypasses key limitations of existing approaches in extended mean field settings.
+  We first establish a model--free sensitivity formula for parameterized McKean--Vlasov dynamics and use it to derive a deterministic policy gradient formula expressed through an advantage--rate function on the Wasserstein space. We then refine this formula by introducing local value and advantage--rate representations that depend on the state, action, and joint state--action distribution, yielding a policy gradient that includes both action derivatives and measure--derivative terms with respect to the control distribution. These characterizations lead to a martingale--based learning principle and motivate a continuous--time deep deterministic policy gradient algorithm combining particle approximations, measure--dependent neural networks, temporal--difference learning, and exploration in either action or parameter space.
+  Numerical experiments on stochastic Cucker--Smale consensus control and optimal liquidation with trade crowding demonstrate the efficiency, stability, and robustness of the proposed method, including problems with explicit dependence on the control distribution.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-13T02:10:07Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Ziheng Cheng</name>
+    </author>
+    <author>
+      <name>Xin Guo</name>
+    </author>
+    <author>
+      <name>Huyên Pham</name>
+    </author>
+    <author>
+      <name>Yufei Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.03888v2</id>
+    <title>Local Gaussian Correlation in the Tails: A Scarcity Diagnostic, an Optimal Local Bandwidth, and the Limits of Adaptivity</title>
+    <updated>2026-07-10T12:59:15Z</updated>
+    <link href="https://arxiv.org/abs/2607.03888v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.03888v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Local Gaussian correlation (LGC) measures dependence locally, making it a natural tool for tail dependence and financial contagion, but its estimates degrade in the joint tails, where they are most needed. Location-adaptive bandwidths have been tried for LGC and found inferior to a single global bandwidth; we explain why, and map the regime in which adaptivity does help. First, a diagnostic: across heavy-tailed data-generating processes the parametric marginal pre-transform is inert (it changes the integrated error only in the fourth decimal), while the binding constraint is the local effective sample size, with the replication dispersion following a Fisher variance floor sd ~ (1 - rho^2)/sqrt(eff_n). Second, theory: specializing the Hjort-Jones local-likelihood asymptotics to the bivariate Gaussian family that LGC fits, we derive the first location-specific AMISE-optimal bandwidth for LGC, b*(x) proportional to [(1 - rho^2)^2 / (f beta^2)]^(1/6) n^(-1/6), and validate its bias expansion directly (bias proportional to b^2 beta, R^2 approximately 0.9, slope-to-beta correlation 0.80). Third, a regime map: a Monte Carlo across dependence strengths shows the adaptive rule beats the global plug-in only at moderate dependence with curved surfaces. At weak dependence there is no curvature to exploit; at strong dependence finite-sample bias from the steep surface dominates, and adaptivity performs substantially worse, with an error that grows in the sample size. This explains the field's experience that global bandwidths are hard to beat, and locates the exception. Fourth, application: on volatility-filtered equity returns the adaptive estimator yields more stable tail-dependence surfaces under resampling. The message is cautionary: the binding constraint on tail LGC is data scarcity, not bandwidth placement, and no bandwidth, however optimal, can recover information the data do not contain.</summary>
+    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-04T14:09:16Z</published>
+    <arxiv:comment>15 pages, 7 figures. Code and data: https://github.com/akashdeepo/LGC_NTS_Pilot</arxiv:comment>
+    <arxiv:primary_category term="stat.ME"/>
+    <author>
+      <name>Akash Deep</name>
+    </author>
+    <author>
+      <name>Gagan Deep</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.01136v1</id>
+    <title>Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains</title>
+    <updated>2026-07-01T16:21:49Z</updated>
+    <link href="https://arxiv.org/abs/2607.01136v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.01136v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already causes duplicated dependencies and inconsistent installations, exposing a gap that dependency management has yet to close. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and help close this gap. Borrowing from Software Bill of Materials (SBOMs), we design SkillDepAnalyzer to capture natural-language dependency evidence and model skills as dependency-bearing artifacts. On the SKILL-DEP benchmark, SkillDepAnalyzer recovers skill metadata and dependency graphs accurately and comprehensively, substantially outperforming an LLM-based baseline and package-centric SBOM tools. Applying SkillDepAnalyzer to over 1.43 million skills, we obtain ASSCs and explore their structural diversity and security signals. We find four structural patterns: skill metadata is activation-ready but governance-poor; dependency graphs span skill, package, and service dependencies with concentrated reuse; recursive skill reuse expands dependency graphs and creates hidden package inventory; and skill dependency clusters form around related workflows. We also find that inspecting a skill alone misses security-relevant signals hiding in its dependencies. By analyzing ASSCs, we identify and report known malicious skills persisting in ASSCs to their developers. Based on these findings, we recommend typed dependency manifests, first-class dependency-cluster management, risk-warning audit commands for skill infrastructure maintainers, and lockfile-like records for skill developers.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T16:21:49Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Changguo Jia</name>
+    </author>
+    <author>
+      <name>Tianqi Zhao</name>
+    </author>
+    <author>
+      <name>Runzhi He</name>
+    </author>
+    <author>
+      <name>Minghui Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.25092v1</id>
+    <title>How Modular Is a Frontier Mixture-of-Experts? A Pre-registered Causal Test in Which Apparent Expert Modularity Mostly Dissolves</title>
+    <updated>2026-06-23T18:55:41Z</updated>
+    <link href="https://arxiv.org/abs/2606.25092v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.25092v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sparse Mixture-of-Experts (MoE) models route each token to a few of many experts, inviting the hypothesis that experts form functional modules tied to capabilities or languages. We test this causally on Command A+, a frontier open-weights MoE (218B total / 25B active; 128 experts, 8 active, +1 shared). We build a routing-mass atlas, pre-register six family-to-axis hypotheses before any intervention, and ablate each family at inference time against a size-matched random-expert null, measuring whether it selectively breaks its own axis (worst off-target effect at most one third of on-target). Crucially, we test the same families under four metrics and a held-out, independent-corpus run with bootstrap confidence intervals. Our finding is cautionary: robust functional modularity is rare and measurement-dependent. Of six pre-registered families, only one, the Arabic-language family, is a clean selective module that survives an independent corpus and a conservative statistical bar (1/6; a more permissive pre-registered point rule admits 3/6, but that count is threshold-sensitive). Every other family has a real causal effect yet fails selectivity, and its apparent modularity flips with the measurement: with the corpus, the metric, and the statistical bar. A positive control on Qwen3-30B-A3B recovers its published disjoint structure, confirming the method detects modularity when present. The verdict reproduces on the un-quantized BF16 model, ruling out a 4-bit quantization artifact. We conclude that ablation-based modularity verdicts are not safe unless the corpus, metric, and statistical bar are controlled. We release the atlas and ablation data.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T18:55:41Z</published>
+    <arxiv:comment>10 pages, 3 figures. Data and atlas: https://github.com/transformerlab/exp-command-a-plus-moe-modularity</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Tony Salomone</name>
+    </author>
+    <author>
+      <name>Deep Gandhi</name>
+    </author>
+    <author>
+      <name>Ali Asaria</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.22558v1</id>
+    <title>Event-by-event fluctuations of elliptic flow in ultrarelativistic O+O collisions</title>
+    <updated>2026-06-21T15:33:04Z</updated>
+    <link href="https://arxiv.org/abs/2606.22558v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.22558v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study O+O collisions at $\sqrt{s_\mathrm{NN}} = 5.36$ TeV within a fully three-dimensional $\text{McDipper}$+$\text{MUSIC}$ model, which allows us to describe the experimentally measured dependence of charged hadron multiplicity on centrality and pseudorapidity. We show that the initial elliptical eccentricity is mainly driven by the fluctuations of the energy deposition and thereby varies considerably event-by-event within a fixed centrality class. This also holds for elliptic flow $v_2$, whose origin in O+O thus differs from that in collisions of heavy nuclei. Using a decomposition of initial states in an average event and uncorrelated modes, we find that despite the large size of fluctuations we can reproduce the joint probability distribution of eccentricity and elliptic flow with a reasonable accuracy with only a small set of fluctuation modes.</summary>
+    <category term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-21T15:33:04Z</published>
+    <arxiv:comment>14 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="nucl-th"/>
+    <author>
+      <name>Renata Krupczak</name>
+    </author>
+    <author>
+      <name>Nicolas Borghini</name>
+    </author>
+    <author>
+      <name>Hendrik Roch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.21647v1</id>
+    <title>ConcernBERT: Learning Responsibilities Using Class Membership</title>
+    <updated>2026-06-19T17:58:13Z</updated>
+    <link href="https://arxiv.org/abs/2606.21647v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.21647v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The principles of separation of concerns, high cohesion, and single responsibility are among the most well-known in software design. However, their application often remains philosophical rather than actionable, relying heavily on developers' intuition and experience. Many software tasks, such as god class decomposition, extract class refactoring, and cohesion measurement, depend on techniques for identifying cohesive groups of program entities, that is, entities that collectively fulfill a common responsibility. Yet reliably identifying such groups remains a challenge. In this paper, we propose ConcernBERT, a BERT-based embedding model trained at the entity level that uses triplet loss to directly optimize the relative positioning of methods and attributes in the embedding space, and uses class-membership context to learn responsibilities and concerns. We also contribute a large-scale replication dataset for training and evaluation. Our dataset spans over two million Java files across more than six thousand repositories. To evaluate ConcernBERT, we merge methods from two or more classes into unlabeled groups and test the model's ability to recover the original class memberships. ConcernBERT achieves significantly higher performance than existing models, demonstrating its effectiveness at encoding concern-level semantics and establishing a strong foundation for downstream tasks such as architecture recovery, extract class refactoring, and cohesion measurement.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-19T17:58:13Z</published>
+    <arxiv:comment>24 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>J. Lefever</name>
+    </author>
+    <author>
+      <name>J. Xu</name>
+    </author>
+    <author>
+      <name>Y. Cai</name>
+    </author>
+    <author>
+      <name>R. Kazman</name>
+    </author>
+    <author>
+      <name>E. Pisch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.14160v1</id>
+    <title>GAIT: Legged Robot Proprioceptive State Estimation with Attention over Inertial-Leg Tokens</title>
+    <updated>2026-06-12T06:34:53Z</updated>
+    <link href="https://arxiv.org/abs/2606.14160v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.14160v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we propose a method that applies Inertial-Leg (IL) tokenization to an attention-based network for proprioceptive state estimation in legged robots. Unlike existing learning-based state estimators that concatenate all sensor measurements into a single flat vector, the proposed architecture represents inertial measurements and leg-wise measurements as individual tokens and uses an attention mechanism to learn the relative importance of each measurement.This design allows the network to reweight each measurement according to the current contact condition, reflecting the fact that the reliability of forward kinematic measurements depends on whether the corresponding foot is in contact. Unlike conventional contact-aided estimators, however, the proposed method learns this behavior without relying on an explicit contact estimator or on explicit measurement updates based on a stationary contact assumption. To validate the proposed method, we conducted experiments on a Unitree Go1 robot, including debris terrain not modeled in simulation and gait patterns not seen during training. Experimental results show that the proposed method achieves better estimation performance than existing learning-based state estimators under unseen gait patterns and also improves performance over contact-aided model-based methods.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-12T06:34:53Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Young-Rang Seo</name>
+    </author>
+    <author>
+      <name>Hajun Kim</name>
+    </author>
+    <author>
+      <name>Sangmin Kim</name>
+    </author>
+    <author>
+      <name>Dongyun Kang</name>
+    </author>
+    <author>
+      <name>Hae-Won Park</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.12613v1</id>
+    <title>Weak Lensing Spectrotomography: A1767 and A2065</title>
+    <updated>2026-06-10T19:14:56Z</updated>
+    <link href="https://arxiv.org/abs/2606.12613v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.12613v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe spectroscopic tomographic weak lensing measurements (spectrotomography) for two rich clusters of galaxies, A1767 and A2065, based on extensive spectroscopy and Subaru/Hyper Suprime-Cam (HSC) imaging. These detections represent the first use of spectrotomography based on archival Subaru/HSC imaging. The measurements depend only on galaxies with spectroscopic redshifts reported here. The approach cleanly separates cluster members from the background and suppresses systematics that may be introduced by the use of photometric background redshifts. We detect the tomographic shear signals at $3.1σ$ (A1767) and $3.5σ$ (A2065). The shear signal amplitudes are consistent with the cluster dynamical (caustic) masses and they scale appropriately with source redshift. However, comparison with the first spectrophotometric detection of A2029 based on DECam imaging reveals some subtle potential systematic issues in deriving the shear signal for the relatively bright background galaxies used in the analysis. These issues may be important for understanding future more extensive applications of spectrotomography based on further Subaru imaging, as well as Euclid and LSST data. The total of three spectrophotometric detections (A1767, A2029, and A2065) sets the stage for broader application of the technique for unbiased cluster weak lensing mass determinations and potentially for a geometric cosmological test that is independent of other methods.</summary>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T19:14:56Z</published>
+    <arxiv:comment>13 pages, 11 figures, 4 tables, accepted for publication in the Journal of the Korean Astronomical Society</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.CO"/>
+    <arxiv:journal_ref>Journal of The Korean Astronomical Society, 2026, Vol. 59 No.1 pp.239-251</arxiv:journal_ref>
+    <author>
+      <name>Jubee Sohn</name>
+      <arxiv:affiliation>Seoul National University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian P. Dell'Antonio</name>
+      <arxiv:affiliation>Brown University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Margaret J. Geller</name>
+      <arxiv:affiliation>Smithsonian Astrophysical Observatory</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.5303/JKAS.2026.59.1.239</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.5303/JKAS.2026.59.1.239" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.19134v3</id>
+    <title>A quantum implementation of high-order power method for estimating geometric entanglement of pure states</title>
+    <updated>2026-06-10T11:31:07Z</updated>
+    <link href="https://arxiv.org/abs/2405.19134v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.19134v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Entanglement is one of the fundamental properties of a quantum state and is a crucial differentiator between classical and quantum computation. There are many ways to define entanglement and its measure, depending on the problem or application under consideration. Each of these measures may be computed or approximated by multiple methods. However, hardly any of these methods can be run on near-term quantum hardware. This work presents a quantum adaptation of the iterative high-order power method for estimating the geometric measure of entanglement of multi-qubit pure states using rank-1 tensor approximation. This method is executable on early fault-tolerant (hybrid) quantum hardware and does not depend on quantum memory. We simulate this algorithm and mitigate the effects of noise on the results of the computation using a theoretical model based on a known mitigation approach, which assumes a global depolarising noise channel.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-29T14:40:24Z</published>
+    <arxiv:comment>44 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Andrii Semenov</name>
+    </author>
+    <author>
+      <name>Niall Murphy</name>
+    </author>
+    <author>
+      <name>Simone Patscheider</name>
+    </author>
+    <author>
+      <name>Alessandra Bernardi</name>
+    </author>
+    <author>
+      <name>Elena Blokhina</name>
+    </author>
+    <arxiv:doi>10.1103/6ym6-yb6m</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/6ym6-yb6m" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08395v2</id>
+    <title>Prime Event Languages: An Information-Theoretic Investigation of Twin-Prime Event Structure</title>
+    <updated>2026-06-10T01:37:04Z</updated>
+    <link href="https://arxiv.org/abs/2606.08395v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08395v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prime numbers are traditionally studied through numerical, probabilistic, and analytic frameworks. In this work, we introduce the concept of a prime event language, in which arithmetic phenomena are represented as symbolic event sequences and analyzed using tools from information theory and stochastic processes. Using all primes up to $N = 5 \times 10^9$ (234,954,223 primes), we construct event languages based on twin-prime occurrences and record prime-gap events. We investigate their statistical properties through finite-order Markov models, train/test validation, mutual-information analysis, and information-horizon measurements. For the Twin Prime Event Language, first-order Markov modeling reduces test-set cross entropy from 0.325350 bits to 0.319949 bits, corresponding to an information gain of approximately 0.0054 bits. This gain survives out-of-sample validation and therefore reflects genuine statistical structure rather than overfitting. Mutual-information analysis independently confirms the Markov results and shows that measurable dependence is concentrated almost entirely at lag 1. The mutual information decreases from approximately $5.96 \times 10^{-3}$ bits at lag 1 to approximately $5.07 \times 10^{-7}$ bits at lag 2 (approximately 11,700-fold reduction), representing a reduction of more than four orders of magnitude. Beyond lag 2, residual information fluctuates near the statistical noise floor. These results indicate that prime event languages are neither perfectly memoryless nor strongly predictable. Instead, they exhibit weak but reproducible short-range statistical structure characterized by first-order dependence and an effective information horizon of approximately one event.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-07T01:18:07Z</published>
+    <arxiv:comment>13 pages,6 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Jinhua Liao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08388v1</id>
+    <title>The Spectral Dynamics and Noise Geometry of Muon</title>
+    <updated>2026-06-07T00:51:30Z</updated>
+    <link href="https://arxiv.org/abs/2606.08388v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08388v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Muon replaces a matrix gradient $G=UΣV^\top$ by its polar factor $UV^\top$. This keeps the singular directions selected by the gradient, but makes the update spectrum flat. We study the optimization bias created by this operation. Under explicit alignment assumptions, we prove that the polar update is the one-step entropy-maximizing choice among bounded updates that use the gradient singular directions and do not adapt to the current weight spectrum. In an underdetermined regression model, we derive exact singular-value dynamics for continuous-time Muon and identify a measurement-dependent condition under which the normalized spectrum moves toward equal nonzero singular values. This geometry also rules out a common low-rank interpretation: at fixed Frobenius norm, Muon's distinguished state has a flat spectrum, whereas nuclear-norm minimization favors spectral concentration. Controlled matrix-sensing experiments separate the effect from simple gradient rescaling, show that norm-matched gradient descent does not reproduce Muon, and recover the predicted flattening trend across broad ablations. In small NanoGPT pretraining, Muon preserves stable rank, has a broad learning-rate plateau, and improves validation loss relative to AdamW; in a matched small-ViT control, the ranking reverses. The resulting picture is regime-dependent: Muon is not universally superior, but its flat-spectrum bias can help when many spectral directions need to remain active.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-07T00:51:30Z</published>
+    <arxiv:comment>24 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Pierfrancesco Beneventano</name>
+    </author>
+    <author>
+      <name>Mahmoud Abdelmoneum</name>
+    </author>
+    <author>
+      <name>Tomaso Poggio</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.09787v2</id>
+    <title>Learning What's Real: Disentangling Signal and Measurement Artifacts in Multi-Sensor Data, with Applications to Astrophysics</title>
+    <updated>2026-06-06T19:38:07Z</updated>
+    <link href="https://arxiv.org/abs/2604.09787v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.09787v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data collected from the physical world is always a combination of multiple sources: an underlying signal from the physical process of interest and a signal from measurement-dependent artifacts from the sensor or instrument. This secondary signal acts as a confounding factor, limiting our ability to extract information about the physics underlying the phenomena we observe. Furthermore, it complicates the combination of observations in heterogeneous or multi-instrument settings. We propose a deep learning framework that leverages overlapping observations, a dual-encoder architecture, and a counterfactual generation objective to disentangle these factors of variation. The resulting representations explicitly separate intrinsic signals from sensor-specific distortions and noise, and can be used for counterfactual view generation, parameter inference unconfounded by measurement distortions, and instrument-independent similarity search. We demonstrate the effectiveness of our approach on astrophysical galaxy images from the DESI Legacy Imaging Survey (Legacy) and the Hyper Suprime-Cam (HSC) Survey as a representative multi-instrument setting. This framework provides a general recipe for scientific and multi-modal self-supervised pretraining: construct training pairs from overlapping observations of the same physical system, treat sensor- or modality-specific effects as augmentations, and learn invariant representations through counterfactual generation.</summary>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-10T18:11:05Z</published>
+    <arxiv:comment>Accepted at the 2nd Workshop on Foundation Models for Science at ICLR 2026. 10 pages, 7 figures (main text), plus appendix</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.IM"/>
+    <author>
+      <name>Pablo Mercader-Perez</name>
+    </author>
+    <author>
+      <name>Carolina Cuesta-Lazaro</name>
+    </author>
+    <author>
+      <name>Daniel Muthukrishna</name>
+    </author>
+    <author>
+      <name>Jeroen Audenaert</name>
+    </author>
+    <author>
+      <name>V. Ashley Villar</name>
+    </author>
+    <author>
+      <name>David W. Hogg</name>
+    </author>
+    <author>
+      <name>Marc Huertas-Company</name>
+    </author>
+    <author>
+      <name>William T. Freeman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.07976v1</id>
+    <title>A Measure-Consistent Operator Learning Method for Infinite-Dimensional Master Equations</title>
+    <updated>2026-06-06T04:32:48Z</updated>
+    <link href="https://arxiv.org/abs/2606.07976v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.07976v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Master equations in mean field game theory characterize feedback value functions that depend on time, state (space), and the population distribution. Their numerical approximation is challenging because the unknown is defined on a space of probability measures and the equation involves intrinsic measure derivatives and nonlocal population terms. This paper proposes a measure-consistent operator learning method (MCOL) for infinite-dimensional master equations. The population distribution is represented by an empirical measure and encoded through a symmetric pooling structure, so that the network input is built directly from the particles representing the measure. The same particles are used in the empirical quadrature of the nonlocal residual terms, avoiding additional quadrature grids or auxiliary integration points. A key feature is that the intrinsic derivative appearing in the residual is induced by the same measure-dependent representation that defines the approximation of the value function. Consequently, the value function, its measure derivative, and the empirical residual are tied to a common measure representation, leading to a structurally coupled value-derivative approximation. We also introduce an error decomposition separating neural approximation error from empirical discretization error. Numerical experiments on several master equations show that MCOL accurately approximates the value function, intrinsic measure derivatives, and feedback quantities, and remains robust under changes in the input measures.</summary>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T04:32:48Z</published>
+    <arxiv:primary_category term="math.NA"/>
+    <author>
+      <name>Chenyao Wang</name>
+    </author>
+    <author>
+      <name>Hongyu Liu</name>
+    </author>
+    <author>
+      <name>Hui Liang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.07406v1</id>
+    <title>Deriving the Variance-Minimizing Design for Standard Addition via c-Optimality</title>
+    <updated>2026-06-05T15:48:56Z</updated>
+    <link href="https://arxiv.org/abs/2606.07406v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.07406v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Knowledge about optimal designs for standard addition seems to be scattered among literature and is also, at least partially, only available in mathematical literature that is not quickly accessible for readers not skilled in the field of design optimality theory. Therefore, the idea for this work was to summarize what is already available in analytical literature and to apply the respective results from optimality theory, where needed, to the special case of standard addition. It is shown, for measurement errors that are non-decreasing, e.g., are constant or increase linearly or quadratically with increasing analyte concentration, that the optimal design in the case of a linear response is a two-point design irrespective of the particular behavior of measurement error variance. In addition, it is demonstrated that the optimal allocation of measurements depends on the concrete setting, which means that the optimal distribution of measurements may deviate significantly from a 50:50 ratio. It is also investigated how the range, i.e., the largest added concentration influences the result. Last but not least, also the question of applying weighted regression is discussed and it is shown, that, in contrast to designs using more than two spiked concentrations, no weighting is necessary to achieve optimal results, when a two-point design is used. While the focus lies on the precision of the concentration estimate also the implications for the bias are investigated.</summary>
+    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-05T15:48:56Z</published>
+    <arxiv:primary_category term="stat.ME"/>
+    <author>
+      <name>Gerhard Gössler</name>
+    </author>
+    <author>
+      <name>Vera Hofer</name>
+    </author>
+    <author>
+      <name>Walter Goessler</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04377v1</id>
+    <title>A comparison principle for Wasserstein PDEs with state- and law-dependent common noise</title>
+    <updated>2026-06-03T02:50:42Z</updated>
+    <link href="https://arxiv.org/abs/2606.04377v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04377v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove a comparison principle for a class of second-order Hamilton--Jacobi--Bellman equations on the Wasserstein space whose second-order term is generated by a general common-noise Hessian. The main difficulty is that the relevant second-order direction is induced by a state- and measure-dependent coefficient, so the associated perturbation of the measure is no longer a translation or a fixed state-dependent transformation. We introduce a nonlinear flow of measures and use it to transform the Wasserstein-space equation into an augmented equation on $[0,T]\times \mathcal P_2(\mathbb R)\times\mathbb R$, where the general Hessian becomes an ordinary second derivative in the auxiliary variable. The construction may be viewed as a measure-dependent Lamperti transform: it removes the common-noise direction at the level of the equation, but unlike the classical one-dimensional Lamperti transform it permits degeneracy of the coefficient and dependence on the conditional law. We establish the spatial, measure-derivative, and negative-Sobolev estimates for this flow that are needed in the viscosity argument. Under structural assumptions on the transformed Hamiltonian, these estimates yield a Crandall--Ishii type comparison theorem for semicontinuous viscosity sub- and supersolutions. This gives, to the best of our knowledge, the first viscosity comparison framework of this kind for the filtering-driven equations considered here, and opens a new class of second-order PDEs on spaces of measures with state- and law-dependent common-noise directions. As an application, we identify the value function of a controlled stochastic filtering problem with state- and law-dependent common noise as the unique viscosity solution of its dynamic programming equation. We also explain how the same change-of-variable viewpoint applies to Zakai-type Kolmogorov equations on spaces of finite positive measures.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T02:50:42Z</published>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>Erhan Bayraktar</name>
+    </author>
+    <author>
+      <name>Ibrahim Ekren</name>
+    </author>
+    <author>
+      <name>Xihao He</name>
+    </author>
+    <author>
+      <name>Xin Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.28075v1</id>
+    <title>Measure-to-measure Regression with Transformers</title>
+    <updated>2026-05-27T07:31:04Z</updated>
+    <link href="https://arxiv.org/abs/2605.28075v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.28075v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Many learning problems require predicting how populations evolve under an unknown transformation. A natural representation for such populations is a probability measure, with point clouds as a key example. In this work, we study the measure-to-measure (M2M) regression problem, in which one seeks to learn a map between probability measures from a finite collection of observed input-output pairs. In contrast to classical regression, where individual samples are transformed independently, M2M regression treats entire distributions as the data points. This perspective is vital in certain scientific applications, for example, cellular and molecular biology, where cells are known to evolve not as independent data points but as a collection. However, few existing approaches address the problem of M2M regression with sufficient expressivity and scalability. We present a formalization of nonlinear M2M regression and introduce two easy-to-use, expressive, and scalable approaches to learn such operators: transformers as static M2M maps and transformers as dynamic M2M velocity fields. Our approach leverages the natural measure-dependent and mean-field structure of transformers to learn nonlinear M2M maps on the space of probability distributions. We illustrate the effectiveness of our proposed method to generalize to unseen measures on synthetic experiments, interacting particle systems, and a large-scale patient-derived organoid dataset for predicting treatment response in colorectal cancer.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-27T07:31:04Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Matthew Vandergrift</name>
+    </author>
+    <author>
+      <name>Martha White</name>
+    </author>
+    <author>
+      <name>Yury Polyanskiy</name>
+    </author>
+    <author>
+      <name>Philippe Rigollet</name>
+    </author>
+    <author>
+      <name>Lazar Atanackovic</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.22025v1</id>
+    <title>Testing for Serial Independence via Auto Hilbert-Schmidt Independence Criterion</title>
+    <updated>2026-05-21T05:50:26Z</updated>
+    <link href="https://arxiv.org/abs/2605.22025v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.22025v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We develop a Hilbert--Schmidt independence criterion (HSIC)-based framework for testing serial independence in strictly stationary time series. The proposed auto Hilbert--Schmidt independence criterion (AutoHSIC) measures dependence between an observation and its lagged counterpart, providing a kernel-based approach to detecting nonlinear serial dependence. The empirical AutoHSIC statistic is a lagged U-statistic constructed from overlapping observations, and hence inherits temporal dependence even under the i.i.d. null. Its asymptotic analysis therefore differs from standard i.i.d. HSIC theory and must account for degeneracy under the null. We establish the limiting behaviour of the resulting single-lag and portmanteau tests under the null and under fixed alternatives. Since the limiting null distribution is non-pivotal, we develop a wild bootstrap procedure for critical value approximation and prove its asymptotic validity. The framework is further extended to residual-based model diagnostics, where parameter estimation affects the null distribution. Simulations and empirical applications illustrate its ability to detect nonlinear serial dependence in multivariate, functional and matrix time series.</summary>
+    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-21T05:50:26Z</published>
+    <arxiv:primary_category term="stat.ME"/>
+    <author>
+      <name>Muyi Li</name>
+    </author>
+    <author>
+      <name>Yuqing Xu</name>
+    </author>
+    <author>
+      <name>Zhou Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.15987v1</id>
+    <title>Area of Hölder curves and coarea formula on the Heisenberg group</title>
+    <updated>2026-05-15T14:20:09Z</updated>
+    <link href="https://arxiv.org/abs/2605.15987v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.15987v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove the coarea formula for Lipschitz maps from the subriemannian $n$th Heisenberg group $\mathbb H_n$ to $\mathbb R^{2n}$. Our result is new even when $n=1$ and provides the simplest vector-valued instance of the coarea formula in subriemannian geometry. This answers a question left open in the works of Magnani, Kozhevnikov, Magnani--Stepanov--Trevisan, and Julia--Nicolussi Golo--Vittone.
+  The main difficulty of the proof is that a fiber of a $C^1_{\mathrm{H}}$ map $f: \mathbb H_n\to \mathbb R^{2n}$ is typically an unrectifiable curve. Its measure depends on the symplectic area of its projection to $\mathbb R^{2n}$. A bound on this area would imply the coarea formula, but examples of Kozhevnikov show that this area can be infinite or undefined.
+  To overcome this, we introduce an integral that we use to define both the symplectic area of $\frac{1}{2}$--Hölder curves in $\mathbb R^{2n}$ and the symplectic area of projections of vertical curves in $\mathbb H_n$. Then, we give a geometric condition for this integral to converge. This yields, in addition, new results on the existence of the signed area of $\tfrac12$--Hölder planar curves that may be of independent interest. Finally, we use $β$--number estimates from the Fässler--Orponen Dorronsoro Theorem to show that this geometric condition holds for almost every fiber.</summary>
+    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-15T14:20:09Z</published>
+    <arxiv:comment>69 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="math.MG"/>
+    <author>
+      <name>Gioacchino Antonelli</name>
+    </author>
+    <author>
+      <name>Robert Young</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11437v1</id>
+    <title>Revisiting GW170817 at milliarcsecond scale: high-precision constraints on jet geometry and $H_0$</title>
+    <updated>2026-05-12T02:39:53Z</updated>
+    <link href="https://arxiv.org/abs/2605.11437v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11437v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The historic detection of gravitational waves from the electromagnetically bright binary neutron star merger GW170817 enabled the first standard siren measurement of Hubble's constant ($H_0$). The accuracy and precision of this measurement depends crucially on how well the merger inclination angle is constrained, given its strong covariance with luminosity distance ($D_L$). Modeling the light-curve of the jet's afterglow provides constraints on inclination, but is highly dependent on the similarly uncertain jet opening angle. Past studies have improved on this by invoking high-resolution radio observations, obtained through very long baseline interferometry (VLBI). We present a Bayesian visibility-plane model-fitting framework that provides a more informed and robust measurement of the viewing geometry of GW170817 and of $H_0$, by including all relevant VLBI data, robustly handling systematic uncertainties and rigorously sampling model parameter space. By fitting new hydrodynamical afterglow models with a continuum of jet geometries, we obtain a viewing angle of $18.^{\circ}3-20.^{\circ}3$ (for a fixed cosmology with $D_L=40.7$ Mpc, as used in most previous analyses). We extend our framework to fit for $D_L$ and $H_0$ directly, and marginalize over an ensemble of plausible peculiar velocity corrections to obtain viewing angle $16.^{\circ}8-19.^{\circ}2$, $D_L=44.0\pm1.6$ Mpc and $H_0=65.5\pm4.4$ km s$^{-1}$ Mpc$^{-1}$. Notably, the peak of our $H_0$ posterior is within $0.5σ$ of the early-Universe Planck $H_0$ value, but $1.7σ$ from the late-Universe SH0ES measurement. We discuss potential caveats and the implications of this result in the context of the current discrepancy between early and late-Universe measurements of the Hubble constant.</summary>
+    <category term="astro-ph.HE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T02:39:53Z</published>
+    <arxiv:comment>25 pages, 8 figures, 4 tables. Submitted to ApJ</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.HE"/>
+    <author>
+      <name>Kelly Gourdji</name>
+    </author>
+    <author>
+      <name>Adam T. Deller</name>
+    </author>
+    <author>
+      <name>Chris Flynn</name>
+    </author>
+    <author>
+      <name>Taya Govreen-Segal</name>
+    </author>
+    <author>
+      <name>Cullan Howlett</name>
+    </author>
+    <author>
+      <name>Kunal P. Mooley</name>
+    </author>
+    <author>
+      <name>Ehud Nakar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.21832v1</id>
+    <title>Hierarchical organization of critical brain dynamics</title>
+    <updated>2026-04-23T16:24:15Z</updated>
+    <link href="https://arxiv.org/abs/2604.21832v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.21832v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The hierarchical organization of the brain is a fundamental structural principle, while brain criticality is a leading hypothesis for its collective dynamics. However, the connection between structure and signatures of criticality remains an open question. Here, we address this issue by applying phenomenological renormalization group approaches to large-scale neuronal spiking activity from the mouse visual cortex and hippocampus. We find that signatures of criticality are not uniform, but instead vary systematically along the known anatomical hierarchy in both brain systems. Strikingly, the direction along this gradient is inconsistent across different criticality exponents, revealing a nontrivial, measure-dependent organization: exponents based on static properties point to a gradient in one direction, while the exponent based on dynamic properties points in the opposite direction. Moreover, the signatures across the visual system are strongly modulated by the engagement in a visual task. We show that the correlations among criticality markers of different brain regions during active engagement are sufficient to reconstruct the anatomical hierarchy from the dynamics. Scaling exponents closely follow a theoretically predicted scaling relation among them, and covary with the hierarchical position. Our findings provide a direct link between the collective dynamics of neurons and the macroscopic architecture of the brain.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.bio-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-23T16:24:15Z</published>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <author>
+      <name>Gustavo G. Cambrainha</name>
+    </author>
+    <author>
+      <name>Daniel M. Castro</name>
+    </author>
+    <author>
+      <name>Leonardo L. Gollo</name>
+    </author>
+    <author>
+      <name>Pedro V. Carelli</name>
+    </author>
+    <author>
+      <name>Mauro Copelli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.10257v2</id>
+    <title>Epidemic spread: limiting contacts to regular circles is not necessarily the safest option</title>
+    <updated>2026-04-18T19:04:27Z</updated>
+    <link href="https://arxiv.org/abs/2507.10257v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.10257v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When a new infectious disease (or a new strain of an existing one) emerges, as in the recent COVID-19 pandemic, different types of mobility restrictions are considered to slow down or mitigate the spread of the disease. The measures to be adopted require carefully weighing the social cost against their impact on disease control. In this work, we analyze, in a context of mobility restrictions, the role of frequent versus occasional contacts in epidemic spread. We develop an individual-based mathematical model where frequent contacts among individuals (at home, work, schools) and occasional contacts (at stores, transport, etc.) are considered. We define several contact structures by varying the relative weight of frequent and occasional contacts while keeping the same initial growth rate of the epidemic. We find the remarkable result that the more frequent contacts prevail over occasional ones, the higher the epidemic peak, the sooner it occurs, and the greater the final number of individuals affected by the epidemic. We conduct our study using an SIR model, considering both exponential and deterministic recovery from infection, and obtain that this effect is more pronounced under deterministic recovery. We find that the impact of relaxation measures depends on the relative importance of frequent and occasional contacts within the considered social structures. Finally, we assess in which of the considered scenarios the homogeneous mixing approximation provides a reasonable description of the epidemic dynamics.</summary>
+    <category term="physics.soc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-11T16:35:39Z</published>
+    <arxiv:comment>Section 2.2.1 added and minor corrections made. Results unchanged</arxiv:comment>
+    <arxiv:primary_category term="physics.soc-ph"/>
+    <author>
+      <name>Jõao Gabriel Simões Delboni</name>
+    </author>
+    <author>
+      <name>Gabriel Fabricius</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.09103v1</id>
+    <title>Responsive Distribution of G-normal Random Variables</title>
+    <updated>2026-04-10T08:35:56Z</updated>
+    <link href="https://arxiv.org/abs/2604.09103v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.09103v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A $G$-normal random variable $X\sim \mathcal{N}(0,[\underlineσ^2,\overlineσ^2])$ does not admit a unique probability law due to volatility uncertainty. For a given test function $φ$, the $G$-expectation admits the stochastic control representation$$\mathbb{E}[φ(X)] =
+\sup_{σ\in[\underlineσ,\overlineσ]} {E}\!\left[φ(X_T^σ)\mid X_0^σ=0\right] ={E}\!\left[φ(X_T^\ast)\mid X_0^\ast=0\right].$$ This formulation interprets the nonlinear expectation as a linear expectation under the law induced by the optimally controlled diffusion $X^\ast$, namely, the terminal law of $X_T^\ast$. This observation motivates the notion of a \emph{responsive distribution}, a measurement-dependent probability density $f_φ$ such that, for a given test function $φ$, $$\mathbb{E}[φ(X)] = \int_{\mathbb{R}} φ(x)\,f_φ(x)\,dx.$$ Based on this viewpoint, we propose a coupled backward--forward trinomial tree framework for computing the $G$-expectation and constructing the corresponding responsive distribution. The backward trinomial tree discretizes the associated stochastic optimal control problem and yields approximations of the value function (i.e., the $G$-expectation) and the optimal feedback control, while the forward trinomial tree propagates the induced transition probabilities and produces a discrete approximation of the responsive distribution. We establish rigorous convergence results for both components of the method. Numerical results not only validate the theoretical convergence of the coupled schemes but also provide a powerful, practical sampling tool to visualize the complex responsive distributions under various measurements.</summary>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-10T08:35:56Z</published>
+    <arxiv:primary_category term="cs.CE"/>
+    <author>
+      <name>Ziting Pei</name>
+    </author>
+    <author>
+      <name>Shige Peng</name>
+    </author>
+    <author>
+      <name>Xingye Yue</name>
+    </author>
+    <author>
+      <name>Xiaotao Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.00333v2</id>
+    <title>MVNN: A Measure-Valued Neural Network for Learning McKean-Vlasov Dynamics from Particle Data</title>
+    <updated>2026-04-06T23:06:42Z</updated>
+    <link href="https://arxiv.org/abs/2604.00333v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.00333v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Collective behaviors that emerge from interactions are fundamental to numerous biological systems. To learn such interacting forces from observations, we introduce a measure-valued neural network that infers measure-dependent interaction (drift) terms directly from particle-trajectory observations. The proposed architecture generalizes standard neural networks to operate on probability measures by learning cylindrical features, using an embedding network that produces scalable distribution-to-vector representations. On the theory side, we establish well-posedness of the resulting dynamics and prove propagation-of-chaos for the associated interacting-particle system. We further show universal approximation and quantitative approximation rates under a low-dimensional measure-dependence assumption. Numerical experiments on first and second order systems, including deterministic and stochastic Motsch-Tadmor dynamics, two-dimensional attraction-repulsion aggregation, Cucker-Smale dynamics, and a hierarchical multi-group system, demonstrate accurate prediction and strong out-of-distribution generalization.</summary>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-01T00:11:47Z</published>
+    <arxiv:primary_category term="math.NA"/>
+    <author>
+      <name>Liyao Lyu</name>
+    </author>
+    <author>
+      <name>Xinyue Yu</name>
+    </author>
+    <author>
+      <name>Hayden Schaeffer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.26102v1</id>
+    <title>Enhanced quantum violation of a non-contextual inequality and witnessing quantum dimension</title>
+    <updated>2026-03-27T06:17:41Z</updated>
+    <link href="https://arxiv.org/abs/2603.26102v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.26102v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider a non-contextual inequality in the sequential measurement scenario and derive the optimal quantum violation of it without assuming the dimension of the system. Since the measurement is dichotomic and the dimension of the quantum system is arbitrary, we formulate the concept of degeneracy-breaking (DB) measurement depending on how many projectors are being used in the sequential measurement. We demonstrate that by increasing the number of projectors involved in the sequential measurement (thereby making the measurement more degeneracy breaking) the quantum violation of non-contextual inequality can be enhanced and can even reach up to its algebraic maximum. We demonstrate that the optimal quantum violations for different number of projectors serves as a quantum dimension witness.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-27T06:17:41Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ritwija Roy</name>
+    </author>
+    <author>
+      <name>Anindya Biswas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.08637v3</id>
+    <title>Direct dependencies between neurons explain activity</title>
+    <updated>2026-03-20T00:18:04Z</updated>
+    <link href="https://arxiv.org/abs/2504.08637v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.08637v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Our understanding of neural computation is founded on the assumption that neurons fire in response to a linear summation of inputs. Yet experiments demonstrate that some neurons are capable of complex functions that require interactions between inputs. Here we show, across multiple brain regions and species, that direct dependencies (without interactions between inputs) explain most of the variability in neuronal activity. Neurons are quantitatively described by models that capture the measured dependence on each input individually, but assume nothing about combinations of inputs. These minimal models, which are equivalent to logistic artificial neurons, predict complex higher-order dependencies and recover known features of synaptic connectivity. The inferred neural network is sparse, indicating a highly redundant neural code that is robust to perturbations. These results suggest that, despite intricate biophysical details, most neurons are described by simple artificial models.</summary>
+    <category term="physics.bio-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-11T15:39:06Z</published>
+    <arxiv:comment>43 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.bio-ph"/>
+    <author>
+      <name>Christopher W. Lynn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.18243v1</id>
+    <title>Why Eight Percent of Benford Sequences Never Converge</title>
+    <updated>2026-03-18T19:59:56Z</updated>
+    <link href="https://arxiv.org/abs/2603.18243v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.18243v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study multi-digit correlations in Benford sequences b^n for integer bases 2 &lt;= b &lt;= 1000, measuring dependence via conditional mutual information (CMI). A resonance ratio derived from the continued fraction expansion of log_10(b) classifies bases into convergent and persistent regimes (Theorem 3.13): among 996 bases surveyed, 84 (8.4%) exhibit persistent correlations at sample depth N = 10,000, and extended computation to N = 200,000 confirms 53 (5.3%) as genuinely persistent. We prove that CMI deviation is bounded by the distribution error (Theorem 3.4); exhaustive computation across 2,988 test cases confirms that the effective scaling is quadratic, yielding a two-sided rate beta = 2 for bounded-type bases (conditional on a computationally verified Hessian positivity condition). The observed effective exponent across 774 convergent bases is beta_eff = 1.72 +/- 0.19, consistent with finite-sample corrections to the asymptotic rate. We conjecture that the persistence rate converges to 1/12, a prediction grounded in the Gauss-Kuzmin distribution of partial quotients. For persistent bases, the convergence threshold N_epsilon exceeds 10^6 at standard precision, rendering the asymptotic limit observationally irrelevant within our computational scope.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-18T19:59:56Z</published>
+    <arxiv:comment>35 pages, 5 figures; 35-page Supplementary Information (ancillary file); code at https://github.com/machyman/hyman2026eight</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>James M. Hyman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.11005v3</id>
+    <title>Draft and Refine with Visual Experts</title>
+    <updated>2026-03-17T18:44:21Z</updated>
+    <link href="https://arxiv.org/abs/2511.11005v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.11005v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While recent Large Vision-Language Models (LVLMs) exhibit strong multimodal reasoning abilities, they often produce ungrounded or hallucinated responses because they rely too heavily on linguistic priors instead of visual evidence. This limitation highlights the absence of a quantitative measure of how much these models actually use visual information during reasoning. We propose Draft and Refine (DnR), an agent framework driven by a question-conditioned utilization metric. The metric quantifies the model's reliance on visual evidence by first constructing a query-conditioned relevance map to localize question-specific cues and then measuring dependence through relevance-guided probabilistic masking. Guided by this metric, the DnR agent refines its initial draft using targeted feedback from external visual experts. Each expert's output (such as boxes or masks) is rendered as visual cues on the image, and the model is re-queried to select the response that yields the largest improvement in utilization. This process strengthens visual grounding without retraining or architectural changes. Experiments across VQA and captioning benchmarks show consistent accuracy gains and reduced hallucination, demonstrating that measuring visual utilization provides a principled path toward more interpretable and evidence-driven multimodal agent systems. Code is available at https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-14T06:50:14Z</published>
+    <arxiv:comment>Accepted to CVPR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Sungheon Jeong</name>
+    </author>
+    <author>
+      <name>Ryozo Masukawa</name>
+    </author>
+    <author>
+      <name>Jihong Park</name>
+    </author>
+    <author>
+      <name>Sanggeon Yun</name>
+    </author>
+    <author>
+      <name>Wenjun Huang</name>
+    </author>
+    <author>
+      <name>Hanning Chen</name>
+    </author>
+    <author>
+      <name>Mahdi Imani</name>
+    </author>
+    <author>
+      <name>Mohsen Imani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.16168v1</id>
+    <title>Minimax solutions of path-dependent Hamilton--Jacobi equations under weakened assumptions with application to differential games</title>
+    <updated>2026-03-17T06:37:48Z</updated>
+    <link href="https://arxiv.org/abs/2603.16168v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.16168v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study minimax (generalized) solutions of a Cauchy problem for a (first-order) path-dependent Hamilton--Jacobi equation with co-invariant derivatives under a right-end boundary condition. Under assumptions on the Hamiltonian that are more general than those previously considered in the literature and allow, in particular, a measurable dependence on the first (time) variable, we establish existence, uniqueness, stability, and consistency results for minimax solutions. As an application, we consider a zero-sum differential game for a time-delay system and prove that this game has a value under assumptions more general than the known ones but rather natural being consistent with the Carathéodory conditions.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-17T06:37:48Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Mikhail Gomoyunov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.15140v2</id>
+    <title>Non-linear degenerate parabolic flow equations and a finer differential structure on Wasserstein spaces</title>
+    <updated>2026-03-16T16:24:40Z</updated>
+    <link href="https://arxiv.org/abs/2508.15140v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.15140v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We define new differential structures on the Wasserstein spaces $\mathcal{W}_p(M)$ for $p &gt; 2$ and a general Riemannian manifold $(M,g)$. We consider a very general and possibly degenerate second order partial differential flow equation with measure dependent coefficients to expand the notion of smooth curves and to ensure that the new differential structure is finer than the classical one. Under weak assumptions, we explicitly construct smooth solutions as uniform limits of Average Flow Approximation Series (a variant of explicit Euler--scheme approximations) in $\mathcal{W}_p(M)$ and, thus, prove a generalzed version of the Central Limit Theorem. Under slightly stronger assumptions, we prove that smooth solutions of our newly introduced flow--equation are unique.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-21T00:24:56Z</published>
+    <arxiv:comment>74 pages</arxiv:comment>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>Arthur Schichl</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.15726v4</id>
+    <title>On the theory of supermodulation of the superconducting order parameter created by structural supermodulation of apex distance in optimally doped Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$</title>
+    <updated>2026-03-13T16:58:30Z</updated>
+    <link href="https://arxiv.org/abs/2506.15726v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.15726v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently using Scanning Josephson Tunneling Microscopy (SJTM) in the group of Séamus Davis a super-modulation of the superconducting order parameter induced by super-modulation of the distance $δ$ between planar Cu and apical O was observed in [O'Mahony et. al., PNAS Vol. 119(37), e2207449119 (2022)]. The authors conclude that: "concurrence of prediction from strong correlation theory ... with these observations indicates that ... super-exchange is the electron pairing mechanism of Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$". In our current theoretical study we use the LCAO approximation, Hilbert space spanned on 5 atomic orbitals: Cu$4s$, Cu$3d_{x^2-y^2}$, O$2p_x$, O$2p_y$, O$2p_z$. For the only super-exchange amplitude $J_{sd}$ we use the Kondo double electron exchange between Cu$4s$ and Cu$3d_{x^2-y^2}$ orbitals and its anti-ferromagnetic sign is determined by adjacent to the Cu ion in-plane O orbitals. Within this approximations we have calculated: "Measured dependence of \dots electron-pair density $n_p$ on the displacement $δ$ of the apical O atoms from the planar Cu atoms" depicted in Fig. 5(C) of O'Mahony \textit{et. al.} and obtained an acceptable accuracy. As a whole, the analyzed SJTM experiment is one of the best confirmations of J. Röhler [J. Röhler, Physica B: Cond. Matter Vol. 284-288, 104 (2000)] idea that hybridization of Cu4$s$ with conduction band leads to increasing of $T_c$. The lack of an alternative explanations for SJTM data $n_p$ versus $δ$ and shape-$T_{c,max}$ correlations for the description of the critical temperature of optimally doped cuprates for several decades on the background of a simple view gives a hint that the long sought pairing mechanism has possibly been found and the Kondo exchange interaction as a property of strongly correlated quantum matter deserves further attention in the physics of layered cuprates.</summary>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-08T12:45:50Z</published>
+    <arxiv:comment>10 pages, 2 figures, 1 table, 32 refs;</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.supr-con"/>
+    <author>
+      <name>Albert M. Varonov</name>
+    </author>
+    <author>
+      <name>Todor M. Mishonov</name>
+    </author>
+  </entry>
+</feed>

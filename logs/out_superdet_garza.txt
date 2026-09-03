@@ -1,0 +1,64 @@
+== 1. Single-band TV identity (analytic vs direct numerical integration) ==
+theta=  45.0 deg, dL=0.77: TV_numeric=0.2923104516  TV_analytic=sin(th)/(pi dL)=0.2923104923  err=4.06e-08
+theta= 135.0 deg, dL=0.77: TV_numeric=0.2923104516  TV_analytic=sin(th)/(pi dL)=0.2923104923  err=4.06e-08
+theta=  60.0 deg, dL=1.0: TV_numeric=0.2756645761  TV_analytic=sin(th)/(pi dL)=0.2756644477  err=1.28e-07
+
+== 2. Mixture (outcome-averaged) TV at dL=0.77 ==
+theta=  45.0 deg: TV_mixture=0.1715719321   single-band upper bound sin/(pi dL)=0.2923104923
+theta= 135.0 deg: TV_mixture=0.1715719321   single-band upper bound sin/(pi dL)=0.2923104923
+theta=  45.0 deg: TV_mixture_analytic=s(pi-2s)/(pi(pi-s))=0.1715719156  err_vs_numeric=1.66e-08
+theta= 135.0 deg: TV_mixture_analytic=s(pi-2s)/(pi(pi-s))=0.1715719156  err_vs_numeric=1.66e-08
+
+== 3. Self-consistency of their correlator: max_theta |E(theta; dL)| ==
+dL= 0.30: max|E|=286748.77952640 (UNPHYSICAL (|E|>1 somewhere)); E(45deg)=-2.002111, E(135deg)=+2.002111
+dL= 0.40: max|E|=1.14345570 (UNPHYSICAL (|E|>1 somewhere)); E(45deg)=-1.143374, E(135deg)=+1.143374
+dL= 0.45: max|E|=1.03152466 (UNPHYSICAL (|E|>1 somewhere)); E(45deg)=-1.000352, E(135deg)=+1.000352
+dL= 0.50: max|E|=1.00000000 (OK (|E|<=1)); E(45deg)=-0.909352, E(135deg)=+0.909352
+dL= 0.77: max|E|=1.00000000 (OK (|E|<=1)); E(45deg)=-0.706525, E(135deg)=+0.706525
+dL= 1.00: max|E|=1.00000000 (OK (|E|<=1)); E(45deg)=-0.645227, E(135deg)=+0.645227
+dL= 2.00: max|E|=1.00000000 (OK (|E|<=1)); E(45deg)=-0.563405, E(135deg)=+0.563405
+
+== 4. S at the standard Tsirelson config (a0=0,a1=90,b0=45,b1=-45 deg; thetas {45,45,45,135}) ==
+dL= 0.50: S=-3.63740961  |S|=3.63740961  F(upper bound)=0.45015816  margin(2+8F-|S|)=1.963856  |S|-2sqrt2=+0.808982
+dL= 0.77: S=-2.82609814  |S|=2.82609814  F(upper bound)=0.29231049  margin(2+8F-|S|)=1.512386  |S|-2sqrt2=-0.002329
+dL= 1.00: S=-2.58090851  |S|=2.58090851  F(upper bound)=0.22507908  margin(2+8F-|S|)=1.219724  |S|-2sqrt2=-0.247519
+dL= 2.00: S=-2.25362153  |S|=2.25362153  F(upper bound)=0.11253954  margin(2+8F-|S|)=0.646695  |S|-2sqrt2=-0.574806
+dL= 5.00: S=-2.09427552  |S|=2.09427552  F(upper bound)=0.04501582  margin(2+8F-|S|)=0.265851  |S|-2sqrt2=-0.734152
+
+== 5. (P1) LITERAL box [0,pi]^4, theta=|ai-bj|: max |S| + Proposition check ==
+dL= 0.50: max|S|=3.63740961 at (a0,a1,b0,b1)=(0.0, 90.0, 45.0, 135.0) deg; F=0.45015816; floor(S-2)/8=0.20467620
+   P1 Proposition margin over full grid at dL=0.5: 0.000000e+00
+dL= 0.77: max|S|=2.82609814 at (a0,a1,b0,b1)=(46.0, 136.0, 91.0, 1.0) deg; F=0.29231049; floor(S-2)/8=0.10326227
+   P1 Proposition margin over full grid at dL=0.77: 0.000000e+00
+dL= 1.00: max|S|=2.58090851 at (a0,a1,b0,b1)=(1.0, 91.0, 46.0, 136.0) deg; F=0.22507908; floor(S-2)/8=0.07261356
+   P1 Proposition margin over full grid at dL=1.0: 0.000000e+00
+dL= 2.00: max|S|=2.25362153 at (a0,a1,b0,b1)=(46.0, 136.0, 91.0, 1.0) deg; F=0.11253954; floor(S-2)/8=0.03170269
+   P1 Proposition margin over full grid at dL=2.0: 0.000000e+00
+WORST P1 margin so far: 0.000000e+00 (must be >= -1e-9)
+
+== 6. (P2) oriented directions on circle, a0=0, thetas=circular distance ==
+dL= 0.50: max|S|=3.63678263 at (a0,a1,b0,b1)=(0.0, 269.01, 134.51, 225.49) deg, thetas=(134.51, 134.51, 134.51, 43.52); F=0.45402655; floor(S-2)/8=0.20459783
+   P2 Proposition margin over full grid at dL=0.5: 0.000000e+00
+dL= 0.77: max|S|=2.82574471 at (a0,a1,b0,b1)=(0.0, 269.01, 134.51, 225.49) deg, thetas=(134.51, 134.51, 134.51, 43.52); F=0.29482243; floor(S-2)/8=0.10321809
+   P2 Proposition margin over full grid at dL=0.77: 0.000000e+00
+dL= 1.00: max|S|=2.58066045 at (a0,a1,b0,b1)=(0.0, 269.01, 134.51, 225.49) deg, thetas=(134.51, 134.51, 134.51, 43.52); F=0.22701327; floor(S-2)/8=0.07258256
+   P2 Proposition margin over full grid at dL=1.0: 0.000000e+00
+WORST P2 margin: 0.000000e+00 (must be >= -1e-9)
+
+== 7. Headline at dL=0.77 (their best fit to QM, max disagreement ~0.03) ==
+thetas (deg) = [45.0, 45.0, 45.0, 135.0]
+S=-2.82609814   (|S|=2.82609814;  2sqrt2=2.82842712)
+F (single-band upper bound) = 0.29231049  = 29.23%
+F (true mixture, 45-deg block) = 0.17157193;  (135-deg block) = 0.17157193
+Proposition margin with TRUE mixture F: 2+8F-|S| = 0.546477
+project floor F*=(sqrt2-1)/4 = 0.10355339 = 10.36%
+excess fine-tuning: F/F* = 1.657 (mixture), 2.823 (upper bound)
+
+== 8. Validity: allowed measure N = pi - sin(theta)/dL > 0 ==
+dL=0.2: N(45deg)=-0.393941, N(135deg)=-0.393941 (BREAKS DOWN)
+dL=0.23: N(45deg)=0.067215, N(135deg)=0.067215 (OK)
+dL=0.3: N(45deg)=0.784570, N(135deg)=0.784570 (OK)
+dL=0.5: N(45deg)=1.727379, N(135deg)=1.727379 (OK)
+dL=0.77: N(45deg)=2.223272, N(135deg)=2.223272 (OK)
+
+ALL PASS

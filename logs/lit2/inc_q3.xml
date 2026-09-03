@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/hXnodfxpaufykrE42SsIzFs9jA4</id>
+  <title>arXiv Query: search_query=all:"measurement dependence"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-02T21:44:57Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22measurement+dependence%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>559</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.29587v1</id>
+    <title>Bloch-regulator Principal Parts of Cyclotomic Iwasawa Pseudomeasures</title>
+    <updated>2026-08-30T06:14:12Z</updated>
+    <link href="https://arxiv.org/abs/2608.29587v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.29587v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $p$ be an odd prime and let $K/\mathbb{Q}_p$ be a finite unramified extension. From a finite presentation by roots of unity of order prime to $p$, we construct a localized Iwasawa pseudomeasure on $\mathbb{Z}_p^\times$. Although the pseudomeasure depends on the chosen presentation, its image modulo bounded measures depends only on the associated Bloch class: it is the Frobenius-depleted Coleman regulator of that class multiplied by a universal half-shifted zeta principal part. Consequently, every nonexceptional weight component is bounded, while the exceptional component has at most a simple pole with explicitly determined residue. For $p&gt;3$ and $\mathbb{Z}_p$-valued coefficients, vanishing of the principal part is equivalent to vanishing of the corresponding class in $K_3(K;\mathbb{Z}_p)$.
+  Cyclotomic refinements preserve the Bloch class and act on the associated pseudomeasures by explicit Iwasawa multipliers. Normalized finite linear combinations of refinements interpolate arbitrary finite jets of the bounded weight-space data, subject only to the normalization at the exceptional point. We also establish a half-shifted complex Mellin factorization, compare the construction with the GSWZ germ family, and derive, at simple degree-one places above primes $p&gt;3$, a finite-polylogarithm criterion for the local $K_3$-class of the knot $5_2$.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.KT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.QA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-30T06:14:12Z</published>
+    <arxiv:comment>64 pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Honghuai Fang</name>
+    </author>
+    <author>
+      <name>Zekun Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18886v3</id>
+    <title>The exact price of local realism in CHSH experiments: a measurement-dependence-detection trade-off surface, a moiré phase-locking mechanism that saturates it, and an unmeasured fringe in the fourfold coincidence sum</title>
+    <updated>2026-08-27T21:20:50Z</updated>
+    <link href="https://arxiv.org/abs/2608.18886v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18886v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For local hidden-variable accounts of the CHSH experiment that are faithful -- reproducing the observed singles and coincidence rates and unbiased marginals of a polarization singlet with symmetric detector efficiency $η_{\rm eff}$ -- I determine the minimal measurement dependence $M$ (Hall's variational measure) needed to achieve a CHSH value $S$. Linear programming over all local strategies yields, to machine precision at 32 grid points, $M(S,η_{\rm eff})=\max\{0,η_{\rm eff}((S+2)η_{\rm eff}-4)/6\}$, whose edges reproduce Hall's tight bound at $η_{\rm eff}=1$, the Garg-Mermin detection threshold, and the postselection ceiling $S=4/η_{\rm eff}-2$. The quantum point is certified exactly: $M(2\sqrt{2},9/10)=(27\sqrt{2}-33)/100$, with primal and dual certificates in $\mathbb{Q}(\sqrt{2})$ arithmetic. I solve the unique detection profile $D(m)=\sqrt{m}\,h(m)$ under which a deterministic sign model reproduces the singlet exactly, derive the $\sqrt{m}$ edge law, and prove exact quantum correlations and angle-independent coincidence rates jointly impossible for pure-detection models. Surviving local accounts trade off measurement dependence against a $\cos 4(a-b)$ modulation of the fourfold coincidence sum, of relative amplitude up to 12.4%, which vanishes at the CHSH angles and has never been bounded below 1%. A settings-torus protocol reaches $5σ$ sensitivity at 0.1% within hours: a flat result forces $M\gtrsim 95\%$ of Hall's floor; a fringe would contradict the flat-rate prediction of quantum mechanics. Finally I exhibit a local mechanism -- moire phase locking -- with deterministic phase evolution and all randomness quenched in frozen offsets and flight times; with 1024 offsets it attains the certified floor exactly at $η_{\rm eff}=1$ at every tested register fidelity, from 10% to 1%, and its softening of the correlation extremes is a falsifiable fingerprint.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T13:14:52Z</published>
+    <arxiv:comment>11 pages, 5 figures. Code, exact certificates, and covariance audit at https://github.com/RandomInternetPreson/moire-phase-space-sampler. v2: 1024-offset ensembles attain Hall's floor at all tested fidelities. v3: Sec. 7 corrected -- the mechanism is exactly rotationally covariant (v2 misattributed a between-pin register effect); floor attained on a 161-angle register to twelve digits</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21182v1</id>
+    <title>Matching Urban Flood Sensor Placement to Monitoring Objectives Using Bayesian Optimal Experimental Design</title>
+    <updated>2026-08-21T14:52:39Z</updated>
+    <link href="https://arxiv.org/abs/2608.21182v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21182v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Flood-monitoring sensors are often placed according to coverage, access, or expected inundation. However, the value of a measurement depends on the prediction or decision it is intended to inform. Using tRIBS-Urban simulations and a neural-network surrogate of the August 2014 metropolitan Detroit flood, we examine how this learning target changes single-sensor placement. Across 2,576 candidate locations, we compare parameter-oriented optimal experimental design (PO-OED), which values expected information gain (EIG) about model parameters, with goal-oriented optimal experimental design (GO-OED), which values EIG about specified flood predictions. We also examine how parameter EIG evolves during the event, and illustrate that parameter learning translates unevenly into reductions in predictive uncertainty across locations and lead times. Under GO-OED, point-depth targets favor nearby locations, whereas regional-average and regional maximum-depth targets can favor nonlocal locations. Weighted multi-point objectives retain similar broad spatial patterns, although their computed max-EIG locations differ. Public geospatial data further provide illustrative feasibility and contextual classifications for deployment screening. These results show how monitoring objectives shape sensor placement in optimal experimental design, and motivates an objective-first workflow that defines the intended prediction and priorities, applies field-verified restrictions, and ranks locations by EIG.</summary>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.geo-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T14:52:39Z</published>
+    <arxiv:primary_category term="stat.AP"/>
+    <author>
+      <name>Chen Cheng</name>
+    </author>
+    <author>
+      <name>Vinh Ngoc Tran</name>
+    </author>
+    <author>
+      <name>Jiayuan Dong</name>
+    </author>
+    <author>
+      <name>Sarah Whitaker</name>
+    </author>
+    <author>
+      <name>Shannon Bergt</name>
+    </author>
+    <author>
+      <name>John Ziker</name>
+    </author>
+    <author>
+      <name>Valeriy Y. Ivanov</name>
+    </author>
+    <author>
+      <name>Xun Huan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20732v1</id>
+    <title>Uncovering and Understanding Hidden Dependencies in the LLM API Reseller Ecosystem via Prefix-Cache Side Channels</title>
+    <updated>2026-08-21T04:35:21Z</updated>
+    <link href="https://arxiv.org/abs/2608.20732v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20732v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM API resellers have become an important access layer to modern LLM services. However, multi-level resale creates an opaque supply chain: a user's request may traverse undisclosed upstream resellers, each of which can inspect or modify prompts and responses, inducing ecosystem-level confidentiality and integrity risks. Existing studies audit individual resellers, but provide little visibility into hidden dependencies across resellers. We present CacheTracer, the first API-only measurement of such hidden dependencies. Our key insight is to exploit prefix-cache reuse as a side channel to measure dependency via cache-reach relations. CacheTracer operationalizes this insight with two primitives: Flood populates fresh cache state through one endpoint, and Prove probes whether another can reuse it while excluding probe-created hits.
+  We then conduct a real-world measurement study with CacheTracer on 39 reseller endpoints, sending 1.1 million API requests across 636 endpoint pairs. Our measurements reveal a deep, concentrated cache-reach structure: 37.1% of measured pairs exhibit shared cache reach, the containment order spans seven layers, and one cache reach is contained within at least 31 of other nodes. We further find that the recovered structure is model-specific. We also evaluate the validity of CacheTracer through both real-world consistency checks and controlled experiments. The results show its high reliability and accuracy. These findings reveal substantial hidden dependencies among seemingly independent API resellers. Such deep and concentrated dependencies can create a large potential blast radius, where a confidentiality or integrity failure along a common upstream path may affect users across multiple downstream resellers.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T04:35:21Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Zimo Ji</name>
+    </author>
+    <author>
+      <name>Xin Wei</name>
+    </author>
+    <author>
+      <name>Congying Xu</name>
+    </author>
+    <author>
+      <name>Wenyuan Jiang</name>
+    </author>
+    <author>
+      <name>Xin Yang</name>
+    </author>
+    <author>
+      <name>Zongjie Li</name>
+    </author>
+    <author>
+      <name>Yudong Gao</name>
+    </author>
+    <author>
+      <name>Shuai Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18839v1</id>
+    <title>Quantum Mixedness Testing with Pauli Measurements</title>
+    <updated>2026-08-19T11:58:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.18839v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18839v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider a fundamental problem of \emph{mixedness testing}: Given $n$ copies of an $N$-qubit state $ρ$, determine whether $ρ= \mathbb{I}_d/d$ or $\|ρ-\mathbb{I}_d/d\|_1 \geq \varepsilon$ with high probability, where $d = 2^N$. In particular, we focus on performing this task in the practical setting of single-qubit measurements, where measurements are prepared independently on each qubit. We provide a nearly complete picture of single-qubit mixedness tesing by showing $n = \widetildeΘ\left(\sqrt{10}^N/\varepsilon^2\right)$. To establish our lower bound, we introduce a new measurement-dependent lower bound framework for adaptive single-copy state certification. For the upper bound, we present a randomized Pauli basis measurement protocol, which relies on a new primitive for computationally efficient uniformity testing of correlation-concentrated distributions on the Boolean hypercube.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T11:58:16Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jayadev Acharya</name>
+    </author>
+    <author>
+      <name>Abhilash Dharmavarapu</name>
+    </author>
+    <author>
+      <name>Yuhan Liu</name>
+    </author>
+    <author>
+      <name>Nengkun Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18797v1</id>
+    <title>Comparing Probabilistic Influence-Spreading Centralities to Commonly-Used Centrality Measures in Directed and Weighted Networks</title>
+    <updated>2026-08-19T10:54:59Z</updated>
+    <link href="https://arxiv.org/abs/2608.18797v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18797v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Influence-Spreading Model (ISM) introduces three probabilistic centrality measures: out-centrality, in-centrality, and ISM betweenness centrality. Out-centrality measures the average probability that a node influences others, while in-centrality measures the average probability that others influence a node. ISM betweenness centrality measures the change in total probabilistic influence when a node is removed. These measures depend on edge transmission probabilities and allow walks up to a specified maximum length. We compare the ISM centrality measures to commonly used weighted variants of out-degree, in-degree, closeness, shortest-path betweenness, and Katz centrality in directed, weighted networks using four real-world online social networks and nine synthetic networks generated by Erdős-Rényi, navigable small-world, and directed scale-free models. For the synthetic networks, the edge probabilities are drawn from three beta distributions. We evaluate the similarity in centrality values and their ranking using Pearson correlation and Spearman's rank correlation coefficients. Results show strong correlations between the ISM out-centrality and weighted out-degree and outward Katz centrality, particularly for low edge probabilities. Conversely, relationships between the ISM in-centrality and other measures vary with network topology, sometimes yielding negative correlations. Correlations between the ISM betweenness and the shortest-path betweenness are also topology-dependent and weaken as alternative influence paths become more relevant. Overall, standard centrality measures can approximate the influence of broadcasting influence but often miss the nuances of receiving influence and probabilistic intermediary roles.</summary>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T10:54:59Z</published>
+    <arxiv:primary_category term="cs.SI"/>
+    <author>
+      <name>Juuso Luhtala</name>
+    </author>
+    <author>
+      <name>Vesa Kuikka</name>
+    </author>
+    <author>
+      <name>Kimmo K. Kaski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14422v1</id>
+    <title>UMPIRE-Net: Unrolled Magnitude-Phase Regularization Network for Accelerated MRI</title>
+    <updated>2026-08-14T16:04:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.14422v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14422v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>MRI reconstruction from undersampled k-space measurements is an ill-posed inverse problem. Physics-driven deep learning (PD-DL) methods have shown strong performance for this task by combining the MRI forward model with learned image regularization within algorithm-unrolling frameworks. However, most existing PD-DL methods reconstruct complex-valued images directly, thereby implicitly coupling magnitude and phase within a single learned representation. This coupled regularization may be suboptimal in reconstruction settings where accurate phase modeling plays an important role, such as partial Fourier (PF) imaging, where recovery of the omitted asymmetric k-space measurements depends on the underlying image phase. In such scenarios, explicit modeling of magnitude and phase as separate components may reduce the reliance on externally estimated or predefined phase information. To this end, we propose UMPIRE-Net (Unrolled Magnitude-Phase In REgularization Network), a PD-DL method that introduces separate learned regularizers for magnitude and phase components, together with a novel data-fidelity formulation that enforces measurements consistency. We evaluate UMPIRE-Net for accelerated MRI with PF across different datasets and acceleration factors. Experimental results demonstrate that our proposed method improves reconstruction quality compared with a conventional complex-valued PD-DL baseline, yielding sharper images and reduced artifacts. Code available at: https://github.com/MahdiSaberii/UMPIRE-Net</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-14T16:04:46Z</published>
+    <arxiv:comment>IEEE International Workshop on Machine Learning for Signal Processing (MLSP)</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Mahdi Saberi</name>
+    </author>
+    <author>
+      <name>Toygan Kiliç</name>
+    </author>
+    <author>
+      <name>Mehmet Akçakaya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14103v1</id>
+    <title>Extremal functions and zero sets for the Dirichlet space</title>
+    <updated>2026-08-14T09:06:05Z</updated>
+    <link href="https://arxiv.org/abs/2608.14103v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14103v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the zeros of functions in the Dirichlet space. Using extremal functions, we produce a necessary and sufficient condition for a sequence of points in the unit disk to be a zero set of the classical Dirichlet space. This Shapiro-Shields type condition involves kernels of the harmonic Dirichlet space associated with measures depending on the zero sequence.</summary>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-14T09:06:05Z</published>
+    <arxiv:primary_category term="math.CA"/>
+    <author>
+      <name>Alexander Borichev</name>
+      <arxiv:affiliation>I2M</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Omar El-Fallah</name>
+      <arxiv:affiliation>IMB</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Karim Kellay</name>
+      <arxiv:affiliation>IMB</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.03890v1</id>
+    <title>CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement</title>
+    <updated>2026-08-04T16:23:39Z</updated>
+    <link href="https://arxiv.org/abs/2608.03890v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.03890v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A clinically useful chest X-ray system must go beyond fluent report generation: it should classify findings with tunable decision thresholds, localize them spatially, and derive the anatomical measurements upon which many diagnoses depend. Today's Vision-Language Models (VLMs) treat these as separate problems, if they address them at all, leaving a gap between what radiologists need and what generative models provide. We introduce CARE-X, a chest X-ray VLM that narrows this gap by unifying auxiliary discriminative supervision with reward-aligned generation. CARE-X augments its generative backbone with focal-loss classification and composite-loss grounding heads, co-trained alongside the language-modeling objective. This auxiliary supervision produces discriminative diagnostic predictions with tunable decision thresholds and precise spatial localization while also improving report quality, providing evidence that structured prediction and generation reinforce one another. Building on this foundation, Decoupled Clip and Dynamic Sampling Policy Optimization (DAPO) leverages task-specific reward signals for report generation, visual question answering (VQA), and spatial grounding, directly optimizing the clinical quality metrics that matter in practice. The result is state-of-the-art performance on the majority of metrics across four report-generation benchmarks, 94.0% VQA accuracy on ReXVQA (+6.0 pp over the next-best baseline), and generative spatial decoding that reaches near parity with dedicated detection heads. Separately, to address measurement-dependent diagnoses, we couple Qwen3-VL-4B-Instruct with native tool-calling capabilities for invoking deterministic measurement tools, while retaining full visual access to the image. This hybrid inference yields +43.6 pp average F1 over perception-only baselines across five measurement-dependent conditions.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-04T16:23:39Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Mercy Prasanna Ranjit</name>
+    </author>
+    <author>
+      <name>Anirban Porya</name>
+    </author>
+    <author>
+      <name>Sathvik Joel</name>
+    </author>
+    <author>
+      <name>Niharika Vadlamudi</name>
+    </author>
+    <author>
+      <name>Nikhilesh Chowdary Eathamukkala</name>
+    </author>
+    <author>
+      <name>Prasanth V</name>
+    </author>
+    <author>
+      <name>Abhyuday Kumara Swamy</name>
+    </author>
+    <author>
+      <name>Pranay Narhari Umredkar</name>
+    </author>
+    <author>
+      <name>Pradeep Narayan</name>
+    </author>
+    <author>
+      <name>Vivek Rajagopal</name>
+    </author>
+    <author>
+      <name>Tanuja Ganu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00124v1</id>
+    <title>Exact minimum measurement dependence for faithful local deterministic models of multipartite GHZ-Mermin correlations</title>
+    <updated>2026-07-31T12:12:03Z</updated>
+    <link href="https://arxiv.org/abs/2608.00124v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00124v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell derivations rest on locality, determinism, and measurement independence. Hall [Phys. Rev. Lett. 105, 250404 (2010)] priced the third assumption exactly for the singlet state, and in the Kochen-Specker analysis of Phys. Rev. A 84, 022102 (2011) priced the four tripartite Mermin perfect correlators at a surrendered fraction of 1/3, leaving open the problem of an optimal model for the Mermin state itself. This paper solves the faithful version of that problem -- every full correlator reproduced and every proper-subset marginal vanishing -- and extends it to thirteen parties. A reduction theorem shows the faithfulness constraints are free, so Hall's correlator-only threshold is promoted to the faithful value, F(3) = 1/3; linear-programming optima, certified exactly by an integer-arithmetic squeeze between a proven lower bound and an explicit construction, then give F(5) = 2/5, F(7) = 4/9, F(9) = 8/17, F(11) = 16/33, and F(13) = 32/65, each value through n = 11 repeated at the following even size. All computed points obey the closed law F = R/[2(R+1)] with R = 2^floor((n-1)/2) the Mermin violation ratio, a proven combinatorial lower bound is tight on every computed core, and a universal ceiling F &lt;= 1/2 shows the statistics never require total abandonment of measurement independence at any size. The optimal hidden-variable densities have a closed physical form: uniform measures on the contextual ground states of the prepared state's frustrated stabilizer Hamiltonian, a structure confirmed out of sample on cluster states in three entanglement classes. The floors constitute counterfeiting thresholds for multipartite device-independent certificates and an exact demand curve that any measurement-dependent account of quantum correlations must fund. Complete proofs of all theorems are given in the main text and appendices.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T12:12:03Z</published>
+    <arxiv:comment>9 pages, 1 table; all exact values machine-verifiable from archived code (DOI in paper)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+</feed>

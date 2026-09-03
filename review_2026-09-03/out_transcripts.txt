@@ -1,0 +1,61 @@
+first                last                 session  models                              msgs tools    output       input    cache_rd
+2026-08-22T22:36:20  2026-08-22T22:48:16  006b0f47 qwen3.8-27b                           12    17     4,630     464,506     302,050
+2026-08-21T17:05:59  2026-08-21T17:06:48  075998e9 qwen3.8-27b                            1     0       117      24,498           0
+2026-08-21T17:16:59  2026-09-02T23:58:37  0f53c128 <synthetic>,qwen3.8-27b               24    25    44,876     936,982     862,787
+2026-09-03T06:15:19  2026-09-03T15:19:55  4212e795 claude-fable-5-1                     108   123   232,151      19,521  30,960,787
+2026-08-22T20:15:43  2026-08-22T20:16:53  456de441 qwen3.8-27b                            4     2     1,194     137,594     100,080
+2026-08-21T17:04:32  2026-08-21T17:05:19  4ad583e4 qwen3.8-27b                            1     0        97      24,401           0
+2026-08-21T17:07:42  2026-08-21T17:09:21  52c3a788 <synthetic>,qwen3.8-27b                2     0        70      24,519           0
+2026-08-22T22:39:26  2026-08-22T22:44:12  5302bf3e qwen3.8-27b                            3     3       884     103,618      34,290
+2026-08-21T17:15:45  2026-08-21T17:16:00  6228531d qwen3.8-27b                            1     0       117      24,498           0
+2026-08-21T17:12:46  2026-08-21T17:13:02  6eeb3ea1 qwen3.8-27b                            1     0       117      24,498           0
+2026-08-21T17:16:59  2026-08-27T15:27:33  90441441 <synthetic>,qwen3.8-27b,unsloth/Qw   481   660 1,065,101  48,253,349   5,628,260
+2026-08-22T19:46:13  2026-08-22T19:47:06  99236a50 <synthetic>                            1     0         0           0           0
+2026-08-22T22:30:40  2026-08-22T22:47:43  9a41fc36 qwen3.8-27b                           12    11     5,956     457,747     375,131
+2026-08-21T17:05:44  2026-08-21T17:05:48  b14382d4 qwen3.8-27b                            1     0        97      24,401      24,397
+2026-08-27T14:32:49  2026-08-28T20:24:12  b7b09b33 <synthetic>,unsloth/Qwen3.8-27B-GG   554   629   459,290  66,697,679           0
+2026-08-28T20:24:41  2026-09-03T05:48:23  d38d6d0d <synthetic>,unsloth/Qwen3.8-27B-GG   455   569   646,595  45,967,215  15,784,256
+2026-08-22T22:35:27  2026-08-22T22:48:39  e73e6a83 qwen3.8-27b                            1     0       638      34,587           0
+2026-09-02T22:31:18  2026-09-02T22:31:29  f487c213 unsloth/Qwen3.8-27B-GGUF               1     0       166      22,770           0
+2026-08-21T17:10:45  2026-08-21T17:11:00  f58a9f7a qwen3.8-27b                            1     0        80      24,498           0
+2026-08-22T18:54:39  2026-08-22T19:09:11  fc2c8b30 qwen3.8-27b                           10     5     6,710     352,100     311,030
+
+SUB-AGENT / WORKFLOW TRANSCRIPTS ON DISK: 180 files with usage data (of 183 scanned)
+session  files   msgs  tools     output        input     cache_rd
+4212e795     2    157    170    137,449          314   22,266,231
+90441441    17    374    412    945,310   34,662,850            0
+b7b09b33    74    241    172    175,535    3,145,857            0
+d38d6d0d    87   2244   2590  5,468,558  237,393,220            0
+
+SUB-AGENT COMPLETION BLOCKS EMBEDDED IN MAIN TRANSCRIPTS (independent estimate; each block = one finished sub-agent):
+session  agents  subagent_tokens tool_uses   hours
+4212e795      2          438,541       170     0.7
+90441441     11          698,700       297    14.4
+b7b09b33     77        1,265,763       189     6.9
+d38d6d0d      1           36,206         8     0.2
+TOTAL        91        2,439,210       664    22.1
+  (subagent_tokens as reported by the harness; whether it counts output only or input+output is not documented here)
+
+MAIN SESSIONS BY MODEL
+  unsloth/Qwen3.8-27B-GGUF         messages= 1,364  output=  1,921,732  input=   154,996,964  cache_read=    15,784,256  cache_create=           0
+  qwen3.8-27b                      messages=   173  output=    315,003  input=     8,602,496  cache_read=     7,638,025  cache_create=           0
+  claude-fable-5-1                 messages=   108  output=    232,151  input=        19,521  cache_read=    30,960,787  cache_create=   1,025,053
+  <synthetic>                      messages=    29  output=          0  input=             0  cache_read=             0  cache_create=           0
+
+SUB-AGENT/WORKFLOW TRANSCRIPTS BY MODEL
+  unsloth/Qwen3.8-27B-GGUF         messages= 2,854  output=  6,589,403  input=   275,201,927  cache_read=             0  cache_create=           0
+  claude-opus-5                    messages=   157  output=    137,449  input=           314  cache_read=    22,266,231  cache_create=     427,409
+  <synthetic>                      messages=     5  output=          0  input=             0  cache_read=             0  cache_create=           0
+
+QWEN PHASE GRAND TOTAL (main + persisted sub-agent transcripts):
+  messages     main=         1,537  sub-agents=         2,854  total=         4,391
+  output       main=     2,236,735  sub-agents=     6,589,403  total=     8,826,138
+  input        main=   163,599,460  sub-agents=   275,201,927  total=   438,801,387
+  cache_read   main=    23,422,281  sub-agents=             0  total=    23,422,281
+  incremental  main=     5,560,706  sub-agents=    12,741,971  total=    18,302,677
+  tool calls   main=         2,044  sub-agents=         3,344  total=         5,388
+
+PREFILL BOUNDS (Qwen): full context re-read every turn = 462,223,668 tokens; incremental (perfect prefix caching) = 18,302,677 tokens (4.0%)
+  at 1000 tok/s prefill: no-cache  128.4 h   perfect-cache    5.1 h
+  at 2000 tok/s prefill: no-cache   64.2 h   perfect-cache    2.5 h
+  at 3000 tok/s prefill: no-cache   42.8 h   perfect-cache    1.7 h

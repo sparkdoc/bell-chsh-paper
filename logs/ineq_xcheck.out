@@ -1,0 +1,18 @@
+=== (1) Mermin n=3 and n=5 by direct strategy brute force ===
+  n=3: strategies=64 distinct evectors=8 local bound=2 min miss=1 #min-miss=32 per-cond=[8, 8, 8, 8]
+  [check   1] n=3 direct brute force: B=2, 8 distinct patterns (64 strategies), min miss 1, one near-miss pattern per condition — matches ineq_mermin.py Part A
+  n=5: strategies=1024 distinct evectors=32 local bound=4 min miss=6 #min-miss=512 per-cond=[192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192]
+  [check   2] n=5 direct brute force: B=4, 32 distinct patterns (1024 strategies), min miss 6, 16 min-miss patterns — matches ineq_mermin.py Part D
+
+=== (2) GHZ quantum values by exact Q(i) matrix computation ===
+Traceback (most recent call last):
+  File "<repo>/verification/scripts/ineq_xcheck.py", line 138, in <module>
+    P = pauli_string(n, m)
+  File "<repo>/verification/scripts/ineq_xcheck.py", line 127, in pauli_string
+    M = kron(M, Y if ((m >> i) & 1) else X)
+  File "<repo>/verification/scripts/ineq_xcheck.py", line 104, in kron
+    cmul(A[i][k2], rowB[j]))
+  File "<repo>/verification/scripts/ineq_xcheck.py", line 81, in cmul
+    def cmul(a, b): return (a[0]*b[0] - a[1]*b[1], a[0]*b[1] + a[1]*b[0])
+TypeError: 'Fraction' object is not subscriptable
+EXIT=1

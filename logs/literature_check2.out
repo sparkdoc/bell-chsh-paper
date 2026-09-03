@@ -1,0 +1,310 @@
+================================================================================
+LITERATURE CHECK 2 — Bell/CHSH fine-tuning project (delta sweep)
+Date: 2026-08-28 (task nominal date; raw fetch timestamps in
+verification/logs/lit2/status*.log run 2026-08-30 02:40–04:10 UTC machine clock —
+coverage therefore extends through that fetch time).
+Scope: (1) NEW arXiv work since 2026-08-23 on the six task terms; (2) VERSION
+UPDATES for five tracked papers; (3) NON-arXiv channels missed by the first
+sweep (PhilSci; FoP / SHPSC / PRA / PRX Quantum); (4) NOVELTY VERDICT.
+Method: direct primary-source fetches only — export.arxiv.org API (curl, raw
+XML kept in verification/logs/lit2/) and arxiv.org abs pages. The WebSearch
+tool was NOT used (known to hallucinate in this environment; see
+literature_check.out §D). Every external claim below carries its URL.
+Supersedes nothing: literature_check.out (first sweep, 2015–2026-08-23)
+remains the state of record for the pre-window.
+================================================================================
+
+SECTION A — NEW WORK SINCE 2026-08-23 (delta)
+--------------------------------------------------------------------------------
+A-1. Query table (all export.arxiv.org/api/query; "desc" = sortOrder
+     descending; totalResults from the opensearch namespace in the feed):
+
+  Q1   all:"measurement dependence"                    submittedDate desc, max50
+       -> 558 total; newest entry 2026-08-21 (2608.21182, unrelated).
+       NO post-cutoff hits.
+  Q2   all:"superdeterminism"                          submittedDate desc, max50
+       -> 78 total; newest entry 2026-07-20 (2607.18383).
+       NO post-cutoff hits.
+  Q3   all:"fine-tuning" AND all:"Bell"                submittedDate desc, max50
+       -> 102 total; ONE post-cutoff entry: 2608.27147 (submitted 2026-08-27),
+       an ML "SovereignAI continual learning" paper — matches LLM-sense
+       "fine-tuning" plus the author surname "Bell". Irrelevant (verified from
+       feed metadata: title + author list).
+  Q4   all:"statistical independence loophole"         -> 0 results in corpus.
+  Q5   all:"measurement independence" AND all:"CHSH"   submittedDate desc, max50
+       -> 19 total; newest 2026-04-20 (2604.18238). NO post-cutoff hits.
+       One entry absent from the first sweep's catalogue: 2512.17024 (A-3).
+  Q6   all:"no-signalling" AND all:"hidden variable"
+          AND all:"fine-tuning"                        -> 3 total, all
+       pre-cutoff and already catalogued (2010.01327 Donadi & Hossenfelder;
+       2003.12195 and 2003.11989 Sen & Valentini).
+  Q7   all:"measurement dependence"                    lastUpdatedDate desc, max50
+       -> newest update 2026-08-21 (2608.21182; also 2608.18886v2 updated
+       2026-08-21). NO matching paper updated after 2026-08-23 — i.e., no
+       silent v2/v3 revisions on any measurement-dependence paper in the window.
+  Q8   all:"superdeterminism"                          lastUpdatedDate desc, max50
+       -> newest update 2026-08-02 (2601.14316v2). NO post-cutoff updates.
+  Q9   jr:"Foundations of Physics"                     submittedDate desc, max50
+       -> 331 total; newest 2026-05-18 (2605.18637). No on-topic
+       (MD/superdet/fine-tuning) entries since cutoff. Substitutes for the
+       blocked FoP TOC — see B-2.
+  Q10  jr:"Studies in History and Philosophy of Science" submittedDate desc
+       -> 36 total; newest 2026-06-30 (2606.31559). No on-topic entries since
+       cutoff. Substitutes for the blocked SHPSC TOC — see B-2.
+  Q11  au:"Alai, Aaron" AND cat:quant-ph               -> 2 total: 2608.18886,
+       2608.00124 (both known from first sweep). No new work by the closest
+       competitor in the window.
+  Q12  au:"Pal, Prosanta"                              -> 2 total: 2607.13090,
+       2601.08290 (both known). No new work in the window.
+  Q13  all:"free will" AND all:"CHSH"                  submittedDate desc, max50
+       -> 82 total; ONE post-cutoff entry: 2608.26407 (submitted 2026-08-26) —
+       assessed in A-2.
+
+A-2. The only relevant post-cutoff hit in the delta window:
+     arXiv:2608.26407v1, submitted 2026-08-26, G. Scala & C. Lupo,
+     "Recovery-Free CHSH Nonlocality with Particle Loss".
+     https://arxiv.org/abs/2608.26407 (accessed 2026-08-28)
+     Claims (from abstract): for flagged erasure and survival probability
+     eta>1/2, measurements asymptotically approach the quantum maximum 2*sqrt(2);
+     for eta<=1/2 CHSH violation is impossible under both loss models; explicit
+     recovery-free Dicke-state protocols violate CHSH for eta>1/sqrt(2) (one
+     excitation) and eta>eta_G=(sqrt(5)-1)/2 asymptotically.
+     Metric: NONE — quantum-capacity / particle-loss result on standard QM with
+     lossy channels. Model class: no hidden variables, no measurement
+     dependence, no TV distance of any kind.
+     Overlap with OUR claims (i) per-setting TV metric F, (ii) exact closed
+     forms/curves/cap/S<=2+8F, (iii) NS-silence: NONE. Class iii (unrelated
+     context). No citation required.
+
+A-3. Catalogue additions — pre-cutoff papers the first sweep missed (all
+     verified at abstract level this sweep; none overlaps claims (i)–(iii);
+     none requires citation in the paper):
+  - arXiv:2512.17024v2 (2025-12-22), Boulle & Franzmann, "Subsystems
+    (in)dependence in GIE proposals". https://arxiv.org/abs/2512.17024
+    AQFT analysis of subsystem independence for gravitationally-induced-
+    entanglement proposals; CHSH/Tsirelson appears only as a side case study
+    (Tsirelson bound persists for a symmetrized CHSH observable when algebras
+    fail to commute). Class iii, no MD metric.
+  - arXiv:2601.14316v2 (v2 2026-08-02), Cafiero, Molinari & Hance, "The burden
+    of Fundamentality: Metaphysical ambiguities and the issue of
+    Superdeterminism". https://arxiv.org/abs/2601.14316
+    Conceptual (naive vs metaphysical superdeterminism; Invariant Set Theory).
+    Class iii, no metric.
+  - arXiv:2605.29589v1 (2026-05-28), G. Beck, "Bell's theorem: why probability
+    factorisation fails". https://arxiv.org/abs/2605.29589
+    Sequential single-spin counterfactual argument; conceptual. Class iii, no
+    metric.
+  - arXiv:2604.00311v1 (2026-03-31), M. Waegell, "On measurement,
+    superdeterminism, free will, and contextuality". https://arxiv.org/abs/2604.00311
+    Formalizes what "nonsuperdeterministic" requires of a theory; conceptual.
+    Class iii, no metric.
+  - arXiv:2607.18383v1 (2026-07-20), Di Biagio & de la Hamette, "Adlam's Frame:
+    comment on 'Wigner's Frame'". https://arxiv.org/abs/2607.18383
+    Critique of a QRF-based resolution of extended-Wigner's-friend no-go
+    theorems; conceptual. Class iii, no metric.
+  - arXiv:2411.11397v2 (v2 2026-05-28), Kunjwal & Oreshkov, "Generalizing Bell
+    nonlocality without global causal assumptions". https://arxiv.org/abs/2411.11397
+    Introduces "antinomicity" for single-round-communication cyclic-causation
+    scenarios; the abstract calls it "an instance of fine-tuning" but for
+    classical models avoiding time-travel antinomies — NOT measurement
+    dependence. Class iii, no MD metric.
+  - arXiv:2608.06359v1 (2026-08-06), Djordjevic et al., "Bell nonlocality from
+    twisted statistics". https://arxiv.org/abs/2608.06359
+    CHSH violation from noncommutative (Moyal-plane) scalar QFT; no MD metric.
+    Class iii.
+  - arXiv:2608.20926v1 (2026-08-21), "Finite Weyl polynomials and the approach
+    to Tsirelson's bound in relativistic scalar quantum field theory".
+    https://arxiv.org/abs/2608.20926 — TITLE-LEVEL ONLY, not read in depth;
+    QFT bounds on the Tsirelson bound, no MD metric expected from title.
+    Class iii (title-level).
+  - arXiv:2608.04128v1 (2026-08-04), "Quantum Contextuality and Entanglement-
+    Free Grover Search in a Trapped-Ion Optical Qudit".
+    https://arxiv.org/abs/2608.04128 — TITLE-LEVEL ONLY; experimental
+    contextuality. Class iii (title-level).
+
+A-4. DELTA VERDICT: NO new work submitted or updated after 2026-08-23 overlaps
+     claims (i)–(iii). The closest active competitors (Alai, Pal) have no new
+     submissions in the window (Q11/Q12), and Q7/Q8 show no silent version
+     revisions on any matching paper since 2026-08-23.
+
+SECTION B — VERSION UPDATES + NON-arXiv CHANNELS
+--------------------------------------------------------------------------------
+B-1. Version checks (arxiv.org abs pages, accessed 2026-08-28):
+  arXiv:2608.18886 -> v2 (v1 Wed 2026-08-19, v2 Fri 2026-08-21). UNCHANGED
+    since the first sweep; abstract identical to the B-14 record in
+    literature_check.out (closed form M(S,eta_eff)=max{0, eta_eff((S+2)eta_eff
+    -4)/6}; Q(sqrt2) certificate M(2*sqrt2, 9/10)=(27*sqrt2-33)/100; moire
+    phase-locking mechanism). v2 note: "offset-ensemble robustness battery
+    added (Sec. 7)" — already reflected in the first sweep's record.
+    https://arxiv.org/abs/2608.18886
+  arXiv:2608.00124 -> v1 (Fri 2026-07-31). UNCHANGED. Abstract consistent with
+    the B-13 record (F(n)=R/[2(R+1)] for n=3..13; ceiling F<=1/2).
+    https://arxiv.org/abs/2608.00124
+  arXiv:2601.08290 -> v1 (Tue 2026-01-13). UNCHANGED. Abstract consistent with
+    the B-12 record (|S|<=2+6*delta_ens; IBM drift witness).
+    https://arxiv.org/abs/2601.08290
+  arXiv:2208.13634 -> v4 (v1 2022-08-29, v2 2022-11-05, v3 2025-03-12,
+    v4 2025-03-17). UNCHANGED. Journal reference now CONFIRMED from the abs
+    page: Quantum 9, 1662 (2025) — may be added to refs.bib (C-3).
+    https://arxiv.org/abs/2208.13634
+  arXiv:2602.11300 -> v2 (v1 Wed 2026-02-11, v2 Tue 2026-07-14). UNCHANGED;
+    abstract identical to the A-c record in literature_check.out ("signalling
+    in principle"; NS-implied Bell theorem without MI).
+    https://arxiv.org/abs/2602.11300
+  No claim changes anywhere; no new comparisons added that affect our
+  positioning.
+
+B-2. Non-arXiv channels (the first sweep was arXiv-only):
+  PhilSci Archive (philsci-archive.pitt.edu): BLOCKED. The search UI
+    (/simple-search?query=...) and OAI-PMH (/oai?verb=ListRecords&...) both
+    return an interactive CAPTCHA challenge ("What code is in the image?") to
+    non-JavaScript HTTP clients — verified via WebFetch and via curl with a
+    browser User-Agent (2026-08-28). The three required searches ("measurement
+    dependence", "superdeterminism", "free will assumption") could not be
+    executed. COVERAGE LIMIT: PhilSci content since 2026-08-23 is unassessed.
+    Residual gap is small but nonzero: a PhilSci-only posting (no arXiv mirror)
+    containing none of the six target phrases verbatim would escape Q1–Q6/Q13.
+  Foundations of Physics (Springer TOC): BLOCKED — link.springer.com/journal/
+    10701 redirects into a cookie-authentication loop ending in
+    error=cookies_not_supported, which WebFetch cannot complete (no persistent
+    cookies). Substituted with the arXiv journal-ref query Q9 (newest 50 FoP-
+    referenced papers; top entry 2026-05-18): no on-topic entries since cutoff.
+    COVERAGE LIMIT: FoP papers without an arXiv mirror are unassessed.
+  PRA + PRX Quantum (APS TOCs): BLOCKED — journals.aps.org/pra/current and
+    /prxquantum/current return Cloudflare 403 ("Just a moment...") to both
+    WebFetch and curl-with-browser-UA. Substituted with topic queries Q1–Q6,
+    which cover all arXiv-mirrored APS content containing the target phrases;
+    no post-cutoff hits. COVERAGE LIMIT: non-arXiv APS papers unassessed (rare
+    in this subfield).
+  Studies in History and Philosophy of Science (ScienceDirect): BLOCKED —
+    sciencedirect.com returns 403 to WebFetch. Substituted with Q10 (36 total
+    SHPSC-referenced arXiv papers; top 2026-06-30): no on-topic entries since
+    cutoff. COVERAGE LIMIT: SHPSC papers without an arXiv mirror are unassessed.
+
+B-3. Honest coverage statement for THIS delta sweep:
+  - Primary sources only: 13 arXiv API queries (raw XML + HTTP status logs in
+    verification/logs/lit2/) and abs-page reads for every post-cutoff hit, all
+    five version-checked papers, and all nine A-3 catalogue entries.
+  - Window: submissions/updates from 2026-08-23 through fetch time (machine
+    clock 2026-08-30 ~04:10 UTC; task nominal date 2026-08-28).
+  - NOT covered: PhilSci (CAPTCHA), paywalled/non-mirrored journal content
+    (Springer/APS/Elsevier TOCs blocked), books/theses, non-English literature.
+  - "No new overlap found" != "proven no overlap".
+
+SECTION C — VERDICT + REQUIRED ACTIONS
+--------------------------------------------------------------------------------
+C-1. Is the novelty statement in paper/main.tex Sec. Discussion (and Abstract)
+     still accurate?
+     UNCHANGED. The statement "no prior use was found in arXiv-indexed
+     literature through 2026-08-23" (main.tex lines ~157 and ~881–898) remains
+     correct, and this sweep extends effective coverage to 2026-08-28/30
+     without finding:
+       (i) any prior use of the per-setting TV-from-fixed-source metric F;
+       (ii) any exact closed form F*=(sqrt(2)-1)/min(N,4), N=4 saturation,
+           exact piecewise-linear curves, cap ceil(N/4)/N, or S<=2+8F;
+       (iii) any NS-silence result of this kind (F*_NS=F* for N>=3 with
+           explicit witnesses; S_NS(2,F)=2 for all F).
+     All five tracked competing papers are version-unchanged (B-1); the closest
+     competitors (Alai, Pal) have no new submissions in the window (Q11/Q12);
+     the only post-cutoff hit on any term is unrelated to measurement
+     dependence (A-2).
+
+C-2. New required citations: NONE. Disambiguation: UNCHANGED — the three-number
+     paragraph (Hall L1 M_singlet ~0.276; fraction-of-independence-lost
+     (sqrt2-1)/3 ~0.1381 = Alai eta=1 floor; our F*=(sqrt2-1)/4 ~0.1036) is
+     unaffected by anything found in this sweep.
+
+C-3. Optional actions for the authors (not required for correctness):
+  - If the paper is revised after this date, the novelty statement's cutoff can
+    be updated from "through 2026-08-23" to "through 2026-08-28", citing this
+    second sweep (verification/logs/literature_check2.out) alongside
+    literature_check.out.
+  - The nine A-3 catalogue entries (all class iii, no metric; seven read at
+    abstract level, two title-level) may be appended to the supplemental sweep
+    table for completeness; none requires citation in the paper body.
+  - Takakura et al.'s journal reference Quantum 9, 1662 (2025) is now confirmed
+    from the arXiv abs page and can be added to refs.bib.
+
+C-4. Search log (this sweep; raw XML + per-attempt HTTP status in
+     verification/logs/lit2/): Q1–Q13 as tabled in A-1; five abs-page version
+     checks (B-1); one post-cutoff abs read (A-2: 2608.26407); seven pre-cutoff
+     abs reads for A-3 at abstract level (2512.17024, 2601.14316, 2605.29589,
+     2604.00311, 2607.18383, 2411.11397, 2608.06359); two A-3 entries are
+     title-level only and were not fetched (2608.20926, 2608.04128). Transient failures: arXiv API returned 429/
+     503 for ~15 minutes early in the sweep (rate limiting); all queries
+     eventually succeeded with spaced retries — no query was dropped, so no
+     RUNTIME CHECKS SKIPPED. PhilSci CAPTCHA and Springer/APS/Elsevier blocks
+     are recorded as coverage limits in B-2, not skipped checks.
+
+================================================================================
+SECTION D — INCREMENTAL UPDATE 2026-09-02 (closes the window to the present)
+================================================================================
+D-1. Motivation and method. The Section A raw fetches ran 2026-08-30
+     02:40–04:10; this addendum closes the 2026-08-30 -> 2026-09-02 gap
+     before submission. Method: export.arxiv.org API over HTTPS (the API
+     now 301-redirects http -> https; the Section A curl runs predate the
+     redirect), raw XML in verification/logs/lit2/inc_*.xml, fetched
+     2026-09-02 ~17:45 UTC. Version histories via the id_list feed plus
+     the arxiv.org abs page of the one changed paper. WebSearch tool NOT
+     used (known to hallucinate in this environment).
+
+D-2. Version checks (id_list feed, 2026-09-02; all five tracked papers):
+  arXiv:2608.18886 -> **v3** (v1 2026-08-19, v2 2026-08-21, v3 2026-08-27
+     21:20 UTC). CHANGED since B-1, which saw v2. v3 comment (abs page,
+     fetched 2026-09-02): "Sec. 7 corrected -- the mechanism is exactly
+     rotationally covariant (v2 misattributed a between-pin register
+     effect); floor attained on a 161-angle register to twelve digits".
+     The v3 abstract was fetched and compared against the B-1 v2 record:
+     IDENTICAL — the closed form M(S,eta_eff)=max{0, eta_eff((S+2)eta_eff
+     -4)/6}, the Hall-floor/Garg-Mermin/postselection structure, the
+     Q(sqrt2) certificate M(2sqrt2, 9/10)=(27sqrt2-33)/100, the 12.4%
+     cos4(a-b) fringe, and the settings-torus protocol are all unchanged.
+     The correction is confined to Sec. 7 (the moire mechanism, a
+     qualitative covariance claim) and touches nothing cited by our
+     papers. NO manuscript action required; the alai2026a citation
+     remains valid as written. https://arxiv.org/abs/2608.18886
+  arXiv:2608.00124 -> v1 (2026-07-31). UNCHANGED.
+  arXiv:2601.08290 -> v1 (2026-01-13). UNCHANGED.
+  arXiv:2208.13634 -> v4 (updated 2025-03-17). UNCHANGED.
+  arXiv:2602.11300 -> v2 (updated 2026-07-14). UNCHANGED (v2 predates B-1).
+
+D-3. New submissions since 2026-08-30 (submittedDate desc, all seven
+     Section A terms re-run; raw XML inc_q1..inc_q7.xml):
+  "measurement dependence": newest 2608.29587 (2026-08-30, "Bloch-
+     regulator Principal Parts of Cyclotomic Iwasawa Pseudomeasures" —
+     number theory, matches the phrase; irrelevant). NO on-topic entries.
+  "superdeterminism": newest 2607.18383 (2026-07-20). NO new entries.
+  "fine-tuning" AND "Bell": newest 2608.27147 (2026-08-27, SovereignAI
+     continual learning — the same irrelevant hit already recorded in
+     Q3/A-1). NO on-topic entries.
+  "measurement independence" AND "CHSH": newest 2604.18238 (2026-04-20).
+     NO new entries. (2604.18238 is now v4 but updated 2026-05-25 —
+     pre-window, no silent revision; 2512.17024 is v2, updated 2025-12-22
+     — likewise unchanged.)
+  "free will" AND "CHSH": ONE new entry since the Section A run:
+     2608.28190v1 (submitted Fri 2026-08-28, announced Mon 2026-08-31 —
+     after the Section A fetches, which is why Q13 did not see it):
+     "Postselection-loophole-free Bell test under strict spacetime
+     constraints". Title-level assessment: experimental loophole-
+     closing Bell test; no measurement dependence / fine-tuning metric.
+     Class iii (no metric); NO citation required.
+  "no-signalling" AND "hidden variable" AND "fine-tuning" (Q6) and the
+     lastUpdatedDate sweeps (inc_q3.xml, inc_q4.xml): newest updates are
+     2608.29587 (08-30, the number-theory hit above) and 2405.02469v3
+     (2026-09-01, "Generating functional of correlators of twist-2
+     operators in N=1 ..." — hep-th; matches the term only via the
+     substring "superdeterminant"). NO on-topic silent revisions.
+
+D-4. Verdict for the incremental window 2026-08-30 -> 2026-09-02.
+     UNCHANGED from Section C: no new work on measurement dependence /
+     fine-tuning / superdeterminism with a quantitative MD metric; no
+     version change affecting any cited result. The single real version
+     update (2608.18886 v2 -> v3, D-2) corrects a mechanism section that
+     our papers do not cite; abstract-level content is identical. The
+     novelty statements in paper/main.tex and paper/companion.tex remain
+     accurate; their coverage cutoff may now be quoted as "through
+     2026-09-02" citing this file (Sections A + D). No new required
+     citations.
+
+END OF FILE
+

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/EktIKCtG8YYUCHezCQ2l9dDA8fE</id>
+  <title>arXiv Query: search_query=&amp;id_list=2608.18886,2608.00124,2601.08290,2208.13634,2602.11300&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-02T21:44:41Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2608.18886,2608.00124,2601.08290,2208.13634,2602.11300" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>5</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2601.08290v1</id>
+    <title>A Preparation Nonstationarity Loophole in Superconducting-Qubit Bell Tests</title>
+    <updated>2026-01-13T07:31:00Z</updated>
+    <link href="https://arxiv.org/abs/2601.08290v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.08290v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell or Clauser-Horne-Shimony-Holt (CHSH) tests on superconducting quantum processors are commonly interpreted under the assumption that repeated circuit executions sample a single, stationary preparation ensemble. Here we show that this assumption can be violated on contemporary hardware, with direct implications for the interpretation of observed Bell violations. We introduce an ensemble-divergence framework in which slow temporal drift of the preparation process induces context-dependent effective ensembles, even when measurement independence and locality are preserved. This leads to a relaxed Bell bound $|S| \le 2 + 6δ_{\mathrm{ens}}$, where $δ_{\mathrm{ens}}$ quantifies preparation nonstationarity. Because $δ_{\mathrm{ens}}$ is not directly observable, we develop an operational witness $δ_{\mathrm{op}}$ based on bin-resolved outcome statistics for fixed measurement channels. Using Pauli-axis measurements on IBM superconducting processors, we observe statistically significant operational drift that persists after full two-qubit readout mitigation, ruling out measurement artifacts. In contrast, drift extracted from CHSH-optimal measurements is eliminated by mitigation, demonstrating that such settings are unsuitable for diagnosing preparation nonstationarity. We further show that the observed Bell violations imply only modest ensemble divergences, comparable in scale to those required in Hall-type measurement-dependence models, but arising here solely from preparation drift combined with experimental scheduling. Our results identify a preparation-dependent loophole relevant to Bell tests on noisy intermediate-scale quantum devices and highlight the necessity of drift-aware protocols for reliable quantum certification.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-13T07:31:00Z</published>
+    <arxiv:comment>10+pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Prosanta Pal</name>
+    </author>
+    <author>
+      <name>Shubhanshu Karoliya</name>
+    </author>
+    <author>
+      <name>Gargee Sharma</name>
+    </author>
+    <author>
+      <name>Ramakrishna Podila</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.11300v2</id>
+    <title>Extending Bell's Theorem: Nonlocality via Measurement Dependence</title>
+    <updated>2026-07-14T18:00:20Z</updated>
+    <link href="https://arxiv.org/abs/2602.11300v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.11300v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Besides well-known conditions of locality or factorisability, deriving the Bell inequalities requires assuming that the distribution of hidden variables and Alice's and Bob's measurement settings be independent of each other. We show that (analogously to violations of locality due to action at a distance) certain violations of this Measurement Independence assumption can be associated with a notion of signalling in principle, thus making them also testable in principle, and spell out the appropriate conditions. Accordingly, we show that by imposing no-signalling one can prove a version of Bell's theorem that does not require the assumption of Measurement Independence. We discuss the "Schulman model" as an example, as well as lessons for "experimental metaphysics".</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-11T19:21:23Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>G. Bacciagaluppi</name>
+    </author>
+    <author>
+      <name>R. Hermens</name>
+    </author>
+    <author>
+      <name>G. Leegwater</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18886v3</id>
+    <title>The exact price of local realism in CHSH experiments: a measurement-dependence-detection trade-off surface, a moiré phase-locking mechanism that saturates it, and an unmeasured fringe in the fourfold coincidence sum</title>
+    <updated>2026-08-27T21:20:50Z</updated>
+    <link href="https://arxiv.org/abs/2608.18886v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18886v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For local hidden-variable accounts of the CHSH experiment that are faithful -- reproducing the observed singles and coincidence rates and unbiased marginals of a polarization singlet with symmetric detector efficiency $η_{\rm eff}$ -- I determine the minimal measurement dependence $M$ (Hall's variational measure) needed to achieve a CHSH value $S$. Linear programming over all local strategies yields, to machine precision at 32 grid points, $M(S,η_{\rm eff})=\max\{0,η_{\rm eff}((S+2)η_{\rm eff}-4)/6\}$, whose edges reproduce Hall's tight bound at $η_{\rm eff}=1$, the Garg-Mermin detection threshold, and the postselection ceiling $S=4/η_{\rm eff}-2$. The quantum point is certified exactly: $M(2\sqrt{2},9/10)=(27\sqrt{2}-33)/100$, with primal and dual certificates in $\mathbb{Q}(\sqrt{2})$ arithmetic. I solve the unique detection profile $D(m)=\sqrt{m}\,h(m)$ under which a deterministic sign model reproduces the singlet exactly, derive the $\sqrt{m}$ edge law, and prove exact quantum correlations and angle-independent coincidence rates jointly impossible for pure-detection models. Surviving local accounts trade off measurement dependence against a $\cos 4(a-b)$ modulation of the fourfold coincidence sum, of relative amplitude up to 12.4%, which vanishes at the CHSH angles and has never been bounded below 1%. A settings-torus protocol reaches $5σ$ sensitivity at 0.1% within hours: a flat result forces $M\gtrsim 95\%$ of Hall's floor; a fringe would contradict the flat-rate prediction of quantum mechanics. Finally I exhibit a local mechanism -- moire phase locking -- with deterministic phase evolution and all randomness quenched in frozen offsets and flight times; with 1024 offsets it attains the certified floor exactly at $η_{\rm eff}=1$ at every tested register fidelity, from 10% to 1%, and its softening of the correlation extremes is a falsifiable fingerprint.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T13:14:52Z</published>
+    <arxiv:comment>11 pages, 5 figures. Code, exact certificates, and covariance audit at https://github.com/RandomInternetPreson/moire-phase-space-sampler. v2: 1024-offset ensembles attain Hall's floor at all tested fidelities. v3: Sec. 7 corrected -- the mechanism is exactly rotationally covariant (v2 misattributed a between-pin register effect); floor attained on a 161-angle register to twelve digits</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.13634v4</id>
+    <title>Trade-off relations between measurement dependence and hidden information for factorizable hidden variable models</title>
+    <updated>2025-03-17T03:17:59Z</updated>
+    <link href="https://arxiv.org/abs/2208.13634v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.13634v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Bell theorem is explored in terms of a trade-off relation between underlying assumptions within the hidden variable model framework. In this paper, recognizing the incorporation of hidden variables as one of the fundamental assumptions, we propose a measure termed `hidden information' taking account of their distribution. This measure quantifies the number of hidden variables that essentially contribute to the empirical statistics. For factorizable models, hidden variable models that satisfy `locality' without adhering to the measurement independence criterion, we derive novel relaxed Bell-Clauser-Horne-Shimony-Holt (Bell-CHSH) inequalities. These inequalities elucidate trade-off relations between measurement dependence and hidden information in the CHSH scenario. It is also revealed that the relation gives a necessary and sufficient condition for the measures to be realized by a factorizable model.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-29T14:32:06Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1662 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Ryo Takakura</name>
+    </author>
+    <author>
+      <name>Kei Morisue</name>
+    </author>
+    <author>
+      <name>Issei Watanabe</name>
+    </author>
+    <author>
+      <name>Gen Kimura</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-03-14-1662</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-03-14-1662" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00124v1</id>
+    <title>Exact minimum measurement dependence for faithful local deterministic models of multipartite GHZ-Mermin correlations</title>
+    <updated>2026-07-31T12:12:03Z</updated>
+    <link href="https://arxiv.org/abs/2608.00124v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00124v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell derivations rest on locality, determinism, and measurement independence. Hall [Phys. Rev. Lett. 105, 250404 (2010)] priced the third assumption exactly for the singlet state, and in the Kochen-Specker analysis of Phys. Rev. A 84, 022102 (2011) priced the four tripartite Mermin perfect correlators at a surrendered fraction of 1/3, leaving open the problem of an optimal model for the Mermin state itself. This paper solves the faithful version of that problem -- every full correlator reproduced and every proper-subset marginal vanishing -- and extends it to thirteen parties. A reduction theorem shows the faithfulness constraints are free, so Hall's correlator-only threshold is promoted to the faithful value, F(3) = 1/3; linear-programming optima, certified exactly by an integer-arithmetic squeeze between a proven lower bound and an explicit construction, then give F(5) = 2/5, F(7) = 4/9, F(9) = 8/17, F(11) = 16/33, and F(13) = 32/65, each value through n = 11 repeated at the following even size. All computed points obey the closed law F = R/[2(R+1)] with R = 2^floor((n-1)/2) the Mermin violation ratio, a proven combinatorial lower bound is tight on every computed core, and a universal ceiling F &lt;= 1/2 shows the statistics never require total abandonment of measurement independence at any size. The optimal hidden-variable densities have a closed physical form: uniform measures on the contextual ground states of the prepared state's frustrated stabilizer Hamiltonian, a structure confirmed out of sample on cluster states in three entanglement classes. The floors constitute counterfeiting thresholds for multipartite device-independent certificates and an exact demand curve that any measurement-dependent account of quantum correlations must fund. Complete proofs of all theorems are given in the main text and appendices.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T12:12:03Z</published>
+    <arxiv:comment>9 pages, 1 table; all exact values machine-verifiable from archived code (DOI in paper)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+</feed>

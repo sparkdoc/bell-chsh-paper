@@ -1,0 +1,99 @@
+=== PART A: exact curves S_max(N,F) for N=2..8 (Fraction arithmetic) ===
+--- N=2: 36 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/2]:   S_max = 2 + 4*F
+  F in [1/2, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 4, 4
+  F(S=4;N) exact = 1/2     ceil(N/4)/N = 1/2
+--- N=3: 120 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/3]:   S_max = 2 + 6*F
+  F in [1/3, 2/3]:   S_max = 4 + 0*F
+  F in [2/3, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 4, 4, 4
+  F(S=4;N) exact = 1/3     ceil(N/4)/N = 1/3
+--- N=4: 330 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/4]:   S_max = 2 + 8*F
+  F in [1/4, 1/2]:   S_max = 4 + 0*F
+  F in [1/2, 3/4]:   S_max = 4 + 0*F
+  F in [3/4, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 4, 4, 4, 4
+  F(S=4;N) exact = 1/4     ceil(N/4)/N = 1/4
+--- N=5: 792 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/5]:   S_max = 2 + 8*F
+  F in [1/5, 2/5]:   S_max = 16/5 + 2*F
+  F in [2/5, 3/5]:   S_max = 4 + 0*F
+  F in [3/5, 4/5]:   S_max = 4 + 0*F
+  F in [4/5, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 18/5, 4, 4, 4, 4
+  F(S=4;N) exact = 2/5     ceil(N/4)/N = 2/5
+--- N=6: 1716 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/6]:   S_max = 2 + 8*F
+  F in [1/6, 1/3]:   S_max = 8/3 + 4*F
+  F in [1/3, 1/2]:   S_max = 4 + 0*F
+  F in [1/2, 2/3]:   S_max = 4 + 0*F
+  F in [2/3, 5/6]:   S_max = 4 + 0*F
+  F in [5/6, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 10/3, 4, 4, 4, 4, 4
+  F(S=4;N) exact = 1/3     ceil(N/4)/N = 1/3
+--- N=7: 3432 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/7]:   S_max = 2 + 8*F
+  F in [1/7, 2/7]:   S_max = 16/7 + 6*F
+  F in [2/7, 3/7]:   S_max = 4 + 0*F
+  F in [3/7, 4/7]:   S_max = 4 + 0*F
+  F in [4/7, 5/7]:   S_max = 4 + 0*F
+  F in [5/7, 6/7]:   S_max = 4 + 0*F
+  F in [6/7, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 22/7, 4, 4, 4, 4, 4, 4
+  F(S=4;N) exact = 2/7     ceil(N/4)/N = 2/7
+--- N=8: 6435 pattern multisets ---
+  S_max(N,0) = 2   (expect exactly 2)
+  F in [0, 1/8]:   S_max = 2 + 8*F
+  F in [1/8, 1/4]:   S_max = 2 + 8*F
+  F in [1/4, 3/8]:   S_max = 4 + 0*F
+  F in [3/8, 1/2]:   S_max = 4 + 0*F
+  F in [1/2, 5/8]:   S_max = 4 + 0*F
+  F in [5/8, 3/4]:   S_max = 4 + 0*F
+  F in [3/4, 7/8]:   S_max = 4 + 0*F
+  F in [7/8, 1]:   S_max = 4 + 0*F
+  S_max at F=k/N: 2, 3, 4, 4, 4, 4, 4, 4, 4
+  F(S=4;N) exact = 1/4     ceil(N/4)/N = 1/4
+--- T3 closed-form checks ---
+  N=2: breakpoints match min(2+4*F,4): True; cell-0 top line: S = 2 + 4*F
+  N=3: breakpoints match min(2+6*F,4): True; cell-0 top line: S = 2 + 6*F
+  N=4: breakpoints match min(2+8*F,4): True; cell-0 top line: S = 2 + 8*F
+=== PART B: headline F* at the exact values (float cross-check) ===
+  N=2: S_max(F*) = 2.828427124746   (2+4*F* = 2.828427124746, 2*sqrt2 = 2.828427124746; margin over 2nd-best Q: 0.000e+00)
+  N=3: S_max(F*) = 2.828427124746   (2+6*F* = 2.828427124746, 2*sqrt2 = 2.828427124746; margin over 2nd-best Q: 0.000e+00)
+  N=4: S_max(F*) = 2.828427124746   (2+8*F* = 2.828427124746, 2*sqrt2 = 2.828427124746; margin over 2nd-best Q: 2.071e-01)
+  N=5: S_max(F*) = 2.828427124746   (2+8*F* = 2.828427124746, 2*sqrt2 = 2.828427124746; margin over 2nd-best Q: 0.000e+00)
+  N=6: S_max(F*) = 2.828427124746   (2+8*F* = 2.828427124746, 2*sqrt2 = 2.828427124746; margin over 2nd-best Q: 0.000e+00)
+=== PART C: re-verification of solN{2,3,4} witnesses (float, raw .npy) ===
+  N=2: S = 2.828430175781   F = 0.207107544   (F* = 0.207106781)
+        per-row TV: 0.000000, 0.000000, 0.207108, 0.207108
+        product patterns per lambda: [(1, 1, -1, -1), (1, 1, 1, 1)]
+        Smax_Q(Q, F) = 2.828430175781  -> witness p optimal for its vertex: True;  |S - 2sqrt2| = 3.05e-06
+  N=3: S = 2.828460693359   F = 0.138076782   (F* = 0.138071187)
+        per-row TV: 0.138077, 0.000000, 0.138077, 0.138077
+        product patterns per lambda: [(-1, 1, 1, -1), (1, 1, -1, -1), (1, 1, 1, 1)]
+        Smax_Q(Q, F) = 2.828460693359  -> witness p optimal for its vertex: True;  |S - 2sqrt2| = 3.36e-05
+  N=4: S = 2.828430175781   F = 0.103553772   (F* = 0.103553391)
+        per-row TV: 0.103554, 0.103554, 0.103554, 0.103554
+        product patterns per lambda: [(-1, 1, 1, -1), (1, -1, 1, -1), (1, 1, -1, -1), (1, 1, 1, 1)]
+        Smax_Q(Q, F) = 2.828430175781  -> witness p optimal for its vertex: True;  |S - 2sqrt2| = 3.05e-06
+=== PART D: exact Q(sqrt(2)) algebra for the N=4 witness table ===
+  E[ab] exact: (0, 1/2)*sqrt2-part, (0, 1/2)*sqrt2-part, (0, 1/2)*sqrt2-part, (0, -1/2)*sqrt2-part
+  S exact = (0, 2*sqrt(2))   (expect (0, 2) i.e. 2*sqrt2)
+  TV per row exact (computed from rows_p): [(Fraction(-1, 4), Fraction(1, 4)), (Fraction(-1, 4), Fraction(1, 4)), (Fraction(-1, 4), Fraction(1, 4)), (Fraction(-1, 4), Fraction(1, 4))]   (expect all == F* = (Fraction(-1, 4), Fraction(1, 4)))
+=== PART E: NS sub-case, N=2 — exact for ALL F in [0,1/2] ===
+  candidate affine functions S(F)=A+B*F collected: 1312
+  candidates exceeding 2 anywhere on [0,1/2]: 0
+  S_NS(2,F) exact at F=0: 2;  F=1/4: 2;  F=1/2: 2
+  CONCLUSION: S_NS(2,F) = 2 for ALL F in [0,1/2], exactly. (closes the [0.4,0.5] grid gap of ns_gap.out)
+=== SUMMARY ===
+All exact (Fraction) checks passed: Bell bound N=2..8; cap F(S=4;N)=ceil(N/4)/N
+for N=2..8; T3 closed forms N=2,3,4; N=4 witness table in Q(sqrt2); NS N=2.

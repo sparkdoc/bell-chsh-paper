@@ -1,0 +1,70 @@
+[PASS] Mermin n=3: K=4 even-weight rows 
+[PASS] Mermin n=3: 8 realizable patterns 8
+[PASS] Mermin n=3: local bound B=2 2
+[PASS] Mermin n=3: m_min=1 1
+[PASS] Mermin n=3: 4 min-miss patterns 4
+[PASS] Mermin n=3: incidence 1 per condition [1, 1, 1, 1]
+[PASS] Mermin n=5: K=16 even-weight rows 
+[PASS] Mermin n=5: 32 realizable patterns 32
+[PASS] Mermin n=5: local bound B=4 4
+[PASS] Mermin n=5: m_min=6 6
+[PASS] Mermin n=5: 16 min-miss patterns 16
+[PASS] Mermin n=5: incidence 6 per condition [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+[PASS] Mermin5: A_maxB(N=2) = 8 8
+[PASS] Mermin5: A_maxB(N=3) = 12 12
+[PASS] Mermin5: A_maxB(N=4) = 16 16
+[PASS] Mermin5: A_maxB(N=5) = 16 16
+[PASS] Mermin5: A_maxB(N=6) = 16 16
+[PASS] Mermin5 N=2: V(k/N) table [Fraction(4, 1), Fraction(16, 1)] (0s)
+[PASS] Mermin5 N=2: F*(16;N) = min_Q max_s n_s/N = 1/2 1/2
+[PASS] Mermin5 N=3: V(k/N) table [Fraction(4, 1), Fraction(12, 1), Fraction(16, 1)] (1s)
+[PASS] Mermin5 N=3: F*(16;N) = min_Q max_s n_s/N = 2/3 2/3
+[PASS] Mermin5 N=4: V(k/N) table [Fraction(4, 1), Fraction(12, 1), Fraction(16, 1)] (8s)
+[PASS] Mermin5 N=4: F*(16;N) = min_Q max_s n_s/N = 1/2 1/2
+[PASS] Mermin5 N=5: V(k/N) table [Fraction(4, 1), Fraction(52, 5), Fraction(72, 5), Fraction(16, 1)] (81s)
+[PASS] Mermin5 N=5: F*(16;N) = min_Q max_s n_s/N = 3/5 3/5
+[PASS] Mermin5 N=6: V(k/N) table [Fraction(4, 1), Fraction(28, 3), Fraction(14, 1), Fraction(16, 1)] (515s)
+[PASS] Mermin5 N=6: F*(16;N) = min_Q max_s n_s/N = 1/2 1/2
+NOTE: Mermin5 N=2: V(1/4) = 8 vs linear interpolation of grid values (4,16) = 10  -> the envelope is NOT determined by V(k/N) alone (contradicts Sec. II.C sentence 'listing V(k/N) gives the complete curve')
+NOTE: since N=3,4,6 attain ceil(3N/8)/N, the construction 'm copies of all 16 + Q_r' gives equality F* = ceil(3N/8)/N also for N = 3,4,6 (mod 16) -- Theorem states equality only for r=0,1,2 (weaker than provable).
+[PASS] GHZ_3: Mermin value = 4 (algebraic max), all correlators perfect 3.999999999999999
+[PASS] GHZ_5: Mermin value = 16 (algebraic max), all correlators perfect 15.999999999999998
+[PASS] CGLMP: 27 realizable difference patterns 
+[PASS] CGLMP: modular constraint d00+d11 = d01+d10 (mod 3) 
+[PASS] CGLMP: local bound 2 
+[PASS] CGLMP: no pattern satisfies all four conditions (m_min=1) 
+[PASS] CGLMP: four near-miss (exactly-one-miss) patterns as listed [(0, 0, 0, 0), (0, 0, 2, 2), (0, 1, 2, 0), (2, 0, 2, 0)]
+[PASS] CGLMP: near-miss = three rows +1, one row -1 
+NOTE: CGLMP: 10 patterns attain the local bound 2 (4 near-miss of type (+1,+1,+1,-1) and 6 of type (+1,+1,0,0)); the companion text mentions only the four near-miss patterns.
+[PASS] CGLMP: max over 81 strategies = 2 
+[PASS] CGLMP generalized row lemma (Lemma 1 of companion) vs LP at F=k/N max dev 2.2e-16
+[PASS] CGLMP N=2: F*(T;N) = (T-2)/(2 min(N,4)) = 0.218234 got 0.218233513
+[PASS] CGLMP N=3: F*(T;N) = (T-2)/(2 min(N,4)) = 0.145489 got 0.145489009
+[PASS] CGLMP N=4: F*(T;N) = (T-2)/(2 min(N,4)) = 0.109117 got 0.109116756
+NOTE: CGLMP I3 numerics: max-entangled state -> 2.872934 (paper's T=2.872934); ADGL state gamma=0.7923 -> 2.914854 (1+sqrt(11/3) = 2.914854)
+[PASS] CGLMP: maximally entangled Fourier value equals T=(12+8sqrt3)/9 2.872934051
+NOTE: a LARGER qutrit quantum value than the paper's target exists (ADGL 2002): I3 = 2.914854 > T; the companion's headline F* for N>=4 would then be (I3-2)/8 = 0.114357, not 0.109117
+[PASS] PM square: line products (R0,R1,R2,C0,C1,C2) = (+,+,+,-,+,+), all lines commuting [1, 1, 1, -1, 1, 1]
+[PASS] PM: every assignment misses an odd number of lines 
+[PASS] PM: exactly 32 odd miss-sets occur (6 singles, 20 triples, 6 quintuples) 
+[PASS] PM: a near-miss type exists for every line 
+[PASS] PM N=2: cap F*_PM = ceil(N/6)/N 1/2
+[PASS] PM N=2: exact curve equals paper table on grid+midpoints up to F* [] (0s, 333 w-vectors)
+[PASS] PM N=3: cap F*_PM = ceil(N/6)/N 1/3
+[PASS] PM N=3: exact curve equals paper table on grid+midpoints up to F* [] (0s, 1856 w-vectors)
+[PASS] PM N=4: cap F*_PM = ceil(N/6)/N 1/4
+[PASS] PM N=4: exact curve equals paper table on grid+midpoints up to F* [] (0s, 7109 w-vectors)
+[PASS] PM N=5: cap F*_PM = ceil(N/6)/N 1/5
+[PASS] PM N=5: exact curve equals paper table on grid+midpoints up to F* [] (1s, 21344 w-vectors)
+[PASS] PM N=6: cap F*_PM = ceil(N/6)/N 1/6
+[PASS] PM N=6: exact curve equals paper table on grid+midpoints up to F* [] (4s, 54089 w-vectors)
+[PASS] PM N=7: cap F*_PM = ceil(N/6)/N 2/7
+[PASS] PM N=7: exact curve equals paper table on grid+midpoints up to F* [] (13s, 121024 w-vectors)
+[PASS] PM N=8: cap F*_PM = ceil(N/6)/N 1/4
+[PASS] PM N=8: exact curve equals paper table on grid+midpoints up to F* [] (27s, 246201 w-vectors)
+[PASS] PM N=9: cap F*_PM = ceil(N/6)/N 2/9
+[PASS] PM N=9: exact curve equals paper table on grid+midpoints up to F* [] (53s, 464608 w-vectors)
+[PASS] PM N=10: cap F*_PM = ceil(N/6)/N 1/5
+[PASS] PM N=10: exact curve equals paper table on grid+midpoints up to F* [] (99s, 825077 w-vectors)
+
+SUMMARY: ALL PASS

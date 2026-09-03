@@ -1,0 +1,21 @@
+=== (1) Mermin n=3 and n=5 by direct strategy brute force ===
+  n=3: strategies=64 distinct evectors=8 local bound=2 min miss=1 #min-miss=32 per-cond=[8, 8, 8, 8]
+  [check   1] n=3 direct brute force: B=2, 8 distinct patterns (64 strategies), min miss 1, one near-miss pattern per condition — matches ineq_mermin.py Part A
+  n=5: strategies=1024 distinct evectors=32 local bound=4 min miss=6 #min-miss=512 per-cond=[192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192]
+  [check   2] n=5 direct brute force: B=4, 32 distinct patterns (1024 strategies), min miss 6, 16 min-miss patterns — matches ineq_mermin.py Part D
+
+=== (2) GHZ quantum values by exact Q(i) matrix computation ===
+  [check   3] n=3: M_n(GHZ_n) = 4 = 2^(n-1) = algebraic max (exact Q(i) computation)
+  [check   4] n=3: every even-weight correlator on GHZ_n is exactly (-1)^{|S|/2} (no shortcut used)
+  [check   5] n=5: M_n(GHZ_n) = 16 = 2^(n-1) = algebraic max (exact Q(i) computation)
+  [check   6] n=5: every even-weight correlator on GHZ_n is exactly (-1)^{|S|/2} (no shortcut used)
+
+=== (3) CGLMP d=3 by direct strategy brute force ===
+  [check   7] CGLMP: 81 strategies all satisfy d00+d11 == d01+d10 (mod 3); local bound B = 2
+  [check   8] CGLMP: 27 distinct difference patterns (27 expected)
+  [check   9] CGLMP: algebraic-max target (d00,d01,d10,d11)=(0,0,2,0) is not a valid pattern
+  [check  10] CGLMP: near-miss difference patterns per blocked row = [1, 1, 1, 1]
+  [check  11] CGLMP: every pattern blocks at least one row (cap lower-bound ingredient)
+
+ALL CHECKS PASSED (11 checks).  elapsed 0.2s
+EXIT=0

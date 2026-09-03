@@ -1,0 +1,16 @@
+=== NS N=2 grid ===
+NS N=2  F=0.0000  Smax=2.00000000
+NS N=2  F=0.0500  Smax=2.00000000
+NS N=2  F=0.1000  Smax=2.00000000
+NS N=2  F=0.1500  Smax=2.00000000
+NS N=2  F=0.2000  Smax=2.00000000
+NS N=2  F=0.2500  Smax=2.00000000
+NS N=2  F=0.3000  Smax=2.00000000
+NS N=2  F=0.3500  Smax=2.00000000
+NS N=2  F=0.4000  Smax=2.00000000
+NS N=2 max over grid: 2.00000000  (claim: exactly 2 for all F)
+
+=== NS N=5 at F*=(sqrt2-1)/4 ===
+NS N=5  F=0.10355339  Smax=2.82842712  target=2.82842712
+NS N=5  F=(sqrt2-1)/5=0.08284271  Smax=2.66274170  (below target expected)
+exit=0

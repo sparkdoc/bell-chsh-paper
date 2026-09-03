@@ -1,0 +1,7 @@
+N=9: PASS  exhaustive envelope == round-robin closed form at 19 points (cap 1/3); 3s
+N=10: PASS  exhaustive envelope == round-robin closed form at 21 points (cap 3/10); 5s
+N=11: PASS  exhaustive envelope == round-robin closed form at 23 points (cap 3/11); 10s
+N=12: PASS  exhaustive envelope == round-robin closed form at 25 points (cap 1/4); 17s
+N=13: PASS  exhaustive envelope == round-robin closed form at 27 points (cap 4/13); 28s
+N=14: PASS  exhaustive envelope == round-robin closed form at 29 points (cap 2/7); 45s
+SUMMARY: ALL PASS

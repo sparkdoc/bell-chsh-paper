@@ -1,0 +1,118 @@
+=== PART 0: Lemma OS-1 — row TV optimum for f in {-2,0,+2}^N ===
+--- cross-check h_exact vs LP for all (k,z,m) types, N=2..8 ---
+  4109 (type, F) pairs checked; max |h_exact - LP| = 1.110e-15   [PASS]
+=== PART A: exact curves S_os_max(N,F) for N=2..8 (Fraction enumeration) ===
+--- N=2: 36 pattern multisets; cap F(S=4)_os = 1/2 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/2:4
+  first-segment slope on (0,1/2): 4   (expect 4)
+--- N=3: 120 pattern multisets; cap F(S=4)_os = 2/3 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/3:10/3, 1/2:11/3, 2/3:4
+  first-segment slope on (0,1/3): 4   (expect 4)
+--- N=4: 330 pattern multisets; cap F(S=4)_os = 1/2 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/4:3, 1/2:4
+  first-segment slope on (0,1/4): 4   (expect 4)
+--- N=5: 792 pattern multisets; cap F(S=4)_os = 3/5 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/5:14/5, 2/5:18/5, 1/2:19/5, 3/5:4
+  first-segment slope on (0,1/5): 4   (expect 4)
+--- N=6: 1716 pattern multisets; cap F(S=4)_os = 1/2 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/6:8/3, 1/3:10/3, 1/2:4
+  first-segment slope on (0,1/6): 4   (expect 4)
+--- N=7: 3432 pattern multisets; cap F(S=4)_os = 4/7 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/7:18/7, 2/7:22/7, 3/7:26/7, 1/2:27/7, 4/7:4
+  first-segment slope on (0,1/7): 4   (expect 4)
+--- N=8: 6435 pattern multisets; cap F(S=4)_os = 1/2 ---
+  S_os_max(N,0) = 2   (expect exactly 2)
+  S_os_max at breakpoints: 0:2, 1/8:5/2, 1/4:3, 3/8:7/2, 1/2:4
+  first-segment slope on (0,1/8): 4   (expect 4)
+CONCLUSION Part A: exact envelope == closed form C_N for all N=2..8: True
+  (C_N: even N: min(2+4F,4); odd N=2M+1: 2+4F on [0,M/N], (6M+2)/N+2F on [M/N,(M+1)/N], then 4)
+=== PART B: headline F*_os(N) = (sqrt(2)-1)/2 for all N>=2 ===
+  Q(sqrt2) identity: 2 + 4*((sqrt2-1)/2) == 2*sqrt2:
+    (Fraction(0, 1), Fraction(2, 1))   (expect (0,2));  equal: True
+  N=2: first segment [0,1/2] contains F_os=(sqrt2-1)/2   [OK]
+  N=3: first segment [0,1/3] contains F_os=(sqrt2-1)/2   [OK]
+  N=4: first segment [0,1/2] contains F_os=(sqrt2-1)/2   [OK]
+  N=5: first segment [0,2/5] contains F_os=(sqrt2-1)/2   [OK]
+  N=6: first segment [0,1/2] contains F_os=(sqrt2-1)/2   [OK]
+  N=7: first segment [0,3/7] contains F_os=(sqrt2-1)/2   [OK]
+  N=8: first segment [0,1/2] contains F_os=(sqrt2-1)/2   [OK]
+  Hence F*_os(N) = (sqrt2-1)/2 for every N>=2: PROVED (lower: Theorem OS-2; upper: Q*_N construction).
+=== PART C: one-sided NS variant (Bob-side no-signalling) ===
+--- C1: S_NS_os(2,F) = 2 for ALL F in [0,1/2] (exact) ---
+  candidate affine functions S(F)=A+B*F collected: 640
+  candidates exceeding 2 anywhere on [0,1/2]: 0
+  S_NS_os(2,F) exact at F=0: 2; F=1/4: 2; F=1/2: 2
+  CONCLUSION: S_NS_os(2,F) = 2 for ALL F in [0,1/2], exactly (one-sided NS is flat at N=2, like full NS Theorem 4).
+--- C2: N=3 one-sided NS ---
+  multisets with S_os_Q(F_os) = 2*sqrt(2) exactly: 12
+    patterns [0, 0, 2] counts (c1,c2,c3,c4)=(2, 0, 1, 0)
+    patterns [0, 0, 4] counts (c1,c2,c3,c4)=(2, 0, 1, 0)
+    patterns [0, 1, 2] counts (c1,c2,c3,c4)=(2, 0, 1, 0)
+    patterns [0, 1, 4] counts (c1,c2,c3,c4)=(2, 0, 1, 0)
+    patterns [0, 2, 2] counts (c1,c2,c3,c4)=(1, 0, 2, 0)
+    patterns [0, 2, 4] counts (c1,c2,c3,c4)=(1, 0, 2, 0)
+    patterns [0, 4, 4] counts (c1,c2,c3,c4)=(1, 0, 2, 0)
+    patterns [1, 1, 2] counts (c1,c2,c3,c4)=(2, 0, 1, 0)
+    patterns [1, 1, 4] counts (c1,c2,c3,c4)=(2, 0, 1, 0)
+    patterns [1, 2, 2] counts (c1,c2,c3,c4)=(1, 0, 2, 0)
+    patterns [1, 2, 4] counts (c1,c2,c3,c4)=(1, 0, 2, 0)
+    patterns [1, 4, 4] counts (c1,c2,c3,c4)=(1, 0, 2, 0)
+  (all are exactly the round-robin types: two states of one row-type, one of the other)
+  verifying the pinning identity exactly, per gauge:
+  gauge check passed for all 96 (Q, gauge) pairs: NS forces w_L = 0, hence S = 2 identically under Bob-side NS
+  CONCLUSION: every Q that reaches 2*sqrt(2) at F_os in the one-sided model has S = 2 IDENTICALLY under Bob-side NS. Hence
+  S_NS_os(3, F_os) < 2*sqrt(2), i.e. F*_NS_os(3) > (sqrt2-1)/2: PROVED.
+  (The exact vertex enumeration below strengthens this to full flatness.)
+  exact vertex enumeration of {q0,q1 in Delta_3 : Bob-NS} per config:
+  max S over all one-sided-NS models at N=3 with F = 2/3 (full simplex): 2   (expect exactly 2)
+  CONCLUSION: S_NS_os(3,F) <= 2 for all F in [0,2/3] (monotonicity), and
+  S = 2 is attained at F=0 by any local deterministic strategy, hence
+  S_NS_os(3,F) = 2 for ALL F in [0,2/3]: PROVED. No Bell violation is
+  possible at N=3 under one-sided NS at ANY fine-tuning level (the
+  one-sided analog of Theorem 4; contrast full NS where F*_NS(3) =
+  (sqrt2-1)/3, Theorem 5).
+  LP cross-check: S_NS_os(3,0.000) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.100) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.200) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.300) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.400) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.500) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.600) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.660) = 2.000000000000
+  LP cross-check: S_NS_os(3,0.667) = 2.000000000000
+--- C3: explicit one-sided NS witnesses at F_os for N=4..8 (Q(sqrt2)) ---
+  N=4: row sums 1: True; TV = F_os exactly: True; S = 2*sqrt(2): True; NS residuals 0: True; nonneg: True
+  N=5: row sums 1: True; TV = F_os exactly: True; S = 2*sqrt(2): True; NS residuals 0: True; nonneg: True
+  N=6: row sums 1: True; TV = F_os exactly: True; S = 2*sqrt(2): True; NS residuals 0: True; nonneg: True
+  N=7: row sums 1: True; TV = F_os exactly: True; S = 2*sqrt(2): True; NS residuals 0: True; nonneg: True
+  N=8: row sums 1: True; TV = F_os exactly: True; S = 2*sqrt(2): True; NS residuals 0: True; nonneg: True
+  CONCLUSION: explicit algebraic one-sided NS witnesses at F_os exist for
+  every N=4..8 (and the construction is general for all N>=4). With the
+  lower bound S_NS_os <= S_os <= 2+4F (Theorem OS-2):
+  F*_NS_os(N) = (sqrt2-1)/2 for all N>=4: PROVED.
+--- C4: independent LP cross-check (HiGHS, float) ---
+  N=4: max over all one-sided-NS configs at F_os: 2.828427124746 (2*sqrt2 = 2.828427124746; |diff| = 0.000e+00)
+  N=5: max over all one-sided-NS configs at F_os: 2.828427124746 (|diff| = 4.441e-16)
+  N=6: max over all one-sided-NS configs at F_os: 2.828427124746 (|diff| = 4.441e-16)
+  N=7: max over all one-sided-NS configs at F_os: 2.828427124746 (|diff| = 4.441e-16)
+  N=8: max over all one-sided-NS configs at F_os: 2.828427124746 (|diff| = 0.000e+00)
+=== PART D: summary ===
+OS-1 (row lemma, f in {-2,0,+2}^N): PROVED (report) + LP cross-checked (max dev 6.7e-16).
+Theorem OS-2: S_os(N,F) <= 2+4F for all N>=2, F in [0,1]: PROVED (report; one-sided analog of S <= 2+8F).
+Exact curves S_os_max(N,F) = C_N for N=2..8: PROVED (exact Fraction certificate, Part A). Even-N closed form min(2+4F,4): PROVED all N. Odd-N bend line: PROVED N=3,5,7; CONJECTURED for odd N>=9.
+Cap F(S=4)_os(N) = ceil(N/2)/N: PROVED all N (concentration argument, report).
+Headline: F*_os(N) = (sqrt2-1)/2 for all N>=2: PROVED. Flat in N from the start (no 4-saturation); equals the full-model F*(N=2).
+One-sided NS: S_NS_os(2,F) = 2 for all F in [0,1/2]: PROVED (Part C1). S_NS_os(3,F) = 2 for all F in [0,2/3] (i.e. at ANY fine-tuning level):
+PROVED (Part C2, exact vertex enumeration at F=2/3 = full simplex) — no
+Bell violation possible at N=2 or N=3 under one-sided NS; contrast full
+NS where F*_NS(3) = (sqrt2-1)/3 (Theorem 5). For N>=4:
+F*_NS_os(N) = (sqrt2-1)/2: PROVED (Part C3 witnesses + Theorem OS-2).
+Positioning vs Hall & Branciard 2020 (arXiv:2007.11903): their mutual-
+information metric gives I_OS(SQ) ~ 0.128 bits vs I_C(SQ) ~ 0.080 bits (factor ~1.6, Eqs. 45/52); our TV metric gives factor exactly 2.
+Orderings agree (one-sided costs more than full causal structure).

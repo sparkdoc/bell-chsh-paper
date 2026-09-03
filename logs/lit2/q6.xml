@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/33dDNhZOH9Yyb9R0T01Dh4/Ja+w</id>
+  <title>arXiv Query: search_query=all:"no-signalling" AND all:"hidden variable" AND all:"fine-tuning"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T03:30:32Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22no-signalling%22+AND+(all:%22hidden+variable%22+AND+all:%22fine-tuning%22)&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2010.01327v5</id>
+    <title>A Toy Model for Local and Deterministic Wave-function Collapse</title>
+    <updated>2021-08-20T10:12:36Z</updated>
+    <link href="https://arxiv.org/abs/2010.01327v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2010.01327v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A local, deterministic toy model for quantum mechanics is introduced and discussed. It is demonstrated that, when averaged over the hidden variables, the model produces the same predictions as quantum mechanics. In the model considered here, the dynamics depends only on the settings of the measurement device at the detection time, not how those settings were chosen. As a consequence, the model is locally causal but violates statistical independence. We show that it is neither fine-tuned nor allows for superluminal signalling.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-10-03T11:19:38Z</published>
+    <arxiv:comment>21 pages, 4 figures, improved explanation</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Physical Review A 106, 2 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Sandro Donadi</name>
+    </author>
+    <author>
+      <name>Sabine Hossenfelder</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.106.022212</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.106.022212" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.12195v5</id>
+    <title>Superdeterministic hidden-variables models II: conspiracy</title>
+    <updated>2020-12-02T16:59:39Z</updated>
+    <link href="https://arxiv.org/abs/2003.12195v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2003.12195v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove that superdeterministic models of quantum mechanics are conspiratorial in a mathematically well-defined sense, by further development of the ideas presented in a previous article $\mathcal{A}$. We consider a Bell scenario where, in each run and at each wing, the experimenter chooses one of $N$ devices to determine the local measurement setting. We prove, without assuming any features of quantum statistics, that superdeterministic models of this scenario must have a finely-tuned distribution of hidden variables. Specifically, fine-tuning is required so that the measurement statistics depend on the measurement settings but not on the details of how the settings are chosen. We quantify this as the overhead fine-tuning $F$ of the model, and show that $F &gt; 0$ (corresponding to `fine-tuned') for any $N &gt;1$. The notion of fine-tuning assumes that arbitrary (`nonequilibrium') hidden-variables distributions are possible in principle. We also show how to quantify superdeterministic conspiracy without using nonequilibrium. This second approach is based on the fact that superdeterministic correlations can mimic actual signalling. We argue that an analogous situation occurs in equilibrium where, for every run, the devices that the hidden variables are correlated with are coincidentally the same as the devices in fact used. This results in extremely large superdeterministic correlations, which we quantify as a drop of an appropriately defined formal entropy. Nonlocal and retrocausal models turn out to be non-conspiratorial according to both approaches.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-03-27T01:01:51Z</published>
+    <arxiv:comment>Post-print version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Proc. R. Soc. A. 476: 20200214 (2020)</arxiv:journal_ref>
+    <author>
+      <name>Indrajit Sen</name>
+    </author>
+    <author>
+      <name>Antony Valentini</name>
+    </author>
+    <arxiv:doi>10.1098/rspa.2020.0214</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1098/rspa.2020.0214" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.11989v4</id>
+    <title>Superdeterministic hidden-variables models I: nonequilibrium and signalling</title>
+    <updated>2020-12-02T16:53:58Z</updated>
+    <link href="https://arxiv.org/abs/2003.11989v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2003.11989v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This is the first of two papers which attempt to comprehensively analyse superdeterministic hidden-variables models of Bell correlations. We first give an overview of superdeterminism and discuss various criticisms of it raised in the literature. We argue that the most common criticism, the violation of `free-will', is incorrect. We take up Bell's intuitive criticism that these models are `conspiratorial'. To develop this further, we introduce nonequilibrium extensions of superdeterministic models. We show that the measurement statistics of these extended models depend on the physical system used to determine the measurement settings. This suggests a fine-tuning in order to eliminate this dependence from experimental observation. We also study the signalling properties of these extended models. We show that although they generally violate the formal no-signalling constraints, this violation cannot be equated to an actual signal. We therefore suggest that the so-called no-signalling constraints be more appropriately named the marginal-independence constraints. We discuss the mechanism by which marginal-independence is violated in superdeterministic models. Lastly, we consider a hypothetical scenario where two experimenters use the apparent-signalling of a superdeterministic model to communicate with each other. This scenario suggests another conspiratorial feature peculiar to superdeterminism. These suggestions are quantitatively developed in the second paper.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-03-26T15:49:34Z</published>
+    <arxiv:comment>Post-print version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Proc. R. Soc. A. 476: 20200212 (2020)</arxiv:journal_ref>
+    <author>
+      <name>Indrajit Sen</name>
+    </author>
+    <author>
+      <name>Antony Valentini</name>
+    </author>
+    <arxiv:doi>10.1098/rspa.2020.0212</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1098/rspa.2020.0212" title="doi"/>
+  </entry>
+</feed>

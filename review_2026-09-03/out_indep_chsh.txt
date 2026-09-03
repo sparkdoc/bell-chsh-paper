@@ -1,0 +1,107 @@
+[PASS] exactly 8 realizable patterns [(-1, -1, -1, -1), (-1, -1, 1, 1), (-1, 1, -1, 1), (-1, 1, 1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, -1), (1, 1, 1, 1)]
+[PASS] all realizable patterns have even parity 
+[PASS] C(q) in {+2,-2} 
+[PASS] four miss-type patterns each differ from sigma at exactly one place 
+[PASS] miss types match paper Eq.(miss) 
+[PASS] Lemma 1 (per-row TV optimum) vs LP 6900 cases, max dev 5.55e-16
+[PASS] N=2: brute-force vertex+LP S_max equals paper curve max dev 4.4e-16
+[PASS] N=3: brute-force vertex+LP S_max equals paper curve max dev 0.0e+00
+[PASS] N=2: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] N=3: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] N=4: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] N=5: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] N=6: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] N=7: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] N=8: exhaustive-multiset S_max equals paper's piecewise-linear curve on grid+midpoints []
+[PASS] S_max(5,1/5)=18/5 
+[PASS] S_max(6,1/6)=10/3 
+[PASS] S_max(7,1/7)=22/7 
+[PASS] S_max(5,1/4)=3.7 (cap remark) 
+[PASS] N=2: cap min_Q max_ab n_ab = ceil(N/4) got 1
+[PASS] N=3: cap min_Q max_ab n_ab = ceil(N/4) got 1
+[PASS] N=4: cap min_Q max_ab n_ab = ceil(N/4) got 1
+[PASS] N=5: cap min_Q max_ab n_ab = ceil(N/4) got 2
+[PASS] N=6: cap min_Q max_ab n_ab = ceil(N/4) got 2
+[PASS] N=7: cap min_Q max_ab n_ab = ceil(N/4) got 2
+[PASS] N=8: cap min_Q max_ab n_ab = ceil(N/4) got 2
+[PASS] N=2: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=2: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] N=3: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=3: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] N=4: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=4: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] N=5: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=5: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] N=6: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=6: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] N=7: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=7: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] N=8: S_max(N,F*) == 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] N=8: S_max(N,F*-1e-6) < 2sqrt2 
+[PASS] Sec.VI witness: rows sum to 1 
+[PASS] Sec.VI witness: rows nonnegative 
+[PASS] Sec.VI witness: S = 2sqrt2 exactly (0 + 2*sqrt2)
+[PASS] Sec.VI witness: E[ab] = (s,s,s,-s), s=sqrt2/2 
+[PASS] Sec.VI witness: every row TV = F* 
+NOTE: Sec.VI (signalling-allowed) witness NS residuals: [(-1/2 + 1/2*sqrt2), (1/2 + -1/2*sqrt2), (1 + -1*sqrt2), (0 + 0*sqrt2)]  (nonzero expected)
+[PASS] Sec.VI witness: pairwise TVs in {F*, 2F*} 
+[PASS] Sec.VI witness: M_model = 2F* 
+[PASS] NS witness N=4: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=4 patterns are exactly M_A..M_D 
+[PASS] NS witness N=5: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=6: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=7: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=8: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=9: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=10: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=11: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=12: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS witness N=13: rows ok, S=2sqrt2, TV=F*, NS residuals 0 
+[PASS] NS N=3 witness: rows sum 1 & nonneg 
+[PASS] NS N=3 witness: S = 2sqrt2 (0 + 2*sqrt2)
+[PASS] NS N=3 witness: per-row TV = (d3,d3,d3/2,d3) 
+[PASS] NS N=3 witness: NS residuals 0 
+[PASS] NS N=3 witness patterns = {M_A,M_B,M_D} {(1, -1, 1, -1), (1, 1, 1, 1), (-1, 1, 1, -1)}
+[PASS] NS N=3 witness: M_model = 3/2 F*(3) 
+[PASS] NS N=2, F=0.0: max S = 2 (flat) got 2.000000000000
+[PASS] one-sided-NS N=2, F=0.0: max S = 2+4F (side finding) got 2.000000000000
+[PASS] NS N=2, F=0.1: max S = 2 (flat) got 2.000000000000
+[PASS] one-sided-NS N=2, F=0.1: max S = 2+4F (side finding) got 2.400000000000
+[PASS] NS N=2, F=0.25: max S = 2 (flat) got 2.000000000000
+[PASS] one-sided-NS N=2, F=0.25: max S = 2+4F (side finding) got 3.000000000000
+[PASS] NS N=2, F=0.4: max S = 2 (flat) got 2.000000000000
+[PASS] one-sided-NS N=2, F=0.4: max S = 2+4F (side finding) got 3.600000000000
+[PASS] NS N=2, F=0.5: max S = 2 (flat) got 2.000000000000
+[PASS] one-sided-NS N=2, F=0.5: max S = 2+4F (side finding) got 4.000000000000
+[PASS] NS N=3, F=0.05000: max S = 2+6F got 2.300000000000
+[PASS] NS N=3, F=0.10000: max S = 2+6F got 2.600000000000
+[PASS] NS N=3, F=0.13807: max S = 2+6F got 2.828427124746
+[PASS] NS S=4 witness N=3: S=4, NS residuals 0, rows sum 1 
+[PASS] NS S=4 witness N=3: max row TV = 1/3 [(1/3 + 0*sqrt2), (1/3 + 0*sqrt2), (1/3 + 0*sqrt2), (1/3 + 0*sqrt2)]
+[PASS] NS S=4 witness N=4 (PR-box decomposition): S=4, NS residuals 0, rows sum 1 
+[PASS] NS S=4 witness N=4 (PR-box decomposition): max row TV = 1/4 [(1/4 + 0*sqrt2), (1/4 + 0*sqrt2), (1/4 + 0*sqrt2), (1/4 + 0*sqrt2)]
+[PASS] NS S=4 witness N=5: S=4, NS residuals 0, rows sum 1 
+[PASS] NS S=4 witness N=5: max row TV = 2/5 [(2/5 + 0*sqrt2), (2/5 + 0*sqrt2), (3/10 + 0*sqrt2), (3/10 + 0*sqrt2)]
+[PASS] one-sided N=2, F=0.0000: S_os,max = 2.000000 got 2.0000000000
+[PASS] one-sided N=2, F=0.1000: S_os,max = 2.400000 got 2.4000000000
+[PASS] one-sided N=2, F=0.2000: S_os,max = 2.800000 got 2.8000000000
+[PASS] one-sided N=2, F=0.3333: S_os,max = 3.333333 got 3.3333333333
+[PASS] one-sided N=2, F=0.4000: S_os,max = 3.600000 got 3.6000000000
+[PASS] one-sided N=2, F=0.5000: S_os,max = 4.000000 got 4.0000000000
+[PASS] one-sided N=3, F=0.0000: S_os,max = 2.000000 got 2.0000000000
+[PASS] one-sided N=3, F=0.1000: S_os,max = 2.400000 got 2.4000000000
+[PASS] one-sided N=3, F=0.2000: S_os,max = 2.800000 got 2.8000000000
+[PASS] one-sided N=3, F=0.3333: S_os,max = 3.333333 got 3.3333333333
+[PASS] one-sided N=3, F=0.4000: S_os,max = 3.466667 got 3.4666666667
+[PASS] one-sided N=3, F=0.5000: S_os,max = 3.666667 got 3.6666666667
+NOTE: one-sided/full cap ratio N=2: 1 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: one-sided/full cap ratio N=5: 3/2 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: one-sided/full cap ratio N=6: 3/2 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: one-sided/full cap ratio N=9: 5/3 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: one-sided/full cap ratio N=10: 5/3 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: one-sided/full cap ratio N=13: 7/4 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: one-sided/full cap ratio N=14: 7/4 (paper claims >= 3/2 for N = 1,2 mod 4)
+NOTE: MI bits: Sec.VI witness 0.056036, NS N=4 witness 0.056036, NS N=3 witness 0.054810  (paper: 0.056036 / 0.056036 / 0.054810)
+NOTE: settings-factorisation defect max|p00 p11 - p01 p10| : Sec.VI witness 0.0322, NS N=4 0.0322, NS N=3 0.0424 (nonzero => not H&B-causal; but note the x,y notation clash)
+
+SUMMARY: ALL PASS

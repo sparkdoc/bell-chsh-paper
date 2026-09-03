@@ -1,0 +1,215 @@
+=== PART A: exact curves S_max(N,F) for N=9..14 (Fraction, exhaustive) ===
+(structure reused from audit1.py Part A; full-curve certificate = breakpoint
+ equality W_k == cf(k/N) at all k=0..N + convexity argument, see docstring)
+--- N=9: 11440 pattern multisets (C(16,7)); 0.9s ---
+  round-robin counts n* = (3, 2, 2, 2);  cap F(S=4;N) = ceil(9/4)/9 = 1/3
+  S_max at F=k/N: 2, 26/9, 34/9, 4, 4, 4, 4, 4, 4, 4
+  exact curve (certified equal to the exhaustive envelope on every cell):
+    F in [0, 2/9]:   S_max = 2 + 8*F
+    F in [2/9, 1/3]:   S_max = 10/3 + 2*F
+    F in [1/3, 1]:   S_max = 4 + 0*F
+  winner census per cell (multisets attaining the top line on that cell):
+    cell 0 [0, 1/9]:  total=56  balanced-pos=4  nonbal-pos=52  with-neg=0
+    cell 1 [1/9, 2/9]:  total=4  balanced-pos=4  nonbal-pos=0  with-neg=0
+    cell 2 [2/9, 1/3]:  total=4  balanced-pos=4  nonbal-pos=0  with-neg=0
+    cell 3 [1/3, 4/9]:  total=36  balanced-pos=4  nonbal-pos=16  with-neg=16
+    cell 4 [4/9, 5/9]:  total=508  balanced-pos=4  nonbal-pos=76  with-neg=428
+    cell 5 [5/9, 2/3]:  total=2276  balanced-pos=4  nonbal-pos=136  with-neg=2136
+    cell 6 [2/3, 7/9]:  total=5276  balanced-pos=4  nonbal-pos=176  with-neg=5096
+    cell 7 [7/9, 8/9]:  total=8436  balanced-pos=4  nonbal-pos=200  with-neg=8232
+    cell 8 [8/9, 1]:  total=10616  balanced-pos=4  nonbal-pos=212  with-neg=10400
+  negative-pattern multisets tying the envelope at a breakpoint: [3, 4, 5, 6, 7, 8, 9]
+  Q_N lower bound == envelope on [0,1/N]: True;  S_max at cap F=1/3: 4 (expect 4)
+--- N=10: 19448 pattern multisets (C(17,7)); 1.6s ---
+  round-robin counts n* = (3, 3, 2, 2);  cap F(S=4;N) = ceil(10/4)/10 = 3/10
+  S_max at F=k/N: 2, 14/5, 18/5, 4, 4, 4, 4, 4, 4, 4, 4
+  exact curve (certified equal to the exhaustive envelope on every cell):
+    F in [0, 1/5]:   S_max = 2 + 8*F
+    F in [1/5, 3/10]:   S_max = 14/5 + 4*F
+    F in [3/10, 1]:   S_max = 4 + 0*F
+  winner census per cell (multisets attaining the top line on that cell):
+    cell 0 [0, 1/10]:  total=84  balanced-pos=6  nonbal-pos=78  with-neg=0
+    cell 1 [1/10, 1/5]:  total=10  balanced-pos=6  nonbal-pos=4  with-neg=0
+    cell 2 [1/5, 3/10]:  total=6  balanced-pos=6  nonbal-pos=0  with-neg=0
+    cell 3 [3/10, 2/5]:  total=14  balanced-pos=6  nonbal-pos=4  with-neg=4
+    cell 4 [2/5, 1/2]:  total=316  balanced-pos=6  nonbal-pos=62  with-neg=248
+    cell 5 [1/2, 3/5]:  total=1936  balanced-pos=6  nonbal-pos=140  with-neg=1790
+    cell 6 [3/5, 7/10]:  total=5656  balanced-pos=6  nonbal-pos=200  with-neg=5450
+    cell 7 [7/10, 4/5]:  total=10682  balanced-pos=6  nonbal-pos=240  with-neg=10436
+    cell 8 [4/5, 9/10]:  total=15366  balanced-pos=6  nonbal-pos=264  with-neg=15096
+    cell 9 [9/10, 1]:  total=18366  balanced-pos=6  nonbal-pos=276  with-neg=18084
+  negative-pattern multisets tying the envelope at a breakpoint: [3, 4, 5, 6, 7, 8, 9, 10]
+  Q_N lower bound == envelope on [0,1/N]: True;  S_max at cap F=3/10: 4 (expect 4)
+--- N=11: 31824 pattern multisets (C(18,7)); 2.9s ---
+  round-robin counts n* = (3, 3, 3, 2);  cap F(S=4;N) = ceil(11/4)/11 = 3/11
+  S_max at F=k/N: 2, 30/11, 38/11, 4, 4, 4, 4, 4, 4, 4, 4, 4
+  exact curve (certified equal to the exhaustive envelope on every cell):
+    F in [0, 2/11]:   S_max = 2 + 8*F
+    F in [2/11, 3/11]:   S_max = 26/11 + 6*F
+    F in [3/11, 1]:   S_max = 4 + 0*F
+  winner census per cell (multisets attaining the top line on that cell):
+    cell 0 [0, 1/11]:  total=120  balanced-pos=4  nonbal-pos=116  with-neg=0
+    cell 1 [1/11, 2/11]:  total=20  balanced-pos=4  nonbal-pos=16  with-neg=0
+    cell 2 [2/11, 3/11]:  total=4  balanced-pos=4  nonbal-pos=0  with-neg=0
+    cell 3 [3/11, 4/11]:  total=4  balanced-pos=4  nonbal-pos=0  with-neg=0
+    cell 4 [4/11, 5/11]:  total=172  balanced-pos=4  nonbal-pos=48  with-neg=120
+    cell 5 [5/11, 6/11]:  total=1436  balanced-pos=4  nonbal-pos=136  with-neg=1296
+    cell 6 [6/11, 7/11]:  total=5380  balanced-pos=4  nonbal-pos=220  with-neg=5156
+    cell 7 [7/11, 8/11]:  total=12072  balanced-pos=4  nonbal-pos=280  with-neg=11788
+    cell 8 [8/11, 9/11]:  total=19832  balanced-pos=4  nonbal-pos=320  with-neg=19508
+    cell 9 [9/11, 10/11]:  total=26440  balanced-pos=4  nonbal-pos=344  with-neg=26092
+    cell 10 [10/11, 1]:  total=30436  balanced-pos=4  nonbal-pos=356  with-neg=30076
+  negative-pattern multisets tying the envelope at a breakpoint: [4, 5, 6, 7, 8, 9, 10, 11]
+  Q_N lower bound == envelope on [0,1/N]: True;  S_max at cap F=3/11: 4 (expect 4)
+--- N=12: 50388 pattern multisets (C(19,7)); 4.6s ---
+  round-robin counts n* = (3, 3, 3, 3);  cap F(S=4;N) = ceil(12/4)/12 = 1/4
+  S_max at F=k/N: 2, 8/3, 10/3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+  exact curve (certified equal to the exhaustive envelope on every cell):
+    F in [0, 1/4]:   S_max = 2 + 8*F
+    F in [1/4, 1]:   S_max = 4 + 0*F
+  winner census per cell (multisets attaining the top line on that cell):
+    cell 0 [0, 1/12]:  total=165  balanced-pos=1  nonbal-pos=164  with-neg=0
+    cell 1 [1/12, 1/6]:  total=35  balanced-pos=1  nonbal-pos=34  with-neg=0
+    cell 2 [1/6, 1/4]:  total=1  balanced-pos=1  nonbal-pos=0  with-neg=0
+    cell 3 [1/4, 1/3]:  total=1  balanced-pos=1  nonbal-pos=0  with-neg=0
+    cell 4 [1/3, 5/12]:  total=85  balanced-pos=1  nonbal-pos=34  with-neg=50
+    cell 5 [5/12, 1/2]:  total=970  balanced-pos=1  nonbal-pos=124  with-neg=845
+    cell 6 [1/2, 7/12]:  total=4586  balanced-pos=1  nonbal-pos=230  with-neg=4355
+    cell 7 [7/12, 2/3]:  total=12345  balanced-pos=1  nonbal-pos=314  with-neg=12030
+    cell 8 [2/3, 3/4]:  total=23199  balanced-pos=1  nonbal-pos=374  with-neg=22824
+    cell 9 [3/4, 5/6]:  total=34486  balanced-pos=1  nonbal-pos=414  with-neg=34071
+    cell 10 [5/6, 11/12]:  total=43458  balanced-pos=1  nonbal-pos=438  with-neg=43019
+    cell 11 [11/12, 1]:  total=48642  balanced-pos=1  nonbal-pos=450  with-neg=48191
+  negative-pattern multisets tying the envelope at a breakpoint: [4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Q_N lower bound == envelope on [0,1/N]: True;  S_max at cap F=1/4: 4 (expect 4)
+--- N=13: 77520 pattern multisets (C(20,7)); 7.8s ---
+  round-robin counts n* = (4, 3, 3, 3);  cap F(S=4;N) = ceil(13/4)/13 = 4/13
+  S_max at F=k/N: 2, 34/13, 42/13, 50/13, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+  exact curve (certified equal to the exhaustive envelope on every cell):
+    F in [0, 3/13]:   S_max = 2 + 8*F
+    F in [3/13, 4/13]:   S_max = 44/13 + 2*F
+    F in [4/13, 1]:   S_max = 4 + 0*F
+  winner census per cell (multisets attaining the top line on that cell):
+    cell 0 [0, 1/13]:  total=220  balanced-pos=4  nonbal-pos=216  with-neg=0
+    cell 1 [1/13, 2/13]:  total=56  balanced-pos=4  nonbal-pos=52  with-neg=0
+    cell 2 [2/13, 3/13]:  total=4  balanced-pos=4  nonbal-pos=0  with-neg=0
+    cell 3 [3/13, 4/13]:  total=4  balanced-pos=4  nonbal-pos=0  with-neg=0
+    cell 4 [4/13, 5/13]:  total=36  balanced-pos=4  nonbal-pos=16  with-neg=16
+    cell 5 [5/13, 6/13]:  total=596  balanced-pos=4  nonbal-pos=100  with-neg=492
+    cell 6 [6/13, 7/13]:  total=3532  balanced-pos=4  nonbal-pos=220  with-neg=3308
+    cell 7 [7/13, 8/13]:  total=11516  balanced-pos=4  nonbal-pos=332  with-neg=11180
+    cell 8 [8/13, 9/13]:  total=24896  balanced-pos=4  nonbal-pos=416  with-neg=24476
+    cell 9 [9/13, 10/13]:  total=41272  balanced-pos=4  nonbal-pos=476  with-neg=40792
+    cell 10 [10/13, 11/13]:  total=56964  balanced-pos=4  nonbal-pos=516  with-neg=56444
+    cell 11 [11/13, 12/13]:  total=68780  balanced-pos=4  nonbal-pos=540  with-neg=68236
+    cell 12 [12/13, 1]:  total=75360  balanced-pos=4  nonbal-pos=552  with-neg=74804
+  negative-pattern multisets tying the envelope at a breakpoint: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+  Q_N lower bound == envelope on [0,1/N]: True;  S_max at cap F=4/13: 4 (expect 4)
+--- N=14: 116280 pattern multisets (C(21,7)); 12.5s ---
+  round-robin counts n* = (4, 4, 3, 3);  cap F(S=4;N) = ceil(14/4)/14 = 2/7
+  S_max at F=k/N: 2, 18/7, 22/7, 26/7, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+  exact curve (certified equal to the exhaustive envelope on every cell):
+    F in [0, 3/14]:   S_max = 2 + 8*F
+    F in [3/14, 2/7]:   S_max = 20/7 + 4*F
+    F in [2/7, 1]:   S_max = 4 + 0*F
+  winner census per cell (multisets attaining the top line on that cell):
+    cell 0 [0, 1/14]:  total=286  balanced-pos=6  nonbal-pos=280  with-neg=0
+    cell 1 [1/14, 1/7]:  total=84  balanced-pos=6  nonbal-pos=78  with-neg=0
+    cell 2 [1/7, 3/14]:  total=10  balanced-pos=6  nonbal-pos=4  with-neg=0
+    cell 3 [3/14, 2/7]:  total=6  balanced-pos=6  nonbal-pos=0  with-neg=0
+    cell 4 [2/7, 5/14]:  total=14  balanced-pos=6  nonbal-pos=4  with-neg=4
+    cell 5 [5/14, 3/7]:  total=340  balanced-pos=6  nonbal-pos=74  with-neg=260
+    cell 6 [3/7, 1/2]:  total=2528  balanced-pos=6  nonbal-pos=200  with-neg=2322
+    cell 7 [1/2, 4/7]:  total=9868  balanced-pos=6  nonbal-pos=338  with-neg=9524
+    cell 8 [4/7, 9/14]:  total=24712  balanced-pos=6  nonbal-pos=450  with-neg=24256
+    cell 9 [9/14, 5/7]:  total=45798  balanced-pos=6  nonbal-pos=534  with-neg=45258
+    cell 10 [5/7, 11/14]:  total=69210  balanced-pos=6  nonbal-pos=594  with-neg=68610
+    cell 11 [11/14, 6/7]:  total=90266  balanced-pos=6  nonbal-pos=634  with-neg=89626
+    cell 12 [6/7, 13/14]:  total=105446  balanced-pos=6  nonbal-pos=658  with-neg=104782
+    cell 13 [13/14, 1]:  total=113646  balanced-pos=6  nonbal-pos=670  with-neg=112970
+  negative-pattern multisets tying the envelope at a breakpoint: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  Q_N lower bound == envelope on [0,1/N]: True;  S_max at cap F=2/7: 4 (expect 4)
+
+=== PART B: bend-structure table N=2..14 (by N mod 4) ===
+N  k r  n*            cap      segments (exact)
+2  0 2   (1, 1, 0, 0)   1/2       [0,1/2] 2+4F ; [1/2,1] 4+0F
+3  0 3   (1, 1, 1, 0)   1/3       [0,1/3] 2+6F ; [1/3,1] 4+0F
+4  1 0   (1, 1, 1, 1)   1/4       [0,1/4] 2+8F ; [1/4,1] 4+0F
+5  1 1   (2, 1, 1, 1)   2/5       [0,1/5] 2+8F ; [1/5,2/5] 16/5+2F ; [2/5,1] 4+0F
+6  1 2   (2, 2, 1, 1)   1/3       [0,1/6] 2+8F ; [1/6,1/3] 8/3+4F ; [1/3,1] 4+0F
+7  1 3   (2, 2, 2, 1)   2/7       [0,1/7] 2+8F ; [1/7,2/7] 16/7+6F ; [2/7,1] 4+0F
+8  2 0   (2, 2, 2, 2)   1/4       [0,1/4] 2+8F ; [1/4,1] 4+0F
+9  2 1   (3, 2, 2, 2)   1/3       [0,2/9] 2+8F ; [2/9,1/3] 10/3+2F ; [1/3,1] 4+0F
+10 2 2   (3, 3, 2, 2)   3/10      [0,1/5] 2+8F ; [1/5,3/10] 14/5+4F ; [3/10,1] 4+0F
+11 2 3   (3, 3, 3, 2)   3/11      [0,2/11] 2+8F ; [2/11,3/11] 26/11+6F ; [3/11,1] 4+0F
+12 3 0   (3, 3, 3, 3)   1/4       [0,1/4] 2+8F ; [1/4,1] 4+0F
+13 3 1   (4, 3, 3, 3)   4/13      [0,3/13] 2+8F ; [3/13,4/13] 44/13+2F ; [4/13,1] 4+0F
+14 3 2   (4, 4, 3, 3)   2/7       [0,3/14] 2+8F ; [3/14,2/7] 20/7+4F ; [2/7,1] 4+0F
+
+winner census summary (per cell: total / balanced-pos / nonbal-pos / with-neg):
+  N=2 : c0:6/6/0/0  c1:10/6/0/4
+  N=3 : c0:4/4/0/0  c1:4/4/0/0  c2:60/4/12/44
+  N=4 : c0:1/1/0/0  c1:1/1/0/0  c2:57/1/18/38  c3:216/1/30/185
+  N=5 : c0:4/4/0/0  c1:4/4/0/0  c2:32/4/12/16  c3:260/4/36/220  c4:600/4/48/548
+  N=6 : c0:10/6/4/0  c1:6/6/0/0  c2:14/6/4/4  c3:228/6/38/184  c4:802/6/62/734  c5:1418/6/74/1338
+  N=7 : c0:20/4/16/0  c1:4/4/0/0  c2:4/4/0/0  c3:148/4/36/108  c4:844/4/76/764  c5:1992/4/100/1888  c6:2996/4/112/2880
+  N=8 : c0:35/1/34/0  c1:1/1/0/0  c2:1/1/0/0  c3:81/1/30/50  c4:722/1/84/637  c5:2310/1/124/2185  c6:4305/1/148/4156  c7:5825/1/160/5664
+  N=9 : c0:56/4/52/0  c1:4/4/0/0  c2:4/4/0/0  c3:36/4/16/16  c4:508/4/76/428  c5:2276/4/136/2136  c6:5276/4/176/5096  c7:8436/4/200/8232  c8:10616/4/212/10400
+  N=10: c0:84/6/78/0  c1:10/6/4/0  c2:6/6/0/0  c3:14/6/4/4  c4:316/6/62/248  c5:1936/6/140/1790  c6:5656/6/200/5450  c7:10682/6/240/10436  c8:15366/6/264/15096  c9:18366/6/276/18084
+  N=11: c0:120/4/116/0  c1:20/4/16/0  c2:4/4/0/0  c3:4/4/0/0  c4:172/4/48/120  c5:1436/4/136/1296  c6:5380/4/220/5156  c7:12072/4/280/11788  c8:19832/4/320/19508  c9:26440/4/344/26092  c10:30436/4/356/30076
+  N=12: c0:165/1/164/0  c1:35/1/34/0  c2:1/1/0/0  c3:1/1/0/0  c4:85/1/34/50  c5:970/1/124/845  c6:4586/1/230/4355  c7:12345/1/314/12030  c8:23199/1/374/22824  c9:34486/1/414/34071  c10:43458/1/438/43019  c11:48642/1/450/48191
+  N=13: c0:220/4/216/0  c1:56/4/52/0  c2:4/4/0/0  c3:4/4/0/0  c4:36/4/16/16  c5:596/4/100/492  c6:3532/4/220/3308  c7:11516/4/332/11180  c8:24896/4/416/24476  c9:41272/4/476/40792  c10:56964/4/516/56444  c11:68780/4/540/68236  c12:75360/4/552/74804
+  N=14: c0:286/6/280/0  c1:84/6/78/0  c2:10/6/4/0  c3:6/6/0/0  c4:14/6/4/4  c5:340/6/74/260  c6:2528/6/200/2322  c7:9868/6/338/9524  c8:24712/6/450/24256  c9:45798/6/534/45258  c10:69210/6/594/68610  c11:90266/6/634/89626  c12:105446/6/658/104782  c13:113646/6/670/112970
+  sub-cap structure: for every N=2..14, no negative-pattern multiset attains
+  S_max on any cell inside [0, cap]; from the bend cell k/N to the cap only
+  balanced all-positive multisets attain it.  PASS
+  (negative-pattern ties occur at breakpoints k/N >= ceil(N/4), i.e. at or
+   beyond the cap, where S_max = 4: N=2: k>=1, N=3: k>=2, N=4: k>=2, N=5: k>=2, N=6: k>=2, N=7: k>=3, N=8: k>=3, N=9: k>=3, N=10: k>=3, N=11: k>=4, N=12: k>=4, N=13: k>=4, N=14: k>=4)
+
+=== PART C: float cross-check at F*=(sqrt(2)-1)/4 for N=9..14 ===
+  N=9: max_Q Smax_Q(F*) = 2.828427124746   (2*sqrt2 = 2.828427124746; |diff| = 4.44e-16)
+  N=10: max_Q Smax_Q(F*) = 2.828427124746   (2*sqrt2 = 2.828427124746; |diff| = 4.44e-16)
+  N=11: max_Q Smax_Q(F*) = 2.828427124746   (2*sqrt2 = 2.828427124746; |diff| = 4.44e-16)
+  N=12: max_Q Smax_Q(F*) = 2.828427124746   (2*sqrt2 = 2.828427124746; |diff| = 4.44e-16)
+  N=13: max_Q Smax_Q(F*) = 2.828427124746   (2*sqrt2 = 2.828427124746; |diff| = 4.44e-16)
+  N=14: max_Q Smax_Q(F*) = 2.828427124746   (2*sqrt2 = 2.828427124746; |diff| = 4.44e-16)
+
+=== PART D: brute-force certificates of the two proof lemmas (N=2..14) ===
+Lemma E (exchange / negative removal): min over nC,nD in 1..N, k in 0..N of
+  4/N + gk(nC-1)-gk(nC) + gk(nD-1)-gk(nD)   [must be >= 0 for all F]
+  N=2 : min = 0   (at None)   PASS
+  N=3 : min = 0   (at None)   PASS
+  N=4 : min = 0   (at None)   PASS
+  N=5 : min = 0   (at None)   PASS
+  N=6 : min = 0   (at None)   PASS
+  N=7 : min = 0   (at None)   PASS
+  N=8 : min = 0   (at None)   PASS
+  N=9 : min = 0   (at None)   PASS
+  N=10: min = 0   (at None)   PASS
+  N=11: min = 0   (at None)   PASS
+  N=12: min = 0   (at None)   PASS
+  N=13: min = 0   (at None)   PASS
+  N=14: min = 0   (at None)   PASS
+Lemma B (balancing): for all compositions p of N into 4 parts, p_i >= p_j+2,
+  gk(p_i)+gk(p_j) <= gk(p_i-1)+gk(p_j+1) for all k=0..N   [must hold]
+  N=2 : 36 checks, 0 violations   PASS
+  N=3 : 144 checks, 0 violations   PASS
+  N=4 : 420 checks, 0 violations   PASS
+  N=5 : 936 checks, 0 violations   PASS
+  N=6 : 1848 checks, 0 violations   PASS
+  N=7 : 3264 checks, 0 violations   PASS
+  N=8 : 5400 checks, 0 violations   PASS
+  N=9 : 8400 checks, 0 violations   PASS
+  N=10: 12540 checks, 0 violations   PASS
+  N=11: 18000 checks, 0 violations   PASS
+  N=12: 25116 checks, 0 violations   PASS
+  N=13: 34104 checks, 0 violations   PASS
+  N=14: 45360 checks, 0 violations   PASS
+
+=== SUMMARY ===
+All assertions passed. Exact curves certified for N=9..14 (and re-certified
+N=2..8) equal to the round-robin closed form S_max(N,F) = 2 + sum_ab 2*min(F, n*_ab/N).
+For every N=2..14 no negative-pattern multiset attains the top line on any cell
+inside [0, cap] (they tie only at/above the cap, where S_max = 4); from the bend
+cell k/N to the cap only balanced all-positive multisets attain it.
+Total wall time: 32.0s

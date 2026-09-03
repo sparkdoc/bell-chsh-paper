@@ -1,0 +1,11 @@
+Part A: row constraints + 4 NS identities exact for N=4..64: PASS (no violations)
+Part A: min_j n_j >= F* N for all N=4..999: True
+Part B: N=3 witness S == 2*sqrt(2) exactly in Q(sqrt2): True
+Part B: per-row TV exact in Q(sqrt2): [(Fraction(-1, 3), Fraction(1, 3)), (Fraction(-1, 3), Fraction(1, 3)), (Fraction(-1, 6), Fraction(1, 6)), (Fraction(-1, 3), Fraction(1, 3))] vs expected [(Fraction(-1, 3), Fraction(1, 3)), (Fraction(-1, 3), Fraction(1, 3)), (Fraction(-1, 6), Fraction(1, 6)), (Fraction(-1, 3), Fraction(1, 3))]: True
+Part B: all four NS residuals exactly 0 in Q(sqrt2): True
+Part B: per-row TV <= d3 (float cross-check): ['0.138071187457698', '0.138071187457698', '0.069035593728849', '0.138071187457698'] vs d3=0.138071187457698: True
+Part C: closed-form N=3 vs saved ns_solN3_p.npy max deviation: 5.551e-17
+Part C: N= 5: PASS  S=2.828427124746  tv_max=0.103553390593  ns_max=8.33e-17
+Part C: N= 7: PASS  S=2.828427124746  tv_max=0.103553390593  ns_max=2.78e-17
+Part C: N=10: PASS  S=2.828427124746  tv_max=0.103553390593  ns_max=5.55e-17
+Part C: N=24: PASS  S=2.828427124746  tv_max=0.103553390593  ns_max=1.11e-16

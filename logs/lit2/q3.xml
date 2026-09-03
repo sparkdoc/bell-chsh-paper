@@ -1,0 +1,1494 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ocs4v71gvvkdcUv72xqGUURj6wo</id>
+  <title>arXiv Query: search_query=all:"fine-tuning" AND all:"Bell"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T03:36:38Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22fine-tuning%22+AND+all:%22Bell%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>102</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.27147v1</id>
+    <title>Thomson: Continual Learning of Frontier Models for SovereignAI</title>
+    <updated>2026-08-27T13:59:36Z</updated>
+    <link href="https://arxiv.org/abs/2608.27147v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.27147v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The development of frontier models is commonly perceived to be the exclusive remit of a small number of heavily funded players, creating an information, economic and power asymmetry between developers and the diverse user base of modern AI. Recent public discourse acknowledges this concern, calling for SovereignAI (an organisation's capability to independently build, deploy and govern AI use), but offers little concrete advice on how this can be achieved in the short term under a diversity of funding settings. We argue that frontier performance is achievable by a wide range of institutions through Continual Learning on readily available open-weight models. Unlike limited approaches such as small-scale fine-tuning, prompt engineering, or tool-augmentation of a frozen model, our approach exploits a modern mid- &amp; post-training stack while introducing safeguards that preserve both plasticity and stability at each stage, making the minimal number of high-impact interventions on the parameters. This yields gains comparable to those typically seen across multiple successive model generations, at compute and personnel budgets substantially lower than commonly thought, making ownership of large parts of the SovereignAI stack (model, tool infrastructure, values &amp; data privacy) viable for far more actors. We demonstrate this with Thomson, a general-purpose frontier model trained with an enhanced focus on high-stakes professional work. Thomson performs competitively with recent frontier models across agentic tasks, safety, legal, tax &amp; multilingualism, and large-scale Deep Research. Evaluations show a distinctive $π$-shaped pattern: distinct improvements across a wide range of capabilities, including those not explicitly targeted, while almost completely eliminating the forgetting problem common to narrow domain adaptation.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-27T13:59:36Z</published>
+    <arxiv:comment>Open-weight model: https://huggingface.co/thomsonreuters/Thomson-1.0-Small</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shengzhuang Chen</name>
+    </author>
+    <author>
+      <name>Jerrod Parker</name>
+    </author>
+    <author>
+      <name>Yejin Bang</name>
+    </author>
+    <author>
+      <name>Andrew M. Bean</name>
+    </author>
+    <author>
+      <name>Nabeel Seedat</name>
+    </author>
+    <author>
+      <name>Stefan Winzeck</name>
+    </author>
+    <author>
+      <name>Daniil Glazko</name>
+    </author>
+    <author>
+      <name>Jannik Zgraggen</name>
+    </author>
+    <author>
+      <name>Fangyi Yu</name>
+    </author>
+    <author>
+      <name>Scott Arnott</name>
+    </author>
+    <author>
+      <name>Dietrich Trautmann</name>
+    </author>
+    <author>
+      <name>Luca Ciuffreda</name>
+    </author>
+    <author>
+      <name>Guglielmo Bonifazi</name>
+    </author>
+    <author>
+      <name>Davide Romano</name>
+    </author>
+    <author>
+      <name>Bradley Bell</name>
+    </author>
+    <author>
+      <name>Kirsty Fielding</name>
+    </author>
+    <author>
+      <name>Daniele Giofrè</name>
+    </author>
+    <author>
+      <name>Tom Zielund</name>
+    </author>
+    <author>
+      <name>Ipshita Chatterjee</name>
+    </author>
+    <author>
+      <name>Sneha Murthy Ghantasala</name>
+    </author>
+    <author>
+      <name>Manpreet Nanreh</name>
+    </author>
+    <author>
+      <name>John Scoville</name>
+    </author>
+    <author>
+      <name>Maciej Sakowicz</name>
+    </author>
+    <author>
+      <name>Wassim Seifeddine</name>
+    </author>
+    <author>
+      <name>Lukas Thede</name>
+    </author>
+    <author>
+      <name>Jonathan Richard Schwarz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21520v1</id>
+    <title>On the performance of pre-trained vision transformers for supernova spectral classification using different spectral representations</title>
+    <updated>2026-08-21T18:00:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.21520v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21520v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The spectroscopic classification of supernovae is a key component of time-domain astronomy and plays an important role in the identification of Type Ia events. The increasing volume and diversity of spectroscopic data motivate the development of automated classification approaches. In this work, we explore the use of Transformer-based vision models for supernova spectral classification, focusing on how different visual representations of spectra and fine-tuning strategies affect classification performance when image-based architectures are applied to intrinsically one-dimensional data. We consider a dataset of 4,011 supernova spectra, augmented and rebalanced into three astrophysically motivated classes: normal Type Ia, other Type Ia subtypes, and core-collapse supernovae. Spectra are encoded as line-plot images using direct flux-wavelength visualizations as well as alternative flux-difference versus wavelength-difference heatmap representations designed to emphasize differential spectral structure. We evaluate several pre-trained Transformer architectures, including Vision Transformers (ViT), Swin Transformers, and a DINOv3-pretrained ViT, and examine the effects of fine-tuning depth, visual representation, and hyperparameter choices. We find that a plain flux-wavelength line plot outperforms the purpose-built maps on average, though log-scale maps remain competitive for specific architecture and fine-tuning combinations. On the held-out test set, our best model (\texttt{vitb-p16}) reaches a macro-F1 score of 86.3%, with per-class F1 scores of 94% for normal Ia, 77% for other Ia subtypes, and 88% for core-collapse supernovae. The dominant misclassification arises from confusion between Ia-91T and normal Ia spectra. These results demonstrate that Transformer-based vision models can provide competitive performance for single-spectrum supernova spectral classification.</summary>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T18:00:04Z</published>
+    <arxiv:comment>Submitted to A&amp;A. 16 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.IM"/>
+    <author>
+      <name>J. Serrano Bell</name>
+    </author>
+    <author>
+      <name>P. Gálvez Molina</name>
+    </author>
+    <author>
+      <name>V. Contreras Rojas</name>
+    </author>
+    <author>
+      <name>W. Fox Fortino</name>
+    </author>
+    <author>
+      <name>M. Rojas</name>
+    </author>
+    <author>
+      <name>P. Protopapas</name>
+    </author>
+    <author>
+      <name>F. Bianco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.13142v1</id>
+    <title>Challenging Majorana neutrino effects in $B\to K^{(\ast)}νν$ and $K\to πνν$ decays</title>
+    <updated>2026-07-14T18:00:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.13142v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.13142v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the contributions of Lepton Number Violating (LNV) effective operators to the rare decays $B\to K^{(\ast)}νν$ and $K\to πνν$. Such operators can modify the kinematic distributions of these processes, providing distinctive probes of physics beyond the Standard Model. Through a renormalization-group analysis, we show that the Standard Model Effective Field Theory (SMEFT) operators responsible for these effects are subject to stringent indirect constraints from neutrino physics. In particular, we find that the mild excess reported by Belle-II in the $B^+\to K^+νν$ channel cannot be explained by LNV SMEFT operators without introducing significant fine-tuning in neutrino masses. We then show that these constraints can be evaded in the SMEFT minimally extended by a light right-handed neutrino, allowing for sizable effects in rare meson decays. Finally, we explore the implications of this viable scenario for low-energy processes, including neutrinoless double-beta decays.</summary>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-14T18:00:04Z</published>
+    <arxiv:comment>44 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="hep-ph"/>
+    <author>
+      <name>Asmaa Abada</name>
+    </author>
+    <author>
+      <name>Claire Chevallier</name>
+    </author>
+    <author>
+      <name>Luighi P. S. Leal</name>
+    </author>
+    <author>
+      <name>Anna Llauradó</name>
+    </author>
+    <author>
+      <name>Olcyr Sumensari</name>
+    </author>
+    <author>
+      <name>Renata Zukanovich Funchal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.17973v1</id>
+    <title>Fine-tuning LLMs for Passive Depression Severity Estimation from AI Mental Health Dialogue</title>
+    <updated>2026-06-16T14:28:47Z</updated>
+    <link href="https://arxiv.org/abs/2606.17973v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.17973v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression is the leading cause of disability worldwide, and early detection of symptom change is essential for timely intervention. Validated instruments such as the Patient Health Questionnaire-9 (PHQ-9) support symptom monitoring at scale, but real-world completion rates are low, introducing response bias and systematic missingness. Passive approaches that infer severity from routinely generated data could close this gap. We address this by predicting PHQ-9 total scores directly from transcripts of conversations between users and an AI mental health application, requiring only conversation text and no additional clinical data. We fine-tune a Qwen3.5-27B backbone with a regression head, augment 3,111 ground-truth labels with pseudolabels generated by a reasoning model (Claude Opus) and iteratively trained intermediate models, for a combined dataset of 6,283 users. On a held-out test set of 842 users, our best model achieves MAE = 2.6, RMSE = 4.0, Pearson r = 0.80, and AUC = 0.91 at the PHQ-9 &gt;= 10 clinical threshold. We also find AUC &gt; 0.87 at every severity threshold from PHQ-9 &gt;= 3 to PHQ-9 &gt;= 24, demonstrating that the model captures depression severity across the full clinical spectrum. This work opens the door to passive, continuous symptom monitoring in AI mental health platforms, without requiring users to complete self-report measures.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-16T14:28:47Z</published>
+    <arxiv:comment>12 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Olivier Tieleman</name>
+    </author>
+    <author>
+      <name>Ziyi Zhu</name>
+    </author>
+    <author>
+      <name>Ting Su</name>
+    </author>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+    <author>
+      <name>Thomas D. Hull</name>
+    </author>
+    <author>
+      <name>Caitlin A. Stamatis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.28577v1</id>
+    <title>Continual Model Routing in Evolving Model Hubs</title>
+    <updated>2026-05-27T15:00:45Z</updated>
+    <link href="https://arxiv.org/abs/2605.28577v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.28577v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI model hubs provide access to a rapidly growing collection of powerful pre-trained models, enabling off-the-shelf mixture-of-experts systems with different routing strategies. However, this rapid growth poses two fundamental challenges: scaling model selection across thousands of experts and continually updating routing mechanisms as new models and tasks are introduced. In this paper, we formalise this setting as Continual Model Routing (CMR) and propose CMRBench, a new large-scale benchmark simulating realistic hub expansion and including over 2,000 candidate models. Finally, we introduce CARvE, a contrastive embedding approach for efficient continual model routing via checkpoint-based anchoring and structured replay. Extensive empirical results and ablations show that CARvE significantly outperforms zero-shot retrieval, fine-tuning, and adapter-merging baselines in model, family, and domain-level accuracy.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-27T15:00:45Z</published>
+    <arxiv:comment>42 pages, 24 tables, 6 figures, to be published at ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jack Bell</name>
+    </author>
+    <author>
+      <name>Giacomo Carfì</name>
+    </author>
+    <author>
+      <name>Gerlando Gramaglia</name>
+    </author>
+    <author>
+      <name>Vincenzo Lomonaco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.15393v1</id>
+    <title>LPDS: Evaluating LLM Robustness Through Logic-Preserving Difficulty Scaling</title>
+    <updated>2026-05-14T20:26:59Z</updated>
+    <link href="https://arxiv.org/abs/2605.15393v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.15393v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As large language models (LLMs) are increasingly deployed to perform tasks with minimal human oversight, it is crucial that these models operate robustly. In particular, a model that can solve a given problem should not fail simply because certain entities$\unicode{x2013}$such as names, numbers, or other contextual details$\unicode{x2013}$have changed while the underlying problem logic remains the same. Prior work suggests that current LLMs still struggle with this form of robustness: they often succeed on some variations of a problem but fail on others. However, existing evaluations often lack a systematic way to identify which logic-preserving variations are most likely to induce failure. Instead, they typically test a random subset of allowable variations, which can overstate robustness. To address this gap, we introduce logic-preserving difficulty scaling (LPDS), a framework that (i) quantifies the difficulty of a problem variation and (ii) systematically searches the space of allowable variations to find those that maximize difficulty and expose failures. We show that as difficulty increases, performance declines and errors in the models' reasoning chains become more pronounced. We further demonstrate that LPDS efficiently finds difficult problem variations for a model, resulting in performance drops up to 5 times larger compared to random sampling. Finally, we show that fine-tuning on more difficult variations leads to more consistent robustness gains than training on easier ones.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-14T20:26:59Z</published>
+    <arxiv:comment>41 pages, 31 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Philipp Mondorf</name>
+    </author>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+    <author>
+      <name>Jesse Dodge</name>
+    </author>
+    <author>
+      <name>Dieuwke Hupkes</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.11348v1</id>
+    <title>CP violation in two meson tau decays</title>
+    <updated>2026-03-11T22:29:56Z</updated>
+    <link href="https://arxiv.org/abs/2603.11348v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.11348v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>CP violation in $τ\to K_S πν_τ$ decays has attracted a lot of attention recently, due to the BaBar anomaly in the corresponding rate asymmetry. Within an effective field theory formalism, only extreme fine-tuning would allow to understand such measurement, which is currently being scrutinized at Belle(-II), as will be in the future super-charm-tau factory. Here we summarize the results of applying the same formalism to the other two-meson tau decay channels, which can help solve this conundrum. Our main conclusion is that current and future experiments would be sensitive to the maximum allowed CP rate asymmetry in the related $K^\pm K_S$ modes with a measurement having 5$\%$ precision, that will either support or cast further doubts on the BaBar anomaly.</summary>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-11T22:29:56Z</published>
+    <arxiv:comment>13 pages, 5 figures, submitted to the proceedings of the 7th International Workshop on Future Tau Charm Facilities (23-27 Nov. 2025, Shanghai, China) to be published in International Journal of Modern Physics A (IJMPA)</arxiv:comment>
+    <arxiv:primary_category term="hep-ph"/>
+    <author>
+      <name>Daniel A. López Aguilar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.01758v1</id>
+    <title>Unifying Heterogeneous Multi-Modal Remote Sensing Detection Via Language-Pivoted Pretraining</title>
+    <updated>2026-03-02T11:38:12Z</updated>
+    <link href="https://arxiv.org/abs/2603.01758v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.01758v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Heterogeneous multi-modal remote sensing object detection aims to accurately detect objects from diverse sensors (e.g., RGB, SAR, Infrared). Existing approaches largely adopt a late alignment paradigm, in which modality alignment and task-specific optimization are entangled during downstream fine-tuning. This tight coupling complicates optimization and often results in unstable training and suboptimal generalization. To address these limitations, we propose BabelRS, a unified language-pivoted pretraining framework that explicitly decouples modality alignment from downstream task learning. BabelRS comprises two key components: Concept-Shared Instruction Aligning (CSIA) and Layerwise Visual-Semantic Annealing (LVSA). CSIA aligns each sensor modality to a shared set of linguistic concepts, using language as a semantic pivot to bridge heterogeneous visual representations. To further mitigate the granularity mismatch between high-level language representations and dense detection objectives, LVSA progressively aggregates multi-scale visual features to provide fine-grained semantic guidance. Extensive experiments demonstrate that BabelRS stabilizes training and consistently outperforms state-of-the-art methods without bells and whistles. Code: https://github.com/zcablii/SM3Det.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-02T11:38:12Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Yuming Chen</name>
+    </author>
+    <author>
+      <name>Yunheng Li</name>
+    </author>
+    <author>
+      <name>Ming-Ming Cheng</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Jian Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.02820v1</id>
+    <title>From Tokens to Numbers: Continuous Number Modeling for SVG Generation</title>
+    <updated>2026-02-02T21:20:38Z</updated>
+    <link href="https://arxiv.org/abs/2602.02820v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.02820v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For certain image generation tasks, vector graphics such as Scalable Vector Graphics (SVGs) offer clear benefits such as increased flexibility, size efficiency, and editing ease, but remain less explored than raster-based approaches. A core challenge is that the numerical, geometric parameters, which make up a large proportion of SVGs, are inefficiently encoded as long sequences of tokens. This slows training, reduces accuracy, and hurts generalization. To address these problems, we propose Continuous Number Modeling (CNM), an approach that directly models numbers as first-class, continuous values rather than discrete tokens. This formulation restores the mathematical elegance of the representation by aligning the model's inputs with the data's continuous nature, removing discretization artifacts introduced by token-based encoding. We then train a multimodal transformer on 2 million raster-to-SVG samples, followed by fine-tuning via reinforcement learning using perceptual feedback to further improve visual quality. Our approach improves training speed by over 30% while maintaining higher perceptual fidelity compared to alternative approaches. This work establishes CNM as a practical and efficient approach for high-quality vector generation, with potential for broader applications. We make our code available http://github.com/mikeogezi/CNM.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-02T21:20:38Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Michael Ogezi</name>
+    </author>
+    <author>
+      <name>Martin Bell</name>
+    </author>
+    <author>
+      <name>Freda Shi</name>
+    </author>
+    <author>
+      <name>Ethan Smith</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.18730v1</id>
+    <title>Reflect: Transparent Principle-Guided Reasoning for Constitutional Alignment at Scale</title>
+    <updated>2026-01-26T17:54:54Z</updated>
+    <link href="https://arxiv.org/abs/2601.18730v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.18730v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The constitutional framework of alignment aims to align large language models (LLMs) with value-laden principles written in natural language (such as to avoid using biased language). Prior work has focused on parameter fine-tuning techniques, such as reinforcement learning from human feedback (RLHF), to instill these principles. However, these approaches are computationally demanding, require careful engineering and tuning, and often require difficult-to-obtain human annotation data. We propose \textsc{reflect}, an inference-time framework for constitutional alignment that does not require any training or data, providing a plug-and-play approach for aligning an instruction-tuned model to a set of principles. \textsc{reflect} operates entirely in-context, combining a (i) constitution-conditioned base response with post-generation (ii) self-evaluation, (iii)(a) self-critique, and (iii)(b) final revision. \textsc{reflect}'s technique of explicit in-context reasoning over principles during post-generation outperforms standard few-shot prompting and provides transparent reasoning traces. Our results demonstrate that \textsc{reflect} significantly improves LLM conformance to diverse and complex principles, including principles quite distinct from those emphasized in the model's original parameter fine-tuning, without sacrificing factual reasoning. \textsc{reflect} is particularly effective at reducing the rate of rare but significant violations of principles, thereby improving safety and robustness in the tail end of the distribution of generations. Finally, we show that \textsc{reflect} naturally generates useful training data for traditional parameter fine-tuning techniques, allowing for efficient scaling and the reduction of inference-time computational overhead in long-term deployment scenarios.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-26T17:54:54Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Henry Bell</name>
+    </author>
+    <author>
+      <name>Caroline Zhang</name>
+    </author>
+    <author>
+      <name>Mohammed Mobasserul Haque</name>
+    </author>
+    <author>
+      <name>Dhaval Potdar</name>
+    </author>
+    <author>
+      <name>Samia Zaman</name>
+    </author>
+    <author>
+      <name>Brandon Fain</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.16582v1</id>
+    <title>X-Aligner: Composed Visual Retrieval without the Bells and Whistles</title>
+    <updated>2026-01-23T09:33:38Z</updated>
+    <link href="https://arxiv.org/abs/2601.16582v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.16582v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Composed Video Retrieval (CoVR) facilitates video retrieval by combining visual and textual queries. However, existing CoVR frameworks typically fuse multimodal inputs in a single stage, achieving only marginal gains over initial baseline. To address this, we propose a novel CoVR framework that leverages the representational power of Vision Language Models (VLMs). Our framework incorporates a novel cross-attention module X-Aligner, composed of cross-attention layers that progressively fuse visual and textual inputs and align their multimodal representation with that of the target video. To further enhance the representation of the multimodal query, we incorporate the caption of the visual query as an additional input. The framework is trained in two stages to preserve the pretrained VLM representation. In the first stage, only the newly introduced module is trained, while in the second stage, the textual query encoder is also fine-tuned. We implement our framework on top of BLIP-family architecture, namely BLIP and BLIP-2, and train it on the Webvid-CoVR data set. In addition to in-domain evaluation on Webvid-CoVR-Test, we perform zero-shot evaluations on the Composed Image Retrieval (CIR) data sets CIRCO and Fashion-IQ. Our framework achieves state-of-the-art performance on CoVR obtaining a Recall@1 of 63.93% on Webvid-CoVR-Test, and demonstrates strong zero-shot generalization on CIR tasks.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-23T09:33:38Z</published>
+    <arxiv:comment>8 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuqian Zheng</name>
+    </author>
+    <author>
+      <name>Mariana-Iuliana Georgescu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.17644v3</id>
+    <title>Mapping Hidden Heritage: Self-supervised Pre-training on High-Resolution LiDAR DEM Derivatives for Archaeological Stone Wall Detection</title>
+    <updated>2026-01-17T14:14:18Z</updated>
+    <link href="https://arxiv.org/abs/2510.17644v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.17644v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Historic dry-stone walls hold significant cultural and environmental importance, serving as historical markers and contributing to ecosystem preservation and wildfire management during dry seasons in Australia. However, many of these stone structures in remote or vegetated landscapes remain undocumented due to limited accessibility and the high cost of manual mapping. Deep learning-based segmentation offers a scalable approach for automated mapping of such features, but challenges remain: 1.the visual occlusion of low-lying dry-stone walls by dense vegetation and 2.the scarcity of labeled training data. This study presents DINO-CV, a self-supervised cross-view pre-training framework based on knowledge distillation, designed for accurate and data-efficient mapping of dry-stone walls using Digital Elevation Models (DEMs) derived from high-resolution airborne LiDAR. By learning invariant geometric and geomorphic features across DEM-derived views, (i.e., Multi-directional Hillshade and Visualization for Archaeological Topography), DINO-CV addresses the occlusion by vegetation and data scarcity challenges. Applied to the Budj Bim Cultural Landscape at Victoria, Australia, a UNESCO World Heritage site, the approach achieves a mean Intersection over Union (mIoU) of 68.6% on test areas and maintains 63.8% mIoU when fine-tuned with only 10% labeled data. These results demonstrate the potential of self-supervised learning on high-resolution DEM derivatives for large-scale, automated mapping of cultural heritage features in complex and vegetated environments. Beyond archaeology, this approach offers a scalable solution for environmental monitoring and heritage preservation across inaccessible or environmentally sensitive regions.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-20T15:23:05Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zexian Huang</name>
+    </author>
+    <author>
+      <name>Mashnoon Islam</name>
+    </author>
+    <author>
+      <name>Brian Armstrong</name>
+    </author>
+    <author>
+      <name>Billy Bell</name>
+    </author>
+    <author>
+      <name>Kourosh Khoshelham</name>
+    </author>
+    <author>
+      <name>Martin Tomko</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.23047v1</id>
+    <title>From statistical dependence to the space of possible superdeterministic theories</title>
+    <updated>2025-09-27T01:52:48Z</updated>
+    <link href="https://arxiv.org/abs/2509.23047v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.23047v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's theorem demonstrates that any physical theory that is consistent with the predictions of quantum mechanics, and which satisfies some apparently innocuous assumptions, must violate the principle of local causality. It may therefore be possible to maintain local causality by rejecting one of these other assumptions instead. One possibility that has recently received significant attention involves rejecting the principle of statistical independence (SI). In this paper, we consider the frequency interpretation of SI, which states that $ρ(λ) \approx ρ(λ| Z)$, where $ρ(λ)$ is the relative frequency of an element of an ensemble being in the state $λ$, and $Z$ is a label that separates the ensemble into apparently randomly selected sub-ensembles. SI is violated when the sub-ensemble frequency $ρ(λ| Z)$ fails to be representative of the ensemble frequency $ρ(λ)$. We argue that physical theories that systematically violate SI should all be understood as superdeterministic. This perspective on SI sheds light on a number of issues that are being debated in the superdeterminism literature, especially concerning its scope and philosophical consequences. Regarding scope, we argue that superdeterministic theories fall into three categories, deterministic theories with fine-tuned initial conditions, fluke theories, and nomic exclusion theories. We also argue that retrocausal and invariant set theories need not violate SI, which is contrary to how they are normally presented. Regarding philosophical implications, we argue that superdeterminism is incompatible with free will according to some prominent compatibilist accounts. We also argue that although superdeterminism is conspiratorial, it is not unscientific, but pre-scientific.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-27T01:52:48Z</published>
+    <arxiv:comment>Forthcoming in The European Journal for Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Mordecai Waegell</name>
+    </author>
+    <author>
+      <name>Kelvin J. McQueen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21891v2</id>
+    <title>AgentPack: A Dataset of Code Changes, Co-Authored by Agents and Humans</title>
+    <updated>2026-03-27T04:56:49Z</updated>
+    <link href="https://arxiv.org/abs/2509.21891v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21891v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Fine-tuning large language models for code editing has typically relied on mining commits and pull requests. The working hypothesis has been that commit messages describe human intent in natural language, and patches to code describe the changes that implement that intent. However, much of the previously collected data is noisy: commit messages are terse, human-written commits commingle several unrelated edits, and many commits come from simple, rule-based bots.
+  The recent adoption of software engineering agents changes this landscape. Code changes \emph{co-authored} by humans and agents are often accompanied by substantially more explicit natural-language descriptions of intent and rationale. Moreover, when these changes land in public repositories, they are implicitly filtered by humans: maintainers discard low-quality commits to their projects.
+  We present AgentPack, a corpus of 1.8M code edits co-authored by Claude Code, OpenAI Codex, and Cursor Agent across public GitHub projects up to early October 2025. We describe the identification and curation pipeline, quantify adoption trends of these agents, and analyze the structural properties of the edits. Finally, we show that models fine-tuned on AgentPack can outperform models trained on prior human-only commit corpora, highlighting the potential of using public data from software engineering agents to train future code-editing models.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-26T05:28:22Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Yangtian Zi</name>
+    </author>
+    <author>
+      <name>Zixuan Wu</name>
+    </author>
+    <author>
+      <name>Aleksander Boruch-Gruszecki</name>
+    </author>
+    <author>
+      <name>Jonathan Bell</name>
+    </author>
+    <author>
+      <name>Arjun Guha</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.16170v1</id>
+    <title>UniMRSeg: Unified Modality-Relax Segmentation via Hierarchical Self-Supervised Compensation</title>
+    <updated>2025-09-19T17:29:25Z</updated>
+    <link href="https://arxiv.org/abs/2509.16170v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.16170v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-modal image segmentation faces real-world deployment challenges from incomplete/corrupted modalities degrading performance. While existing methods address training-inference modality gaps via specialized per-combination models, they introduce high deployment costs by requiring exhaustive model subsets and model-modality matching. In this work, we propose a unified modality-relax segmentation network (UniMRSeg) through hierarchical self-supervised compensation (HSSC). Our approach hierarchically bridges representation gaps between complete and incomplete modalities across input, feature and output levels. %
+First, we adopt modality reconstruction with the hybrid shuffled-masking augmentation, encouraging the model to learn the intrinsic modality characteristics and generate meaningful representations for missing modalities through cross-modal fusion. %
+Next, modality-invariant contrastive learning implicitly compensates the feature space distance among incomplete-complete modality pairs. Furthermore, the proposed lightweight reverse attention adapter explicitly compensates for the weak perceptual semantics in the frozen encoder. Last, UniMRSeg is fine-tuned under the hybrid consistency constraint to ensure stable prediction under all modality combinations without large performance fluctuations. Without bells and whistles, UniMRSeg significantly outperforms the state-of-the-art methods under diverse missing modality scenarios on MRI-based brain tumor segmentation, RGB-D semantic segmentation, RGB-D/T salient object segmentation. The code will be released at https://github.com/Xiaoqi-Zhao-DLUT/UniMRSeg.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-19T17:29:25Z</published>
+    <arxiv:comment>Accepted by NeurIPS 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Xiaoqi Zhao</name>
+    </author>
+    <author>
+      <name>Youwei Pang</name>
+    </author>
+    <author>
+      <name>Chenyang Yu</name>
+    </author>
+    <author>
+      <name>Lihe Zhang</name>
+    </author>
+    <author>
+      <name>Huchuan Lu</name>
+    </author>
+    <author>
+      <name>Shijian Lu</name>
+    </author>
+    <author>
+      <name>Georges El Fakhri</name>
+    </author>
+    <author>
+      <name>Xiaofeng Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.14493v1</id>
+    <title>Translate, then Detect: Leveraging Machine Translation for Cross-Lingual Toxicity Classification</title>
+    <updated>2025-09-17T23:58:07Z</updated>
+    <link href="https://arxiv.org/abs/2509.14493v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.14493v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multilingual toxicity detection remains a significant challenge due to the scarcity of training data and resources for many languages. While prior work has leveraged the translate-test paradigm to support cross-lingual transfer across a range of classification tasks, the utility of translation in supporting toxicity detection at scale remains unclear. In this work, we conduct a comprehensive comparison of translation-based and language-specific/multilingual classification pipelines. We find that translation-based pipelines consistently outperform out-of-distribution classifiers in 81.3% of cases (13 of 16 languages), with translation benefits strongly correlated with both the resource level of the target language and the quality of the machine translation (MT) system. Our analysis reveals that traditional classifiers outperform large language model (LLM) judges, with this advantage being particularly pronounced for low-resource languages, where translate-classify methods dominate translate-judge approaches in 6 out of 7 cases. We additionally show that MT-specific fine-tuning on LLMs yields lower refusal rates compared to standard instruction-tuned models, but it can negatively impact toxicity detection accuracy for low-resource languages. These findings offer actionable guidance for practitioners developing scalable multilingual content moderation systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-17T23:58:07Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+    <author>
+      <name>Eduardo Sánchez</name>
+    </author>
+    <author>
+      <name>David Dale</name>
+    </author>
+    <author>
+      <name>Pontus Stenetorp</name>
+    </author>
+    <author>
+      <name>Mikel Artetxe</name>
+    </author>
+    <author>
+      <name>Marta R. Costa-jussà</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.10396v1</id>
+    <title>Inpainting-Guided Policy Optimization for Diffusion Large Language Models</title>
+    <updated>2025-09-12T16:44:31Z</updated>
+    <link href="https://arxiv.org/abs/2509.10396v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.10396v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Masked diffusion large language models (dLLMs) are emerging as promising alternatives to autoregressive LLMs, offering competitive performance while supporting unique generation capabilities such as inpainting. We explore how inpainting can inform RL algorithm design for dLLMs. Aligning LLMs with reinforcement learning faces an exploration challenge: sparse reward signals and sample waste when models fail to discover correct solutions. While this inefficiency affects LLMs broadly, dLLMs offer a distinctive opportunity--their inpainting ability can guide exploration. We introduce IGPO (Inpainting Guided Policy Optimization), an RL framework that strategically inserts partial ground-truth reasoning traces during online sampling. Unlike providing full solutions, inpainting steers exploration toward promising trajectory spaces while preserving self-generated reasoning, bridging supervised fine-tuning and reinforcement learning. We apply IGPO to group-based optimization methods such as GRPO, where exploration failures cause zero advantages and gradients. IGPO restores meaningful gradients while improving sample efficiency. We also propose supervised fine-tuning on synthetically rewritten concise traces that better align with dLLM generation patterns. With additional techniques including entropy-based filtering, our training recipe yields substantial gains across three mathematical benchmarks--GSM8K, Math500, and AMC--achieving new state-of-the-art results for full-attention masked dLLMs.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-12T16:44:31Z</published>
+    <arxiv:comment>preprint; 21 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Siyan Zhao</name>
+    </author>
+    <author>
+      <name>Mengchen Liu</name>
+    </author>
+    <author>
+      <name>Jing Huang</name>
+    </author>
+    <author>
+      <name>Miao Liu</name>
+    </author>
+    <author>
+      <name>Chenyu Wang</name>
+    </author>
+    <author>
+      <name>Bo Liu</name>
+    </author>
+    <author>
+      <name>Yuandong Tian</name>
+    </author>
+    <author>
+      <name>Guan Pang</name>
+    </author>
+    <author>
+      <name>Sean Bell</name>
+    </author>
+    <author>
+      <name>Aditya Grover</name>
+    </author>
+    <author>
+      <name>Feiyu Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.22679v1</id>
+    <title>Assessing the feasibility of Large Language Models for detecting micro-behaviors in team interactions during space missions</title>
+    <updated>2025-06-27T23:06:24Z</updated>
+    <link href="https://arxiv.org/abs/2506.22679v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.22679v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We explore the feasibility of large language models (LLMs) in detecting subtle expressions of micro-behaviors in team conversations using transcripts collected during simulated space missions. Specifically, we examine zero-shot classification, fine-tuning, and paraphrase-augmented fine-tuning with encoder-only sequence classification LLMs, as well as few-shot text generation with decoder-only causal language modeling LLMs, to predict the micro-behavior associated with each conversational turn (i.e., dialogue). Our findings indicate that encoder-only LLMs, such as RoBERTa and DistilBERT, struggled to detect underrepresented micro-behaviors, particularly discouraging speech, even with weighted fine-tuning. In contrast, the instruction fine-tuned version of Llama-3.1, a decoder-only LLM, demonstrated superior performance, with the best models achieving macro F1-scores of 44% for 3-way classification and 68% for binary classification. These results have implications for the development of speech technologies aimed at analyzing team communication dynamics and enhancing training interventions in high-stakes environments such as space missions, particularly in scenarios where text is the only accessible data.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-27T23:06:24Z</published>
+    <arxiv:comment>5 pages, 4 figures. Accepted to Interspeech 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ankush Raut</name>
+    </author>
+    <author>
+      <name>Projna Paromita</name>
+    </author>
+    <author>
+      <name>Sydney Begerowski</name>
+    </author>
+    <author>
+      <name>Suzanne Bell</name>
+    </author>
+    <author>
+      <name>Theodora Chaspari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.09038v1</id>
+    <title>AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions</title>
+    <updated>2025-06-10T17:57:30Z</updated>
+    <link href="https://arxiv.org/abs/2506.09038v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.09038v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For Large Language Models (LLMs) to be reliably deployed in both everyday and high-stakes domains, knowing when not to answer is equally critical as answering correctly. Real-world user queries, which can be underspecified, ill-posed, or fundamentally unanswerable, require LLMs to reason about uncertainty and selectively abstain -- i.e., refuse to answer definitively. However, abstention remains understudied, without a systematic evaluation framework for modern LLMs. In this work, we introduce AbstentionBench, a large-scale benchmark for holistically evaluating abstention across 20 diverse datasets, including questions with unknown answers, underspecification, false premises, subjective interpretations, and outdated information. Evaluating 20 frontier LLMs reveals abstention is an unsolved problem, and one where scaling models is of little use. While recent reasoning LLMs have shown impressive results in complex problem solving, surprisingly, we find that reasoning fine-tuning degrades abstention (by $24\%$ on average), even for math and science domains on which reasoning models are explicitly trained. We find that while a carefully crafted system prompt can boost abstention in practice, it does not resolve models' fundamental inability to reason about uncertainty. We release AbstentionBench to foster research into advancing LLM reliability.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-10T17:57:30Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Polina Kirichenko</name>
+    </author>
+    <author>
+      <name>Mark Ibrahim</name>
+    </author>
+    <author>
+      <name>Kamalika Chaudhuri</name>
+    </author>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.04915v1</id>
+    <title>A Practitioner's Guide to Building ASR Models for Low-Resource Languages: A Case Study on Scottish Gaelic</title>
+    <updated>2025-06-05T11:52:08Z</updated>
+    <link href="https://arxiv.org/abs/2506.04915v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.04915v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An effective approach to the development of ASR systems for low-resource languages is to fine-tune an existing multilingual end-to-end model. When the original model has been trained on large quantities of data from many languages, fine-tuning can be effective with limited training data, even when the language in question was not present in the original training data. The fine-tuning approach has been encouraged by the availability of public-domain E2E models and is widely believed to lead to state-of-the-art results. This paper, however, challenges that belief. We show that an approach combining hybrid HMMs with self-supervised models can yield substantially better performance with limited training data. This combination allows better utilisation of all available speech and text data through continued self-supervised pre-training and semi-supervised training. We benchmark our approach on Scottish Gaelic, achieving WER reductions of 32% relative over our best fine-tuned Whisper model.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-05T11:52:08Z</published>
+    <arxiv:comment>Accepted to Interspeech 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ondřej Klejch</name>
+    </author>
+    <author>
+      <name>William Lamb</name>
+    </author>
+    <author>
+      <name>Peter Bell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.03320v1</id>
+    <title>The Future of Continual Learning in the Era of Foundation Models: Three Key Directions</title>
+    <updated>2025-06-03T19:06:41Z</updated>
+    <link href="https://arxiv.org/abs/2506.03320v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.03320v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Continual learning--the ability to acquire, retain, and refine knowledge over time--has always been fundamental to intelligence, both human and artificial. Historically, different AI paradigms have acknowledged this need, albeit with varying priorities: early expert and production systems focused on incremental knowledge consolidation, while reinforcement learning emphasised dynamic adaptation. With the rise of deep learning, deep continual learning has primarily focused on learning robust and reusable representations over time to solve sequences of increasingly complex tasks. However, the emergence of Large Language Models (LLMs) and foundation models has raised the question: Do we still need continual learning when centralised, monolithic models can tackle diverse tasks with access to internet-scale knowledge? We argue that continual learning remains essential for three key reasons: (i) continual pre-training is still necessary to ensure foundation models remain up to date, mitigating knowledge staleness and distribution shifts while integrating new information; (ii) continual fine-tuning enables models to specialise and personalise, adapting to domain-specific tasks, user preferences, and real-world constraints without full retraining, avoiding the need for computationally expensive long context-windows; (iii) continual compositionality offers a scalable and modular approach to intelligence, enabling the orchestration of foundation models and agents to be dynamically composed, recombined, and adapted. While continual pre-training and fine-tuning are explored as niche research directions, we argue it is continual compositionality that will mark the rebirth of continual learning. The future of AI will not be defined by a single static model but by an ecosystem of continually evolving and interacting models, making continual learning more relevant than ever.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-03T19:06:41Z</published>
+    <arxiv:comment>16 pages, 1 figure, accepted at TCAI workshop 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jack Bell</name>
+    </author>
+    <author>
+      <name>Luigi Quarantiello</name>
+    </author>
+    <author>
+      <name>Eric Nuertey Coleman</name>
+    </author>
+    <author>
+      <name>Lanpei Li</name>
+    </author>
+    <author>
+      <name>Malio Li</name>
+    </author>
+    <author>
+      <name>Mauro Madeddu</name>
+    </author>
+    <author>
+      <name>Elia Piccoli</name>
+    </author>
+    <author>
+      <name>Vincenzo Lomonaco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.12737v1</id>
+    <title>Chinese-Vicuna: A Chinese Instruction-following Llama-based Model</title>
+    <updated>2025-04-17T08:27:02Z</updated>
+    <link href="https://arxiv.org/abs/2504.12737v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.12737v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chinese-Vicuna is an open-source, resource-efficient language model designed to bridge the gap in Chinese instruction-following capabilities by fine-tuning Meta's LLaMA architecture using Low-Rank Adaptation (LoRA). Targeting low-resource environments, it enables cost-effective deployment on consumer GPUs (e.g., RTX-2080Ti for 7B models) and supports domain-specific adaptation in fields like healthcare and law. By integrating hybrid datasets (BELLE and Guanaco) and 4-bit quantization (QLoRA), the model achieves competitive performance in tasks such as translation, code generation, and domain-specific Q\&amp;A. The project provides a comprehensive toolkit for model conversion, CPU inference, and multi-turn dialogue interfaces, emphasizing accessibility for researchers and developers. Evaluations indicate competitive performance across medical tasks, multi-turn dialogue coherence, and real-time legal updates. Chinese-Vicuna's modular design, open-source ecosystem, and community-driven enhancements position it as a versatile foundation for Chinese LLM applications.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-17T08:27:02Z</published>
+    <arxiv:comment>Chinese-Vicuna Technique Report</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Chenghao Fan</name>
+    </author>
+    <author>
+      <name>Zhenyi Lu</name>
+    </author>
+    <author>
+      <name>Jie Tian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.16926v1</id>
+    <title>Operational equivalence and causal structure</title>
+    <updated>2025-03-21T07:43:41Z</updated>
+    <link href="https://arxiv.org/abs/2503.16926v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.16926v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In operational quantum mechanics two measurements are called operationally equivalent if they yield the same distribution of outcomes in every quantum state and hence are represented by the same operator. In this paper, I will show that the ontological models for quantum mechanics and, more generally, for any operational theory sensitively depend on which measurement we choose from the class of operationally equivalent measurements, or more precisely, which of the chosen measurements can be performed simultaneously. To this goal, I will take first three examples -- a classical theory, the EPR-Bell scenario and the Popescu-Rochlich box; then realize each example by two operationally equivalent but different operational theories -- one with a trivial and another with a non-trivial compatibility structure; and finally show that the ontological models for the different theories will be different with respect to their causal structure, contextuality, and fine-tuning.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-21T07:43:41Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Gábor Hofer-Szabó</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.19321v1</id>
+    <title>Language Bias in Self-Supervised Learning For Automatic Speech Recognition</title>
+    <updated>2025-01-31T17:16:45Z</updated>
+    <link href="https://arxiv.org/abs/2501.19321v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.19321v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Self-supervised learning (SSL) is used in deep learning to train on large datasets without the need for expensive labelling of the data. Recently, large Automatic Speech Recognition (ASR) models such as XLS-R have utilised SSL to train on over one hundred different languages simultaneously. However, deeper investigation shows that the bulk of the training data for XLS-R comes from a small number of languages. Biases learned through SSL have been shown to exist in multiple domains, but language bias in multilingual SSL ASR has not been thoroughly examined. In this paper, we utilise the Lottery Ticket Hypothesis (LTH) to identify language-specific subnetworks within XLS-R and test the performance of these subnetworks on a variety of different languages. We are able to show that when fine-tuning, XLS-R bypasses traditional linguistic knowledge and builds only on weights learned from the languages with the largest data contribution to the pretraining data.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-31T17:16:45Z</published>
+    <arxiv:comment>Accepted to Speech and Language Technology Workshop (SLT) 2024 accessible on IEEE Xplore</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Edward Storey</name>
+    </author>
+    <author>
+      <name>Naomi Harte</name>
+    </author>
+    <author>
+      <name>Peter Bell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.16720v1</id>
+    <title>One Head Eight Arms: Block Matrix based Low Rank Adaptation for CLIP-based Few-Shot Learning</title>
+    <updated>2025-01-28T05:54:55Z</updated>
+    <link href="https://arxiv.org/abs/2501.16720v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.16720v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancements in fine-tuning Vision-Language Foundation Models (VLMs) have garnered significant attention for their effectiveness in downstream few-shot learning tasks.While these recent approaches exhibits some performance improvements, they often suffer from excessive training parameters and high computational costs. To address these challenges, we propose a novel Block matrix-based low-rank adaptation framework, called Block-LoRA, for fine-tuning VLMs on downstream few-shot tasks. Inspired by recent work on Low-Rank Adaptation (LoRA), Block-LoRA partitions the original low-rank decomposition matrix of LoRA into a series of sub-matrices while sharing all down-projection sub-matrices. This structure not only reduces the number of training parameters, but also transforms certain complex matrix multiplication operations into simpler matrix addition, significantly lowering the computational cost of fine-tuning. Notably, Block-LoRA enables fine-tuning CLIP on the ImageNet few-shot benchmark using a single 24GB GPU. We also show that Block-LoRA has the more tighter bound of generalization error than vanilla LoRA. Without bells and whistles, extensive experiments demonstrate that Block-LoRA achieves competitive performance compared to state-of-the-art CLIP-based few-shot methods, while maintaining a low training parameters count and reduced computational overhead.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-28T05:54:55Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Chunpeng Zhou</name>
+    </author>
+    <author>
+      <name>Qianqian Shen</name>
+    </author>
+    <author>
+      <name>Zhi Yu</name>
+    </author>
+    <author>
+      <name>Jiajun Bu</name>
+    </author>
+    <author>
+      <name>Haishuai Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.11064v3</id>
+    <title>Reproducing EPR correlations without superluminal signalling: backward conditional probabilities and Statistical Independence</title>
+    <updated>2025-05-20T06:32:24Z</updated>
+    <link href="https://arxiv.org/abs/2501.11064v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.11064v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's theorem states that no model that respects Local Causality and Statistical Independence can account for the correlations predicted by quantum mechanics via entangled states. This paper proposes a new approach, using backward-in-time conditional probabilities, which relaxes conventional assumptions of temporal ordering while preserving Statistical Independence as a "fine-tuning condition. It is shown how such models can account for EPR/Bell correlations and, analogously, the GHZ predictions while nevertheless forbidding superluminal signalling.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-19T14:43:18Z</published>
+    <arxiv:comment>6 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>EPL, 150 (2025) 40001</arxiv:journal_ref>
+    <author>
+      <name>Simon Friederich</name>
+    </author>
+    <arxiv:doi>10.1209/0295-5075/adcbd0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1209/0295-5075/adcbd0" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.02018v1</id>
+    <title>Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs</title>
+    <updated>2025-01-02T15:15:38Z</updated>
+    <link href="https://arxiv.org/abs/2501.02018v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.02018v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have been shown to be susceptible to jailbreak attacks, or adversarial attacks used to illicit high risk behavior from a model. Jailbreaks have been exploited by cybercriminals and blackhat actors to cause significant harm, highlighting the critical need to safeguard widely-deployed models. Safeguarding approaches, which include fine-tuning models or having LLMs "self-reflect", may lengthen the inference time of a model, incur a computational penalty, reduce the semantic fluency of an output, and restrict ``normal'' model behavior. Importantly, these Safety-Performance Trade-offs (SPTs) remain an understudied area. In this work, we introduce a novel safeguard, called SafeNudge, that combines Controlled Text Generation with "nudging", or using text interventions to change the behavior of a model. SafeNudge triggers during text-generation while a jailbreak attack is being executed, and can reduce successful jailbreak attempts by 30% by guiding the LLM towards a safe responses. It adds minimal latency to inference and has a negligible impact on the semantic fluency of outputs. Further, we allow for tunable SPTs. SafeNudge is open-source and available through https://pypi.org/, and is compatible with models loaded with the Hugging Face "transformers" library.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-02T15:15:38Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Joao Fonseca</name>
+    </author>
+    <author>
+      <name>Andrew Bell</name>
+    </author>
+    <author>
+      <name>Julia Stoyanovich</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.16469v2</id>
+    <title>Chained Tuning Leads to Biased Forgetting</title>
+    <updated>2024-12-24T19:43:57Z</updated>
+    <link href="https://arxiv.org/abs/2412.16469v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.16469v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are often fine-tuned for use on downstream tasks, though this can degrade capabilities learned during previous training. This phenomenon, often referred to as catastrophic forgetting, has important potential implications for the safety of deployed models. In this work, we first show that models trained on downstream tasks forget their safety tuning to a greater extent than models trained in the opposite order. Second, we show that forgetting disproportionately impacts safety information about certain groups. To quantify this phenomenon, we define a new metric we term biased forgetting. We conduct a systematic evaluation of the effects of task ordering on forgetting and apply mitigations that can help the model recover from the forgetting observed. We hope our findings can better inform methods for chaining the finetuning of LLMs in continual learning settings to enable training of safer and less toxic models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-21T03:51:58Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Megan Ung</name>
+    </author>
+    <author>
+      <name>Alicia Sun</name>
+    </author>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+    <author>
+      <name>Bhaktipriya Radharapu</name>
+    </author>
+    <author>
+      <name>Levent Sagun</name>
+    </author>
+    <author>
+      <name>Adina Williams</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.11397v2</id>
+    <title>Generalizing Bell nonlocality without global causal assumptions</title>
+    <updated>2026-05-28T16:26:48Z</updated>
+    <link href="https://arxiv.org/abs/2411.11397v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.11397v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell scenarios are multipartite scenarios that exclude any communication between parties. This constraint leads to a strict hierarchy of correlation sets in such scenarios, namely, classical, quantum, and nonsignaling. However, without any constraints on communication between the parties, they can realize arbitrary correlations by exchanging only classical systems. Here we consider a multipartite scenario where the parties can engage in at most a single round of communication, i.e., each party is allowed to receive a system once, implement any local intervention on it, and send out the resulting system once. While no global assumption about causal relations between parties is assumed in this scenario, we do make a causal assumption local to each party, i.e., the input received by it causally precedes the output it sends out. We then introduce antinomicity, a notion of nonclassicality for correlations in such scenarios, and prove the existence of a strict hierarchy of correlation sets classified by their antinomicity. Antinomicity serves as a generalization of Bell nonlocality: when all the parties discard their output systems (i.e., in a nonsignaling scenario), it is mathematically equivalent to Bell nonlocality. Like Bell nonlocality, it can be understood as an instance of fine-tuning, one that is necessary in any classical model of cyclic causation that avoids time-travel antinomies but allows antinomic correlations. Furthermore, antinomicity resolves a long-standing puzzle, i.e., the failure of causal inequality violations as device-independent witnesses of nonclassicality. Antinomicity implies causal inequality violations, but not conversely.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-18T09:21:12Z</published>
+    <arxiv:comment>7 pages, 2 figures, short version of arXiv:2307.02565 with an emphasis on device-independent aspects; v2 updates references and adds an acknowledgement</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ravi Kunjwal</name>
+    </author>
+    <author>
+      <name>Ognyan Oreshkov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.08870v1</id>
+    <title>SAM2-UNet: Segment Anything 2 Makes Strong Encoder for Natural and Medical Image Segmentation</title>
+    <updated>2024-08-16T17:55:38Z</updated>
+    <link href="https://arxiv.org/abs/2408.08870v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.08870v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Image segmentation plays an important role in vision understanding. Recently, the emerging vision foundation models continuously achieved superior performance on various tasks. Following such success, in this paper, we prove that the Segment Anything Model 2 (SAM2) can be a strong encoder for U-shaped segmentation models. We propose a simple but effective framework, termed SAM2-UNet, for versatile image segmentation. Specifically, SAM2-UNet adopts the Hiera backbone of SAM2 as the encoder, while the decoder uses the classic U-shaped design. Additionally, adapters are inserted into the encoder to allow parameter-efficient fine-tuning. Preliminary experiments on various downstream tasks, such as camouflaged object detection, salient object detection, marine animal segmentation, mirror detection, and polyp segmentation, demonstrate that our SAM2-UNet can simply beat existing specialized state-of-the-art methods without bells and whistles. Project page: \url{https://github.com/WZH0120/SAM2-UNet}.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-16T17:55:38Z</published>
+    <arxiv:comment>Technical Report</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <arxiv:journal_ref>Visual Intelligence, Volume 4, article number 2, (2026)</arxiv:journal_ref>
+    <author>
+      <name>Xinyu Xiong</name>
+    </author>
+    <author>
+      <name>Zihuang Wu</name>
+    </author>
+    <author>
+      <name>Shuangyi Tan</name>
+    </author>
+    <author>
+      <name>Wenxue Li</name>
+    </author>
+    <author>
+      <name>Feilong Tang</name>
+    </author>
+    <author>
+      <name>Ying Chen</name>
+    </author>
+    <author>
+      <name>Siying Li</name>
+    </author>
+    <author>
+      <name>Jie Ma</name>
+    </author>
+    <author>
+      <name>Guanbin Li</name>
+    </author>
+    <arxiv:doi>10.1007/s44267-025-00106-w</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s44267-025-00106-w" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.18242v1</id>
+    <title>ConStyle v2: A Strong Prompter for All-in-One Image Restoration</title>
+    <updated>2024-06-26T10:46:44Z</updated>
+    <link href="https://arxiv.org/abs/2406.18242v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.18242v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper introduces ConStyle v2, a strong plug-and-play prompter designed to output clean visual prompts and assist U-Net Image Restoration models in handling multiple degradations. The joint training process of IRConStyle, an Image Restoration framework consisting of ConStyle and a general restoration network, is divided into two stages: first, pre-training ConStyle alone, and then freezing its weights to guide the training of the general restoration network. Three improvements are proposed in the pre-training stage to train ConStyle: unsupervised pre-training, adding a pretext task (i.e. classification), and adopting knowledge distillation. Without bells and whistles, we can get ConStyle v2, a strong prompter for all-in-one Image Restoration, in less than two GPU days and doesn't require any fine-tuning. Extensive experiments on Restormer (transformer-based), NAFNet (CNN-based), MAXIM-1S (MLP-based), and a vanilla CNN network demonstrate that ConStyle v2 can enhance any U-Net style Image Restoration models to all-in-one Image Restoration models. Furthermore, models guided by the well-trained ConStyle v2 exhibit superior performance in some specific degradation compared to ConStyle.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-26T10:46:44Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Dongqi Fan</name>
+    </author>
+    <author>
+      <name>Junhao Zhang</name>
+    </author>
+    <author>
+      <name>Liang Chang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.16677v2</id>
+    <title>Crossmodal ASR Error Correction with Discrete Speech Units</title>
+    <updated>2024-09-13T01:56:05Z</updated>
+    <link href="https://arxiv.org/abs/2405.16677v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.16677v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>ASR remains unsatisfactory in scenarios where the speaking style diverges from that used to train ASR systems, resulting in erroneous transcripts. To address this, ASR Error Correction (AEC), a post-ASR processing approach, is required. In this work, we tackle an understudied issue: the Low-Resource Out-of-Domain (LROOD) problem, by investigating crossmodal AEC on very limited downstream data with 1-best hypothesis transcription. We explore pre-training and fine-tuning strategies and uncover an ASR domain discrepancy phenomenon, shedding light on appropriate training schemes for LROOD data. Moreover, we propose the incorporation of discrete speech units to align with and enhance the word embeddings for improving AEC quality. Results from multiple corpora and several evaluation metrics demonstrate the feasibility and efficacy of our proposed AEC approach on LROOD data as well as its generalizability and superiority on large-scale data. Finally, a study on speech emotion recognition confirms that our model produces ASR error-robust transcripts suitable for downstream applications.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-26T19:58:38Z</published>
+    <arxiv:comment>Accepted to IEEE SLT 2024</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Yuanchao Li</name>
+    </author>
+    <author>
+      <name>Pinzhen Chen</name>
+    </author>
+    <author>
+      <name>Peter Bell</name>
+    </author>
+    <author>
+      <name>Catherine Lai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.03657v2</id>
+    <title>Quantum interpretations, causality and quantum computation</title>
+    <updated>2026-05-23T11:03:31Z</updated>
+    <link href="https://arxiv.org/abs/2405.03657v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.03657v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The interpretation of quantum mechanics continues to be debated, and quantum nonlocality accentuates the puzzle. Quantum interpretations can be classified broadly into two types: realist interpretations, which assert that quantum states describe objective reality (even if hidden or branching), and subjective interpretations, which treat quantum states as observer-dependent information or beliefs about the system. Here we study the implication of quantum interpretations for causal explanations of Bell nonlocal correlations, and show that a given interpretation type carries an inherent commitment to a preferred causal structure. Specifically, we find that realist interpretations entail a classical causal model, and thus require Fine-Tuning to prevent superluminal signaling, while subjective interpretations are found to entail a framework of nonclassical causal models. The implications of our results for one-way quantum computation and computation-based Bell nonlocality are studied.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-06T17:33:42Z</published>
+    <arxiv:comment>8 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Physics Letters A, 576, 131422 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Vivek Kumar</name>
+    </author>
+    <author>
+      <name>M. P. Singh</name>
+    </author>
+    <author>
+      <name>R. Srikanth</name>
+    </author>
+    <arxiv:doi>10.1016/j.physleta.2026.131422</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.physleta.2026.131422" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.01002v2</id>
+    <title>Spider: A Unified Framework for Context-dependent Concept Segmentation</title>
+    <updated>2024-05-28T04:09:30Z</updated>
+    <link href="https://arxiv.org/abs/2405.01002v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.01002v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Different from the context-independent (CI) concepts such as human, car, and airplane, context-dependent (CD) concepts require higher visual understanding ability, such as camouflaged object and medical lesion. Despite the rapid advance of many CD understanding tasks in respective branches, the isolated evolution leads to their limited cross-domain generalisation and repetitive technique innovation. Since there is a strong coupling relationship between foreground and background context in CD tasks, existing methods require to train separate models in their focused domains. This restricts their real-world CD concept understanding towards artificial general intelligence (AGI). We propose a unified model with a single set of parameters, Spider, which only needs to be trained once. With the help of the proposed concept filter driven by the image-mask group prompt, Spider is able to understand and distinguish diverse strong context-dependent concepts to accurately capture the Prompter's intention. Without bells and whistles, Spider significantly outperforms the state-of-the-art specialized models in 8 different context-dependent segmentation tasks, including 4 natural scenes (salient, camouflaged, and transparent objects and shadow) and 4 medical lesions (COVID-19, polyp, breast, and skin lesion with color colonoscopy, CT, ultrasound, and dermoscopy modalities). Besides, Spider shows obvious advantages in continuous learning. It can easily complete the training of new tasks by fine-tuning parameters less than 1\% and bring a tolerable performance degradation of less than 5\% for all old tasks. The source code will be publicly available at \href{https://github.com/Xiaoqi-Zhao-DLUT/Spider-UniCDSeg}{Spider-UniCDSeg}.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-02T04:58:29Z</published>
+    <arxiv:comment>Accepted by ICML 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Xiaoqi Zhao</name>
+    </author>
+    <author>
+      <name>Youwei Pang</name>
+    </author>
+    <author>
+      <name>Wei Ji</name>
+    </author>
+    <author>
+      <name>Baicheng Sheng</name>
+    </author>
+    <author>
+      <name>Jiaming Zuo</name>
+    </author>
+    <author>
+      <name>Lihe Zhang</name>
+    </author>
+    <author>
+      <name>Huchuan Lu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.15750v1</id>
+    <title>iDAT: inverse Distillation Adapter-Tuning</title>
+    <updated>2024-03-23T07:36:58Z</updated>
+    <link href="https://arxiv.org/abs/2403.15750v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.15750v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Adapter-Tuning (AT) method involves freezing a pre-trained model and introducing trainable adapter modules to acquire downstream knowledge, thereby calibrating the model for better adaptation to downstream tasks. This paper proposes a distillation framework for the AT method instead of crafting a carefully designed adapter module, which aims to improve fine-tuning performance. For the first time, we explore the possibility of combining the AT method with knowledge distillation. Via statistical analysis, we observe significant differences in the knowledge acquisition between adapter modules of different models. Leveraging these differences, we propose a simple yet effective framework called inverse Distillation Adapter-Tuning (iDAT). Specifically, we designate the smaller model as the teacher and the larger model as the student. The two are jointly trained, and online knowledge distillation is applied to inject knowledge of different perspective to student model, and significantly enhance the fine-tuning performance on downstream tasks. Extensive experiments on the VTAB-1K benchmark with 19 image classification tasks demonstrate the effectiveness of iDAT. The results show that using existing AT method within our iDAT framework can further yield a 2.66% performance gain, with only an additional 0.07M trainable parameters. Our approach compares favorably with state-of-the-arts without bells and whistles. Our code is available at https://github.com/JCruan519/iDAT.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-23T07:36:58Z</published>
+    <arxiv:comment>10 pages, 9 figures, 13 tables. This paper has been accepted by ICME 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Jiacheng Ruan</name>
+    </author>
+    <author>
+      <name>Jingsheng Gao</name>
+    </author>
+    <author>
+      <name>Mingye Xie</name>
+    </author>
+    <author>
+      <name>Daize Dong</name>
+    </author>
+    <author>
+      <name>Suncheng Xiang</name>
+    </author>
+    <author>
+      <name>Ting Liu</name>
+    </author>
+    <author>
+      <name>Yuzhuo Fu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.14814v3</id>
+    <title>The opportunities and risks of large language models in mental health</title>
+    <updated>2024-08-01T15:15:34Z</updated>
+    <link href="https://arxiv.org/abs/2403.14814v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.14814v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Global rates of mental health concerns are rising, and there is increasing realization that existing models of mental health care will not adequately expand to meet the demand. With the emergence of large language models (LLMs) has come great optimism regarding their promise to create novel, large-scale solutions to support mental health. Despite their nascence, LLMs have already been applied to mental health related tasks. In this paper, we summarize the extant literature on efforts to use LLMs to provide mental health education, assessment, and intervention and highlight key opportunities for positive impact in each area. We then highlight risks associated with LLMs' application to mental health and encourage the adoption of strategies to mitigate these risks. The urgent need for mental health support must be balanced with responsible development, testing, and deployment of mental health LLMs. It is especially critical to ensure that mental health LLMs are fine-tuned for mental health, enhance mental health equity, and adhere to ethical standards and that people, including those with lived experience with mental health concerns, are involved in all stages from development through deployment. Prioritizing these efforts will minimize potential harms to mental health and maximize the likelihood that LLMs will positively impact mental health globally.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-21T19:59:52Z</published>
+    <arxiv:comment>15 pages, 2 tables, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>JMIR Ment Health 2024;11:e59479</arxiv:journal_ref>
+    <author>
+      <name>Hannah R. Lawrence</name>
+    </author>
+    <author>
+      <name>Renee A. Schneider</name>
+    </author>
+    <author>
+      <name>Susan B. Rubin</name>
+    </author>
+    <author>
+      <name>Maja J. Mataric</name>
+    </author>
+    <author>
+      <name>Daniel J. McDuff</name>
+    </author>
+    <author>
+      <name>Megan Jones Bell</name>
+    </author>
+    <arxiv:doi>10.2196/59479</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.2196/59479" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.16389v1</id>
+    <title>MoZIP: A Multilingual Benchmark to Evaluate Large Language Models in Intellectual Property</title>
+    <updated>2024-02-26T08:27:50Z</updated>
+    <link href="https://arxiv.org/abs/2402.16389v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.16389v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have demonstrated impressive performance in various natural language processing (NLP) tasks. However, there is limited understanding of how well LLMs perform in specific domains (e.g, the intellectual property (IP) domain). In this paper, we contribute a new benchmark, the first Multilingual-oriented quiZ on Intellectual Property (MoZIP), for the evaluation of LLMs in the IP domain. The MoZIP benchmark includes three challenging tasks: IP multiple-choice quiz (IPQuiz), IP question answering (IPQA), and patent matching (PatentMatch). In addition, we also develop a new IP-oriented multilingual large language model (called MoZi), which is a BLOOMZ-based model that has been supervised fine-tuned with multilingual IP-related text data. We evaluate our proposed MoZi model and four well-known LLMs (i.e., BLOOMZ, BELLE, ChatGLM and ChatGPT) on the MoZIP benchmark. Experimental results demonstrate that MoZi outperforms BLOOMZ, BELLE and ChatGLM by a noticeable margin, while it had lower scores compared with ChatGPT. Notably, the performance of current LLMs on the MoZIP benchmark has much room for improvement, and even the most powerful ChatGPT does not reach the passing level. Our source code, data, and models are available at \url{https://github.com/AI-for-Science/MoZi}.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-26T08:27:50Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>LREC-COLING 2024</arxiv:journal_ref>
+    <author>
+      <name>Shiwen Ni</name>
+    </author>
+    <author>
+      <name>Minghuan Tan</name>
+    </author>
+    <author>
+      <name>Yuelin Bai</name>
+    </author>
+    <author>
+      <name>Fuqiang Niu</name>
+    </author>
+    <author>
+      <name>Min Yang</name>
+    </author>
+    <author>
+      <name>Bowen Zhang</name>
+    </author>
+    <author>
+      <name>Ruifeng Xu</name>
+    </author>
+    <author>
+      <name>Xiaojun Chen</name>
+    </author>
+    <author>
+      <name>Chengming Li</name>
+    </author>
+    <author>
+      <name>Xiping Hu</name>
+    </author>
+    <author>
+      <name>Ye Li</name>
+    </author>
+    <author>
+      <name>Jianping Fan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.07533v4</id>
+    <title>VILA: On Pre-training for Visual Language Models</title>
+    <updated>2024-05-16T21:21:30Z</updated>
+    <link href="https://arxiv.org/abs/2312.07533v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.07533v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual language models (VLMs) rapidly progressed with the recent success of large language models. There have been growing efforts on visual instruction tuning to extend the LLM with visual inputs, but lacks an in-depth study of the visual language pre-training process, where the model learns to perform joint modeling on both modalities. In this work, we examine the design options for VLM pre-training by augmenting LLM towards VLM through step-by-step controllable comparisons. We introduce three main findings: (1) freezing LLMs during pre-training can achieve decent zero-shot performance, but lack in-context learning capability, which requires unfreezing the LLM; (2) interleaved pre-training data is beneficial whereas image-text pairs alone are not optimal; (3) re-blending text-only instruction data to image-text data during instruction fine-tuning not only remedies the degradation of text-only tasks, but also boosts VLM task accuracy. With an enhanced pre-training recipe we build VILA, a Visual Language model family that consistently outperforms the state-of-the-art models, e.g., LLaVA-1.5, across main benchmarks without bells and whistles. Multi-modal pre-training also helps unveil appealing properties of VILA, including multi-image reasoning, enhanced in-context learning, and better world knowledge.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-12T18:58:18Z</published>
+    <arxiv:comment>CVPR 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Ji Lin</name>
+    </author>
+    <author>
+      <name>Hongxu Yin</name>
+    </author>
+    <author>
+      <name>Wei Ping</name>
+    </author>
+    <author>
+      <name>Yao Lu</name>
+    </author>
+    <author>
+      <name>Pavlo Molchanov</name>
+    </author>
+    <author>
+      <name>Andrew Tao</name>
+    </author>
+    <author>
+      <name>Huizi Mao</name>
+    </author>
+    <author>
+      <name>Jan Kautz</name>
+    </author>
+    <author>
+      <name>Mohammad Shoeybi</name>
+    </author>
+    <author>
+      <name>Song Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.18465v2</id>
+    <title>The standard no-signalling constraints in Bell scenarios are neither sufficient nor necessary for preventing superluminal signalling with general interventions</title>
+    <updated>2025-01-24T15:56:05Z</updated>
+    <link href="https://arxiv.org/abs/2311.18465v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.18465v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Non-classical correlations resulting from entangled quantum systems have sparked debates about the compatibility of quantum theory and relativity, and about the right way to think about causation. Key to a causal theory is that superluminal signalling is forbidden, which holds in quantum theory. In Bell scenarios, relativistic causality principles like no superluminal signalling are often assumed to follow from the standard no-signalling constraints on correlations. We explore the connections between a range of relativistic principles, including no superluminal signalling and no causal loops, and constraints on correlations that can arise with arbitrary interventions, within multi-party Bell scenarios. This includes standard no-signalling conditions and proposed relaxations allowing phenomena like jamming, where it was suggested that superluminal signalling and causal loops remain impossible. Using our recent framework combining relativistic principles with causal modelling, we show that any theory (classical or non-classical) allowing jamming must rely on causal fine-tuning and superluminal causal influences. Additionally, we show that jamming theories can lead to superluminal signalling in certain situations, highlighting limitations for their physicality. However, we identify cases where jamming correlations avoid superluminal signalling under general interventions, demonstrating that standard no-signalling constraints are not necessary for this purpose. We also show that these constraints are insufficient to rule out superluminal signalling and are neither necessary nor sufficient for ensuring no causal loops under general interventions. Finally, we derive necessary and sufficient conditions for ruling out superluminal signalling and operationally detectable causal loops, solidifying our understanding of relativistic causality principles in information processing tasks in space-time.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-30T11:17:49Z</published>
+    <arxiv:comment>25+14 pages. Version 2 includes a new result about space-time configurations for jamming in more than 2 spatial dimensions, an improved introduction and a title update. This paper contains improved versions of some (previously unpublished) results from V. Vilasini's PhD thesis arXiv:2102.02393</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>V. Vilasini</name>
+    </author>
+    <author>
+      <name>Roger Colbeck</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.03774v2</id>
+    <title>Meta-Adapter: An Online Few-shot Learner for Vision-Language Model</title>
+    <updated>2024-01-11T06:03:56Z</updated>
+    <link href="https://arxiv.org/abs/2311.03774v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.03774v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The contrastive vision-language pre-training, known as CLIP, demonstrates remarkable potential in perceiving open-world visual concepts, enabling effective zero-shot image recognition. Nevertheless, few-shot learning methods based on CLIP typically require offline fine-tuning of the parameters on few-shot samples, resulting in longer inference time and the risk of over-fitting in certain domains. To tackle these challenges, we propose the Meta-Adapter, a lightweight residual-style adapter, to refine the CLIP features guided by the few-shot samples in an online manner. With a few training samples, our method can enable effective few-shot learning capabilities and generalize to unseen data or tasks without additional fine-tuning, achieving competitive performance and high efficiency. Without bells and whistles, our approach outperforms the state-of-the-art online few-shot learning method by an average of 3.6\% on eight image classification datasets with higher inference speed. Furthermore, our model is simple and flexible, serving as a plug-and-play module directly applicable to downstream tasks. Without further fine-tuning, Meta-Adapter obtains notable performance improvements in open-vocabulary object detection and segmentation tasks.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-07T07:27:16Z</published>
+    <arxiv:comment>Accepted by NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Cheng Cheng</name>
+    </author>
+    <author>
+      <name>Lin Song</name>
+    </author>
+    <author>
+      <name>Ruoyi Xue</name>
+    </author>
+    <author>
+      <name>Hang Wang</name>
+    </author>
+    <author>
+      <name>Hongbin Sun</name>
+    </author>
+    <author>
+      <name>Yixiao Ge</name>
+    </author>
+    <author>
+      <name>Ying Shan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.10012v4</id>
+    <title>Ring-A-Bell! How Reliable are Concept Removal Methods for Diffusion Models?</title>
+    <updated>2024-06-07T02:48:59Z</updated>
+    <link href="https://arxiv.org/abs/2310.10012v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.10012v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Diffusion models for text-to-image (T2I) synthesis, such as Stable Diffusion (SD), have recently demonstrated exceptional capabilities for generating high-quality content. However, this progress has raised several concerns of potential misuse, particularly in creating copyrighted, prohibited, and restricted content, or NSFW (not safe for work) images. While efforts have been made to mitigate such problems, either by implementing a safety filter at the evaluation stage or by fine-tuning models to eliminate undesirable concepts or styles, the effectiveness of these safety measures in dealing with a wide range of prompts remains largely unexplored. In this work, we aim to investigate these safety mechanisms by proposing one novel concept retrieval algorithm for evaluation. We introduce Ring-A-Bell, a model-agnostic red-teaming tool for T2I diffusion models, where the whole evaluation can be prepared in advance without prior knowledge of the target model. Specifically, Ring-A-Bell first performs concept extraction to obtain holistic representations for sensitive and inappropriate concepts. Subsequently, by leveraging the extracted concept, Ring-A-Bell automatically identifies problematic prompts for diffusion models with the corresponding generation of inappropriate content, allowing the user to assess the reliability of deployed safety mechanisms. Finally, we empirically validate our method by testing online services such as Midjourney and various methods of concept removal. Our results show that Ring-A-Bell, by manipulating safe prompting benchmarks, can transform prompts that were originally regarded as safe to evade existing safety mechanisms, thus revealing the defects of the so-called safety mechanisms which could practically lead to the generation of harmful contents. Our codes are available at https://github.com/chiayi-hsu/Ring-A-Bell.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-16T02:11:20Z</published>
+    <arxiv:comment>This paper has already been accepted by ICLR 2024. This version is the camera-ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yu-Lin Tsai</name>
+    </author>
+    <author>
+      <name>Chia-Yi Hsu</name>
+    </author>
+    <author>
+      <name>Chulin Xie</name>
+    </author>
+    <author>
+      <name>Chih-Hsun Lin</name>
+    </author>
+    <author>
+      <name>Jia-You Chen</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Pin-Yu Chen</name>
+    </author>
+    <author>
+      <name>Chia-Mu Yu</name>
+    </author>
+    <author>
+      <name>Chun-Ying Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.12987v4</id>
+    <title>Relating Wigner's Friend Scenarios to Nonclassical Causal Compatibility, Monogamy Relations, and Fine Tuning</title>
+    <updated>2024-09-25T14:13:45Z</updated>
+    <link href="https://arxiv.org/abs/2309.12987v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.12987v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Nonclassical causal modeling was developed in order to explain violations of Bell inequalities while adhering to relativistic causal structure and faithfulness -- that is, avoiding fine-tuned causal explanations. Recently, a no-go theorem that can be viewed as being stronger than Bell's theorem has been derived, based on extensions of the Wigner's friend thought experiment: the Local Friendliness (LF) no-go theorem. Here we show that the LF no-go theorem poses formidable challenges for the field of causal modeling, even when nonclassical and/or cyclic causal explanations are considered. We first recast the LF inequalities, one of the key elements of the LF no-go theorem, as special cases of monogamy relations stemming from a statistical marginal problem. We then further recast LF inequalities as causal compatibility inequalities stemming from a nonclassical causal marginal problem, for a causal structure implied by well-motivated causal-metaphysical assumptions. We find that the LF inequalities emerge from this causal structure even when one allows the latent causes of observed events to admit post-quantum descriptions, such as in a generalized probabilistic theory or in an even more exotic theory. We further prove that no nonclassical causal model can explain violations of LF inequalities without violating the No Fine-Tuning principle. Finally, we note that these obstacles cannot be overcome even if one appeals to cyclic causal models, and we discuss potential directions for further extensions of the causal modeling framework.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-22T16:32:39Z</published>
+    <arxiv:comment>16+5 pages, 9 figures. Accepted in Quantum</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 8, 1485 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Yìlè Yīng</name>
+    </author>
+    <author>
+      <name>Marina Maciel Ansanelli</name>
+    </author>
+    <author>
+      <name>Andrea Di Biagio</name>
+    </author>
+    <author>
+      <name>Elie Wolfe</name>
+    </author>
+    <author>
+      <name>David Schmid</name>
+    </author>
+    <author>
+      <name>Eric Gama Cavalcanti</name>
+    </author>
+    <arxiv:doi>10.22331/q-2024-09-26-1485</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2024-09-26-1485" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.10121v3</id>
+    <title>Pre-training on Synthetic Driving Data for Trajectory Prediction</title>
+    <updated>2024-08-29T02:35:21Z</updated>
+    <link href="https://arxiv.org/abs/2309.10121v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.10121v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accumulating substantial volumes of real-world driving data proves pivotal in the realm of trajectory forecasting for autonomous driving. Given the heavy reliance of current trajectory forecasting models on data-driven methodologies, we aim to tackle the challenge of learning general trajectory forecasting representations under limited data availability. We propose a pipeline-level solution to mitigate the issue of data scarcity in trajectory forecasting. The solution is composed of two parts: firstly, we adopt HD map augmentation and trajectory synthesis for generating driving data, and then we learn representations by pre-training on them. Specifically, we apply vector transformations to reshape the maps, and then employ a rule-based model to generate trajectories on both original and augmented scenes; thus enlarging the driving data without collecting additional real ones. To foster the learning of general representations within this augmented dataset, we comprehensively explore the different pre-training strategies, including extending the concept of a Masked AutoEncoder (MAE) for trajectory forecasting. Without bells and whistles, our proposed pipeline-level solution is general, simple, yet effective: we conduct extensive experiments to demonstrate the effectiveness of our data expansion and pre-training strategies, which outperform the baseline prediction model by large margins, e.g. 5.04%, 3.84% and 8.30% in terms of $MR_6$, $minADE_6$ and $minFDE_6$. The pre-training dataset and the codes for pre-training and fine-tuning are released at https://github.com/yhli123/Pretraining_on_Synthetic_Driving_Data_for_Trajectory_Prediction.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-18T19:49:22Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yiheng Li</name>
+    </author>
+    <author>
+      <name>Seth Z. Zhao</name>
+    </author>
+    <author>
+      <name>Chenfeng Xu</name>
+    </author>
+    <author>
+      <name>Chen Tang</name>
+    </author>
+    <author>
+      <name>Chenran Li</name>
+    </author>
+    <author>
+      <name>Mingyu Ding</name>
+    </author>
+    <author>
+      <name>Masayoshi Tomizuka</name>
+    </author>
+    <author>
+      <name>Wei Zhan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.15987v1</id>
+    <title>FPTQ: Fine-grained Post-Training Quantization for Large Language Models</title>
+    <updated>2023-08-30T12:18:18Z</updated>
+    <link href="https://arxiv.org/abs/2308.15987v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.15987v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the era of large-scale language models, the substantial parameter size poses significant challenges for deployment. Being a prevalent compression technique, quantization has emerged as the mainstream practice to tackle this issue, which is mainly centered on two recipes W8A8 and W4A16 (i.e. weights and activations in such bit widths). In this study, we propose a novel W4A8 post-training quantization method for the available open-sourced LLMs, which combines the advantages of both two recipes. Therefore, we can leverage the benefit in the I/O utilization of 4-bit weight quantization and the acceleration due to 8-bit matrix computation. Nevertheless, the W4A8 faces notorious performance degradation. As a remedy, we involve layerwise activation quantization strategies which feature a novel logarithmic equalization for most intractable layers, and we combine them with fine-grained weight quantization. Without whistles and bells, we eliminate the necessity for further fine-tuning and obtain the state-of-the-art W4A8 quantized performance on BLOOM, LLaMA, and LLaMA-2 on standard benchmarks. We confirm that the W4A8 quantization is achievable for the deployment of large language models, fostering their wide-spreading real-world applications.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-30T12:18:18Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qingyuan Li</name>
+    </author>
+    <author>
+      <name>Yifan Zhang</name>
+    </author>
+    <author>
+      <name>Liang Li</name>
+    </author>
+    <author>
+      <name>Peng Yao</name>
+    </author>
+    <author>
+      <name>Bo Zhang</name>
+    </author>
+    <author>
+      <name>Xiangxiang Chu</name>
+    </author>
+    <author>
+      <name>Yerui Sun</name>
+    </author>
+    <author>
+      <name>Li Du</name>
+    </author>
+    <author>
+      <name>Yuchen Xie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.15697v2</id>
+    <title>Aligned Unsupervised Pretraining of Object Detectors with Self-training</title>
+    <updated>2024-07-07T10:46:52Z</updated>
+    <link href="https://arxiv.org/abs/2307.15697v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.15697v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The unsupervised pretraining of object detectors has recently become a key component of object detector training, as it leads to improved performance and faster convergence during the supervised fine-tuning stage. Existing unsupervised pretraining methods, however, typically rely on low-level information to define proposals that are used to train the detector. Furthermore, in the absence of class labels for these proposals, an auxiliary loss is used to add high-level semantics. This results in complex pipelines and a task gap between the pretraining and the downstream task. We propose a framework that mitigates this issue and consists of three simple yet key ingredients: (i) richer initial proposals that do encode high-level semantics, (ii) class pseudo-labeling through clustering, that enables pretraining using a standard object detection training pipeline, (iii) self-training to iteratively improve and enrich the object proposals. Once the pretraining and downstream tasks are aligned, a simple detection pipeline without further bells and whistles can be directly used for pretraining and, in fact, results in state-of-the-art performance on both the full and low data regimes, across detector architectures and datasets, by significant margins. We further show that our pretraining strategy is also capable of pretraining from scratch (including the backbone) and works on complex images like COCO, paving the path for unsupervised representation learning using object detection directly as a pretext task.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-28T17:46:00Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Ioannis Maniadis Metaxas</name>
+    </author>
+    <author>
+      <name>Adrian Bulat</name>
+    </author>
+    <author>
+      <name>Ioannis Patras</name>
+    </author>
+    <author>
+      <name>Brais Martinez</name>
+    </author>
+    <author>
+      <name>Georgios Tzimiropoulos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.06354v1</id>
+    <title>Faster-than-Clifford Simulations of Entanglement Purification Circuits and Their Full-stack Optimization</title>
+    <updated>2023-07-12T18:00:00Z</updated>
+    <link href="https://arxiv.org/abs/2307.06354v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.06354v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum Entanglement is a fundamentally important resource in Quantum Information Science; however, generating it in practice is plagued by noise and decoherence, limiting its utility. Entanglement distillation and forward error correction are the tools we employ to combat this noise, but designing the best distillation and error correction circuits that function well, especially on today's imperfect hardware, is still challenging. Here, we develop a simulation algorithm for distillation circuits with gate-simulation complexity of $\mathcal{O}(1)$ steps, providing for drastically faster modeling compared to $\mathcal{O}(n)$ Clifford simulators or $\mathcal{O}(2^n)$ wavefunction simulators over $n$ qubits.
+  This new simulator made it possible to not only model but also optimize practically interesting purification circuits. It enabled us to use a simple discrete optimization algorithm to design purification circuits from $n$ raw Bell pairs to $k$ purified pairs and study the use of these circuits in the teleportation of logical qubits in second-generation quantum repeaters. The resulting purification circuits are the best-known purification circuits for finite-size noisy hardware and can be fine-tuned for specific hardware error models. Furthermore, we design purification circuits that shape the correlations of errors in the purified pairs such that the performance of the error-correcting code used in teleportation or other higher-level protocols is greatly improved. Our approach of optimizing multiple layers of the networking stack, both the low-level entanglement purification, and the forward error correction on top of it, are shown to be indispensable for the design of high-performance second-generation quantum repeaters.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-12T18:00:00Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Vaishnavi L. Addala</name>
+    </author>
+    <author>
+      <name>Shu Ge</name>
+    </author>
+    <author>
+      <name>Stefan Krastanov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.16714v1</id>
+    <title>SimPLe: Similarity-Aware Propagation Learning for Weakly-Supervised Breast Cancer Segmentation in DCE-MRI</title>
+    <updated>2023-06-29T06:22:50Z</updated>
+    <link href="https://arxiv.org/abs/2306.16714v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.16714v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Breast dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI) plays an important role in the screening and prognosis assessment of high-risk breast cancer. The segmentation of cancerous regions is essential useful for the subsequent analysis of breast MRI. To alleviate the annotation effort to train the segmentation networks, we propose a weakly-supervised strategy using extreme points as annotations for breast cancer segmentation. Without using any bells and whistles, our strategy focuses on fully exploiting the learning capability of the routine training procedure, i.e., the train - fine-tune - retrain process. The network first utilizes the pseudo-masks generated using the extreme points to train itself, by minimizing a contrastive loss, which encourages the network to learn more representative features for cancerous voxels. Then the trained network fine-tunes itself by using a similarity-aware propagation learning (SimPLe) strategy, which leverages feature similarity between unlabeled and positive voxels to propagate labels. Finally the network retrains itself by employing the pseudo-masks generated using previous fine-tuned network. The proposed method is evaluated on our collected DCE-MRI dataset containing 206 patients with biopsy-proven breast cancers. Experimental results demonstrate our method effectively fine-tunes the network by using the SimPLe strategy, and achieves a mean Dice value of 81%.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-29T06:22:50Z</published>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Yuming Zhong</name>
+    </author>
+    <author>
+      <name>Yi Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.17235v2</id>
+    <title>Kaizen: Practical Self-supervised Continual Learning with Continual Fine-tuning</title>
+    <updated>2024-02-07T15:45:43Z</updated>
+    <link href="https://arxiv.org/abs/2303.17235v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.17235v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Self-supervised learning (SSL) has shown remarkable performance in computer vision tasks when trained offline. However, in a Continual Learning (CL) scenario where new data is introduced progressively, models still suffer from catastrophic forgetting. Retraining a model from scratch to adapt to newly generated data is time-consuming and inefficient. Previous approaches suggested re-purposing self-supervised objectives with knowledge distillation to mitigate forgetting across tasks, assuming that labels from all tasks are available during fine-tuning. In this paper, we generalize self-supervised continual learning in a practical setting where available labels can be leveraged in any step of the SSL process. With an increasing number of continual tasks, this offers more flexibility in the pre-training and fine-tuning phases. With Kaizen, we introduce a training architecture that is able to mitigate catastrophic forgetting for both the feature extractor and classifier with a carefully designed loss function. By using a set of comprehensive evaluation metrics reflecting different aspects of continual learning, we demonstrated that Kaizen significantly outperforms previous SSL models in competitive vision benchmarks, with up to 16.5% accuracy improvement on split CIFAR-100. Kaizen is able to balance the trade-off between knowledge retention and learning from new data with an end-to-end model, paving the way for practical deployment of continual learning systems.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-30T09:08:57Z</published>
+    <arxiv:comment>Presented at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024. The code for this work is available at https://github.com/dr-bell/kaizen</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024, pp. 2841-2850</arxiv:journal_ref>
+    <author>
+      <name>Chi Ian Tang</name>
+    </author>
+    <author>
+      <name>Lorena Qendro</name>
+    </author>
+    <author>
+      <name>Dimitris Spathis</name>
+    </author>
+    <author>
+      <name>Fahim Kawsar</name>
+    </author>
+    <author>
+      <name>Cecilia Mascolo</name>
+    </author>
+    <author>
+      <name>Akhil Mathur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.10213v3</id>
+    <title>Bell inequalities in 2-2 scattering</title>
+    <updated>2023-07-06T15:05:20Z</updated>
+    <link href="https://arxiv.org/abs/2212.10213v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.10213v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider Bell inequalities in 2-2 scattering of photons, gravitons, fermions and pions. We choose measurement settings that give maximum Bell violation for maximally entangled states and calculate the relevant Bell inequalities for these processes. For photon scattering at low energies, QED exhibits Bell violation for all scattering angles except for a small transverse region. This leads to a fine-tuning problem. Incorporating a light axion/axion-like particle (ALP) removes the fine-tuning problem and constrains the axion-coupling--axion-mass parameters. Allowing for graviton exchange and demanding Bell violation in photon scattering, we find that the Weak Gravity Conjecture is satisfied. Quantum gravity effect on axion coupling is discussed. For 2-2 graviton scattering, we find that CEMZ bounds allow for at most small Bell violations. Restriction on the Weinberg angle is found by demanding Bell violation in Bhabha scattering. We use recent S-matrix bootstrap data for pions and photons to study the Bell parameter in the space of allowed S-matrices. In the photon case, we study the Bell parameters as a function of energy and find support for the EFT observations. We discuss Bell parameter for pion S-matrices, which are qutrits. For pions, we find that there is a minimization of a suitable Bell parameter for S-matrices which exhibit Regge behaviour.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-20T12:47:51Z</published>
+    <arxiv:comment>v3, 21 pages, 12 figures, version to appear in PRD</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Aninda Sinha</name>
+    </author>
+    <author>
+      <name>Ahmadullah Zahed</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.108.025015</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.108.025015" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.13228v1</id>
+    <title>Self-Supervised Learning based on Heat Equation</title>
+    <updated>2022-11-23T18:59:59Z</updated>
+    <link href="https://arxiv.org/abs/2211.13228v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.13228v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a new perspective of self-supervised learning based on extending heat equation into high dimensional feature space. In particular, we remove time dependence by steady-state condition, and extend the remaining 2D Laplacian from x--y isotropic to linear correlated. Furthermore, we simplify it by splitting x and y axes as two first-order linear differential equations. Such simplification explicitly models the spatial invariance along horizontal and vertical directions separately, supporting prediction across image blocks. This introduces a very simple masked image modeling (MIM) method, named QB-Heat.
+  QB-Heat leaves a single block with size of quarter image unmasked and extrapolates other three masked quarters linearly. It brings MIM to CNNs without bells and whistles, and even works well for pre-training light-weight networks that are suitable for both image classification and object detection without fine-tuning. Compared with MoCo-v2 on pre-training a Mobile-Former with 5.8M parameters and 285M FLOPs, QB-Heat is on par in linear probing on ImageNet, but clearly outperforms in non-linear probing that adds a transformer block before linear classifier (65.6% vs. 52.9%). When transferring to object detection with frozen backbone, QB-Heat outperforms MoCo-v2 and supervised pre-training on ImageNet by 7.9 and 4.5 AP respectively.
+  This work provides an insightful hypothesis on the invariance within visual representation over different shapes and textures: the linear relationship between horizontal and vertical derivatives. The code will be publicly released.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-23T18:59:59Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yinpeng Chen</name>
+    </author>
+    <author>
+      <name>Xiyang Dai</name>
+    </author>
+    <author>
+      <name>Dongdong Chen</name>
+    </author>
+    <author>
+      <name>Mengchen Liu</name>
+    </author>
+    <author>
+      <name>Lu Yuan</name>
+    </author>
+    <author>
+      <name>Zicheng Liu</name>
+    </author>
+    <author>
+      <name>Youzuo Lin</name>
+    </author>
+  </entry>
+</feed>

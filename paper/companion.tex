@@ -1,0 +1,1186 @@
+% =====================================================================
+%  Fine-tuning beyond CHSH: minimum measurement dependence for CGLMP,
+%  Mermin, and contextuality inequalities
+%  Companion to "Exact minimum measurement dependence for violating the
+%  CHSH inequality" (paper/main.tex, in preparation).
+%  Target: Phys. Rev. A (revtex4-2), same class options as main.tex.
+%  Compile: ~/bin/tectonic paper/companion.tex
+%  (bibtex pulls only the cited entries from the shared paper/refs.bib)
+% =====================================================================
+\documentclass[aps,pra,reprint,superscriptaddress,floatfix]{revtex4-2}
+
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+
+\newcommand{\TV}{\mathrm{TV}}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+
+\begin{document}
+
+% TODO: replace with real author block (name, affiliation, email) before submission.
+\title{Fine-tuning beyond {CHSH}: minimum measurement dependence for {CGLMP}, {Mermin}, and contextuality inequalities}
+\author{Dan Petersen}
+\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+We compute the exact minimum measurement dependence, in the worst-case
+total-variation metric $F=\max_{s}\,\TV(p(\cdot\mid s)\,\Vert\,\rho)$ of the
+companion {CHSH} paper, that local or noncontextual hidden-variable models
+need to reach quantum values in three further scenarios: the {CGLMP}
+inequality for $d=3$, the {Mermin} (GHZ-parity) inequalities for $n=3$ and
+$n=5$, and the Peres--Mermin square. For {CGLMP} $d=3$ the {CHSH} form
+survives verbatim: for any target $T$ on the first linear segment,
+$F^{*}=(T-2)/(2\min(N,4))$ for every $N$ --- $\sqrt3/9-1/12\approx0.109$
+($N\ge4$) at the maximally-entangled-state value
+$T_{\mathrm{ME}}=(12+8\sqrt3)/9$, and $(\sqrt{11/3}-1)/8\approx0.114$ at
+the quantum maximum $T_{\mathrm{Q}}=1+\sqrt{11/3}$ of Ac\'in \emph{et al.}
+Where the quantum value equals the algebraic maximum ---
+{Mermin} $n=3$ and the Peres--Mermin square --- the price is the cap,
+$\lceil N/4\rceil/N$ (saturating at $1/4$) and $\lceil N/6\rceil/N$
+(saturating at $1/6$); the latter is, to the coverage of our search, the
+first exact minimum-measurement-dependence value for a contextuality
+scenario. For {Mermin} $n=5$, frustration --- every hidden state misses at
+least six of the sixteen conditions --- changes the answer: the exact values
+at $N=2,\dots,6$ are $\tfrac12,\tfrac23,\tfrac12,\tfrac35,\tfrac12$, the
+$N=5$ value lies strictly above the counting bound $\lceil 3N/8\rceil/N$,
+and $F^{*}\to\tfrac38=m_{\min}/K$ as $N\to\infty$. We state a $K/m_{\min}$
+principle as a conjecture whose instances are proved, and compare with
+Alai's faithful-model program for GHZ-{Mermin} correlations, whose metric
+is incommensurable with ours but whose conclusions align. The results are
+exact and certificate-backed; their significance is structural: they
+delimit when the {CHSH} price-per-violation form generalizes and when
+frustration takes over.
+\end{abstract}
+
+\pacs{03.65.Ta, 03.65.Ud, 03.67.-a}
+\keywords{Bell inequality, CGLMP inequality, Mermin inequality,
+contextuality, Peres--Mermin square, measurement dependence, fine-tuning}
+
+\maketitle
+
+% =====================================================================
+\section{Introduction}
+\label{sec:intro}
+
+The companion paper to this work
+\cite{mainpaper2026} quantified the measurement dependence a local
+hidden-variable model must have to violate the {CHSH} inequality: it proved
+$S\le 2+8F$ for every local {CHSH} model with
+$F=\max_{ab}\TV(p(\cdot\mid a,b)\Vert\rho)$ the worst-case
+total-variation (TV) distance of the conditional source from a fixed
+baseline $\rho$, computed the exact maximum $S_{\max}(N,F)$ for $N$-state
+uniform-source models, and showed that the minimum fine-tuning for the
+Tsirelson value is $F^{*}(2\sqrt{2};N)=(\sqrt{2}-1)/\min(N,4)$ --- flat at
+$(\sqrt{2}-1)/4$ for $N\ge 4$, so that the bottleneck is the four {CHSH}
+correlators, not the size of the hidden source. The question that paper
+left open was whether that ``four correlators'' saturation is special to
+{CHSH} or is an instance of a general principle for inequalities whose
+algebraic maximum requires satisfying $K$ independent conditions with a
+parity-type obstruction (every hidden state misses at least one).
+
+This paper answers that question for three {Bell} inequalities and one
+contextuality scenario, in the same metric and with the same two-lemma
+template (a parity/obstruction lemma counting missed conditions, the row
+lemma of \cite{mainpaper2026} bounding the per-row gain from fine-tuning,
+and a round-robin construction over near-miss patterns):
+
+\begin{itemize}
+\item \textbf{{CGLMP}, $d=3$} (Sec.~\ref{sec:cglmp}): the generalization
+  holds \emph{verbatim}. Both the maximally-entangled-state value
+  $T_{\mathrm{ME}}=(12+8\sqrt{3})/9\approx 2.87293$ \cite{cglmp2002} and the
+  quantum maximum $T_{\mathrm{Q}}=1+\sqrt{11/3}\approx2.91485$
+  \cite{adgl2002,npa2008} lie below the algebraic maximum $4$, on the first linear
+  segment, and $F^{*}(T;N)=(T-2)/(2\min(N,4))$ exactly, for every $N$.
+\item \textbf{{Mermin} (GHZ-parity), $n=3$} (Sec.~\ref{sec:mermin3}): the
+  quantum value \emph{is} the algebraic maximum ($4$ on
+  $\ket{\mathrm{GHZ}_{3}}$, perfect correlators), so the target sits at the
+  cap rather than on the linear segment; the price is the cap
+  $\lceil N/4\rceil/N$, identical to {CHSH}'s with $K=4$.
+\item \textbf{{Mermin}, $n=5$} (Sec.~\ref{sec:mermin5}): frustration ---
+  every hidden state misses at least six of the sixteen conditions
+  ($m_{\min}=6$) --- breaks the all-but-one structure; the exact values at
+  $N=2,\dots,6$ are $\tfrac12,\tfrac23,\tfrac12,\tfrac35,\tfrac12$ (the
+  $N=5$ value strictly above the general bound $\lceil 3N/8\rceil/N=2/5$),
+  with $\lim_{N\to\infty}F^{*}=3/8=m_{\min}/K$.
+\item \textbf{Peres--Mermin square} (Sec.~\ref{sec:pm}): the state-
+  independent contextuality analog has exactly the same shape --- a parity
+  lemma, the same row lemma, a bound $G\le 5/6+F$, and a cap
+  $F^{*}_{\mathrm{PM}}(N)=\lceil N/6\rceil/N$ saturating at $1/6$ with the
+  six lines playing the role of the four {CHSH} correlators.
+\end{itemize}
+
+Together these establish the generalization in one direction ({CGLMP}) and
+an identifiable failure mode in the other (GHZ-{Mermin}, $n\ge 5$), and they
+delimit the scope of the fine-tuning theory: the structural data are the
+triple $(K,m_{\min},\text{balance})$, not $K$ alone
+(Sec.~\ref{sec:unify}). A search of the {arXiv} literature found no prior
+computation of the minimum fine-tuning in the per-setting TV metric used
+here for any of these scenarios (the GHZ-{Mermin} family has been treated
+in a different, incommensurable metric in \cite{alai2026b},
+Sec.~\ref{sec:alai}); that statement, with its coverage limits, is a search
+result, not a proven novelty claim (Sec.~\ref{sec:scope}).
+
+\emph{Scope note.} We do not treat the {I3322} inequality: its quantum
+target $0.250875384514\ldots$ is a \emph{conjectured} maximum, attained by
+an infinite-dimensional family of states with only a numerical upper bound
+on optimality, and its single-party marginal terms add biasable rows that
+complicate the clean $K$-row structure studied here. {CGLMP} $d\ge 4$ and
+{Mermin} $n\ge 7$ are likewise out of reach or out of scope
+(Sec.~\ref{sec:scope}).
+
+% =====================================================================
+\section{Setup: the metric, generalized}
+\label{sec:setup}
+
+\subsection{Models and cost}
+
+Fix a scenario with parties, settings, and outcomes as in the scenarios
+below, and an inequality whose value is a linear combination of the
+$K$ setting blocks $s$ that enter it. A finite model consists of:
+
+\begin{itemize}
+\item $N$ hidden states $\lambda=1,\dots,N$ with \emph{uniform} source
+  $\rho(\lambda)=1/N$;
+\item for each setting block $s$, a conditional source $p[s,\lambda]\ge 0$
+  with $\sum_{\lambda}p[s,\lambda]=1$ (the rows $p[s,\cdot]$ are
+  independent --- no joint constraint across blocks);
+\item deterministic responses (per party, per local setting).
+\end{itemize}
+
+The fine-tuning cost is the exact generalization of the project's metric:
+
+\begin{equation}
+F=\max_{s}\ \TV\big(p(\cdot\mid s)\,\Vert\,\rho\big),\qquad
+\TV=\frac12\sum_{\lambda}\big|p[s,\lambda]-\tfrac1N\big|.
+\label{eq:Fgen}
+\end{equation}
+
+Rows that do not enter the inequality are never biased at an optimum
+(biasing them costs $F$ without helping the value), so only the $K$ rows
+matter. The model-class caveats of \cite{mainpaper2026} carry over: the
+lower-bound side does not depend on the source distribution, and
+stochastic responses reduce to deterministic ones by the vertex argument.
+
+\subsection{Generalized row lemma}
+
+\begin{lemma}[row optimum for weights in $\{-1,0,+1\}$]
+\label{lem:row}
+Let $w_{1},\dots,w_{N}\in\{-1,0,+1\}$ be the weight multiset of a row,
+$\mu=\frac1N\sum_{\lambda}w(\lambda)$ its mean, $w_{\max}=\max_{\lambda}
+w(\lambda)$, and $w^{\uparrow}_{1}\le\cdots\le w^{\uparrow}_{N}$ the
+ascending sort. The maximum of $\sum_{\lambda}p[\lambda]\,w(\lambda)$ over
+all $p$ with $\TV(p\Vert\rho)\le F$, at $F=k/N$, is
+\begin{equation}
+\begin{aligned}
+h(k/N)=\;&\mu+\frac{k\,w_{\max}-\sum_{i=1}^{k}w^{\uparrow}_{i}}{N},
+\quad 0\le k\le N-1,\\
+&\qquad h(1)=w_{\max}.
+\end{aligned}
+\label{eq:rowopt}
+\end{equation}
+For $w\in\{\pm 1\}$ this reduces to the row lemma of
+\cite{mainpaper2026}, $h=\mu+2\min(F,n/N)$ with $n$ the wrong-sign count.
+\end{lemma}
+
+\begin{proof}
+Write $d=p-\rho$, so $d$ is zero-sum with $\|d\|_{1}\le 2F$. Decompose
+$d=d^{+}-d^{-}$ with $d^{\pm}\ge 0$ and $\sum d^{+}=\sum d^{-}=F$. Then
+\begin{equation*}
+d\!\cdot\! w=\sum d^{+}w-\sum d^{-}w
+\ \le\ F\,w_{\max}-\min_{d^{-}}\sum d^{-}w .
+\end{equation*}
+The minimum of $\sum d^{-}w$ over $0\le d^{-}\le 1/N$,
+$\sum d^{-}=F=k/N$ is attained by draining the smallest-$w$ entries first
+(greedy; each has capacity $1/N$), giving $\sum_{i=1}^{k}w^{\uparrow}_{i}/N$.
+Achievability: take $d^{+}=F\,e_{\arg\max}$ (capacity $(N-1)/N\ge k/N$) and
+$d^{-}$ as in the greedy; then $p=\rho+d^{+}-d^{-}\ge 0$ by construction.
+\end{proof}
+
+\subsection{Finite-max formula and uniform bound}
+
+For fixed responses the inequality value is linear in each row
+$p[s,\cdot]$ and the feasible set is a product of TV balls, so the rows
+decouple; a hidden state's relevant data is its \emph{pattern} --- the
+vector of its per-row contributions. Then, exactly as in Theorem~1 of
+\cite{mainpaper2026},
+
+\begin{equation}
+V_{\max}(N,F)=\max_{Q}\Big[\,V_{0}(Q)+\sum_{r}h_{r}(Q,F)\,\Big],
+\label{eq:finmax}
+\end{equation}
+
+where $Q$ ranges over multisets of $N$ realizable patterns,
+$V_{0}(Q)$ is the uniform-source value, and each $h_{r}$ is given by
+Lemma~\ref{lem:row} (or its $\{\pm1\}$ special case). For each fixed $Q$
+the bracket is an exact piecewise-linear function of $F$ with breakpoints at
+multiples of $1/N$; the envelope over $Q$ is convex on each cell
+$[k/N,(k+1)/N]$ but may bend \emph{inside} a cell where two multisets cross
+(this happens for {Mermin} $n=5$ at $N=2$, Sec.~\ref{sec:mermin5}). Full
+multiset enumeration \emph{is} the exact computation; the grid values
+$V(k/N)$, $k=0,\dots,N$, determine the whole curve exactly when a single
+construction matches the envelope at every grid point (the convexity
+argument of Sec.~\ref{sec:pm}). (No LP is used; the
+enumerations run in exact $\mathbb{Q}$ or quadratic-field arithmetic,
+Sec.~\ref{sec:scope}.)
+
+\begin{proposition}[uniform global bound]
+\label{prop:uniform}
+For every multiset $Q$ and every $F$,
+\begin{equation}
+V_{\max}(N,F)\ \le\ B+2KF,
+\label{eq:uniform}
+\end{equation}
+where $B=\max$ pattern value (the local bound).
+\end{proposition}
+
+\begin{proof}
+Per row, with $d=p-\rho$ and $\|d\|_{1}\le 2F$,
+$|E_{r}-\mu_{r}|=|d\cdot w|\le F\,(w_{\max}-w_{\min})\le 2F$; summing over
+the $K$ rows and using $V_{0}(Q)\le B$ (every pattern's value is at most
+$B$) gives the claim.
+\end{proof}
+
+Instances: {CHSH} (recovered from \cite{mainpaper2026}), {CGLMP} $d=3$ and
+{Mermin} $n=3$ all give $2+8F$; {Mermin} $n=5$ gives $4+32F$ (the $N=5$
+curve of Sec.~\ref{sec:mermin5} hits it exactly at $F=1/5$).
+
+\emph{Structural parameters.} Two structural parameters of an inequality,
+plus a balance condition, govern the answers below: $K$ = the number of
+extremal (row) conditions that must all be satisfied to reach the
+algebraic maximum $A$; $m_{\min}$ = the minimum number of conditions any
+single pattern misses (the \emph{frustration index}); and \emph{balance}
+= whether the min-miss patterns can be distributed evenly across
+conditions. {CHSH}, {CGLMP} $d=3$ and {Mermin} $n=3$ have $m_{\min}=1$
+(``all-but-one'' near-miss structure); {Mermin} $n=5$ has $m_{\min}=6$.
+
+% =====================================================================
+\section{{CGLMP}, $d=3$: the headline form generalizes verbatim}
+\label{sec:cglmp}
+
+\subsection{The inequality and its constants}
+
+Two parties, two settings each ($A_{1},A_{2}$ / $B_{1},B_{2}$), three
+outcomes. The {CGLMP} inequality of \cite{cglmp2002} at $d=3$ (all
+equalities mod $3$) is
+
+\begin{align}
+I_{3}={}&
+\big[P(A_{1}\!=\!B_{1})-P(A_{1}\!=\!B_{1}\!-\!1)\big]\notag\\
+&+\big[P(B_{1}\!=\!A_{2}\!+\!1)-P(B_{1}\!=\!A_{2})\big]\notag\\
+&+\big[P(A_{2}\!=\!B_{2})-P(A_{2}\!=\!B_{2}\!-\!1)\big]\notag\\
+&+\big[P(B_{2}\!=\!A_{1})-P(B_{2}\!=\!A_{1}\!-\!1)\big].
+\label{eq:i3}
+\end{align}
+
+\begin{itemize}
+\item \textbf{Local bound $I_{3}\le 2$.} Stated in \cite{cglmp2002}
+  (``$I_{3}\le 2$'' for local realism) and independently re-proved here by
+  exhaustive check of all $81$ deterministic strategies ($27$ patterns),
+  certificate \texttt{ineq\_cglmp.py} Part~A, cross-checked by direct
+  brute force in \texttt{ineq\_xcheck.py}.
+\item \textbf{Quantum values.} \citet{cglmp2002} give
+  $I_{3}=4/(-9+6\sqrt{3})=(12+8\sqrt{3})/9\approx 2.87293=:T_{\mathrm{ME}}$
+  for the maximally entangled two-qutrit state with Fourier-based
+  measurements, and state explicitly that they have no proof that these
+  measurements are optimal. Indeed this is not the maximum: Ac\'in, Durt,
+  Gisin and Latorre \cite{adgl2002} showed that the non-maximally entangled
+  state $(\ket{00}+\gamma\ket{11}+\ket{22})/\sqrt{2+\gamma^{2}}$ with
+  $\gamma=(\sqrt{11}-\sqrt{3})/2\approx0.7923$ and the same measurements
+  reaches $T_{\mathrm{Q}}=1+\sqrt{11/3}\approx2.91485$. This is the quantum
+  maximum of $I_{3}$ to numerical precision: the semidefinite upper bound of
+  the Navascu\'es--Pironio--Ac\'in hierarchy at level $1{+}AB$ equals
+  $2.9149$ with the rank-loop stopping criterion satisfied \cite{npa2008},
+  although no closed-form optimality proof is known. Both values were
+  recomputed numerically for this paper; we treat both as targets
+  (Sec.~\ref{sec:scope}).
+\item \textbf{Algebraic maximum $4$.} Stated in \cite{cglmp2002};
+  re-proved unattainable locally here by the modular obstruction below.
+\end{itemize}
+
+\subsection{Pattern structure: the modular obstruction ($K=4$,
+$m_{\min}=1$)}
+
+Write $d_{00}=A_{1}-B_{1}$, $d_{01}=A_{1}-B_{2}$, $d_{10}=A_{2}-B_{1}$,
+$d_{11}=A_{2}-B_{2}$ (mod $3$). Every deterministic strategy's differences
+satisfy
+\begin{equation}
+d_{00}+d_{11}\equiv d_{01}+d_{10}\pmod{3},
+\label{eq:mod}
+\end{equation}
+the additive analog of {CHSH}'s parity lemma ($27$ valid patterns out of
+$81$). The four row weight vectors, in $\{-1,0,+1\}$, are
+\begin{equation*}
+w_{00}(d)=+1[d{=}0]-1[d{=}2],\quad w_{01}(d)=+1[d{=}0]-1[d{=}1],
+\end{equation*}
+\begin{equation*}
+w_{10}(d)=+1[d{=}2]-1[d{=}0],\quad w_{11}(d)=+1[d{=}0]-1[d{=}2].
+\end{equation*}
+The algebraic-maximum conditions are $d_{00}=0$, $d_{01}=0$, $d_{10}=2$,
+$d_{11}=0$; constraint \eqref{eq:mod} gives $0+0\equiv 0+2\pmod 3$, false
+--- \emph{no pattern attains all four row conditions}. Enumeration finds
+exactly \textbf{four near-miss patterns, one per blocked row}, each with
+value $2=B$:
+\begin{equation*}
+\begin{array}{ccl}
+(d_{00},d_{01},d_{10},d_{11}) & \text{blocks row} & \text{value}\\[2pt]
+(2,0,2,0) & A_{1},B_{1} & 2\\
+(0,1,2,0) & A_{1},B_{2} & 2\\
+(0,0,0,0) & A_{2},B_{1} & 2\\
+(0,0,2,2) & A_{2},B_{2} & 2.
+\end{array}
+\end{equation*}
+(Six further patterns, of weight type $(+1,+1,0,0)$, also attain the local
+bound $2$, but they miss two conditions each with weight $0$ rather than
+$-1$: such rows can be bent only at rate $1$ per unit TV, and the exhaustive
+enumeration confirms they never beat the near-miss round-robin.) This is the
+direct {CGLMP} analog of {CHSH}'s four miss-types (single cover, like
+{CHSH}); in each near-miss pattern the blocked row has weight
+$-1$ and the other three rows $+1$, so under round-robin every row
+contains both signs (slope $2$ per row on the first segment).
+
+\subsection{Exact results}
+
+\begin{theorem}[minimum fine-tuning at the quantum value]
+\label{thm:cglmp}
+Let $T\in\{T_{\mathrm{ME}},T_{\mathrm{Q}}\}$ with
+$T_{\mathrm{ME}}=(12+8\sqrt{3})/9\approx 2.87293$ and
+$T_{\mathrm{Q}}=1+\sqrt{11/3}\approx2.91485$. Then, for the $N$-state
+uniform-source class,
+\begin{equation}
+F^{*}(I_{3}=T;\,N)=\frac{T-2}{2\,\min(N,4)}
+\label{eq:fcglmp}
+\end{equation}
+for every $N$. At $T_{\mathrm{ME}}$: $F^{*}=\sqrt{3}/9-1/12\approx
+0.109117$ exactly for $N\ge 4$, $\approx0.21823$ at $N=2$ and
+$\approx0.14549$ at $N=3$. At $T_{\mathrm{Q}}$:
+$F^{*}=(\sqrt{11/3}-1)/8\approx0.114357$ for $N\ge4$, $\approx0.22871$ at
+$N=2$ and $\approx0.15248$ at $N=3$.
+\end{theorem}
+
+\begin{proof}
+The uniform bound \eqref{eq:uniform} gives $F^{*}\ge (T-2)/8$ for all
+$N$. For $N\ge 4$ the round-robin construction over the four near-misses
+(state $i$ carries the near-miss pattern of row $i\bmod 4$) gives
+$V_{\max}(N,F)\ge 2+8F$ on $[0,\lfloor N/4\rfloor/N]$ (every row contains
+both signs, Sec.~\ref{sec:cglmp}); the target crosses there because
+$(T-2)/8<1/7\le \lfloor N/4\rfloor/N$ for every $N\ge 4$ and both targets
+($0.1092$ and $0.1144$ versus $1/7\approx0.1429$; asserted in
+$\mathbb{Q}(\sqrt{3})$ for $T_{\mathrm{ME}}$ at $N=4,5,6$, and by direct
+comparison for $T_{\mathrm{Q}}$; the minimum of $\lfloor N/4\rfloor/N$ for
+$N\ge 4$ is $1/7$). For $N=2,3$ the value $(T-2)/(2N)$ follows from the
+exact per-multiset segment analysis in $\mathbb{Q}(\sqrt{3})$ over
+\emph{all} $378$ / $3654$ multisets (certificate \texttt{ineq\_cglmp.py}
+Part~B, for $T_{\mathrm{ME}}$): the minimum is attained by a round-robin
+near-miss multiset, and no other multiset crosses $T$ earlier. For
+$T_{\mathrm{Q}}$ the same per-multiset analysis was repeated in floating
+point over all multisets for $N=2,3,4$ (\texttt{cglmp\_Tprime.py}) and
+reproduces the closed form to $10^{-9}$ --- a numerical cross-check, not an
+exact certificate.
+\end{proof}
+
+So the {CHSH} $\min(N,K)$ headline form holds \emph{exactly}, with $K=4$,
+because here the quantum-side value $T$ is below the algebraic maximum
+(the target lies in the linear regime, as for {CHSH}). Note
+$F^{*}({\rm CGLMP},N\ge 4)\approx 0.1091$ (at $T_{\mathrm{ME}}$) or
+$0.1144$ (at $T_{\mathrm{Q}}$) $>F^{*}({\rm CHSH},N\ge 4)\approx 0.10355$:
+the {CGLMP} quantum points sit slightly farther along the same slope-$8$
+segment.
+
+\begin{proposition}[cap at the algebraic maximum]
+\label{prop:cglmpcap}
+The minimum fine-tuning to reach $I_{3}=4$ is $\lceil N/4\rceil/N$ for all
+$N$.
+\end{proposition}
+
+\begin{proof}
+Write $n_{r}^{+}=\#\{\lambda: w_{r}(\lambda)<+1\}$ (states blocking row
+$r$ from its per-row maximum). Every pattern blocks at least one row, so
+$\sum_{r}n_{r}^{+}\ge N$ and $\max_{r}n_{r}^{+}\ge \lceil N/4\rceil$;
+reaching $I_{3}=4$ forces each row supported on $\{w_{r}=+1\}$, hence
+$\TV_{r}\ge n_{r}^{+}/N$ and $F^{*}\ge \lceil N/4\rceil/N$. Conversely the
+round-robin over the four near-misses has $\max_{r}n_{r}^{+}=\lceil
+N/4\rceil$ (asserted for $N=2,\dots,64$; the counting argument is valid
+for all $N$), and supporting each row on its $+1$ states costs exactly
+$n_{r}^{+}/N$ TV. The exhaustive minimum over all multisets equals
+$\lceil N/4\rceil/N$ for $N=2,\dots,6$.
+\end{proof}
+
+The exact curves $V_{\max}(N,k/N)$, $N=2,\dots,6$ (full multiset
+enumeration, every breakpoint; certificate \texttt{ineq\_cglmp.out}), with
+first segment $V_{\max}(N,F)=2+2\min(N,4)F$ on $[0,1/N]$:
+
+\begin{equation*}
+\begin{array}{c|cccc}
+N & V(0) & V(1/N) & V(2/N) & F^{*}(T;N)\\
+\hline
+2 & 2 & 4 & --- & (T-2)/4\\
+3 & 2 & 4 & --- & (T-2)/6\\
+4 & 2 & 4 & --- & (T-2)/8\\
+5 & 2 & 18/5 & 4 & (T-2)/8\\
+6 & 2 & 10/3 & 4 & (T-2)/8.
+\end{array}
+\end{equation*}
+
+% =====================================================================
+\section{{Mermin} (GHZ-parity), $n=3$: the cap form}
+\label{sec:mermin3}
+
+\subsection{The inequality and its constants}
+
+Three parties, two settings each ($X$ or $Y$), binary outcomes. The
+tripartite {Mermin} (GHZ-parity) inequality, in its standard even-weight
+form, is
+\begin{equation}
+M_{3}=E(XXX)-E(XYY)-E(YXY)-E(YYX),
+\label{eq:m3}
+\end{equation}
+the four terms being the four tripartite perfect correlators of the
+$\ket{\mathrm{GHZ}_{3}}$ state, as catalogued for this inequality in
+\cite{alai2026b} (after Hall, Phys.\ Rev.\ A 84, 022102 (2011), as cited
+there). Its constants are re-proved here by exact computation, not taken
+on authority:
+
+\begin{itemize}
+\item \textbf{Local bound $B_{3}=2$.} Proved by exhaustive
+  deterministic-strategy check (certificate \texttt{ineq\_mermin.py}
+  Part~A; max pattern value $=2$) and independently by direct brute force
+  over all $64$ strategies with no pattern parameterization
+  (\texttt{ineq\_xcheck.py}). It equals the standard $2^{(n-1)/2}$.
+\item \textbf{Quantum value $4=$ algebraic maximum.} Proved by exact
+  $\mathbb{Q}(i)$ matrix computation (\texttt{ineq\_xcheck.py} Part~(2);
+  explicit Kronecker products of Pauli matrices, no trigonometric
+  shortcut): on $\ket{\mathrm{GHZ}_{3}}=(\ket{000}+\ket{111})/\sqrt{2}$
+  the four correlators are \emph{perfect} --- $E(XXX)=+1$ and
+  $E(XYY)=E(YXY)=E(YYX)=-1$ --- so $M_{3}=4$. Since four terms of
+  $|\cdot|\le 1$ cannot exceed $4$, \emph{the quantum value equals the
+  algebraic maximum}: the key structural difference from {CHSH}, and the
+  reason the headline changes form below.
+\end{itemize}
+
+\subsection{Pattern structure: the parity obstruction ($K=4$,
+$m_{\min}=1$)}
+
+A hidden state's responses $(o_{i}[X],o_{i}[Y])$, $i=1,\dots,3$, give $64$
+deterministic strategies. Its correlator vector over the four even-weight
+settings is $e_{s}=P\cdot\prod_{i\in S_{Y}}r_{i}$ with
+$(P,r_{1},r_{2},r_{3})\in\{\pm1\}^{4}$; the $16$ parameter pairs carry a
+$2$-fold redundancy ($(P,r)\sim(P,-r)$, invisible on even-weight rows),
+so there are exactly \textbf{$8$ distinct realizable patterns} --- the
+other $8$ of the $16$ possible $\{\pm1\}^{4}$ vectors violate the parity
+product constraint
+\begin{equation*}
+e_{XXX}\,e_{XYY}\,e_{YXY}\,e_{YYX}=+1
+\end{equation*}
+(each factor appears squared across the product). Each realizable pattern
+is realized by exactly $8$ of the $64$ strategies. The algebraic-maximum
+conditions $E(XXX)=+1$, $E(XYY)=E(YXY)=E(YYX)=-1$ have target product
+$(+1)(-1)^{3}=-1$ while every pattern has product $+1$ --- the
+\emph{parity obstruction} (exact analog of the obstruction lemma of
+\cite{mainpaper2026}). Enumeration gives: minimum miss count $=1$; exactly
+\textbf{four near-miss patterns, one per condition} ($32$ near-miss
+strategies, $8$ per condition); local bound $B_{3}=\max$ pattern value
+$=2$. This is the direct {Mermin} analog of {CHSH}'s four miss-types --- a
+single cover, exactly like {CHSH} and {CGLMP} $d=3$. Indeed the pattern
+data ($8$ even-parity patterns with values $\pm2$, four single-miss types)
+are combinatorially identical to {CHSH}'s, so every finite-$N$ statement of
+\cite{mainpaper2026} transfers to $M_{3}$ by relabelling; the results below
+make that transfer explicit.
+
+\subsection{Exact results}
+
+\begin{theorem}[minimum fine-tuning at the algebraic maximum]
+\label{thm:mermin3}
+For the $N$-state uniform-source class,
+\begin{equation}
+F^{*}(M_{3}=4;\,N)=\left\lceil\frac{N}{4}\right\rceil\!\Big/N
+\label{eq:fmermin3}
+\end{equation}
+for all $N\ge 2$: values $\tfrac12,\tfrac13,\tfrac14,\tfrac25,\tfrac13,
+\tfrac27,\tfrac14,\dots$, identical to the {CHSH} cap of
+\cite{mainpaper2026} with $K=4$.
+\end{theorem}
+
+\begin{proof}
+\emph{Lower bound.} Every pattern misses at least one condition, so
+$\sum_{s}n_{s}(Q)\ge N$ and $\max_{s}n_{s}\ge\lceil N/4\rceil$;
+reaching $M_{3}=4$ forces each row fully bent (row value $+1$ requires
+$p$ supported on the correct-sign states, $\TV_{r}\ge n_{r}/N$).
+\emph{Upper bound.} Round-robin over the four near-miss patterns (state
+$i$ misses condition $i\bmod 4$) gives $\max_{s}n_{s}\le\lceil N/4
+\rceil$ and $\sum_{s}n_{s}=N$ (asserted for $N=2,\dots,64$; the counting
+argument is valid for all $N$), so
+$V_{\max}(N,\lceil N/4\rceil/N)\ge 2+2(N/N)=4$ exactly.
+\end{proof}
+
+The exact curves, $N=2,\dots,6$ (certificate \texttt{ineq\_mermin.out};
+the first-segment bend values coincide with {CHSH}'s $N=5,6$ bends ---
+same $K$, same $m_{\min}$):
+\begin{equation*}
+\begin{array}{c|cccc}
+N & V(0) & V(1/N) & V(2/N) & F^{*}(4;N)\\
+\hline
+2 & 2 & 4 & --- & 1/2\\
+3 & 2 & 4 & --- & 1/3\\
+4 & 2 & 4 & --- & 1/4\\
+5 & 2 & 18/5 & 4 & 2/5\\
+6 & 2 & 10/3 & 4 & 1/3.
+\end{array}
+\end{equation*}
+
+\emph{Intermediate targets.} For any $T\in(2,4)$ lying on the linear
+segment (i.e.\ $(T-2)/8\le \lfloor N/4\rfloor/N$),
+$F^{*}(T;N)=(T-2)/(2\min(N,4))$ --- in particular
+$F^{*}(2\sqrt{2};N)=(\sqrt{2}-1)/4$ for all $N\ge 4$, \emph{the same
+number as {CHSH}}. So the fine-tuning price per unit of violation
+generalizes with $K=4$; only the algebraic-maximum target departs from the
+$\min(N,K)$ form.
+
+\emph{Why the $\min(N,K)$ headline does not survive here.} {CHSH}'s
+quantum point $2\sqrt{2}<4$ lies on the first linear segment (slope
+$2K=8$ once $N\ge K$), so $F^{*}=(T-B)/(2\min(N,K))$. For {Mermin} $n=3$
+the quantum point \emph{is} the algebraic maximum: reaching it requires
+\emph{every} row to be fully bent (not merely active), which costs the cap
+$\lceil N/K\rceil/N$ --- a quantity that oscillates
+($\tfrac14,\tfrac25,\tfrac13,\tfrac27,\dots$) rather than saturating at
+$N=K$. The condition structure ($K=4$, $m_{\min}=1$, all-but-one
+patterns, parity obstruction) is the same; what differs is where the
+target sits.
+
+% =====================================================================
+\section{{Mermin}, $n=5$: frustration governs the price}
+\label{sec:mermin5}
+
+\subsection{The inequality and its constants}
+
+Five parties, two settings each, binary outcomes:
+$M_{5}=\sum_{|S|\ \mathrm{even}}(-1)^{|S|/2}E(S)$ over the $16$ even-
+weight setting strings. As for $n=3$, the constants are re-proved here by
+exact computation:
+
+\begin{itemize}
+\item \textbf{Local bound $B_{5}=4$.} Proved by exhaustive check ($32$
+  patterns; \texttt{ineq\_xcheck.py}: $1024$ strategies).
+\item \textbf{Quantum value $16=$ algebraic maximum.} Proved by exact
+  $\mathbb{Q}(i)$ computation: on $\ket{\mathrm{GHZ}_{5}}$ every
+  even-weight correlator is exactly $(-1)^{|S|/2}$, so $M_{5}=16$.
+\end{itemize}
+
+\subsection{Pattern structure: frustration ($K=16$, $m_{\min}=6$)}
+
+There are $32$ distinct realizable patterns ($2^{5}$; same $(P,r)$
+redundancy as Sec.~\ref{sec:mermin3}) and $16$ active rows. Enumeration
+(certificate \texttt{ineq\_mermin.py} Part~D, cross-checked by
+\texttt{ineq\_xcheck.py}) gives: \textbf{minimum miss count $=6$} --- the
+all-but-one structure \emph{fails} ($m_{\min}>1$); exactly
+\textbf{$16$ min-miss patterns}, with uniform incidence \textbf{$6$ per
+condition} (each of the $16$ conditions is missed by exactly $6$ of the
+$16$ min-miss patterns). The parity-type obstruction persists (no
+$0$-miss pattern) but is \emph{frustrated}: every state must miss at
+least six of the sixteen conditions.
+
+\subsection{First-segment slope: $2A_{\max B}$, not $2\min(K,m_{\min}N)$}
+
+On $[0,1/N]$ the finite-max formula \eqref{eq:finmax} is affine per
+multiset $Q$ (value $V_{0}(Q)+2F\,A(Q)$, with
+$A(Q)=\#\{s:0<n_{s}<N\}$ the number of active rows), so the right
+derivative at $F=0$ is $2\,A_{\max B}$ where
+\begin{equation*}
+\begin{aligned}
+A_{\max B}=\;&\max\{\,A(Q):V_{0}(Q)=B_{5}\,\}\\
+\le\;&\min(K,m_{\min}N).
+\end{aligned}
+\end{equation*}
+the maximum over multisets whose patterns all achieve the local bound
+(each such pattern misses exactly $m_{\min}=6$, so $\sum_{s}n_{s}=6N$).
+Exact enumeration of the $16$ bound-achieving patterns
+(\texttt{ineq\_mermin.out} Part~E2) gives
+
+\begin{equation*}
+\begin{array}{c|ccccc}
+N & 2 & 3 & 4 & 5 & 6\\
+\hline
+A_{\max B} & 8 & 12 & 16 & 16 & 16\\
+\min(K,m_{\min}N) & 12 & 16 & 16 & 16 & 16.
+\end{array}
+\end{equation*}
+
+The naive formula $2\min(K,m_{\min}N)$ is \emph{false} at $N=2,3$ (it
+would give slopes $24,32$; the true first-segment slopes are $16,24$). At
+$N=2$ the envelope bends \emph{inside} $[0,1/2]$: no bound-achieving $Q$
+can support the chord to $V(1/2)=16$ (that would need $A=12>
+A_{\max B}=8$), so a sub-bound multiset takes over before $F=1/2$. For
+$N=3,4,5,6$ the bound-achieving line $B_{5}+2A_{\max B}F$ reaches
+$V(1/N)$ exactly (convexity of the envelope then forces it to be the whole
+segment): single segments of slope $24$ ($N=3$) and $32=2K$ ($N=4,5,6$;
+$V(1/5)=52/5=4+32/5$ hits the global bound $4+32F$ exactly). For $N\ge 4$
+the miss sets of a few bound-achieving patterns already cover all $16$
+rows ($m_{\min}N\ge 16$), so every row is active from $F=0$. This refines
+--- and at small $N$ corrects --- the ``$2\min(N,K)$'' rule of
+\cite{mainpaper2026}, which assumed $m_{\min}=1$.
+
+\subsection{Exact results}
+
+The exact curves, $N=2,\dots,6$ (full multiset enumeration;
+\texttt{ineq\_mermin.out} and \texttt{ineq\_mermin5\_n5.out}):
+\begin{equation*}
+\begin{array}{c|ccccc}
+N & V(0) & V(1/N) & V(2/N) & V(3/N) & F^{*}(16;N)\\
+\hline
+2 & 4 & 16 & --- & --- & 1/2\\
+3 & 4 & 12 & 16 & --- & 2/3\\
+4 & 4 & 12 & 16 & --- & 1/2\\
+5 & 4 & 52/5 & 72/5 & 16 & \mathbf{3/5}\\
+6 & 4 & 28/3 & 14 & 16 & 1/2.
+\end{array}
+\end{equation*}
+
+\begin{theorem}[minimum fine-tuning for {Mermin} $n=5$]
+\label{thm:mermin5}
+$F^{*}(M_{5}=16;N)=\min_{Q}\max_{s}n_{s}(Q)/N$, with exact values
+$F^{*}=\tfrac12,\tfrac23,\tfrac12,\tfrac35,\tfrac12$ at $N=2,3,4,5,6$.
+The $N=5$ value $\tfrac35$ lies \emph{strictly above} the general lower
+bound $\lceil 3N/8\rceil/N=\tfrac25$; equality holds at $N=2,3,4,6$. For
+general $N=16m+r$,
+\begin{equation}
+\frac{\lceil 3N/8\rceil}{N}\ \le\ F^{*}(M_{5}=16;N)\ \le\
+\frac{6m+r}{16m+r},
+\label{eq:sandwich}
+\end{equation}
+with equality in the lower bound at $N=2,3,4,6$ and for all
+$N\equiv 0,1,2,3,4,6\pmod{16}$, and
+\begin{equation}
+\lim_{N\to\infty}F^{*}(M_{5}=16;N)=\tfrac38=\frac{m_{\min}}{K}.
+\label{eq:lim38}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+\emph{Lower bound, all $N$.} Every pattern misses at least $6$
+conditions, so $\sum_{s}n_{s}(Q)\ge 6N$ and $\max_{s}n_{s}\ge\lceil
+6N/16\rceil=\lceil 3N/8\rceil$; reaching $M_{5}=16$ forces each row fully
+bent ($\TV_{s}\ge n_{s}/N$). \emph{Upper bounds.} (a) For
+$N=16m+r$ with $r\in\{0,1,2,3,4,6\}$: $m$ copies of all $16$ min-miss
+patterns (incidence $6m$ per condition) plus an optimal size-$r$ multiset
+$Q_{r}$ give $\max_{s}n_{s}=6m+\max_{s}n_{s}(Q_{r})$, and
+$\max_{s}n_{s}(Q_{r})=\lceil 3r/8\rceil$ for $r=0,1,2$ (one realizable
+pattern; a disjoint complementary pair) and, by the exact enumeration of
+this section, also for $r=3,4,6$ (values $2,2,3$); since
+$\lceil 3(16m+r)/8\rceil=6m+\lceil 3r/8\rceil$, this is
+$\lceil 3N/8\rceil$ exactly (certificate Part~F for $r=0,1,2$; the
+hardcoded witness masks were verified to be realizable pattern miss masks
+in \texttt{ineq\_mermin5\_n5.out} Part~B, and $16$ disjoint realizable
+pairs exist, so the $r=2$ construction is not an isolated artifact).
+(b) For other residues $N=16m+r$: trivially $F^{*}\le (6m+r)/(16m+r)$.
+The limit follows from \eqref{eq:sandwich}; the exact $N=5,6$ values and
+full curves are the exhaustive enumeration.
+\end{proof}
+
+\emph{Reading.} The fine-tuning price to reach the GHZ-$5$ algebraic
+maximum is governed by frustration: each state must miss at least $6$ of
+$16$ conditions, so even an infinitely large source needs $F\ge 3/8$.
+This is the same qualitative lesson as Alai's universal ceiling in
+\cite{alai2026b} (their $F\le 1/2$ in Hall's metric), but in our TV metric
+with an exact asymptotic value: $\lim F^{*}=m_{\min}/K=3/8$ at $n=5$, vs
+the oscillating cap $\lceil N/4\rceil/N$ (liminf $1/4$) at $n=3$.
+
+% =====================================================================
+\section{The Peres--Mermin square: the contextuality analog}
+\label{sec:pm}
+
+\subsection{Setup: a fine-tuning problem}
+
+The Peres--Mermin (PM) square \cite{peres1990,mermin1990b} is a $3\times 3$ grid of
+nine binary observables on two qubits whose six lines (three rows, three
+columns) have operator products
+\begin{equation*}
+\begin{array}{c|ccc}
+ & C_{0} & C_{1} & C_{2}\\
+\hline
+R_{0} & X\!\otimes\!X & X\!\otimes\!I & I\!\otimes\!X\\
+R_{1} & Y\!\otimes\!Y & X\!\otimes\!Z & Z\!\otimes\!X\\
+R_{2} & Z\!\otimes\!Z & I\!\otimes\!Z & Z\!\otimes\!I
+\end{array},
+\end{equation*}
+with row products $+I,+I,+I$ and column products $-I,+I,+I$, the $-I$
+product being on column $C_{0}$ (any relabeling of lines is equivalent;
+certificate \texttt{fringe\_pm.py} Part~0b verifies all six product
+identities and each line's commutativity by exact integer-matrix
+arithmetic). The product of the six line products is $-I$ while the
+product of the nine observables taken twice (once per row, once per
+column) is $+I$: a state-independent contextuality proof.
+
+\emph{The game.} A referee picks one of the six lines $c$ uniformly; the
+player wins iff the product of the three preassigned outcomes on that
+line equals the target $t_{c}$, with $(t_{0},\dots,t_{5})=(1,1,1,-1,1,1)$
+($-1$ on $C_{0}$, the line whose product is $-I$). A
+\emph{noncontextual} (NC) model assigns to each hidden state $\lambda$ a
+full assignment $v(\lambda)\in\{\pm1\}^{9}$; by the parity lemma below no
+assignment satisfies all six lines, so $G\le 5/6$ at $F=0$. A
+\emph{quantum strategy} measures the three observables of the chosen line
+in any state --- each line product is literally $\pm I$ and the target
+equals its sign on every line --- so \emph{quantum $G=1$} (certificate
+PM-Qa--d, exact matrices).
+
+\emph{Measurement dependence.} The source may depend on which line is
+measured: $p[c,\lambda]\ge 0$, row-sum $1$, uniform baseline
+$\rho(\lambda)=1/N$; cost $F=\max_{c}\TV(p(\cdot\mid c)\Vert\rho)$ --- the
+same metric as everywhere else in this paper. The rows $p[c]$ are
+independent, so for a fixed state multiset $Q$ each line can be optimized
+separately, exactly as in the {CHSH} theory. Question: what is the minimum
+$F$ for an $N$-state NC-response model to reach $G=1$, and what is the
+exact curve $G_{\max}(N,F)$? Two honest differences from {CHSH}, stated up
+front: (i) the quantum value equals the algebraic maximum
+(state-independent contextuality), so the interesting quantity is the
+\emph{cap} rather than an intermediate quantum value --- the {KCBS}
+inequality would test the intermediate case (Sec.~\ref{sec:scope});
+(ii) there is no even-parity restriction on states: all $512$ assignments
+exist, of which exactly $32$ odd-parity sign vectors are realizable on the
+six line products.
+
+\subsection{Parity lemma and miss-set census}
+
+\begin{lemma}[PM parity]
+\label{lem:pmparity}
+For any assignment $v$, write $s_{c}(v):=t_{c}\prod_{\text{cell}\in
+c}v_{\text{cell}}\in\pm 1$ ($+1$ iff line $c$ is satisfied). Then every
+assignment violates an \emph{odd} number of lines --- in particular at
+least one.
+\end{lemma}
+
+\begin{proof}
+Each cell lies in exactly one row and one column, so
+\begin{equation*}
+\prod_{c}s_{c}(v)=\frac{\prod_{c}\prod_{\text{cell}\in c}v_{\text{cell}}}
+{\prod_{c}t_{c}}=\frac{+1}{-1}=-1.
+\end{equation*}
+\end{proof}
+
+This is the contextuality analog of the obstruction lemma of
+\cite{mainpaper2026}. The certificate additionally censuses all $512$
+assignments: exactly the \textbf{$32$ odd-weight miss-sets} occur ($6$
+single-line ``near-miss'' types, $20$ three-line, $6$ five-line), and a
+near-miss type exists for \emph{every} one of the six lines (explicit
+examples in the log; e.g.\ the all-$+1$ assignment violates only the
+$-I$ line). This census is what makes the round-robin construction
+below possible, exactly as the four {CHSH} miss-types make the round-robin
+$Q_{N}$ of \cite{mainpaper2026} possible.
+
+\subsection{Global bound and first segment}
+
+For line $c$ write $w_{c}:=\#\{\lambda:s_{c}(\lambda)=-1\}$ and
+$\mu_{c}:=(N-2w_{c})/N$. Then $P(\text{win }c)=\tfrac12(1+E_{p[c]}
+[s_{c}])$, and the row lemma of \cite{mainpaper2026} (max of a linear
+functional over a TV ball --- the only non-combinatorial ingredient of the
+whole project, reused verbatim) gives
+\begin{equation*}
+\max_{\TV(p[c]\Vert\rho)\le F}P(\text{win }c)
+=1-\frac{w_{c}}{N}+\min\Big(F,\frac{w_{c}}{N}\Big).
+\end{equation*}
+
+\begin{theorem}[PM global bound]
+\label{thm:pm2}
+For every $N$ and every $F$: $G_{\max}(N,F)\le \tfrac56+F$.
+\end{theorem}
+
+\begin{proof}
+For a model with miss-count vector $(w_{0},\dots,w_{5})$ of its state
+multiset $Q$ and total $M:=\sum_{c}w_{c}=\sum_{\lambda}\mathrm{misscount}
+(\lambda)$, the row bound gives per line at most $1-w_{c}/N+F$;
+averaging over the six lines,
+\begin{equation*}
+G\ \le\ 1-\frac{M}{6N}+F.
+\end{equation*}
+By Lemma~\ref{lem:pmparity}, $\mathrm{misscount}(\lambda)\ge 1$ for every
+state, so $M\ge N$, and therefore $G\le 5/6+F$.
+\end{proof}
+
+This is the exact analog of $S\le 2+8F$: a model-independent bound whose
+tightness is carried by the round-robin construction. (The {CHSH} version
+has slope $8=2K$ because each of $K=4$ rows bends at rate $2$ per unit TV;
+here each of $K=6$ lines bends at rate $1$ and the objective averages over
+six lines, so the total slope is $1$.)
+
+\emph{Round-robin.} Let state $i$ ($i=0,\dots,N-1$) carry the near-miss
+assignment of line $i\bmod 6$. Then $w_{c}(Q_{N})\in\{\lfloor N/6\rfloor,\lceil N/6\rceil\}$ for every $c$ and $M=N$, so
+\begin{equation*}
+G_{Q_{N}}(F)=\frac56+\frac16\sum_{c}\min\Big(F,\frac{w_{c}}{N}\Big).
+\end{equation*}
+
+\begin{theorem}[PM first segment]
+\label{thm:pm3}
+For $N\ge 6$: $G_{\max}(N,F)=\tfrac56+F$ on
+$[0,\lfloor N/6\rfloor/N]$ (all six lines active; lower bound by
+$Q_{N}$, upper bound by Theorem~\ref{thm:pm2}). For $N=2,\dots,5$ the
+round-robin has only $N$ active lines and the whole curve is the single
+segment $G=\tfrac56+\tfrac{N}{6}F$ on $[0,1/N]$, reaching $1$ at $F=1/N$.
+\end{theorem}
+
+\emph{Exact curves, $N=2,\dots,10$ (certificate PM-5).} Because the
+objective depends on $Q$ only through the miss-count vector $w$, the exact
+curve is the upper envelope over the finitely many \emph{achievable}
+$w$-vectors --- computed by an exact $\mathbb{Q}$ dynamic program over the
+$32$ odd miss-set indicator vectors, then asserted to equal the
+round-robin curve \emph{at every breakpoint $k/N$} ($k=0,\dots,N$) for
+$N=2,\dots,10$. Grid points suffice because the envelope $E(F)=\max_{w}
+G_{w}(F)$ is convex (max of affines) while the round-robin value $R(F)$ is
+affine on each cell $[k/N,(k+1)/N]$: $h:=E-R$ is convex on each cell,
+nonnegative everywhere ($Q_{N}$ is among the maximized), and zero at both
+cell endpoints by the assertion; a convex function with $h\ge 0$ and
+$h(a)=h(b)=0$ vanishes throughout. The breakpoint assertions therefore
+certify the whole curve (same technique as the exact-curve certificate of
+\cite{mainpaper2026}). All values are exact rationals:
+
+\begin{equation*}
+\begin{array}{c|l|c}
+N & G_{\max}(N,F) & F^{*}_{\mathrm{PM}}(N)\\
+\hline
+2 & \tfrac56+\tfrac13 F\ \text{on }[0,\tfrac12] & \tfrac12\\
+3 & \tfrac56+\tfrac12 F\ \text{on }[0,\tfrac13] & \tfrac13\\
+4 & \tfrac56+\tfrac23 F\ \text{on }[0,\tfrac14] & \tfrac14\\
+5 & \tfrac56+\tfrac56 F\ \text{on }[0,\tfrac15] & \tfrac15\\
+6 & \tfrac56+F\ \text{on }[0,\tfrac16] & \tfrac16\\
+7 & \tfrac56+F;\ \text{then } \tfrac{41}{42}+\tfrac16(F-\tfrac17) & \tfrac27\\
+8 & \tfrac56+F;\ \text{then } \tfrac{23}{24}+\tfrac13(F-\tfrac18) & \tfrac14\\
+9 & \tfrac56+F;\ \text{then } \tfrac{17}{18}+\tfrac12(F-\tfrac19) & \tfrac29\\
+10 & \tfrac56+F;\ \text{then } \tfrac{14}{15}+\tfrac23(F-\tfrac1{10}) & \tfrac15.
+\end{array}
+\end{equation*}
+
+(``then'' = on the interval to $F^{*}$; every row reaches exactly $1$ at
+$F^{*}$.) For $N\ge 6$ the first segment has slope exactly $1$ --- the
+direct analog of $S=2+8F$ on $[0,1/N]$; the bends for
+$N\not\equiv 0\pmod 6$ are the analog of the {CHSH} bend region and are
+exact here for all $N\le 10$ by full enumeration.
+
+\subsection{The cap}
+
+\begin{theorem}[PM cap]
+\label{thm:pm4cap}
+$F^{*}_{\mathrm{PM}}(N):=\min\{F:G_{\max}(N,F)=1\}=\lceil N/6
+\rceil/N$ for every $N\ge 2$. In particular the cost \emph{saturates at
+$1/6$}: $F^{*}_{\mathrm{PM}}(6k)=1/6$ for all $k$, and
+$F^{*}_{\mathrm{PM}}(N)\to 1/6$.
+\end{theorem}
+
+\begin{proof}
+\emph{Necessity.} $G=1$ forces $P(\text{win }c)=1$ for every line $c$
+(each term is $\le 1$). By the row lemma this requires $p[c]$ supported on
+$\{\lambda:s_{c}(\lambda)=+1\}$, which --- when $w_{c}>0$ --- requires
+$F\ge w_{c}/N$. Hence $F\ge \max_{c}w_{c}(Q)/N$; and by
+Lemma~\ref{lem:pmparity}, $\sum_{c}w_{c}=\sum_{\lambda}
+\mathrm{misscount}(\lambda)\ge N$, so $\max_{c}w_{c}\ge\lceil N/6
+\rceil$. Thus $F^{*}_{\mathrm{PM}}(N)\ge\lceil N/6\rceil/N$.
+\emph{Sufficiency.} The round-robin $Q_{N}$ has $\max_{c}w_{c}=\lceil
+N/6\rceil$. At $F=\lceil N/6\rceil/N$ set each row $p[c]$ uniform on its
+satisfying states (there are $N-w_{c}$ of them); then
+\begin{equation*}
+\TV(p[c]\Vert\rho)=\tfrac12\Big[\,(N-w_{c})
+\big|\tfrac{1}{N-w_{c}}-\tfrac1N\big|+w_{c}\tfrac1N\,\Big]
+=\frac{w_{c}}{N}\le F,
+\end{equation*}
+and every line is won with probability $1$, so $G=1$.
+\end{proof}
+
+\emph{Explicit witnesses (certificate Part PM-6, $N=4,\dots,8$).} State
+$i$ carries the near-miss assignment of line $i\bmod 6$; rows $p[c]$
+uniform on satisfiers. Verified exactly in $\mathbb{Q}$: row sums $1$;
+per-row $\TV=w_{c}/N$; max per-row $\TV=\lceil N/6\rceil/N$; $G=1$. The
+$N=4$ witness is printed in full in the log --- note its elegance: the two
+lines that every state satisfies ($C_{1}$, $C_{2}$) need \emph{zero}
+fine-tuning (uniform rows), and each of the other four rows spends
+exactly $\TV=1/4$.
+
+\emph{Structural remark.} The proof is a line-by-line translation of the
+cap theorem of \cite{mainpaper2026}: parity lemma
+($\sum$ misses $\ge N$); $\min_{Q}\max_{c}w_{c}/N$; round-robin
+sufficiency. The only new ingredient is the Lemma-2 census ($32$ odd
+miss-sets, all six near-miss types), which replaces {CHSH}'s four
+even-parity patterns. Combined with Theorem~8 of
+\cite{mainpaper2026} --- the no-signalling {CHSH} cap at the algebraic
+maximum --- the same statement now holds in two scenarios: \emph{hiding
+the fine-tuning from the marginals never raises the price of reaching the
+algebraic maximum.}
+
+% =====================================================================
+\section{Unification: the $(K,m_{\min},\text{balance})$ principle}
+\label{sec:unify}
+
+The data from the main paper \cite{mainpaper2026} and the four scenarios
+of this paper ($F^{*}(A;N)$ = minimum fine-tuning to reach the algebraic
+maximum $A$; status labels in the following paragraph):
+
+\small
+\begin{equation*}
+\begin{array}{l|c|c|l}
+\text{Scenario} & K & m_{\min} & F^{*}(A;N)\\
+\hline
+\text{{CHSH}} & 4 & 1 & \lceil N/4\rceil/N\to 1/4\\
+\text{{CGLMP} $d=3$} & 4 & 1 & (T-2)/(2\min(N,4))\ \text{at }T<A;\\
+ & & & \text{cap: }\lceil N/4\rceil/N\to 1/4\\
+\text{{Mermin} $n=3$} & 4 & 1 & \lceil N/4\rceil/N\to 1/4\\
+\text{PM square} & 6 & 1 & \lceil N/6\rceil/N\to 1/6\\
+\text{{Mermin} $n=5$} & 16 & 6 & \tfrac12,\tfrac23,\tfrac12,\tfrac35,\tfrac12\ (N\!=\!2\dots 6);\\
+ & & & \ge\lceil 3N/8\rceil/N;\ \lim F^{*}=3/8.
+\end{array}
+\end{equation*}
+\normalsize
+
+\begin{conjecture}[$K/m_{\min}$ principle]
+\label{conj:kmm}
+For a parity-frustrated extremal game with $K$ conditions, frustration
+index $m_{\min}$, and a near-miss state for each condition: (i) the
+minimum TV fine-tuning to reach the algebraic maximum $A$
+\emph{saturates at $m_{\min}/K$} as $N\to\infty$; (ii) when $m_{\min}=1$
+it equals $\lceil N/K\rceil/N$ exactly for all $N$; (iii) when the
+quantum value $T<A$ lies on the first linear segment, the cost to reach
+$T$ is $(T-B)/(2\min(N,K))$.
+\end{conjecture}
+
+Status labels, stated explicitly: clause (ii) is \textbf{PROVED} for
+{CHSH} \cite{mainpaper2026}, the PM square (Theorem~\ref{thm:pm4cap}), and
+{Mermin} $n=3$ (Theorem~\ref{thm:mermin3}); the {CGLMP} cap is the
+extrapolated instance of the proved linear-regime price. Clause (iii) is
+\textbf{PROVED} for {CHSH} and {CGLMP} $d=3$ (and, as an intermediate
+target, for {Mermin} $n=3$, Sec.~\ref{sec:mermin3}). Clause (i) is
+\textbf{PROVED} for {Mermin} $n=5$ (the limit $3/8$,
+Eq.~\eqref{eq:lim38}) and for all $m_{\min}=1$ cases (which saturate at
+$1/K$); the general case is \textbf{CONJECTURED}. The {Mermin} $n=5$ row
+delimits the pattern precisely: the \emph{saturation value}
+$m_{\min}/K=6/16=3/8$ survives as the limit, and the lower bound
+$\lceil m_{\min}N/K\rceil/N$ is tight for $N=2,3,4,6$ and all
+$N\equiv 0,1,2,3,4,6\pmod{16}$, but the finite-$N$ cap form can be
+\emph{strictly exceeded} --- at $N=5$ the exact value $3/5$ lies above
+$\lceil 3\cdot 5/8\rceil/5=2/5$; for large $m$ the remaining residues
+$r\in\{5,7,8,\dots,15\}\pmod{16}$ are sandwiched but not pinned
+(Sec.~\ref{sec:scope}). The structural data are therefore the triple
+$(K,m_{\min},\text{balance})$, not $K$ alone.
+
+The $m_{\min}=1$ case reduces to exactly the two-lemma template used in
+both \cite{mainpaper2026} and this paper: obstruction lemma
+($\sum$ misses $\ge N$) + row lemma (per-condition gain bounded by the row
+optimum) + round-robin over near-miss types. For general $m_{\min}$ the
+lower bound $\lceil m_{\min}N/K\rceil/N$ is a one-line extension of the
+same counting argument, but the \emph{achieving construction} needs a
+balanced packing of $m_{\min}$-miss states instead of round-robin --- and
+{Mermin} $n=5$ shows such packings are not always available at the bound
+(strictly exceeded at $N=5$). That is the main open item
+(Sec.~\ref{sec:scope}).
+
+% =====================================================================
+\section{Comparison with Alai's faithful-model program}
+\label{sec:alai}
+
+\citet{alai2026b} solve the \emph{faithful} version of Hall's problem for
+GHZ-{Mermin} correlations (every full correlator reproduced and every
+proper-subset marginal vanishing), with metric the ``surrendered fraction''
+$F:=M/2$, where $M$ is Hall's pairwise-$L^{1}$ measurement-dependence
+measure (no fixed baseline source). A reduction theorem shows the
+faithfulness constraints are free, so Hall's correlator-only threshold is
+promoted to the faithful value; LP optima certified by integer arithmetic
+give $F(n)=R/[2(R+1)]$ with $R=2^{\lfloor(n-1)/2\rfloor}$ (the {Mermin}
+violation ratio) for $n=3,\dots,13$: $F(3)=1/3$, $F(5)=2/5$, $F(7)=4/9$,
+$F(9)=8/17$, $F(11)=16/33$, $F(13)=32/65$ (each odd-$n$ value through $n=11$ repeated at
+the following even size), with a universal ceiling $F\le 1/2$.
+
+Our setup is different in two ways: the metric is per-block TV from a
+fixed uniform source (not pairwise $L^{1}$), and the model class is plain
+(no faithfulness constraints). The metrics are therefore
+\emph{incommensurable} --- no ordering of the numbers follows. In
+particular the numerical coincidence Alai $F(3)=1/3=$ our
+$F^{*}(n=3;N=3)$ is a convention accident, not a theorem. What \emph{does}
+align: both programs find that for GHZ-{Mermin} the minimum measurement
+dependence \emph{does not vanish as the hidden source grows}, is determined
+by the frustration structure of the inequality rather than the source
+size, and admits a universal ceiling strictly below $1$ (theirs $\le 1/2$;
+ours $\lim 3/8$ at $n=5$, oscillating cap at $n=3$). This paper
+independently confirms, in a different metric, that ``exact minimum
+measurement dependence for GHZ-{Mermin}'' is a well-posed problem with
+clean structural answers --- and supplies the first TV-metric values for
+it.
+
+% =====================================================================
+\section{Scope, caveats, and verification}
+\label{sec:scope}
+
+\subsection{Coverage limits, stated honestly}
+
+\begin{itemize}
+\item \textbf{{CGLMP} targets.} $T_{\mathrm{ME}}=(12+8\sqrt{3})/9$ is
+  the maximally-entangled-state value of \cite{cglmp2002};
+  $T_{\mathrm{Q}}=1+\sqrt{11/3}$ is the quantum maximum of \cite{adgl2002},
+  matched to numerical precision by the NPA upper bound \cite{npa2008}; a
+  closed-form optimality proof is not available, so if the true maximum
+  $T'$ differed from $T_{\mathrm{Q}}$, then $F^{*}(T';N)=(T'-2)/(2\min(N,4))$ by the same
+  linear-segment argument whenever $(T'-2)/8<\lfloor N/4\rfloor/N$ (for
+  $N\ge 4$ this holds up to $T'<2+8\lfloor N/4\rfloor/N\ge 3$). The exact
+  $\mathbb{Q}(\sqrt{3})$ certificate covers $T_{\mathrm{ME}}$; the
+  $T_{\mathrm{Q}}$ values for $N=2,3$ rest on exhaustive floating-point
+  enumeration. {CGLMP} $d\ge 4$ not treated.
+\item \textbf{{Mermin} $n\ge 7$.} Pattern space $2^{n}$, rows $2^{n-1}$:
+  full enumeration intractable. The structural claims ($m_{\min}$ grows
+  with $n$; GHZ attains the algebraic maximum) were re-derived here only
+  for $n=3,5$ (exact $\mathbb{Q}(i)$). Alai's $F(n)$ formula (Hall
+  metric) covers $n\le 13$.
+\item \textbf{Exact curves.} Certified at $N=2,\dots,6$ (all breakpoints;
+  PM square to $N=10$). For $N\ge 7$: first segment and cap are proved
+  for all $N$ (construction + global bound); the bend region is left to
+  numerics (not computed here). The {Mermin} $n=5$ residues
+  $r\in\{5,7,8,\dots,15\}\pmod{16}$ at large $m$ remain sandwiched between
+  $\lceil 3N/8\rceil/N$ and $(6m+r)/(16m+r)$, not pinned.
+\item \textbf{Model-class caveats.} Constructions use the uniform source;
+  the lower-bound side does not depend on the source distribution (TV
+  duality, same argument as \cite{mainpaper2026} --- stated, not
+  re-certified per inequality). Stochastic responses reduce to the
+  deterministic case by the vertex argument (same as
+  \cite{mainpaper2026}) --- not separately certified here. The
+  \emph{no-signalling sub-case} for these inequalities was \emph{not}
+  studied (open; for {CHSH} it did not change $F^{*}$, so a similar
+  result is plausible but unproved here).
+\item \textbf{{I3322}} dropped (Sec.~\ref{sec:intro}); its local bound $0$
+  was taken from the primary source's assertion, not re-proved by
+  enumeration here.
+\item \textbf{{KCBS} analog (open).} The PM square has quantum =
+  algebraic maximum, so it tests only the cap. The {KCBS} inequality
+  \cite{cabello2008} has a quantum value strictly between the NC bound
+  and the algebraic maximum --- the true analog of $2\sqrt{2}$ vs $4$. The
+  same two-lemma machinery applies (five contexts, binary outcomes,
+  parity-type obstruction); the exact constants (NC bound of
+  $\cos^{2}(\pi/10)$ type) must be taken from \cite{cabello2008} before
+  use and were \emph{not} verified in this work.
+\item \textbf{Novelty search.} {arXiv} API term combinations
+  (``measurement dependence'' + ``contextuality''; ``fine-tuning'' +
+  ``noncontextual'', date-sorted) found no prior work computing minimum
+  measurement dependence / fine-tuning for these scenarios in the
+  per-setting TV-from-a-fixed-baseline metric used here; the closest hit
+  is \cite{alai2026b} (GHZ-{Mermin} Bell models, Hall's metric --- a
+  different, incommensurable metric). Two term combinations only;
+  paywalled/non-{arXiv} content not covered. This is a search result with
+  stated coverage limits, not a proven novelty claim.
+\end{itemize}
+
+\subsection{Exact certificates (all re-runnable, all exit $0$)}
+
+All results above are backed by re-runnable exact-arithmetic certificates
+(exact $\mathbb{Q}$ or quadratic-field arithmetic; no floating point in
+the proof parts; each script exits $0$ iff every assertion passes):
+
+\footnotesize
+\begin{equation*}
+\begin{array}{l|l|l}
+\text{Script} & \text{Log} & \text{Checks / runtime}\\
+\hline
+\texttt{ineq\_cglmp.py} & \texttt{ineq\_cglmp.out} & 30\ /\ \approx 25\ \mathrm{s}\\
+\texttt{ineq\_mermin.py} & \texttt{ineq\_mermin.out} & 52\ /\ \approx 1\ \mathrm{s}\\
+\texttt{ineq\_xcheck.py} & \texttt{ineq\_xcheck2.out} & 11\ /\ <1\ \mathrm{s}\\
+\texttt{ineq\_mermin5\_n5.py} & \texttt{ineq\_mermin5\_n5.out} & 14\ /\ \approx 41\ \mathrm{s}\\
+\texttt{fringe\_pm.py} & \texttt{fringe\_pm.out} & 88\ /\ \approx 1.6\ \mathrm{s}
+\end{array}
+\end{equation*}
+\normalsize
+
+\texttt{ineq\_cglmp.py}: difference-pattern reduction; full multiset
+enumeration ($\mathbb{Q}$ + exact $\mathbb{Q}(\sqrt{3})$ tuples); per-
+multiset $F^{*}$ analysis for $N=2,3$. \texttt{ineq\_mermin.py}:
+$(P,r)$ pattern parameterization; full multiset enumeration; pins the
+$n=5$ curves $N=2\dots 4$ and tightness of $\lceil 3N/8\rceil/N$;
+enumerates $A_{\max B}$ exactly. \texttt{ineq\_xcheck.py}:
+\emph{independent} cross-check by direct strategy brute force
+($64/1024/81$ strategies, no pattern parameterization) and exact
+$\mathbb{Q}(i)$ Kronecker computation of the GHZ correlators.
+\texttt{ineq\_mermin5\_n5.py}: independent re-implementation of the
+enumeration (cross-checked against the certified $N=4$ values before
+use); full-curve pins $N=5,6$; audit of the remainder-witness
+realizability. \texttt{fringe\_pm.py}: the PM square in full (exact
+$\mathbb{Q}$ / $\mathbb{Q}(\sqrt{2})$; two soft LP cross-checks, never
+failing the run). (The older log \texttt{ineq\_xcheck.out} is stale --- it
+records a crash of an earlier buggy draft; the current output is
+\texttt{ineq\_xcheck2.out}.) The two route families (pattern-
+parameterized enumeration vs direct strategy brute force) agree on all
+shared pattern-structure facts, and the GHZ quantum values were computed
+without any shortcut formula. These certificates build on the main paper's
+(the row lemma, the exact-curve breakpoint technique, the round-robin
+witnesses), whose own certificates are listed in the appendices
+of \cite{mainpaper2026}.
+
+% =====================================================================
+\section{Conclusion}
+\label{sec:concl}
+
+The minimum-fine-tuning program of \cite{mainpaper2026} generalizes
+exactly where the quantum point lies on the first linear segment and the
+obstruction has $m_{\min}=1$ balanced near-misses ({CGLMP} $d=3$), becomes
+the cap $\lceil N/K\rceil/N$ where the quantum point \emph{is} the
+algebraic maximum ({Mermin} $n=3$ with $K=4$; the Peres--Mermin square
+with $K=6$, a first exact result for a contextuality scenario), and is
+governed by the frustration index $m_{\min}/K$ where the obstruction is
+frustrated ({Mermin} $n=5$, $\lim F^{*}=3/8$). The $K/m_{\min}$
+principle (Conjecture~\ref{conj:kmm}) unifies the instances, with
+{Mermin} $n=5$ marking where the finite-$N$ form can fail. Natural next
+steps: the {KCBS} analog (the intermediate-quantum-value case for
+contextuality), pinning the {Mermin} $n=5$ residues $r\in\{5,7,8,\dots,
+15\}\pmod{16}$, and the no-signalling sub-case for these inequalities.
+
+% =====================================================================
+\section*{Note on provenance and corrections}
+
+As explained in the corresponding note of the companion paper
+\cite{mainpaper2026}, this paper is primarily the product of a locally
+hosted open-weight language model (Qwen3.8-27B), which chose the problem,
+did the mathematics and computations and wrote the text under the direction
+of the human author, who supplied minimal scientific or technical input.
+On 2026-09-03 it was critically reviewed by Claude Fable~5.1 (Anthropic),
+which re-derived every result by independent exact computation (all
+pattern censuses, the Mermin $n=5$ tables and $A_{\max B}$ values, the
+Peres--Mermin curves for $N\le10$, the CGLMP closed forms) and found the
+mathematics correct. The reviewer made the following corrections:
+\begin{enumerate}
+\item The CGLMP ``quantum value'' used as target,
+  $T_{\mathrm{ME}}=(12+8\sqrt3)/9$, is the maximally-entangled-state value
+  of Ref.~\onlinecite{cglmp2002}, not the quantum maximum: the larger value
+  $T_{\mathrm{Q}}=1+\sqrt{11/3}$ of Ac\'in \emph{et al.}
+  \cite{adgl2002} was missing (an earlier draft even recorded an
+  unconfirmed guess ``$\approx3.34$''). Both targets are now treated; the
+  closed form is unchanged, the $N\ge4$ headline number at $T_{\mathrm{Q}}$
+  is $0.114357$.
+\item Sec.~\ref{sec:setup} claimed that the grid values $V(k/N)$ always
+  give the complete curve; this is false (the paper's own Mermin $n=5$,
+  $N=2$ curve bends at $F=1/4$) and was replaced by the correct convexity
+  statement.
+\item Sec.~\ref{sec:cglmp}: the census omitted the six bound-attaining
+  patterns of weight type $(+1,+1,0,0)$; now stated.
+\item Theorem~\ref{thm:mermin5}: equality $F^{*}=\lceil 3N/8\rceil/N$ is
+  provable for the residues $r\in\{0,1,2,3,4,6\}\pmod{16}$, not only
+  $r\in\{0,1,2\}$; strengthened accordingly.
+\item Sec.~\ref{sec:mermin3}: the combinatorial identity of the Mermin
+  $n=3$ problem with CHSH is now stated.
+\item References: the Peres--Mermin square is now credited to Peres (1990)
+  and Mermin, PRL \textbf{65}, 3373, rather than to Mermin's GHZ paper; the
+  Ac\'in \emph{et al.} reference was added; an over-generalisation of
+  Alai's ``repeated at the following even size'' statement was restricted
+  to $n\le11$ as in the source; two typographical errors
+  ($\lfloor\cdot\rceil$, a missing $/N$) were fixed; the bibliography style
+  was aligned with the companion paper.
+\item The abstract was rewritten to state the contribution and its
+  scope first, naming both {CGLMP} targets.
+\end{enumerate}
+
+\begin{acknowledgments}
+This work received no institutional or financial support. As described in
+the Note on provenance, the research and drafting were carried out by
+language models under the author's direction; the author takes full
+responsibility for the content.
+\end{acknowledgments}
+
+\bibliographystyle{apsrev4-2}
+\bibliography{refs}
+
+\end{document}

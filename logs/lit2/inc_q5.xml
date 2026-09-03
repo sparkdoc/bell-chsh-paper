@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/aE877Vuz4aGvTU5FdD1F8c0Pa7Y</id>
+  <title>arXiv Query: search_query=all:"fine-tuning" AND all:"Bell"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-02T22:12:52Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22fine-tuning%22+AND+all:%22Bell%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>102</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.27147v1</id>
+    <title>Thomson: Continual Learning of Frontier Models for SovereignAI</title>
+    <updated>2026-08-27T13:59:36Z</updated>
+    <link href="https://arxiv.org/abs/2608.27147v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.27147v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The development of frontier models is commonly perceived to be the exclusive remit of a small number of heavily funded players, creating an information, economic and power asymmetry between developers and the diverse user base of modern AI. Recent public discourse acknowledges this concern, calling for SovereignAI (an organisation's capability to independently build, deploy and govern AI use), but offers little concrete advice on how this can be achieved in the short term under a diversity of funding settings. We argue that frontier performance is achievable by a wide range of institutions through Continual Learning on readily available open-weight models. Unlike limited approaches such as small-scale fine-tuning, prompt engineering, or tool-augmentation of a frozen model, our approach exploits a modern mid- &amp; post-training stack while introducing safeguards that preserve both plasticity and stability at each stage, making the minimal number of high-impact interventions on the parameters. This yields gains comparable to those typically seen across multiple successive model generations, at compute and personnel budgets substantially lower than commonly thought, making ownership of large parts of the SovereignAI stack (model, tool infrastructure, values &amp; data privacy) viable for far more actors. We demonstrate this with Thomson, a general-purpose frontier model trained with an enhanced focus on high-stakes professional work. Thomson performs competitively with recent frontier models across agentic tasks, safety, legal, tax &amp; multilingualism, and large-scale Deep Research. Evaluations show a distinctive $π$-shaped pattern: distinct improvements across a wide range of capabilities, including those not explicitly targeted, while almost completely eliminating the forgetting problem common to narrow domain adaptation.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-27T13:59:36Z</published>
+    <arxiv:comment>Open-weight model: https://huggingface.co/thomsonreuters/Thomson-1.0-Small</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shengzhuang Chen</name>
+    </author>
+    <author>
+      <name>Jerrod Parker</name>
+    </author>
+    <author>
+      <name>Yejin Bang</name>
+    </author>
+    <author>
+      <name>Andrew M. Bean</name>
+    </author>
+    <author>
+      <name>Nabeel Seedat</name>
+    </author>
+    <author>
+      <name>Stefan Winzeck</name>
+    </author>
+    <author>
+      <name>Daniil Glazko</name>
+    </author>
+    <author>
+      <name>Jannik Zgraggen</name>
+    </author>
+    <author>
+      <name>Fangyi Yu</name>
+    </author>
+    <author>
+      <name>Scott Arnott</name>
+    </author>
+    <author>
+      <name>Dietrich Trautmann</name>
+    </author>
+    <author>
+      <name>Luca Ciuffreda</name>
+    </author>
+    <author>
+      <name>Guglielmo Bonifazi</name>
+    </author>
+    <author>
+      <name>Davide Romano</name>
+    </author>
+    <author>
+      <name>Bradley Bell</name>
+    </author>
+    <author>
+      <name>Kirsty Fielding</name>
+    </author>
+    <author>
+      <name>Daniele Giofrè</name>
+    </author>
+    <author>
+      <name>Tom Zielund</name>
+    </author>
+    <author>
+      <name>Ipshita Chatterjee</name>
+    </author>
+    <author>
+      <name>Sneha Murthy Ghantasala</name>
+    </author>
+    <author>
+      <name>Manpreet Nanreh</name>
+    </author>
+    <author>
+      <name>John Scoville</name>
+    </author>
+    <author>
+      <name>Maciej Sakowicz</name>
+    </author>
+    <author>
+      <name>Wassim Seifeddine</name>
+    </author>
+    <author>
+      <name>Lukas Thede</name>
+    </author>
+    <author>
+      <name>Jonathan Richard Schwarz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21520v1</id>
+    <title>On the performance of pre-trained vision transformers for supernova spectral classification using different spectral representations</title>
+    <updated>2026-08-21T18:00:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.21520v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21520v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The spectroscopic classification of supernovae is a key component of time-domain astronomy and plays an important role in the identification of Type Ia events. The increasing volume and diversity of spectroscopic data motivate the development of automated classification approaches. In this work, we explore the use of Transformer-based vision models for supernova spectral classification, focusing on how different visual representations of spectra and fine-tuning strategies affect classification performance when image-based architectures are applied to intrinsically one-dimensional data. We consider a dataset of 4,011 supernova spectra, augmented and rebalanced into three astrophysically motivated classes: normal Type Ia, other Type Ia subtypes, and core-collapse supernovae. Spectra are encoded as line-plot images using direct flux-wavelength visualizations as well as alternative flux-difference versus wavelength-difference heatmap representations designed to emphasize differential spectral structure. We evaluate several pre-trained Transformer architectures, including Vision Transformers (ViT), Swin Transformers, and a DINOv3-pretrained ViT, and examine the effects of fine-tuning depth, visual representation, and hyperparameter choices. We find that a plain flux-wavelength line plot outperforms the purpose-built maps on average, though log-scale maps remain competitive for specific architecture and fine-tuning combinations. On the held-out test set, our best model (\texttt{vitb-p16}) reaches a macro-F1 score of 86.3%, with per-class F1 scores of 94% for normal Ia, 77% for other Ia subtypes, and 88% for core-collapse supernovae. The dominant misclassification arises from confusion between Ia-91T and normal Ia spectra. These results demonstrate that Transformer-based vision models can provide competitive performance for single-spectrum supernova spectral classification.</summary>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T18:00:04Z</published>
+    <arxiv:comment>Submitted to A&amp;A. 16 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.IM"/>
+    <author>
+      <name>J. Serrano Bell</name>
+    </author>
+    <author>
+      <name>P. Gálvez Molina</name>
+    </author>
+    <author>
+      <name>V. Contreras Rojas</name>
+    </author>
+    <author>
+      <name>W. Fox Fortino</name>
+    </author>
+    <author>
+      <name>M. Rojas</name>
+    </author>
+    <author>
+      <name>P. Protopapas</name>
+    </author>
+    <author>
+      <name>F. Bianco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.13142v1</id>
+    <title>Challenging Majorana neutrino effects in $B\to K^{(\ast)}νν$ and $K\to πνν$ decays</title>
+    <updated>2026-07-14T18:00:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.13142v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.13142v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the contributions of Lepton Number Violating (LNV) effective operators to the rare decays $B\to K^{(\ast)}νν$ and $K\to πνν$. Such operators can modify the kinematic distributions of these processes, providing distinctive probes of physics beyond the Standard Model. Through a renormalization-group analysis, we show that the Standard Model Effective Field Theory (SMEFT) operators responsible for these effects are subject to stringent indirect constraints from neutrino physics. In particular, we find that the mild excess reported by Belle-II in the $B^+\to K^+νν$ channel cannot be explained by LNV SMEFT operators without introducing significant fine-tuning in neutrino masses. We then show that these constraints can be evaded in the SMEFT minimally extended by a light right-handed neutrino, allowing for sizable effects in rare meson decays. Finally, we explore the implications of this viable scenario for low-energy processes, including neutrinoless double-beta decays.</summary>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-14T18:00:04Z</published>
+    <arxiv:comment>44 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="hep-ph"/>
+    <author>
+      <name>Asmaa Abada</name>
+    </author>
+    <author>
+      <name>Claire Chevallier</name>
+    </author>
+    <author>
+      <name>Luighi P. S. Leal</name>
+    </author>
+    <author>
+      <name>Anna Llauradó</name>
+    </author>
+    <author>
+      <name>Olcyr Sumensari</name>
+    </author>
+    <author>
+      <name>Renata Zukanovich Funchal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.17973v1</id>
+    <title>Fine-tuning LLMs for Passive Depression Severity Estimation from AI Mental Health Dialogue</title>
+    <updated>2026-06-16T14:28:47Z</updated>
+    <link href="https://arxiv.org/abs/2606.17973v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.17973v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression is the leading cause of disability worldwide, and early detection of symptom change is essential for timely intervention. Validated instruments such as the Patient Health Questionnaire-9 (PHQ-9) support symptom monitoring at scale, but real-world completion rates are low, introducing response bias and systematic missingness. Passive approaches that infer severity from routinely generated data could close this gap. We address this by predicting PHQ-9 total scores directly from transcripts of conversations between users and an AI mental health application, requiring only conversation text and no additional clinical data. We fine-tune a Qwen3.5-27B backbone with a regression head, augment 3,111 ground-truth labels with pseudolabels generated by a reasoning model (Claude Opus) and iteratively trained intermediate models, for a combined dataset of 6,283 users. On a held-out test set of 842 users, our best model achieves MAE = 2.6, RMSE = 4.0, Pearson r = 0.80, and AUC = 0.91 at the PHQ-9 &gt;= 10 clinical threshold. We also find AUC &gt; 0.87 at every severity threshold from PHQ-9 &gt;= 3 to PHQ-9 &gt;= 24, demonstrating that the model captures depression severity across the full clinical spectrum. This work opens the door to passive, continuous symptom monitoring in AI mental health platforms, without requiring users to complete self-report measures.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-16T14:28:47Z</published>
+    <arxiv:comment>12 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Olivier Tieleman</name>
+    </author>
+    <author>
+      <name>Ziyi Zhu</name>
+    </author>
+    <author>
+      <name>Ting Su</name>
+    </author>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+    <author>
+      <name>Thomas D. Hull</name>
+    </author>
+    <author>
+      <name>Caitlin A. Stamatis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.28577v1</id>
+    <title>Continual Model Routing in Evolving Model Hubs</title>
+    <updated>2026-05-27T15:00:45Z</updated>
+    <link href="https://arxiv.org/abs/2605.28577v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.28577v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI model hubs provide access to a rapidly growing collection of powerful pre-trained models, enabling off-the-shelf mixture-of-experts systems with different routing strategies. However, this rapid growth poses two fundamental challenges: scaling model selection across thousands of experts and continually updating routing mechanisms as new models and tasks are introduced. In this paper, we formalise this setting as Continual Model Routing (CMR) and propose CMRBench, a new large-scale benchmark simulating realistic hub expansion and including over 2,000 candidate models. Finally, we introduce CARvE, a contrastive embedding approach for efficient continual model routing via checkpoint-based anchoring and structured replay. Extensive empirical results and ablations show that CARvE significantly outperforms zero-shot retrieval, fine-tuning, and adapter-merging baselines in model, family, and domain-level accuracy.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-27T15:00:45Z</published>
+    <arxiv:comment>42 pages, 24 tables, 6 figures, to be published at ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jack Bell</name>
+    </author>
+    <author>
+      <name>Giacomo Carfì</name>
+    </author>
+    <author>
+      <name>Gerlando Gramaglia</name>
+    </author>
+    <author>
+      <name>Vincenzo Lomonaco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.15393v1</id>
+    <title>LPDS: Evaluating LLM Robustness Through Logic-Preserving Difficulty Scaling</title>
+    <updated>2026-05-14T20:26:59Z</updated>
+    <link href="https://arxiv.org/abs/2605.15393v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.15393v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As large language models (LLMs) are increasingly deployed to perform tasks with minimal human oversight, it is crucial that these models operate robustly. In particular, a model that can solve a given problem should not fail simply because certain entities$\unicode{x2013}$such as names, numbers, or other contextual details$\unicode{x2013}$have changed while the underlying problem logic remains the same. Prior work suggests that current LLMs still struggle with this form of robustness: they often succeed on some variations of a problem but fail on others. However, existing evaluations often lack a systematic way to identify which logic-preserving variations are most likely to induce failure. Instead, they typically test a random subset of allowable variations, which can overstate robustness. To address this gap, we introduce logic-preserving difficulty scaling (LPDS), a framework that (i) quantifies the difficulty of a problem variation and (ii) systematically searches the space of allowable variations to find those that maximize difficulty and expose failures. We show that as difficulty increases, performance declines and errors in the models' reasoning chains become more pronounced. We further demonstrate that LPDS efficiently finds difficult problem variations for a model, resulting in performance drops up to 5 times larger compared to random sampling. Finally, we show that fine-tuning on more difficult variations leads to more consistent robustness gains than training on easier ones.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-14T20:26:59Z</published>
+    <arxiv:comment>41 pages, 31 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Philipp Mondorf</name>
+    </author>
+    <author>
+      <name>Samuel J. Bell</name>
+    </author>
+    <author>
+      <name>Jesse Dodge</name>
+    </author>
+    <author>
+      <name>Dieuwke Hupkes</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.11348v1</id>
+    <title>CP violation in two meson tau decays</title>
+    <updated>2026-03-11T22:29:56Z</updated>
+    <link href="https://arxiv.org/abs/2603.11348v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.11348v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>CP violation in $τ\to K_S πν_τ$ decays has attracted a lot of attention recently, due to the BaBar anomaly in the corresponding rate asymmetry. Within an effective field theory formalism, only extreme fine-tuning would allow to understand such measurement, which is currently being scrutinized at Belle(-II), as will be in the future super-charm-tau factory. Here we summarize the results of applying the same formalism to the other two-meson tau decay channels, which can help solve this conundrum. Our main conclusion is that current and future experiments would be sensitive to the maximum allowed CP rate asymmetry in the related $K^\pm K_S$ modes with a measurement having 5$\%$ precision, that will either support or cast further doubts on the BaBar anomaly.</summary>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-11T22:29:56Z</published>
+    <arxiv:comment>13 pages, 5 figures, submitted to the proceedings of the 7th International Workshop on Future Tau Charm Facilities (23-27 Nov. 2025, Shanghai, China) to be published in International Journal of Modern Physics A (IJMPA)</arxiv:comment>
+    <arxiv:primary_category term="hep-ph"/>
+    <author>
+      <name>Daniel A. López Aguilar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.01758v1</id>
+    <title>Unifying Heterogeneous Multi-Modal Remote Sensing Detection Via Language-Pivoted Pretraining</title>
+    <updated>2026-03-02T11:38:12Z</updated>
+    <link href="https://arxiv.org/abs/2603.01758v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.01758v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Heterogeneous multi-modal remote sensing object detection aims to accurately detect objects from diverse sensors (e.g., RGB, SAR, Infrared). Existing approaches largely adopt a late alignment paradigm, in which modality alignment and task-specific optimization are entangled during downstream fine-tuning. This tight coupling complicates optimization and often results in unstable training and suboptimal generalization. To address these limitations, we propose BabelRS, a unified language-pivoted pretraining framework that explicitly decouples modality alignment from downstream task learning. BabelRS comprises two key components: Concept-Shared Instruction Aligning (CSIA) and Layerwise Visual-Semantic Annealing (LVSA). CSIA aligns each sensor modality to a shared set of linguistic concepts, using language as a semantic pivot to bridge heterogeneous visual representations. To further mitigate the granularity mismatch between high-level language representations and dense detection objectives, LVSA progressively aggregates multi-scale visual features to provide fine-grained semantic guidance. Extensive experiments demonstrate that BabelRS stabilizes training and consistently outperforms state-of-the-art methods without bells and whistles. Code: https://github.com/zcablii/SM3Det.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-02T11:38:12Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Yuming Chen</name>
+    </author>
+    <author>
+      <name>Yunheng Li</name>
+    </author>
+    <author>
+      <name>Ming-Ming Cheng</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Jian Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.02820v1</id>
+    <title>From Tokens to Numbers: Continuous Number Modeling for SVG Generation</title>
+    <updated>2026-02-02T21:20:38Z</updated>
+    <link href="https://arxiv.org/abs/2602.02820v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.02820v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For certain image generation tasks, vector graphics such as Scalable Vector Graphics (SVGs) offer clear benefits such as increased flexibility, size efficiency, and editing ease, but remain less explored than raster-based approaches. A core challenge is that the numerical, geometric parameters, which make up a large proportion of SVGs, are inefficiently encoded as long sequences of tokens. This slows training, reduces accuracy, and hurts generalization. To address these problems, we propose Continuous Number Modeling (CNM), an approach that directly models numbers as first-class, continuous values rather than discrete tokens. This formulation restores the mathematical elegance of the representation by aligning the model's inputs with the data's continuous nature, removing discretization artifacts introduced by token-based encoding. We then train a multimodal transformer on 2 million raster-to-SVG samples, followed by fine-tuning via reinforcement learning using perceptual feedback to further improve visual quality. Our approach improves training speed by over 30% while maintaining higher perceptual fidelity compared to alternative approaches. This work establishes CNM as a practical and efficient approach for high-quality vector generation, with potential for broader applications. We make our code available http://github.com/mikeogezi/CNM.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-02T21:20:38Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Michael Ogezi</name>
+    </author>
+    <author>
+      <name>Martin Bell</name>
+    </author>
+    <author>
+      <name>Freda Shi</name>
+    </author>
+    <author>
+      <name>Ethan Smith</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.18730v1</id>
+    <title>Reflect: Transparent Principle-Guided Reasoning for Constitutional Alignment at Scale</title>
+    <updated>2026-01-26T17:54:54Z</updated>
+    <link href="https://arxiv.org/abs/2601.18730v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.18730v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The constitutional framework of alignment aims to align large language models (LLMs) with value-laden principles written in natural language (such as to avoid using biased language). Prior work has focused on parameter fine-tuning techniques, such as reinforcement learning from human feedback (RLHF), to instill these principles. However, these approaches are computationally demanding, require careful engineering and tuning, and often require difficult-to-obtain human annotation data. We propose \textsc{reflect}, an inference-time framework for constitutional alignment that does not require any training or data, providing a plug-and-play approach for aligning an instruction-tuned model to a set of principles. \textsc{reflect} operates entirely in-context, combining a (i) constitution-conditioned base response with post-generation (ii) self-evaluation, (iii)(a) self-critique, and (iii)(b) final revision. \textsc{reflect}'s technique of explicit in-context reasoning over principles during post-generation outperforms standard few-shot prompting and provides transparent reasoning traces. Our results demonstrate that \textsc{reflect} significantly improves LLM conformance to diverse and complex principles, including principles quite distinct from those emphasized in the model's original parameter fine-tuning, without sacrificing factual reasoning. \textsc{reflect} is particularly effective at reducing the rate of rare but significant violations of principles, thereby improving safety and robustness in the tail end of the distribution of generations. Finally, we show that \textsc{reflect} naturally generates useful training data for traditional parameter fine-tuning techniques, allowing for efficient scaling and the reduction of inference-time computational overhead in long-term deployment scenarios.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-26T17:54:54Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Henry Bell</name>
+    </author>
+    <author>
+      <name>Caroline Zhang</name>
+    </author>
+    <author>
+      <name>Mohammed Mobasserul Haque</name>
+    </author>
+    <author>
+      <name>Dhaval Potdar</name>
+    </author>
+    <author>
+      <name>Samia Zaman</name>
+    </author>
+    <author>
+      <name>Brandon Fain</name>
+    </author>
+  </entry>
+</feed>

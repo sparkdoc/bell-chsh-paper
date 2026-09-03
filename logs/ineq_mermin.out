@@ -1,0 +1,75 @@
+=== PART A: n=3 pattern structure (exact) ===
+  [check   1] n=3: 8 distinct realizable patterns (= 2^3; the 16 (P,r) pairs carry a 2-fold redundancy (P,r)~(P,-r))
+  [check   2] n=3: 4 active setting blocks (even-weight); algebraic max = 4
+  [check   3] n=3: min miss count = 1 (parity obstruction: no 0-miss pattern)
+  [check   4] n=3: 4 near-miss patterns (each misses exactly one condition)
+  [check   5] n=3: near-miss patterns per condition = [1, 1, 1, 1]
+  [check   6] n=3: local bound B_3 = max pattern value = 2 (Mermin: 2^((n-1)/2) = 2)
+  [check   7] n=3: M_3(GHZ_3) = 4 = algebraic max (quantum value = algebraic max)
+
+=== PART B: n=3 exact curves S_max(N, k/N), N = 2..6 (full enumeration) ===
+  N=2: S(0/2)=2  S(1/2)=4  S(2/2)=4
+  [check   8] n=3 N=2: S_max(N,0) = 2 = B_3
+  [check   9] n=3 N=2: S_max(N,1/N) = 2 + 2*min(N,4)/N  (first segment 2+2*min(N,4)*F)
+  [check  10] n=3 N=2: F*(M_3=4) = min_Q max_s n_s/N = 1/2 = ceil(N/4)/N
+  [check  11] n=3 N=2: S_max(N,1/N) = 4 and S_max(N,0/N) < 4
+  N=3: S(0/3)=2  S(1/3)=4  S(2/3)=4  S(3/3)=4
+  [check  12] n=3 N=3: S_max(N,0) = 2 = B_3
+  [check  13] n=3 N=3: S_max(N,1/N) = 2 + 2*min(N,4)/N  (first segment 2+2*min(N,4)*F)
+  [check  14] n=3 N=3: F*(M_3=4) = min_Q max_s n_s/N = 1/3 = ceil(N/4)/N
+  [check  15] n=3 N=3: S_max(N,1/N) = 4 and S_max(N,0/N) < 4
+  N=4: S(0/4)=2  S(1/4)=4  S(2/4)=4  S(3/4)=4  S(4/4)=4
+  [check  16] n=3 N=4: S_max(N,0) = 2 = B_3
+  [check  17] n=3 N=4: S_max(N,1/N) = 2 + 2*min(N,4)/N  (first segment 2+2*min(N,4)*F)
+  [check  18] n=3 N=4: F*(M_3=4) = min_Q max_s n_s/N = 1/4 = ceil(N/4)/N
+  [check  19] n=3 N=4: S_max(N,1/N) = 4 and S_max(N,0/N) < 4
+  N=5: S(0/5)=2  S(1/5)=18/5  S(2/5)=4  S(3/5)=4  S(4/5)=4  S(5/5)=4
+  [check  20] n=3 N=5: S_max(N,0) = 2 = B_3
+  [check  21] n=3 N=5: S_max(N,1/N) = 2 + 2*min(N,4)/N  (first segment 2+2*min(N,4)*F)
+  [check  22] n=3 N=5: F*(M_3=4) = min_Q max_s n_s/N = 2/5 = ceil(N/4)/N
+  [check  23] n=3 N=5: S_max(N,2/N) = 4 and S_max(N,1/N) < 4
+  N=6: S(0/6)=2  S(1/6)=10/3  S(2/6)=4  S(3/6)=4  S(4/6)=4  S(5/6)=4  S(6/6)=4
+  [check  24] n=3 N=6: S_max(N,0) = 2 = B_3
+  [check  25] n=3 N=6: S_max(N,1/N) = 2 + 2*min(N,4)/N  (first segment 2+2*min(N,4)*F)
+  [check  26] n=3 N=6: F*(M_3=4) = min_Q max_s n_s/N = 2/6 = ceil(N/4)/N
+  [check  27] n=3 N=6: S_max(N,2/N) = 4 and S_max(N,1/N) < 4
+
+=== PART C: n=3 general-N construction + explicit N=4 witness ===
+  [check  28] n=3: round-robin construction gives max_s n_s <= ceil(N/4), sum n_s = N for N = 2..64
+  [check  29] n=3 N=4 witness: all 4 rows at +1, per-row TV = 1/4 exactly, M_3 = 4
+
+=== PART D: n=5 pattern structure (exact) ===
+  [check  30] n=5: 32 distinct realizable patterns; 16 active setting blocks; algebraic max = 16
+  [check  31] n=5: min miss count = 6  ('all-but-one' structure FAILS: m_5 > 1)
+  [check  32] n=5: 16 min-miss patterns (of the 32 distinct patterns)
+  [check  33] n=5: local bound B_5 = max pattern value = 4 (Mermin: 2^((n-1)/2) = 4)
+  [check  34] n=5: M_5(GHZ_5) = 16 = algebraic max (quantum value = algebraic max)
+
+=== PART E: n=5 exact S_max(N, k/N), N = 2..4 (full enumeration) ===
+  N=2: S(0/2)=4  S(1/2)=16  S(2/2)=16
+  [check  35] n=5 N=2: S_max(N,0) = 4 = B_5
+  [check  36] n=5 N=2: full curve pinned (S_max(N,1/N) = 16)
+  [check  37] n=5 N=2: F*(M_5=16) = min_Q max n_s/N = 1/2 = ceil(3N/8)/N (tight)
+  N=3: S(0/3)=4  S(1/3)=12  S(2/3)=16  S(3/3)=16
+  [check  38] n=5 N=3: S_max(N,0) = 4 = B_5
+  [check  39] n=5 N=3: full curve pinned (S_max(N,1/N) = 12)
+  [check  40] n=5 N=3: F*(M_5=16) = min_Q max n_s/N = 2/3 = ceil(3N/8)/N (tight)
+  N=4: S(0/4)=4  S(1/4)=12  S(2/4)=16  S(3/4)=16  S(4/4)=16
+  [check  41] n=5 N=4: S_max(N,0) = 4 = B_5
+  [check  42] n=5 N=4: full curve pinned (S_max(N,1/N) = 12)
+  [check  43] n=5 N=4: F*(M_5=16) = min_Q max n_s/N = 2/4 = ceil(3N/8)/N (tight)
+
+=== PART E2: A_max_B(N) — first-segment right slope at F=0 (exact) ===
+  [check  44] n=5 N=2: A_max_B = 8 (bound min(K,6N) = 12, LOOSE); first-segment slope 2*A_max_B = 16; bend in [0,1/2] (chord to S(1/2)=16 needs A > A_max_B)
+  [check  45] n=5 N=3: A_max_B = 12 (bound min(K,6N) = 16, LOOSE); single segment 4+24*F on [0,1/N] (endpoint 12)
+  [check  46] n=5 N=4: A_max_B = 16 (bound min(K,6N) = 16, tight); single segment 4+32*F on [0,1/N] (endpoint 12)
+  [check  47] n=5 N=5: A_max_B = 16 (bound min(K,6N) = 16, tight); single segment 4+32*F on [0,1/N] (endpoint 52/5)
+  [check  48] n=5 N=6: A_max_B = 16 (bound min(K,6N) = 16, tight); single segment 4+32*F on [0,1/N] (endpoint 28/3)
+
+=== PART F: n=5 general-N constructions (exact counting) ===
+  [check  49] n=5: full 16 min-miss family incidence per condition = [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+  [check  50] n=5: F*(M_5=16; N=16m) = 3/8 exactly, m = 1..4 (construction + lower bound)
+  [check  51] n=5: remainder witnesses r=0,1,2 keep per-condition incidence <= ceil(3r/8)
+  [check  52] n=5: F*(M_5=16; N) = ceil(3N/8)/N exactly for all N ≡ 0,1,2 (mod 16), N >= 2
+
+ALL CHECKS PASSED (52 checks).  elapsed 1.2s

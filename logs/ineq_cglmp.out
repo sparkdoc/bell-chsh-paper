@@ -1,0 +1,46 @@
+=== PART A: CGLMP d=3 pattern structure (exact) ===
+  [check   1] pattern space: 27 valid difference patterns (modular constraint)
+  [check   2] local bound B = max pattern value = 2  (Collins et al.: I_3 <= 2)
+  [check   3] modular obstruction: no pattern attains the algebraic-max target (0,0,2,0)
+  [check   4] near-miss patterns (block exactly one row): 4
+  [check   5] each near-miss pattern has value 2 = B (local bound), one per row
+  [check   6] every pattern blocks at least one row (cap lower-bound ingredient)
+
+=== PART B: exact curves S_max(N, k/N), N = 2..6 (full enumeration) ===
+  N=2: S(0/2)=2  S(1/2)=4  S(2/2)=4
+  [check   7] N=2: S_max(N,0) = 2 = local bound
+  [check   8] N=2: S_max(N,1/N) = 2 + 2*min(N,4)/N   (first segment 2+2*min(N,4)*F)
+  [check   9] N=2: F*(I_3=4) = min_Q max_r n_r^+/N = 1/2 = ceil(N/4)/N (exact cap)
+  N=3: S(0/3)=2  S(1/3)=4  S(2/3)=4  S(3/3)=4
+  [check  10] N=3: S_max(N,0) = 2 = local bound
+  [check  11] N=3: S_max(N,1/N) = 2 + 2*min(N,4)/N   (first segment 2+2*min(N,4)*F)
+  [check  12] N=3: F*(I_3=4) = min_Q max_r n_r^+/N = 1/3 = ceil(N/4)/N (exact cap)
+  N=4: S(0/4)=2  S(1/4)=4  S(2/4)=4  S(3/4)=4  S(4/4)=4
+  [check  13] N=4: S_max(N,0) = 2 = local bound
+  [check  14] N=4: S_max(N,1/N) = 2 + 2*min(N,4)/N   (first segment 2+2*min(N,4)*F)
+  [check  15] N=4: F*(I_3=4) = min_Q max_r n_r^+/N = 1/4 = ceil(N/4)/N (exact cap)
+  N=5: S(0/5)=2  S(1/5)=18/5  S(2/5)=4  S(3/5)=4  S(4/5)=4  S(5/5)=4
+  [check  16] N=5: S_max(N,0) = 2 = local bound
+  [check  17] N=5: S_max(N,1/N) = 2 + 2*min(N,4)/N   (first segment 2+2*min(N,4)*F)
+  [check  18] N=5: F*(I_3=4) = min_Q max_r n_r^+/N = 2/5 = ceil(N/4)/N (exact cap)
+  N=6: S(0/6)=2  S(1/6)=10/3  S(2/6)=4  S(3/6)=4  S(4/6)=4  S(5/6)=4  S(6/6)=4
+  [check  19] N=6: S_max(N,0) = 2 = local bound
+  [check  20] N=6: S_max(N,1/N) = 2 + 2*min(N,4)/N   (first segment 2+2*min(N,4)*F)
+  [check  21] N=6: F*(I_3=4) = min_Q max_r n_r^+/N = 2/6 = ceil(N/4)/N (exact cap)
+
+=== PART C: F* to reach I_3(QM) = (12+8 sqrt(3))/9 ~= 2.87293 ===
+  [check  22] N=2: F*(T) = (T-2)/(2N) exactly in Q(sqrt(3))  [min over all 378 multisets]
+  [check  23] N=3: F*(T) = (T-2)/(2N) exactly in Q(sqrt(3))  [min over all 3654 multisets]
+  [check  24] N=4: S_max(N,k/N) = 2+8k/N for k <= 1 (construction + global bound 2+8F)
+  [check  25] N=4: F*(T) = (T-2)/8 = sqrt(3)/9 - 1/12 ~= 0.109117 < floor(N/4)/N -> on linear segment
+  [check  26] N=5: S_max(N,k/N) = 2+8k/N for k <= 1 (construction + global bound 2+8F)
+  [check  27] N=5: F*(T) = (T-2)/8 = sqrt(3)/9 - 1/12 ~= 0.109117 < floor(N/4)/N -> on linear segment
+  [check  28] N=6: S_max(N,k/N) = 2+8k/N for k <= 1 (construction + global bound 2+8F)
+  [check  29] N=6: F*(T) = (T-2)/8 = sqrt(3)/9 - 1/12 ~= 0.109117 < floor(N/4)/N -> on linear segment
+
+=== PART D: general-N cap construction (round-robin over 4 near-misses) ===
+  [check  30] round-robin over the 4 near-miss patterns: max block-count <= ceil(N/4), sum = N, N=2..64
+     => F*(I_3=4; N) = ceil(N/4)/N for all N (lower bound: every pattern blocks >= 1 row)
+
+ALL CHECKS PASSED (30 checks).  elapsed 21.7s
+EXIT=0

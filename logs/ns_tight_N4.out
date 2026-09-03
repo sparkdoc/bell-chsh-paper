@@ -1,0 +1,12 @@
+=== TASK 2: direct NS tightness evaluation, N=4 ===
+F = (sqrt(2)-1)/4 = 0.103553390593274
+S_NS(N,F) via phase3.exact_Smax_ns (Pool nproc=96, HiGHS); target 2*sqrt(2) = 2.828427124746190
+
+S_NS(4, F) = 2.828427124746
+S - 2*sqrt(2) = +4.440892098501e-16
+runtime = 0.9 s   (65536 vertices, one NS LP each)
+
+VERDICT: S_NS(4,(sqrt2-1)/4) = 2*sqrt(2) to within LP tolerance (>= target - 1e-05).
+=> F*_NS(4) = (sqrt2-1)/4 EXACTLY. The earlier bisection offsets were pure
+   bisection-resolution artifacts (13 iters from [0,0.5], resolution ~6.1e-5).
+RESULT: PASS

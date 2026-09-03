@@ -1,0 +1,430 @@
+================================================================================
+LITERATURE CHECK — Bell/CHSH fine-tuning project
+Date: 2026-08-23 | Tasks: (1) anchor verification, (2) novelty sweep 2015–2026,
+(3) FGHK 2018 verification.
+Method: direct arxiv.org fetches (API + abs pages) and local reference lists.
+The WebSearch tool proved unreliable in this environment (see §D); no citation
+or quote below rests on it. All quotes were re-read from the cited source
+during this sweep; nothing is quoted from memory alone.
+================================================================================
+
+SECTION A — ANCHOR VERIFICATION
+--------------------------------------------------------------------------------
+(A-a) hall2010.txt  ->  Michael J.W. Hall, "Local deterministic model of
+singlet state correlations based on relaxing measurement independence"
+[title completed 2026-08-26 per arXiv abs page], arXiv:1007.5518v4 [quant-ph]
+21 Dec 2010 (PRL 105, 250404 (2010)).
+
+VERDICT: CONFIRMED. File is the v4 arXiv text; metric and bound match the task
+brief exactly (M in [0,2]; S <= min{2+3M, 4}).
+
+Verbatim quotes (section "Quantifying measurement independence" unless noted):
+  [Eq. (3)]   "M := sup_{X,X',Y,Y'} \int d\lambda |\rho^{XY}(\lambda) -
+               \rho^{X'Y'}(\lambda)|,  (3)"
+  [after (3)] "i.e, by the 'maximum distance' between the distributions of the
+               underlying variable for any two pairs of measurement settings.
+               Clearly, a distance of M = 0 corresponds to the case of full
+               measurement independence ... Conversely, suppose that M attains
+               its greatest possible value, M = 2, for some model."
+  [Eq. (4)]   "F := 1 - M/2.  (4)  Thus, 0 <= F <= 1 ..."
+  [Sec. "Bell inequality violation", Eq. (11)]
+              "For any value 0 <= M <= 2, a deterministic no-signalling model
+               is constructed below which has degree of measurement
+               independence M , and for which E = min{2 + 3M, 4}.  (11)"
+  [optimality] "This generalisation implies in particular that the right hand
+               side of Eq. (11), and the corresponding models in Tables I and
+               II, are optimal, in the sense that no larger violation of the
+               Bell-CHSH inequality is possible for deterministic no-signalling
+               models with a given value of M."
+  [singlet]   "M_singlet = 2(\sqrt{2} - 1)/3 \approx 0.276  (9)"
+              "F_singlet = (4 - \sqrt{2})/3 \approx 86%  (10)   [corrected 2026-08-25: originally transcribed as (4-2\sqrt{2})/3, a typo — (4-\sqrt{2})/3 = 0.8619 matches '≈86%' and the lost fraction (\sqrt{2}-1)/3]"
+  [abstract]  "... giving up a fraction of just 14% of measurement
+               independence ..."
+
+Note for RESULTS.md: Hall's M is the pairwise L1 distance between two
+setting-pair source distributions (in [0,2]); F_Hall = 1 - M/2 is the fraction
+of MI retained. Our metric F = max_ab TV(p(.|ab) || 1/N) measures per-setting
+distance from a FIXED uniform baseline — a different object (see §C).
+
+(A-b) branciard2020.txt  ->  arXiv:2007.11903v1 [quant-ph] 23 Jul 2020,
+"Measurement-dependence cost for Bell nonlocality: causal vs retrocausal
+models".
+
+VERDICT: CONFIRMED, with one correction to the task brief: author order is
+Michael J. W. Hall FIRST and Cyril Branciard second (not "Branciard & Hall").
+All MI values and the ordering in the brief match the text exactly.
+
+Verbatim quotes:
+  [Eq. (31)]  "IR (SQ ) \sim 0.046 bits,  (31)  i.e., just a little more than
+               1/2^2 of a bit of measurement dependence is required to reach
+               the Tsirelson bound."
+  [Eq. (45)]  "IC (SQ ) = I1 (SQ ) \sim 0.080 bits  (45)  is required for any
+               fully causal model reproducing the maximal quantum violation."
+  [Eq. (52)]  "IOS (SQ ) \sim 0.128 bits.  (52)"
+  [Eq. (56)]  "ISD (S) := 2 bits  (56)  for superdeterministic models."
+  [Eq. (54)]  "IZ (S) := IC (S),  (54)  for zigzag models"
+  [Sec. V, Eq. (73)]
+              "IR (S) < IC (S) = IZ (S) < IOS (S) < ISD (S)  (73)
+               for the minimum informations required to model any given value
+               S \in (2, 4) of the CHSH parameter. Recall that the subscripts
+               denote retrocausal, causal, zigzag, one-sided and
+               superdeterministic measurement dependence, respectively."
+  [intro]     "The corresponding minimal informations are found to increase
+               progressively for retrocausal, causal, one-sided, zigzag and
+               superdeterministic measurement dependence ... retrocausal
+               measurement dependence requires strictly less mutual information
+               than any other type."
+  [footnote 21] "A similar result holds for any good quantifier of measurement
+               dependent correlations, including the variational distance
+               quantifier M introduced in Ref. [26]."
+               (Ref [26] = Hall, PRL 105, 250404 (2010).)
+
+(A-c) bhl2026.txt  ->  G. Bacciagaluppi, R. Hermens, G. Leegwater, "Extending
+Bell's Theorem: Nonlocality via Measurement Dependence", arXiv:2602.11300v2
+[quant-ph] 14 Jul 2026 (dated 4 July 2026).
+
+VERDICT: CONFIRMED. The "signalling in principle" claim is exactly as
+described. It is the only paper found in the sweep using that phrase; it is
+qualitative (no fine-tuning metric), so it frames but does not overlap with
+our NS-silence theorem (§C).
+
+Verbatim quotes:
+  [abstract]  "We show that (analogously to violations of locality due to
+               action at a distance) certain violations of this Measurement
+               Independence assumption can be associated with a notion of
+               signalling in principle, thus making them also testable in
+               principle, and spell out the appropriate conditions.
+               Accordingly, we show that by imposing no-signalling one can
+               prove a version of Bell's theorem that does not require the
+               assumption of Measurement Independence."
+  [Sec. 5]    "We have identified conditions under which a certain form of
+               non-triviality in hidden variables models leads to signalling ...
+               We thus effectively show that imposing no-signalling allows one
+               to derive the Bell inequalities."
+  [Sec. 7 — direct context for our NS-silence result]
+              "While at first striking, the fact that even though these
+               approaches violate MI they do not allow for signalling in
+               principle need not really be surprising, because the dependence
+               of the hidden variables on Alice's and Bob's settings is
+               arguably not causal ... it is possible that in all cases in
+               which the hidden variables can be said to causally depend on
+               Alice's and Bob's settings, Charlie has in principle the ability
+               to prepare the required non-quantum distributions, thus enabling
+               at least one of Alice or Bob to signal."
+  [Sec. 5/6]  "Signalling in principle is thus the crucial notion that makes it
+               possible to distinguish operationally between the different
+               forms of nonlocality: correlations without signalling, signalling
+               with a preferred time order, or signalling with no preferred
+               time order."
+
+TASK 3 — FGHK VERIFICATION (arXiv:1809.01307)
+VERDICT: CONFIRMED. Full metadata (from arxiv.org/abs/1809.01307, cross-
+checked against branciard2020.txt reference [9]):
+  Title:    "Relaxed Bell Inequalities with Arbitrary Measurement Dependence
+             for Each Observer"
+  Authors:  Andrew S. Friedman, Alan H. Guth, Michael J. W. Hall, David I.
+            Kaiser, Jason Gallicchio
+  Versions: v1 4 Sep 2018; v2 24 Jan 2019
+  Venue:    Phys. Rev. A 99, 012121 (2019)
+One-line summary: tight relaxed CHSH inequalities for models in which MI is
+violated to different degrees at Alice's and Bob's side (per-observer
+Hall-type parameters), with saturating locally-causal constructions.
+Relation to ours: class (ii) — same program (quantify MD cost of CHSH
+violation), different metric family (per-observer pairwise Hall-type
+distances, not TV from a fixed uniform source). No overlap with our exact
+curves or NS-silence result.
+
+SECTION B — RELATED WORKS (2015–2026 sweep)
+Overlap class: i = same metric as ours; ii = different MD metric; iii =
+unrelated/contextual. Threat = to OUR novelty claims.
+--------------------------------------------------------------------------------
+B-1  Hall, PRL 105, 250404 (2010); arXiv:1007.5518. [pre-window, foundational]
+     Metric: pairwise L1 M in [0,2] between setting-pair sources; F_Hall =
+     1 - M/2. Result: S <= min{2+3M,4}, tight; singlet needs
+     M = 2(sqrt2-1)/3 ~ 0.276 (gives up 14% of MI). Class ii. Threat LOW —
+     the reference metric; our F is TV from a fixed uniform baseline, not
+     pairwise.
+
+B-2  Barrett & Gisin, PRL 106, 100406 (2011); arXiv:1008.3612. Metric: mutual
+     information I(X,Y:Lambda) in bits. Result: <= 1 bit suffices for the
+     singlet. Class ii. Threat none/low.
+
+B-3  Hall, PRA 84, 022102 (2011); arXiv:1102.4467. Metric: MI bits + relaxed
+     inequalities; KS robustness. Result: ~1/15 bit for singlet correlations.
+     Class ii. Threat low.
+
+B-4  Thinh, Sheridan & Scarani, PRA 87, 062121 (2013); arXiv:1304.3598.
+     Metric: min-entropy of source given settings. Result: trade-off bounds.
+     Class ii. Threat low.
+
+B-5  Pütz, Rosset, Barnea, Liang & Gisin, PRL 113, 190402 (2014);
+     arXiv:1407.5634; and Pütz & Gisin, NJP 18, 055006 (2016);
+     arXiv:1510.09087. Metric: none — full MDL polytope (MI relaxed entirely).
+     Class iii/ii-lite. Threat low (no distance quantification).
+
+B-6  Friedman, Guth, Hall, Kaiser & Gallicchio, PRA 99, 012121 (2019);
+     arXiv:1809.01307. See TASK 3 above. Class ii. Threat low.
+
+B-7  Hall & Branciard, arXiv:2007.11903 (2020). Metric: MI bits per model
+     class (causal/retrocausal/zigzag/one-sided/superdet); values in §A-b.
+     Class ii. Threat low — different metric; but the closest prior work on
+     "minimum cost to reach 2*sqrt(2)" and must be cited in RESULTS.md.
+
+B-8  Hossain et al., arXiv:2107.12495 (2021). Metric: Hall's M extended to
+     tripartite + one-sided/bipartite variants. Result: minimum relaxation for
+     Svetlichny/NS2 etc. (e.g., 41% of freedom sacrificed). Class ii.
+     Threat low.
+
+B-9  Takakura, Morisue, Watanabe & Kimura, arXiv:2208.13634 (v4 Mar 2025);
+     companion: Kimura, Susuki & Morisue, arXiv:2206.06196. Metric: M(s) =
+     Hall's pairwise L1 + "hidden information" H = 1 - max_lambda p(lambda).
+     Result: S <= 2 + min{3M, (3/4)M + 2H, 2}, necessary & sufficient for
+     factorizable models. Class ii. Threat LOW-MEDIUM — the most developed
+     recent "exact trade-off" program in a Hall-type metric; still not TV
+     from a fixed baseline.
+
+B-10 Supic, Bancal & Brunner, PRA 108, 042207 (2023); arXiv:2209.02337.
+     Metric: "strong" MDL — settings fixed in nearly all rounds (epsilon
+     fraction). Class ii/iii. Threat low (complementary question).
+
+B-11 Ramanathan & Liu, arXiv:2512.18513 (Dec 2025). Metric: mu-MI / epsilon-PI
+     relaxations; certification robustness. Class ii/iii. Threat low
+     (abstract-level review only).
+
+B-12 NEAR-HIT — Pal, Karoliya, Sharma & Podila, arXiv:2601.08290 (13 Jan
+     2026), "A Preparation Nonstationarity Loophole in Superconducting-Qubit
+     Bell Tests". Metric: delta_ens = max_{(a,b),(a',b')} d_TV(pi_ab, pi_a'b')
+     — pairwise TV between temporally drifting preparation ensembles (MI
+     preserved; authors call it "logically distinct ... from Hall's
+     measurement-dependence parameter M"). Result: |S| <= 2 + 6*delta_ens (not
+     claimed tight); IBM hardware drift 3–12%. Class ii. Threat MEDIUM for the
+     general idea "quantify Bell fine-tuning with total variation" — the first
+     TV-based bound found in the sweep — but LOW for our specific results:
+     different mechanism (drift, not setting-dependence), no fixed uniform
+     baseline, no exact curves, no NS analysis. Must be cited.
+
+B-13 NEAR-HIT — Aaron Alai, arXiv:2608.00124 (31 Jul 2026), "Exact minimum
+     measurement dependence for faithful local deterministic models of
+     multipartite GHZ-Mermin correlations". Metric: Hall's M (M :=
+     max_{s,s'} sum_lambda |rho_s(lambda) - rho_s'(lambda)|), F := M/2.
+     Result: exact F(n) = R/[2(R+1)] for n = 3..13 (F(3)=1/3, F(5)=2/5, ...);
+     ceiling F <= 1/2; Table 1 lists the CHSH-at-Tsirelson consistency value
+     (sqrt2-1)/3. Class ii. Threat MEDIUM — shows "exact minimum MD" is an
+     active 2026 problem, but with Hall's metric and other inequalities. Must
+     be cited.
+
+B-14 NEAR-HIT (newest) — Aaron Alai, arXiv:2608.18886v2 (19/21 Aug 2026),
+     "The exact price of local realism in CHSH experiments: a measurement-
+     dependence-detection trade-off surface, ...". Metric: "Hall's variational
+     measure" M (definition not printed in abstract; the eta_eff=1 value below
+     equals half of Hall's L1 M_singlet, consistent with M = max pairwise TV
+     in [0,1]). Result: closed form M(S,eta_eff) = max{0, eta_eff((S+2)eta_eff
+     - 4)/6} from LP over all local strategies; at eta_eff=1 the edge
+     reproduces Hall's tight bound (S <= 2 + 3*M_Hall); Tsirelson point
+     certified exactly in Q(sqrt2): M(2*sqrt2, 9/10) = (27*sqrt2 - 33)/100;
+     plus a "moire phase-locking" saturating mechanism. Class ii. Threat
+     MEDIUM — closest prior work to "exact minimum MD for CHSH at 2*sqrt(2)",
+     with Q(sqrt2) certificates like ours, but: (i) Hall-type metric, not TV
+     from a fixed uniform source; (ii) model class includes detector
+     inefficiency/postselection (eta_eff), which we do not; (iii) its eta=1
+     floor at 2*sqrt2 is (sqrt2-1)/3 ~ 0.1381, differing from our F* =
+     (sqrt2-1)/4 ~ 0.1036 because the metrics differ. Must be cited;
+     RESULTS.md should explicitly disambiguate the two conventions.
+
+B-15 Pal, Sharma & Podila, arXiv:2607.13090 (Jul 2026). Metric: "benchmark
+     dependence" eta generalization; S_eta <= min{1, S_cl + eta}. Class
+     ii/iii. Threat low (abstract-level).
+
+B-16 Bacciagaluppi, Hermens & Leegwater, arXiv:2602.11300 (2026) — see §A-c.
+     Qualitative "signalling in principle"; no metric. Class iii (contextual).
+     Threat none for the metric; REQUIRED citation for our NS-silence framing.
+
+B-17 Catalogue (class iii or abstract-level ii; one line each):
+  - Rossi Jr. & Souza, arXiv:1804.06452 (2018) — MI metric I(λ:x,y), singlet
+    target; proves adding hidden variables cannot lower Hall's relaxation cost
+    (their Eq. 24); qualitative precursor to our N=4 saturation, no exact
+    minimum, no NS analysis. ii, threat LOW. [added 2026-08-26 by extended
+    re-sweep; cited in main.tex Discussion]
+  - Gill, Helland & Jongejan, arXiv:2605.13154 (2026) — conceptual, "free of
+    conspiracy between settings and hidden state", no metric. iii.
+  - Kupczynski, arXiv:2402.00725 (2024) — "statistical independence ... free
+    choice" commentary, no metric. iii.
+  - Walls & Ford, arXiv:2307.07655; Guo et al., arXiv:2103.02819; Chaves et
+    al., arXiv:2105.05721 — MD/superdet modelling, no TV metric. iii.
+  - Pope & Kay, arXiv:1304.4904; Paul, Mukherjee & Sarkar, arXiv:1304.7409;
+    Banik et al., arXiv:1304.6425 (J. Phys. A 45, 205301 (2012)); Palmer,
+    arXiv:1502.06972 — early MD/superdet program. iii.
+  - Dzhafarov, arXiv:2110.15910; Kim, Lee & Kim, arXiv:1403.4417 —
+    contextuality angle. iii.
+  - Almada, Ch'ng, Kintner, Morrison & Wharton, arXiv:1510.03706 (2015) —
+    "Are Retrocausal Accounts of Entanglement Unnaturally Fine-Tuned?";
+    retrocausal fine-tuning, no TV metric. ii-lite. [corrected 2026-08-26:
+    originally misattributed to "Aktas et al."; the Aktas experimental MD Bell
+    test is a different paper, arXiv:1504.08332.]
+  - Tan, Cai & Scarani, arXiv:1605.09326; BIG Bell Test, arXiv:1807.00918 —
+    empirical MD tests. iii.
+  - Wharton et al., arXiv:2412.05456; Hossenfelder & Palmer (Front. Phys.
+    2020); Hance, Hossenfelder & Palmer, arXiv:2108.07292 (Found. Phys. 52,
+    81 (2022)); Sen & Valentini, arXiv:2003.11989 / 2003.12195 — retrocausal
+    models, no fine-tuning metric. iii.
+  - De Zela, arXiv:2601.07867; Waegell & McQueen, arXiv:2509.23047; Catani &
+    Leifer, arXiv:2003.10050 (Quantum 7, 948 (2023)); Friederich,
+    arXiv:2501.11064 (EPL 150 (2025) 40001); Cavalcanti, arXiv:1705.05961;
+    Vilasini & Colbeck, arXiv:2311.18465 — causality/MD philosophy or DI
+    context, no TV fine-tuning metric. iii.
+  - Leifer & Pusey, PRSA 473, 20160607 (2017) — "free will" theorem framing.
+    iii.
+  - Price & Wharton, Entropy 17, 7752 (2015) — retrocausal cost discussion.
+    iii.
+  - Myrvold, Genovese & Shimony, SEP entry "Bell's Theorem" — reference. iii.
+  - Mal & Majumdar PDF in lg/ (arXiv:1506.00519) — Leggett-Garg; UNRELATED,
+    misfiled download. iii.
+
+B-18 Extended re-sweep catalogue (adversarial literature audit, 2026-08-26;
+    full sweep table with per-paper verdicts: adversarial_review/advrev_lit_p2.md).
+    All checked at abstract or full-text depth; NONE overlaps claims (i)–(iii):
+  - Nomura, Yamagata & Fujiwara, arXiv:2601.09339 (Jan 2026) — game-theoretic-
+    probability treatment of the CHSH locality + MD loopholes; qualitative, no
+    metric. ii-lite.
+  - Arroyo, arXiv:2408.09579 (2024) — local deterministic singlet models under
+    relaxed MI; abstract checked: no quantitative metric, no minimum. ii-lite.
+  - Kundu & Sarkar, arXiv:2405.12379 (2024) — MD relaxation for quantum-network
+    security. iii.
+  - Scarani & Suarez, arXiv:2605.07228 (2026); Yang, arXiv:2604.18238 (2026);
+    Palmer, arXiv:2601.14941 (2026); Saunders, arXiv:2601.12159 (2026);
+    Koroteev, arXiv:2512.11476 (2025); Kitajima, arXiv:2509.14458 (2025) —
+    conceptual MD/superdet works, no TV fine-tuning metric. iii.
+  - Anastopoulos & Savvidou, arXiv:2411.11631 (2024); Hall "Bell vs Bell",
+    arXiv:2406.19426 (2024); Vieira, Ramanathan & Cabello, arXiv:2402.00801
+    (2024, experimental no-go for partial single-assumption relaxation —
+    different question); Palmer, arXiv:2308.11262 (2023); Gu et al.,
+    arXiv:2302.02472 (2023, experiment); Cabello, arXiv:2211.06476 (2022);
+    Kupczynski, arXiv:2202.09639 / 2201.08483 (2022); Sen, arXiv:2107.04761
+    (2021); arXiv:2102.06920 (2021, parameter-dependence, not MI); Rossi Junior
+    & Leite, arXiv:2006.01534 (2020) — MD/superdet modelling or experiment, no
+    exact minimum-MD in a TV metric. iii.
+  - Camalet, arXiv:1709.01420; Weinstein, arXiv:1707.03114; Argaman,
+    arXiv:1705.04140; Hnilo, arXiv:1701.08194 / 1607.04177; Hall (expository),
+    arXiv:1511.00729 — earlier MD literature, no overlap. iii.
+  - Pre-window or foundational/framework papers: Chaves, Kueng, Brask & Gross,
+    arXiv:1411.4648 (2014); Gallego & Aolita, arXiv:1409.5804; Vervoort,
+    arXiv:1406.0901 / 1211.1411 / 1203.6587; Palmer, arXiv:1309.2396; Fritz,
+    arXiv:1206.5115; Banik et al., arXiv:1204.3835 (2012); Hall (PBR),
+    arXiv:1111.6304; Di Lorenzo, arXiv:1104.1797; Ying et al., arXiv:2309.12987;
+    Palmer, arXiv:2209.05549 / 2204.05763 / 1609.08148; Wood & Spekkens,
+    arXiv:1208.4119 (2012); Dressel & Korotkov, arXiv:1310.6947. iii.
+
+SECTION C — NOVELTY VERDICT
+--------------------------------------------------------------------------------
+Question (1): Is the per-setting-TV metric F = max_ab TV(p(.|ab) || 1/N) novel?
+  FINDING: No prior use found in the 2015–2026 arXiv sweep. The two closest
+  objects are (i) Hall's pairwise L1 M between setting-pair sources (no fixed
+  baseline; B-1, B-9, B-13, B-14), and (ii) Pal et al.'s delta_ens — the only
+  total-variation-based Bell-fine-tuning bound found — which is pairwise TV
+  between drifting ensembles with MI preserved (B-12). Neither measures TV
+  from a fixed uniform source per setting, maximized over settings.
+  VERDICT: Novel within search coverage. Hedge required: phrase as "no prior
+  use found in arXiv-indexed literature through 2026-08-23", not "proven
+  novel".
+
+Question (2): Exact S_max(N,F) curves and F*(S=2*sqrt2) = (sqrt2-1)/min(N,4)?
+  FINDING: No prior art in our metric. Alai 2026b (B-14) solves the closest
+  problem — exact minimum MD to reach a given S in CHSH — but under a Hall-
+  type convention with detector-efficiency degrees of freedom; its eta_eff=1
+  floor at 2*sqrt2 is (sqrt2-1)/3 ~ 0.1381, which is NOT our F* =
+  (sqrt2-1)/4 ~ 0.1036 (different metrics; Hall's own singlet value is
+  M_singlet = 2(sqrt2-1)/3 ~ 0.276 in the L1 convention). The three numbers
+  are easy to confuse and RESULTS.md must disambiguate all three.
+  VERDICT: Novel within search coverage; cite Alai x2, Pal et al., Takakura
+  et al. explicitly as the active "exact minimum MD" program in other metrics.
+
+Question (3): NS-silence (S_NS(2,F) = 2 for all F; F*_NS(N) = F*(N) for N>=3)?
+  FINDING: No prior art found. BHL 2026 (B-16) is the only "signalling in
+  principle" paper and is qualitative; its Sec. 7 explicitly notes that MI-
+  violating models may not signal — exactly the phenomenon our Theorems 4/5
+  quantify with a metric for the first time.
+  VERDICT: Novel within search coverage; cite BHL as motivation/context.
+
+What RESULTS.md MAY claim (with the hedges above):
+  - "First characterization of CHSH fine-tuning cost using per-setting TV
+     distance from a fixed uniform source" — OK if phrased "to our knowledge /
+     no prior use found in [stated coverage]".
+  - Exact piecewise-linear S_max(N,F) for N = 2..8, global bound S <= 2+8F,
+     cap F(S=4) = ceil(N/4)/N, closed form F* = (sqrt2-1)/min(N,4), and the
+     NS-silence theorems — OK, with explicit citations to B-7/B-9/B-12/B-13/
+     B-14 as related-but-different-metric work.
+
+What RESULTS.md MUST hedge / add:
+  - Cite Alai arXiv:2608.18886 and arXiv:2608.00124 (both Jul/Aug 2026, after
+    most of the known literature) and Pal et al. arXiv:2601.08290 — all three
+    are 2026 works showing exact/TV-based MD quantification is an active front.
+  - State the convention difference numerically: Hall L1 M_singlet ~ 0.276;
+    fraction of MI lost under Hall's F-convention = (sqrt2-1)/3 ~ 0.1381;
+    Alai's eta=1 floor ~ 0.1381; our F* = (sqrt2-1)/4 ~ 0.1036. Different
+    metrics, different answers — do not present ours as contradicting theirs.
+  - Note that the uniform-source baseline is a modelling choice: Hall's
+    pairwise metric is baseline-free, and a reviewer may ask why TV from
+    uniform rather than pairwise; RESULTS.md should pre-empt this (the uniform
+    source IS the MI assumption, so F measures deviation from MI directly per
+    setting).
+
+Search coverage and limits (state in any novelty claim):
+  - arXiv-centric: API metadata queries + direct abs-page fetches. ~16 papers
+    read at full/abstract depth; the rest catalogue-level.
+  - Window 2015–2026-08-23 (foundational pre-2015 works included as context).
+  - NOT covered: paywalled journal content not mirrored on arXiv; non-arXiv
+    preprint servers / institutional repositories; books/theses. The WebSearch
+    tool was unusable in this environment (see §D), so coverage rests on arXiv
+    plus local reference lists.
+  - "No prior use found" != "proven novel".
+
+SECTION D — SEARCH LOG (queries actually run, approximate order)
+--------------------------------------------------------------------------------
+WebSearch tool attempts:
+  W1  WebSearch "Bell inequality measurement dependence total variation"
+      -> hallucinated output (invented citations, no URLs). DISCARDED.
+  W2  WebSearch follow-up on same topic -> again no real URLs / claimed no
+      search tool available. DISCARDED.
+  Consequence: all positive findings above come from direct arxiv.org fetches
+  or local files; nothing rests on WebSearch output.
+
+arXiv API / search-UI queries (export.arxiv.org + arxiv.org/search):
+  Q1  all:"measurement independence" AND all:"total variation" -> NO RESULTS.
+  Q2  all:"measurement dependence" AND all:"total variation" -> 8 hits, all
+      unrelated (Markov chains / kinetic theory). No Bell+TV metric found.
+  Q3  "superdeterminism" + CHSH + minimum fine-tuning -> NO RESULTS.
+  Q4  "no-signalling" + "measurement dependence" + fine-tuning -> NO RESULTS.
+  Q5  "signalling in principle" + "measurement dependence" -> only BHL
+      (arXiv:2602.11300).
+  Q6  Author searches: Evans -> no relevant quant-ph paper found; Swire ->
+      only astrophysics SWIRE survey + unrelated CS names. (Task-list authors
+      Branciard, Hall, Scarani, Gallicchio ("Galley"), Myrvold, Price,
+      Wharton, Pusey all resolved to known works.)
+  Q7  "relaxed Bell inequality" + "measurement independence" -> FGHK
+      (1809.01307) + Hall 2011 (1102.4467) only.
+  Q8  "variation distance" + Bell, cat:quant-ph (API) -> 3 entries, none
+      relevant.
+  Q9  all:"free will" AND all:"CHSH" AND cat:quant-ph, newest first -> 30
+      entries; one new find: Alai arXiv:2608.18886 (B-14); two conceptual:
+      Gill et al. 2605.13154, Kupczynski 2402.00725.
+
+Direct abs-page fetches (full or abstract read):
+  1809.01307 (FGHK), 2007.11903 (via local txt), 2602.11300 (via local txt),
+  1007.5518 (via local txt), 2601.08290, 2608.00124, 2608.18886,
+  2208.13634, 2206.06196, 2107.12495, 2209.02337, 2512.18513, 2607.13090,
+  1008.3612, 1102.4467, 1304.3598, 1407.5634, 1510.09087 — plus abstract-level
+  fetches for the B-17 catalogue entries.
+
+Local files mined: hall2010.txt, branciard2020.txt (incl. full reference list
+lines 1040–1151 -> source of B-2..B-6, B-8 seeds), bhl2026.txt (references
+lines 1307–1490), RESULTS.md §6/§8, PROOFS.md, curve_results.txt, audit1.out,
+lg/mal_majumdar_2015.pdf (unrelated).
+
+Failed / blocked fetches (honest gaps):
+  - arXiv API HTTP 429 then 503 on several early queries; recovered later.
+  - Semantic Scholar API: HTTP 429 on both attempts — NOT used.
+  - One WebFetch timeout on Q9 (classifier outage); retried successfully.
+  - Paywalled journal versions (PRL/PRA/NJP/Quantum/EPL) not fetched beyond
+    arXiv mirrors; possible but unassessed risk of journal-only content.
+
+END OF FILE

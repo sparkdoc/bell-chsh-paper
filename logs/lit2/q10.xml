@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/0xCwQPNYyQPYMKUc0FcO8EOLWdA</id>
+  <title>arXiv Query: search_query=jr:"Studies in History and Philosophy of Science"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T03:42:40Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=jr:%22Studies+in+History+and+Philosophy+of+Science%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>36</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.31559v1</id>
+    <title>The Dynamics of Quantum Gravity: the Missing Piece in the Spacetime Emergentist Account</title>
+    <updated>2026-06-30T12:16:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.31559v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.31559v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum gravity suggests that spacetime may not be fundamental, and it has been argued that we can understand a theory without a fundamental spacetime if we are able to claim that spacetime `emerges' from some non-spatiotemporal entities. In this sense, strategies like functionalism have been deployed to claim that this emergence is possible and plausible, both in principle and in practice for current approaches to quantum gravity. In this article I argue that this analysis is incomplete, as it tends to overlook the way the dynamics of these theories is `quantum' in a way that differs from standard quantum theory. The challenge for the emergentist (and for the quantum gravity theorist) is to give an interpretation not only to the kinematical and classical aspects of these theories, but to the dynamical and quantum ones, and to show how the spacetime roles can be fulfilled, if possible at all. Therefore, I argue that some current approaches to quantum gravity seem to fail to provide meaningful theories, that spacetime functionalism is of no help, and that the position of the spacetime emergentists is weakened, as they lack any example of a successful reduction of spacetime to some truly quantum non-spatiotemporal stuff.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T12:16:28Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, 118, 102173 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Álvaro Mozota Frauca</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2026.102173</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2026.102173" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.18002v1</id>
+    <title>Systematizing the Interpretation of Quantum Theory via Reconstruction</title>
+    <updated>2025-12-19T19:01:47Z</updated>
+    <link href="https://arxiv.org/abs/2512.18002v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.18002v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For a century, quantum theory has posed a fundamental challenge to philosophical thinking. On its face, it repudiates many of the key features of the mechanical conception of physical reality. However, the challenge of developing a precise, coherent alternative to that conception has yet to be met. Here, I argue that a major hindrance to the project of quantum interpretation is its existing interpretative methodologies, which suffer from a lack of systematicity in their judgements about what aspects of the theory are interpretational relevant. In particular, I argue that current interpretations tend to marginalize the informal part of the theory in favour of its formal part, and place inappropriate emphasis on the natural language component of the formalism over its detailed mathematical structure. To counterbalance these biases, I propose that an interpretation-free zone be constructed around the theory, wherein an interpreter initially adopt a descriptive stance which considers all parts of the theory, and that the results of this deliberation~(and the judgements about what facts are interpretationally relevant) are reported as part of their interpretation.
+  I argue that the interpretation of quantum theory poses special challenges and difficulties which necessitate this interpretation-free zone, and that existing interpretative methodologies are insufficient to address them. Further, I argue that a reconstructive interpretative methodology, which harnesses the recent results of the quantum reconstruction program, provides a powerful means to identify almost all facts that could be interpretationally relevant, and naturally meets these challenges and difficulties. Moreover, I argue that the quantum reconstruction program offers a powerful way to discover new physical principles, and offers a systematic pathway to build a rich, coherent conception of quantum reality.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-19T19:01:47Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 115 (2026) 102100</arxiv:journal_ref>
+    <author>
+      <name>Philip Goyal</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2025.102100</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2025.102100" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.07027v1</id>
+    <title>The Fine-Structure Constant as a Scaled Quantity</title>
+    <updated>2025-12-07T22:41:47Z</updated>
+    <link href="https://arxiv.org/abs/2512.07027v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.07027v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The fine-structure constant alpha approximately 1/137 is traditionally regarded as a fundamental dimensionless parameter. I argue instead that alpha is a scaled quantity that arises only where the structural scales contributed by classical electromagnetism (e), quantum mechanics (h-bar), and special relativity (c) intersect. None of these theories, taken individually, supplies the independent scales required to define alpha. The constant first appears when relativistic corrections are added to the Schrodinger-Bohr description of hydrogen (Sommerfeld), and it becomes the structural coupling in quantum electrodynamics, where quantum and relativistic effects modify the classical electromagnetic interaction. Expressing the governing laws in canonical form reveals this dependence and eliminates representational artifacts that make alpha appear fundamental. The running of alpha in QED further demonstrates its status as a scale-dependent coupling rather than a universal constant. I conclude that alpha is a domain-specific structural ratio reflecting contingent relationships among independent physical scales.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-07T22:41:47Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 119 (2026) 102199</arxiv:journal_ref>
+    <author>
+      <name>Harry Sticker</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2026.102199</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2026.102199" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.11598v1</id>
+    <title>Why did the dark matter hypothesis supersede modified gravity in the 1980s?</title>
+    <updated>2025-07-15T17:59:17Z</updated>
+    <link href="https://arxiv.org/abs/2507.11598v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.11598v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the 1960s and 1970s a series of observations and theoretical developments highlighted the presence of several anomalies which could, in principle, be explained by postulating one of the following two working hypotheses: (i) the existence of dark matter, or (ii) the modification of standard gravitational dynamics in low accelerations. In the years that followed, the dark matter hypothesis as an explanation for dark matter phenomenology attracted far more attention compared to the hypothesis of modified gravity, and the latter is largely regarded today as a non-viable alternative. The present article takes an integrated history and philosophy of science approach in order to identify the reasons why the scientific community mainly pursued the dark matter hypothesis in the years that followed, as opposed to modified gravity. A plausible answer is given in terms of three epistemic criteria for the pursuitworthiness of a hypothesis: (a) its problem-solving potential, (b) its compatibility with established theories and the feasibility of incorporation, and (c) its independent testability. A further comparison between the problem of dark matter and the problem of dark energy is also presented, explaining why in the latter case the situation is different, and modified gravity is still considered a viable possibility.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-15T17:59:17Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, 112, 141-152 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Antonis Antoniou</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2025.06.006</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2025.06.006" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.06690v1</id>
+    <title>From S-matrix theory to strings: Scattering data and the commitment to non-arbitrariness</title>
+    <updated>2024-03-11T13:05:08Z</updated>
+    <link href="https://arxiv.org/abs/2403.06690v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.06690v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The early history of string theory is marked by a shift from strong interaction physics to quantum gravity. The first string models and associated theoretical framework were formulated in the late 1960s and early 1970s in the context of the S-matrix program for the strong interactions. In the mid-1970s, the models were reinterpreted as a potential theory unifying the four fundamental forces. This paper provides a historical analysis of how string theory was developed out of S-matrix physics, aiming to clarify how modern string theory, as a theory detached from experimental data, grew out of an S-matrix program that was strongly dependent upon observable quantities. Surprisingly, the theoretical practice of physicists already turned away from experiment before string theory was recast as a potential unified quantum gravity theory. With the formulation of dual resonance models (the "hadronic string theory"), physicists were able to determine almost all of the models' parameters on the basis of theoretical reasoning. It was this commitment to "non-arbitrariness", i.e., a lack of free parameters in the theory, that initially drove string theorists away from experimental input, and not the practical inaccessibility of experimental data in the context of quantum gravity physics. This is an important observation when assessing the role of experimental data in string theory.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-11T13:05:08Z</published>
+    <arxiv:comment>To appear in Studies in History and Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, 104 (2024), 130-149</arxiv:journal_ref>
+    <author>
+      <name>Robert van Leeuwen</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2023.12.011</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2023.12.011" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.04069v2</id>
+    <title>Relational Quantum Mechanics, Quantum Relativism, and the Iteration of Relativity</title>
+    <updated>2024-03-23T20:43:01Z</updated>
+    <link href="https://arxiv.org/abs/2403.04069v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.04069v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The idea that the dynamical properties of quantum systems are invariably relative to other systems has recently regained currency. Using Relational Quantum Mechanics (RQM) for a case study, this paper calls attention to a question that has been underappreciated in the debate about quantum relativism: the question of whether relativity iterates. Are there absolute facts about the properties one system possesses relative to a specified reference, or is this again a relative matter, and so on? It is argued that RQM (in its best-known form) is committed to what I call the Unrestricted Iteration Principle (UIP), and thus to an infinite regress of relativisations. This principle plays a crucial role in ensuring the communicability and coherence of interaction outcomes across observers. It is, however, shown to be incompatible with the widespread, conservative reading of RQM in terms of relations, instead necessitating the adoption of the more unorthodox notion of perspectival facts. I conclude with some reflections on the current state of play in perspectivist versions of RQM and quantum relativism more generally, underscoring both the need for further conceptual development and the importance of the iteration principle for an accurate cost-benefit analysis of such interpretations.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-06T21:48:41Z</published>
+    <arxiv:comment>32 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 104 (2024), 109-118</arxiv:journal_ref>
+    <author>
+      <name>Timotheus Riedel</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2024.02.007</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2024.02.007" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.06504v2</id>
+    <title>The Causal Axioms of Algebraic Quantum Field Theory: A Diagnostic</title>
+    <updated>2024-03-05T12:43:52Z</updated>
+    <link href="https://arxiv.org/abs/2401.06504v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.06504v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Algebraic quantum field theory (AQFT) puts forward three "causal axioms" that aim to characterize the theory as one that implements relativistic causation: the spectrum condition, microcausality, and primitive causality. In this paper, I aim to show, in a minimally technical way, that none of them fully explains the notion of causation appropriate for AQFT because they only capture some of the desiderata for relativistic causation I state or because it is often unclear how each axiom implements its respective desideratum. After this diagnostic, I will show that a fourth condition, local primitive causality (LPC), fully characterizes relativistic causation in the sense of fulfilling all the relevant desiderata. However, it only encompasses the virtues of the other axioms because it is implied by them, as I will show from a construction by Haag and Schroer (1962). Since the conjunction of the three causal axioms implies LPC and other important results in QFT that LPC does not imply, and since LPC helps clarify some of the shortcomings of the three axioms, I advocate for a holistic interpretation of how the axioms characterize the causal structure of AQFT against the strategy in the literature to rivalize the axioms and privilege one among them.</summary>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-12T11:00:28Z</published>
+    <arxiv:comment>Forthcoming in Studies in History and Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="math-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Volume 104, April 2024, Pages 98-108</arxiv:journal_ref>
+    <author>
+      <name>Francisco Calderón</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2024.01.006</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2024.01.006" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.10192v2</id>
+    <title>Is Bohr's Correspondence Principle just Hankel's Principle of Permanence?</title>
+    <updated>2023-11-22T13:01:41Z</updated>
+    <link href="https://arxiv.org/abs/2310.10192v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.10192v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>No, but the paper argues that Bohr understood his correspondence principle, or at least an aspect of that principle expressed by the notion of rational generalization, as grounded in Hankel's principle of permanence, adapted to new historical and theoretical contexts. This is shown to illuminate some otherwise obscure aspects of Bohr's approach to quantum theory, as well as a seemingly strange criticism against this approach, due to Feyerabend and Bohm.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-16T08:54:57Z</published>
+    <arxiv:comment>27 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, 2024</arxiv:journal_ref>
+    <author>
+      <name>Iulian D. Toader</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2023.12.003</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2023.12.003" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.10395v2</id>
+    <title>How (Not) to Understand Weak Measurements of Velocities</title>
+    <updated>2025-03-11T14:03:59Z</updated>
+    <link href="https://arxiv.org/abs/2309.10395v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.10395v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To-date, the most elaborated attempt to complete quantum mechanics by the addition of hidden variables is the de Broglie-Bohm (pilot wave) theory (dBBT). It endows particles with definite positions at all times. Their evolution is governed by a deterministic dynamics. By construction, however, the individual particle trajectories generically defy detectability in principle. Of late, this lore might seem to have been called into question in light of so-called weak measurements. Due to their characteristic weak coupling between the measurement device and the system under study, they permit the experimental probing of quantum systems without essentially disturbing them. It's natural therefore to think that weak measurements of velocity in particular offer to actually observe the particle trajectories. If true, such a claim would not only experimentally demonstrate the incompleteness of quantum mechanics: it would provide support of dBBT in its standard form, singling it out from an infinitude of empirically equivalent alternative choices for the particle dynamics. Here we examine this possibility. Our result is deflationary: weak velocity measurements constitute no new arguments, let alone empirical evidence, in favour of standard dBBT; One mustn't naïvely identify weak and actual positions. Weak velocity measurements admit of a straightforward standard quantum mechanical interpretation, independent of any commitment to particle trajectories and velocities. This is revealed by a careful reconstruction of the physical arguments on which the description of weak velocity measurements rests. It turns out that for weak velocity measurements to be reliable, one must already presuppose dBBT in its standard form: in this sense, they can provide no new argument, empirical or otherwise, for dBBT and its standard guidance equation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-19T07:51:05Z</published>
+    <arxiv:comment>Published version; 33 pages, 3 figures, small technical corrections</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part A Studies in History and Philosophy of Science Part A Studies in History and Philosophy of Science Part A; Volume 85, February 2021, Pages 16-29</arxiv:journal_ref>
+    <author>
+      <name>Johannes Fankhauser</name>
+    </author>
+    <author>
+      <name>Patrick M. Dürr</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2020.12.002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2020.12.002" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.04054v1</id>
+    <title>Can we "effectivize'' spacetime?</title>
+    <updated>2023-09-08T00:59:28Z</updated>
+    <link href="https://arxiv.org/abs/2309.04054v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.04054v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>According to \textit{effective realism}, scientific theories give us knowledge about the unobservable world, but not at the fundamental level. This view is justified by the well-received \textit{effective-field-theory} (EFT) approach to physics, according to which our best physical theories are only applicable up to a certain energy scale and expected to break down beyond that. In this paper, I explain the motivations for the EFT approach and effective realism and their benefits. I also raise new challenges for this approach. Applying effective realism to \textit{effective quantum gravity} (EQG) reveals its shortcomings: EQG does not give us a realistic theory of spacetime even within its scope of validity. It also exposes a general interpretative dilemma faced by all EFTs concerning their indispensable references to classical spacetime beyond their scope of validity.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-08T00:59:28Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Volume 95, October 2022, Pages 75-83</arxiv:journal_ref>
+    <author>
+      <name>Lu Chen</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2022.07.004</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2022.07.004" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.02283v2</id>
+    <title>Cosmological Inflation and Meta-Empirical Theory Assessment</title>
+    <updated>2024-01-04T12:53:48Z</updated>
+    <link href="https://arxiv.org/abs/2309.02283v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.02283v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I apply Dawid's Meta-Empirical Assessment (MEA) methodology to the theory of cosmological inflation. I argue that applying this methodology does not currently offer a compelling case for ascribing non-empirical confirmation to cosmological inflation. In particular, I argue that despite displaying strong instances of Unexpected Explanatory Coherence (UEA), it is premature to evaluate the theory on the basis of the No Alternatives Argument (NAA). More significantly though, I argue that the theory of cosmological inflation fails to sustain a convincing Meta-Inductive Argument (MIA) because the empirical evidence and theoretical successes that it seeks to draw meta-empirical support from do not warrant a meta-inductive inference to inflation. I conclude by assessing how future developments could pave the way towards crafting a more compelling case for the non-empirical confirmation of cosmological inflation.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-05T14:43:28Z</published>
+    <arxiv:comment>Accepted in Studies in History and Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 103 (2024) 146-158</arxiv:journal_ref>
+    <author>
+      <name>William J. Wolf</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2023.12.006</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2023.12.006" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.12229v1</id>
+    <title>Uniform probability in cosmology</title>
+    <updated>2023-08-23T16:11:07Z</updated>
+    <link href="https://arxiv.org/abs/2308.12229v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.12229v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Problems with uniform probabilities on an infinite support show up in contemporary cosmology. This paper focuses on the context of inflation theory, where it complicates the assignment of a probability measure over pocket universes. The measure problem in cosmology, whereby it seems impossible to pick out a uniquely well-motivated measure, is associated with a paradox that occurs in standard probability theory and crucially involves uniformity on an infinite sample space. This problem has been discussed by physicists, albeit without reference to earlier work on this topic. The aim of this article is both to introduce philosophers of probability to these recent discussions in cosmology and to familiarize physicists and philosophers working on cosmology with relevant foundational work by Kolmogorov, de Finetti, Jaynes, and other probabilists. As such, the main goal is not to solve the measure problem, but to clarify the exact origin of some of the current obstacles. The analysis of the assumptions going into the paradox indicates that there exist multiple ways of dealing consistently with uniform probabilities on infinite sample spaces. Taking a pluralist stance towards the mathematical methods used in cosmology shows there is some room for progress with assigning probabilities in cosmological theories.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-23T16:11:07Z</published>
+    <arxiv:comment>16 pages; accepted for publication in Studies in History and Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 101 (2023) 48-60</arxiv:journal_ref>
+    <author>
+      <name>Sylvia Wenmackers</name>
+    </author>
+    <arxiv:doi>0.1016/j.shpsa.2023.08.009</arxiv:doi>
+    <link rel="related" href="https://doi.org/0.1016/j.shpsa.2023.08.009" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.13026v1</id>
+    <title>Methodological Reflections on the MOND/Dark Matter Debate</title>
+    <updated>2023-06-22T16:41:04Z</updated>
+    <link href="https://arxiv.org/abs/2306.13026v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.13026v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The paper re-examines the principal methodological questions, arising in the debate over the cosmological standard model's postulate of Dark Matter vs. rivalling proposals that modify standard (Newtonian and general-relativistic) gravitational theory, the so-called Modified Newtonian Dynamics (MOND) and its subsequent extensions. What to make of such seemingly radical challenges of cosmological orthodoxy? In the first part of our paper, we assess MONDian theories through the lens of key ideas of major 20th century philosophers of science (Popper, Kuhn, Lakatos, and Laudan), thereby rectifying widespread misconceptions and misapplications of these ideas common in the pertinent MOND-related literature. None of these classical methodological frameworks, which render precise and systematise the more intuitive judgements prevalent in the scientific community, yields a favourable verdict on MOND and its successors -- contrary to claims in the MOND-related literature by some of these theories' advocates; the respective theory appraisals are largely damning. Drawing on these insights, the paper's second part zooms in on the most common complaint about MONDian theories, their ad-hocness. We demonstrate how the recent coherentist model of ad-hocness captures, and fleshes out, the underlying -- but too often insufficiently articulated -- hunches underlying this critique. MONDian theories indeed come out as severely ad hoc: they do not cohere well with either theoretical or empirical-factual background knowledge. In fact, as our complementary comparison with the cosmological standard model's Dark Matter postulate shows, with respect to ad-hocness, MONDian theories fare worse than the cosmological standard model.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-22T16:41:04Z</published>
+    <arxiv:comment>forthcoming in Studies in History and Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 101 (2023) 1-23</arxiv:journal_ref>
+    <author>
+      <name>Patrick M. Duerr</name>
+      <arxiv:affiliation>Hebrew University and Oxford University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>William J. Wolf</name>
+      <arxiv:affiliation>Oxford University</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2023.07.001</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2023.07.001" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.04360v1</id>
+    <title>Functionalising the wavefunction</title>
+    <updated>2022-11-08T16:26:04Z</updated>
+    <link href="https://arxiv.org/abs/2211.04360v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.04360v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Functionalism is the view that being x is to play the role of x. This paper defends a functionalist account of three-dimensional entities in the context of Wave Function Realism (WFR), that can explain in detail how we can recover three-dimensional entities out of the wavefunction. In particular, the essay advocates for a novel version of WFR in terms of a functional reductionist approach in the style of David Lewis. This account entails reduction of the upper entities to the bottom ones, when the latter behave appropriately. As applied to WFR, it shows how the wavefunction can turn out to be identical to three-dimensional objects, provided certain conditions. The first major goal of the paper is thus to put forward an improved and more rigorous version of WFR, which dissolves several extant issues about the theory, and can serve as a starting point for the future literature about the topic. Moreover, the second major goal of the article is to take WFR as a case study to demonstrate the pros of functional reductionism, especially in the form defended here, thereby helping to bring this view back in the philosophy of science debate. The positive upshots of this paper suggest a possible application of functional reductionism also to other contexts.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-08T16:26:04Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, Volume 96, December 2022, Pages 141-153</arxiv:journal_ref>
+    <author>
+      <name>Lorenzo Lorenzetti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.06043v1</id>
+    <title>Peter Bergmann on Observables in Hamiltonian General Relativity: A Historical-Critical Investigation</title>
+    <updated>2022-08-11T21:24:55Z</updated>
+    <link href="https://arxiv.org/abs/2208.06043v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.06043v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The problem of observables and their supposed lack of change has been significant in Hamiltonian quantum gravity since the 1950s. This paper considers the unrecognized variety of ideas about observables in the thought of Peter Bergmann, who invented observables. Whereas initially he required a constrained Hamiltonian formalism to be mathematically equivalent to the Lagrangian, in 1953 Bergmann and Schiller introduced a novel postulate, motivated by facilitating quantum gravity: observables were _invariant_ under transformations generated by _each individual_ first-class constraint. While modern works rely on Bergmann's authority and sometimes speak of "Bergmann observables," he had much to say about observables, plausible but not all consistent or remembered.
+  At times he required observables to be locally defined (not changeless and global); at times he wanted them independent of the Hamiltonian formalism (not essentially involving separate first-class constraints). But typically he took observables to have vanishing Poisson bracket with each first-class constraint, purportedly justified by electrodynamics. He expected observables to be analogous to the transverse true degrees of freedom of electromagnetism. Hence there is no coherent concept of observables which he reliably endorsed.
+  A revised definition of observables that satisfies the requirement that equivalent theories should have equivalent observables using the Rosenfeld-Anderson-Bergmann-Castellani gauge generator $G$, a tuned sum of first-class constraints that changes the canonical action $\int dt(p\dot{q}-H)$ by a boundary term. Bootstrapping from theory formulations with no first-class constraints, the "external" coordinate symmetry of GR calls for covariance ($4$-dimensional Lie derivative), not invariance ($0$ Poisson bracket), under $G$ (not each first-class constraint).</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-11T21:24:55Z</published>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 95 (2022) pp. 1-27</arxiv:journal_ref>
+    <author>
+      <name>J. Brian Pitts</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2022.06.012.</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2022.06.012." title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.14233v2</id>
+    <title>Absorbing the Arrow of Electromagnetic Radiation</title>
+    <updated>2023-04-02T21:04:02Z</updated>
+    <link href="https://arxiv.org/abs/2205.14233v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.14233v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We argue that the asymmetry between diverging and converging electromagnetic waves is just one of many asymmetries in observed phenomena that can be explained by a past hypothesis and statistical postulate (together assigning probabilities to different states of matter and field in the early universe). The arrow of electromagnetic radiation is thus absorbed into a broader account of temporal asymmetries in nature. We give an accessible introduction to the problem of explaining the arrow of radiation and compare our preferred strategy for explaining the arrow to three alternatives: (i) modifying the laws of electromagnetism by adding a radiation condition requiring that electromagnetic fields always be attributable to past sources, (ii) removing electromagnetic fields and having particles interact directly with one another through retarded action-at-a-distance, (iii) adopting the Wheeler-Feynman approach and having particles interact directly through half-retarded half-advanced action-at-a-distance. In addition to the asymmetry between diverging and converging waves, we also consider the related asymmetry of radiation reaction.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-27T20:59:48Z</published>
+    <arxiv:comment>42 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 99 (2023) 10-27</arxiv:journal_ref>
+    <author>
+      <name>Mario Hubert</name>
+    </author>
+    <author>
+      <name>Charles T. Sebens</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2023.01.002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2023.01.002" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.11626v1</id>
+    <title>Trans-Planckian Philosophy of Cosmology</title>
+    <updated>2022-05-23T20:53:10Z</updated>
+    <link href="https://arxiv.org/abs/2205.11626v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.11626v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I provide some philosophical groundwork for the recently proposed 'trans-Planckian censorship' conjecture in theoretical physics. In particular, I argue that structure formation in early universe cosmology is, at least as we typically understand it, autonomous with regards to quantum gravity, the high energy physics that governs the Planck regime in our universe. Trans-Planckian censorship is then seen as a means of rendering this autonomy an empirical constraint within ongoing quantum gravity research.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-23T20:53:10Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, Volume 90, December 2021, Pages 184-193</arxiv:journal_ref>
+    <author>
+      <name>Mike D. Schneider</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.10.001</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.10.001" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.11469v1</id>
+    <title>Integrating Dark Matter, Modified Gravity, and the Humanities</title>
+    <updated>2022-02-23T12:40:10Z</updated>
+    <link href="https://arxiv.org/abs/2202.11469v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.11469v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Editorial of a special issue on dark matter &amp; modified gravity, distributed across the journals Studies in History and Philosophy of Modern Physics and Studies in History and Philosophy of Science. Published version of the open access editorial (in SHPS) available here: https://doi.org/10.1016/j.shpsa.2021.08.015. The six papers are collected here: https://www.sciencedirect.com/journal/studies-in-history-and-philosophy-of-science-part-b-studies-in-history-and-philosophy-of-modern-physics/special-issue/10CR71RJLWM.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-23T12:40:10Z</published>
+    <arxiv:comment>14 pages, 0 figures, editorial of a special issue on dark matter &amp; modified gravity</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science (2022), 91:A1-A5</arxiv:journal_ref>
+    <author>
+      <name>Niels C. M. Martens</name>
+    </author>
+    <author>
+      <name>Miguel Ángel Carretero Sahuquillo</name>
+    </author>
+    <author>
+      <name>Erhard Scholz</name>
+    </author>
+    <author>
+      <name>Dennis Lehmkuhl</name>
+    </author>
+    <author>
+      <name>Michael Krämer</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.08.015</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.08.015" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.12712v1</id>
+    <title>Idealizations and analogies</title>
+    <updated>2021-10-25T07:48:46Z</updated>
+    <link href="https://arxiv.org/abs/2110.12712v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2110.12712v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The "universality" of critical phenomena is much discussed in philosophy of scientific explanation, idealizations and philosophy of physics. Lange and Reutlinger recently opposed Batterman concerning the role of some deliberate distortions in unifying a large class of phenomena, regardless of microscopic constitution. They argue for an essential explanatory role for "commonalities" rather than that of idealizations. Building on Batterman's insight, this article aims to show that assessing the differences between the universality of critical phenomena and two paradigmatic cases of "commonality strategy" - the ideal gas model and the harmonic oscillator model-is necessary to avoid the objections raised by Lange and Reutlinger. Taking these universal explanations as benchmarks for critical phenomena reveals the importance of the different roles played by analogies underlying the use of the models. A special combination of physical and formal analogies allows one to explain the epistemic autonomy of the universality of critical phenomena through an explicative loop.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-10-25T07:48:46Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part A, Elsevier, 2021, 89, pp.235 - 247</arxiv:journal_ref>
+    <author>
+      <name>Quentin Rodriguez</name>
+      <arxiv:affiliation>PHIER</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.08.007</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.08.007" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2105.14342v2</id>
+    <title>String theory, Einstein, and the identity of physics: Theory assessment in absence of the empirical</title>
+    <updated>2021-06-22T14:02:33Z</updated>
+    <link href="https://arxiv.org/abs/2105.14342v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2105.14342v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>String theorists are certain that they are practicing physicists. Yet, some of their recent critics deny this. This paper argues that this conflict is really about who holds authority in making rational judgment in theoretical physics. At bottom, the conflict centers on the question: who is a proper physicist? To illustrate and understand the differing opinions about proper practice and identity, we discuss different appreciations of epistemic virtues and explanation among string theorists and their critics, and how these have been sourced in accounts of Einstein's biography. Just as Einstein is claimed by both sides, historiography offers examples of both successful and unsuccessful non-empirical science. History of science also teaches that times of conflict are often times of innovation, in which novel scholarly identities may come into being. At the same time, since the contributions of Thomas Kuhn historians have developed a critical attitude towards formal attempts and methodological recipes for epistemic demarcation and justification of scientific practice. These are now, however, being considered in the debate on non-empirical physics.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-05-29T17:20:00Z</published>
+    <arxiv:comment>To appear in Studies in History and Philosophy of Science, special issue on "Non-Empirical Physics from a Historical Perspective"</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, Part A, 89 (2021), 164-176</arxiv:journal_ref>
+    <author>
+      <name>Jeroen van Dongen</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.06.017</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.06.017" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2103.03491v1</id>
+    <title>No-Go Theorems: What Are They Good For?</title>
+    <updated>2021-03-05T06:35:21Z</updated>
+    <link href="https://arxiv.org/abs/2103.03491v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.03491v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>No-go theorems have played an important role in the development and assessment of scientific theories. They have stopped whole research programs and have given rise to strong ontological commitments. Given the importance they obviously have had in physics and philosophy of physics and the huge amount of literature on the consequences of specific no-go theorems, there has been relatively little attention to the more abstract assessment of no-go theorems as a tool in theory development. We will here provide this abstract assessment of no-go theorems and conclude that the methodological implications one may draw from no-go theorems are in disagreement with the implications that have often been drawn from them in the history of science.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-03-05T06:35:21Z</published>
+    <arxiv:comment>34 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part A, 86, 47-55, 2021</arxiv:journal_ref>
+    <author>
+      <name>Radin Dardashti</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.01.005</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.01.005" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.01693v1</id>
+    <title>Angular momentum without rotation: turbocharging relationalism</title>
+    <updated>2020-11-03T13:31:32Z</updated>
+    <link href="https://arxiv.org/abs/2011.01693v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.01693v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Newton's rotating bucket pours cold water on the naive relationalist by vividly illustrating how certain rotational effects, particularly those due to non-zero angular momentum, can depend on more than just relations between material bodies. Because of such effects, rotation has played a central role in the absolute-relational debate and poses a particularly difficult challenge to the relationalist. In this paper, we provide a qualified response to this challenge that significantly weakens the absolutist position. We present a theory that, contrary to orthodoxy, can account for all rotational effects without introducing, as the absolutist does, a fixed standard of rotation. Instead, our theory posits a universal SO(3) charge that plays the role of angular momentum and couples to inter-particle relations via terms commonly seen in standard gauge theories such as electromagnetism and the Standard Model of particle physics. Our theory makes use of an enriched form of relationalism: it adds an SO(3) structure to the traditional relational description. Our construction is made possible by the modern tools of gauge theory, which reveal a simple relational law describing rotational effects. In this way, we can save the phenomena of Newtonian mechanics using conserved charges and relationalism. In a second paper, we will further explore the ontological and explanatory implications of the theory developed here.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-03T13:31:32Z</published>
+    <arxiv:comment>41 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, Vol 88 (2021): pp 138-155</arxiv:journal_ref>
+    <author>
+      <name>Henrique Gomes</name>
+    </author>
+    <author>
+      <name>Sean Gryb</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.05.006</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.05.006" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2008.10421v1</id>
+    <title>Holography without holography: How to turn inter-representational into intra-theoretical relations in AdS/CFT</title>
+    <updated>2020-08-24T13:19:25Z</updated>
+    <link href="https://arxiv.org/abs/2008.10421v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2008.10421v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show by means of the AdS/CFT correspondence in the context of quantum gravity how inter-representational relations - loosely speaking relations among different equivalent representations of one and the same physics - can play out as a tool for intra-theoretical developments and thus boost theory development in the context of discovery. More precisely, we first show that, as a duality, the AdS/CFT correspondence cannot in itself testify to the quantum origin of gravity (though it may be utilized for this purpose). We then establish through two case studies from emergent gravity (Jacobson (2016), Verlinde (2017)) that the holographic AdS/CFT correspondence can, however, still excel as a guiding principle towards the quantum origin of gravity (similar in nature to quantisation).</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-08-24T13:19:25Z</published>
+    <arxiv:comment>36 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics (2020). Volume 71, Pages 101-117</arxiv:journal_ref>
+    <author>
+      <name>Rasmus Jaksland</name>
+    </author>
+    <author>
+      <name>Niels S. Linnemann</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2020.04.007</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2020.04.007" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2004.01276v2</id>
+    <title>The Five Problems of Irreversibility</title>
+    <updated>2021-04-28T13:19:03Z</updated>
+    <link href="https://arxiv.org/abs/2004.01276v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2004.01276v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Thermodynamics has a clear arrow of time, characterized by the irreversible approach to equilibrium. This stands in contrast to the laws of microscopic theories, which are invariant under time-reversal. Foundational discussions of this "problem of irreversibility" often focus on historical considerations, and do therefore not take results of modern physical research on this topic into account. In this article, I will close this gap by studying the implications of dynamical density functional theory (DDFT), a central method of modern nonequilibrium statistical mechanics not previously considered in philosophy of physics, for this debate. For this purpose, the philosophical discussion of irreversibility is structured into five problems, concerned with the source of irreversibility in thermodynamics, the definition of equilibrium and entropy, the justification of coarse-graining, the approach to equilibrium and the arrow of time. For each of these problems, it is shown that DDFT provides novel insights that are of importance for both physicists and philosophers of physics.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-02T21:42:04Z</published>
+    <arxiv:comment>Updated with accepted manuscript</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science 87, pp. 136-146 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Michael te Vrugt</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsa.2021.04.006</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsa.2021.04.006" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1806.01121v5</id>
+    <title>How Electrons Spin</title>
+    <updated>2024-07-26T19:11:04Z</updated>
+    <link href="https://arxiv.org/abs/1806.01121v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1806.01121v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There are a number of reasons to think that the electron cannot truly be spinning. Given how small the electron is generally taken to be, it would have to rotate superluminally to have the right angular momentum and magnetic moment. Also, the electron's gyromagnetic ratio is twice the value one would expect for an ordinary classical rotating charged body. These obstacles can be overcome by examining the flow of mass and charge in the Dirac field (interpreted as giving the classical state of the electron). Superluminal velocities are avoided because the electron's mass and charge are spread over sufficiently large distances that neither the velocity of mass flow nor the velocity of charge flow need to exceed the speed of light. The electron's gyromagnetic ratio is twice the expected value because its charge rotates twice as fast as its mass.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.pop-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-05-26T22:20:49Z</published>
+    <arxiv:comment>post-publication version, 29 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics 68 (2019) 40-50</arxiv:journal_ref>
+    <author>
+      <name>Charles T. Sebens</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2019.04.007</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2019.04.007" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1707.04198v3</id>
+    <title>Forces on Fields</title>
+    <updated>2018-02-09T15:16:37Z</updated>
+    <link href="https://arxiv.org/abs/1707.04198v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1707.04198v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In electromagnetism, as in Newton's mechanics, action is always equal to reaction. The force from the electromagnetic field on matter is balanced by an equal and opposite force from matter on the field. We generally speak only of forces exerted by the field, not forces exerted upon the field. But, we should not be hesitant to speak of forces acting on the field. The electromagnetic field closely resembles a relativistic fluid and responds to forces in the same way. Analyzing this analogy sheds light on the inertial role played by the field's mass, the status of Maxwell's stress tensor, and the nature of the electromagnetic field.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-07-13T16:16:54Z</published>
+    <arxiv:comment>26 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics 63 (2018) 1-11</arxiv:journal_ref>
+    <author>
+      <name>Charles T. Sebens</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2017.09.005</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2017.09.005" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1703.02389v2</id>
+    <title>Cosmology and Convention</title>
+    <updated>2017-03-11T17:55:08Z</updated>
+    <link href="https://arxiv.org/abs/1703.02389v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1703.02389v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I argue that some important elements of the current cosmological model are "conventionalist" in the sense defined by Karl Popper. These elements include dark matter and dark energy; both are auxiliary hypotheses that were invoked in response to observations that falsified the standard model as it existed at the time. The use of conventionalist stratagems in response to unexpected observations implies that the field of cosmology is in a state of "degenerating problemshift" in the language of Imre Lakatos. I show that the "concordance" argument, often put forward by cosmologists in support of the current paradigm, is weaker than the convergence arguments that were made in the past in support of the atomic theory of matter or the quantization of energy.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-03-07T14:13:49Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B, Studies in History and Philosophy of Modern Physics, Vol. 57, February 2017, p. 41-52</arxiv:journal_ref>
+    <author>
+      <name>David Merritt</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2016.12.002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2016.12.002" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1611.04423v1</id>
+    <title>Expertise revisited I: Interactional Expertise</title>
+    <updated>2016-11-14T15:44:44Z</updated>
+    <link href="https://arxiv.org/abs/1611.04423v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1611.04423v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The notion of interactional expertise is explained starting with its origins and discussing its many applications. Interactional expertise is the ability to understand a technical area purely be deeply immersed in its 'practice-language' without actually practising. One of its many applications is to explain how large sciences are managed.</summary>
+    <category term="physics.soc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-11-14T15:44:44Z</published>
+    <arxiv:comment>39 pages, one table</arxiv:comment>
+    <arxiv:primary_category term="physics.soc-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science, 54, 113-123 (2015)</arxiv:journal_ref>
+    <author>
+      <name>Harry Collins</name>
+    </author>
+    <author>
+      <name>Robert Evans</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1608.08590v1</id>
+    <title>Constructing and Constraining Wave Functions for Identical Quantum Particles</title>
+    <updated>2016-08-30T18:27:19Z</updated>
+    <link href="https://arxiv.org/abs/1608.08590v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1608.08590v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I address the problem of explaining why wave functions for identical particles must be either symmetric or antisymmetric (the symmetry dichotomy) within two interpretations of quantum mechanics which include particles following definite trajectories in addition to, or in lieu of, the wave function: Bohmian mechanics and Newtonian quantum mechanics (a.k.a. many interacting worlds). In both cases I argue that, if the interpretation is formulated properly, the symmetry dichotomy can be derived and need not be postulated.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-08-30T18:27:19Z</published>
+    <arxiv:comment>27 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, Vol. 56 (November 2016), pp. 48-59</arxiv:journal_ref>
+    <author>
+      <name>Charles Sebens</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2016.08.009</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2016.08.009" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1511.03429v2</id>
+    <title>Metaphysics of the Principle of Least Action</title>
+    <updated>2016-03-02T19:15:17Z</updated>
+    <link href="https://arxiv.org/abs/1511.03429v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1511.03429v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the importance of the variational principles of physics, there have been relatively few attempts to consider them for a realistic framework. In addition to the old teleological question, this paper continues the recent discussion regarding the modal involvement of the principle of least action and its relations with the Humean view of the laws of nature. The reality of possible paths in the principle of least action is examined from the perspectives of the contemporary metaphysics of modality and Leibniz's concept of essences or possibles striving for existence. I elaborate a modal interpretation of the principle of least action that replaces a classical representation of a system's motion along a single history in the actual modality by simultaneous motions along an infinite set of all possible histories in the possible modality. This model is based on an intuition that deep ontological connections exist between the possible paths in the principle of least action and possible quantum histories in the Feynman path integral. I interpret the action as a physical measure of the essence of every possible history. Therefore only one actual history has the highest degree of the essence and minimal action. To address the issue of necessity, I assume that the principle of least action has a general physical necessity and lies between the laws of motion with a limited physical necessity and certain laws with a metaphysical necessity.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-11-11T09:53:13Z</published>
+    <arxiv:comment>35 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics 62:189-201</arxiv:journal_ref>
+    <author>
+      <name>Vladislav Terekhovich</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2017.09.004</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2017.09.004" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1504.01063v1</id>
+    <title>The Problem of Confirmation in the Everett Interpretation</title>
+    <updated>2015-04-04T22:31:17Z</updated>
+    <link href="https://arxiv.org/abs/1504.01063v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1504.01063v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I argue that the Oxford school Everett interpretation is internally incoherent, because we cannot claim that in an Everettian universe the kinds of reasoning we have used to arrive at our beliefs about quantum mechanics would lead us to form true beliefs. I show that in an Everettian context, the experimental evidence that we have available could not provide empirical confirmation for quantum mechanics, and moreover that we would not even be able to establish reference to the theoretical entities of quantum mechanics. I then consider a range of existing Everettian approaches to the probability problem and show that they do not succeed in overcoming this incoherence.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-04-04T22:31:17Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics, Volume 47, August 2014, Pages 21-32</arxiv:journal_ref>
+    <author>
+      <name>Emily Adlam</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2014.03.004</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2014.03.004" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1404.5881v1</id>
+    <title>Interpreting the modal Kochen-Specker theorem: possibility and many worlds in quantum mechanics</title>
+    <updated>2014-04-23T16:27:11Z</updated>
+    <link href="https://arxiv.org/abs/1404.5881v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1404.5881v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we attempt to physically interpret the Modal Kochen- Specker (MKS) theorem. In order to do so, we analyze the features of the possible properties of quantum systems arising from the elements in an orthomodular lattice and distinguish the use of "possibility" in the classical and quantum formalisms. Taking into account the modal and many worlds non-collapse interpretation of the projection postulate, we discuss how the MKS theorem rules the constraints to actualization, and thus, the relation between actual and possible realms.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-04-23T16:27:11Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics 45 (2014) 11-18</arxiv:journal_ref>
+    <author>
+      <name>Christian de Ronde</name>
+    </author>
+    <author>
+      <name>Hector Freytes</name>
+    </author>
+    <author>
+      <name>Graciela Domenech</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/0604216v1</id>
+    <title>Minimal Assumption Derivation of a weak Clauser-Horne Inequality</title>
+    <updated>2006-04-28T19:21:21Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/0604216v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/0604216v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  According to Bell's theorem a large class of hidden-variable models obeying Bell's notion of local causality conflict with the predictions of quantum mechanics. Recently, a Bell-type theorem has been proven using a weaker notion of local causality, yet assuming the existence of perfectly correlated event types. Here we present a similar Bell-type theorem without this latter assumption. The derived inequality differs from the Clauser-Horne inequality by some small correction terms, which render it less constraining.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2006-04-28T19:21:21Z</published>
+    <arxiv:comment>25 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies In History and Philosophy of Science Part B: Studies In History and Philosophy of Modern Physics 38(4), 844-862 (2007)</arxiv:journal_ref>
+    <author>
+      <name>Samuel Portmann</name>
+    </author>
+    <author>
+      <name>Adrian Wuethrich</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2007.02.002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2007.02.002" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/0604133v4</id>
+    <title>Decision theory and information propagation in quantum physics</title>
+    <updated>2007-04-25T20:11:40Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/0604133v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/0604133v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  In recent papers, Zurek has objected to the decision-theoretic approach of Deutsch and Wallace to deriving the Born rule for quantum probabilities on the grounds that it courts circularity. Deutsch and Wallace assume that the many worlds theory is true and that decoherence gives rise to a preferred basis. However, decoherence arguments use the reduced density matrix, which relies upon the partial trace and hence upon the Born Rule for its validity. Using the Heisenberg Picture and quantum Darwinism - the notion that classical information is quantum information that can proliferate in the environment pioneered by Olliver et al - I show that measurement interactions between two systems only create correlations between a specific set of commuting observables of system 1 and a specific set of commuting observables of system 2. This argument picks out a unique basis in which information flows in the correlations between those sets of commuting observables. I then derive the Born rule for both pure and mixed states and answer some other criticisms of the decision theoretic approach to quantum probability.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2006-04-18T19:00:35Z</published>
+    <arxiv:comment>minor corrections, to appear in Studies in the History and Philosophy of Modern Physics, 35 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies In History and Philosophy of Science Part B: Studies In History and Philosophy of Modern Physics, Vol, 38, No. 4, Dec 2007, 815-831</arxiv:journal_ref>
+    <author>
+      <name>Alan Forrester</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2007.02.004</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2007.02.004" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/0410193v1</id>
+    <title>Bell's theorem and the experiments: Increasing empirical support to local realism</title>
+    <updated>2004-10-25T15:12:26Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/0410193v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/0410193v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  It is argued that local realism is a fundamental principle, which might be rejected only if experiments clearly show that it is untenable. A critical review is presented of the derivations of Bell's inequalities and the performed experiments, with the conclusion that no valid, loophole-free, test exists of local realism vs. quantum mechanics. It is pointed out that, without any essential modification, quantum mechanics might be compatible with local realism. This suggests that the principle may be respected by nature.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2004-10-25T15:12:26Z</published>
+    <arxiv:comment>28 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics Volume 36, Issue 3, September 2005, Pages 544-565</arxiv:journal_ref>
+    <author>
+      <name>Emilio Santos</name>
+    </author>
+    <arxiv:doi>10.1016/j.shpsb.2005.05.007</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.shpsb.2005.05.007" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/0003084v3</id>
+    <title>A quantum computer only needs one universe</title>
+    <updated>2003-03-24T17:50:36Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/0003084v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/0003084v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  The nature of quantum computation is discussed. It is argued that, in terms of the amount of information manipulated in a given time, quantum and classical computation are equally efficient. Quantum superposition does not permit quantum computers to ``perform many computations simultaneously'' except in a highly qualified and to some extent misleading sense. Quantum computation is therefore not well described by interpretations of quantum mechanics which invoke the concept of vast numbers of parallel universes. Rather, entanglement makes available types of computation process which, while not exponentially larger than classical ones, are unavailable to classical systems. The essence of quantum computation is that it uses entanglement to generate and manipulate a physical representation of the correlations between logical entities, without the need to completely represent the logical entities themselves.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2000-03-20T12:07:54Z</published>
+    <arxiv:comment>13 pages. The paper has undergone major changes, in order to stengthen the argument and cut extraneous material. Schrodinger's Cat has been cut. The "one-way computer" model is now included, and the other remarks tightened. A positive statement on what a QC is, as opposed to what it is not, is added</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Studies in History and Philosophy of Science B - Studies in History and Philosophy of Modern Physics 34(3):469-478 (2003)</arxiv:journal_ref>
+    <author>
+      <name>A. M. Steane</name>
+    </author>
+    <arxiv:doi>10.1016/S1355-2198(03)00038-8</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S1355-2198(03)00038-8" title="doi"/>
+  </entry>
+</feed>

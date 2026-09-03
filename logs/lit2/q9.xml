@@ -1,0 +1,1009 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/8U7OoIJIXY1AtMrtg6IO+cj0doA</id>
+  <title>arXiv Query: search_query=jr:"Foundations of Physics"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T03:41:10Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=jr:%22Foundations+of+Physics%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>331</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.18637v1</id>
+    <title>Gravity, Fine-Structure Constant and Natural Units -- some Thoughts based on Dimensional Analysis --</title>
+    <updated>2026-05-18T16:44:34Z</updated>
+    <link href="https://arxiv.org/abs/2605.18637v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.18637v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Here we discuss direct links of the number of fundamental dimensions to the fundamental natural constants using simple arguments of dimensional analysis \corr{based on Maxwell's dimensions length (L), time (T) and mass (M) as well as the constants $G$, $c$, $\hbar$ and $e$}. We find that the \corr{form} of the fine-structure constant is a direct consequence of this connection. Additionally, our approach emphasises that gravity is a quite distinct area of physics which is not yet successfully quantised, i.e. not yet combined with quantum mechanics. We also discuss different unit systems based on dimensional analysis and natural constants.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-18T16:44:34Z</published>
+    <arxiv:comment>Published at Foundations of Physics (Springer Nature) Comments and discussions are welcome</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2026) 56:28</arxiv:journal_ref>
+    <author>
+      <name>Robi Banerjee</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-026-00929-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-026-00929-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.02026v1</id>
+    <title>Perspectives in and on Quantum Theory</title>
+    <updated>2026-04-02T13:34:09Z</updated>
+    <link href="https://arxiv.org/abs/2604.02026v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.02026v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I take a pragmatist perspective on quantum theory. This is not a view of the world described by quantum theory. In this view quantum theory itself does not describe the physical world, nor our observatons, experiences or opinions of it. Instead, the theory offers reliable advice on when to expect an event of one kind or another, and on how strongly to expect each possible outcome of that event. The actual outcome is a perspectival fact: a fact relative to a physical context of assessment. Measurement outcomes and quantum states are both perspectival. By noticing that each must be relativized to an appropriate physical context one can resolve the measurement problem and the problem of nonlocal action. But if the outcome of a quantum measurement is not an absolute fact, then why shoud the statistics of such outcomes give us any objective reason to accept quantum theory? One can describe extensions of the scenario of Wigner's friend in which a statement expressing the outcome of a quantum measurement would be true relative to one such context but not relative to another. However, physical conditions in our world prevent us from realizing such scenarios. Since the outcome of every actual quantum measurement is certified at what is essentially a single context of assessment, the outcome relative to that context is an objective fact in the only sense that matters for science. We should accept quantum theory because the statistics these outcomes display are just those it leads us to expect.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-02T13:34:09Z</published>
+    <arxiv:comment>14 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2025) 55:25 Foundations of Physics (2025) 55:25</arxiv:journal_ref>
+    <author>
+      <name>Richard Healey</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00838-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00838-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.25409v1</id>
+    <title>From Complementarity to Quantum Properties: An Operational Reconstructive Approach</title>
+    <updated>2026-03-26T13:07:57Z</updated>
+    <link href="https://arxiv.org/abs/2603.25409v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.25409v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum theory brings into question the compatibility of the twin desiderata of exact knowability of the present state of the physical world and perfect predictability of its future states. Bohr's coordination-causality complementarity principle transforms this tension into one between properties (as ordinarily understood in classical physics) and deterministic causality. Here, we develop an explicit model of quantum properties which accommodates this essential tension. Our approach integrates operational, reconstructive, and metaphysical standpoints. In particular, we make use of an operational framework employed in a recent operational reconstruction of Feynman's formulation of quantum theory; base our property model on an analysis of property types; and use the notions of actuality and potentiality to frame the model. We show that this quantum property model provides a natural resolution of Zeno's paradox of motion, and provides reliable intuitions about phenomena such as electron diffraction and the non-local behaviour of entangled states of non-identical particles.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-26T13:07:57Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 56, 23 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Philip Goyal</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-026-00922-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-026-00922-0" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02978v3</id>
+    <title>The Informational Observer in Relational Quantum Mechanics</title>
+    <updated>2026-08-06T15:23:37Z</updated>
+    <link href="https://arxiv.org/abs/2603.02978v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02978v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Relational Quantum Mechanics (RQM) treats quantum states as observer-dependent facts rather than absolute properties. While this relational stance is conceptually attractive, it raises concerns about empirical confirmation, particularly in multi-observer scenarios. Existing responses within RQM focus on securing agreement between observers by strengthening the status, stability, or accessibility of recorded outcomes. However, they leave open a more basic question: what grounds the persistence of an observer across time? Scientific observation presupposes stable records and the capacity to relate outcomes across successive measurements. We argue that the minimal definition of the observer in RQM as a merely interacting physical system is insufficient to support this requirement. We propose a complementary account of the observer that distinguishes physical interaction from informational coherence, and show how this distinction supports empirical confirmation in Wigner's friend-type scenarios.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-03T13:32:24Z</published>
+    <arxiv:comment>30 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 56 (2026) 39</arxiv:journal_ref>
+    <author>
+      <name>Bethany Terris</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-026-00939-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-026-00939-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.01982v3</id>
+    <title>A Heptalemma for Quantum Mechanics</title>
+    <updated>2026-04-08T10:02:37Z</updated>
+    <link href="https://arxiv.org/abs/2512.01982v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.01982v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a seven-pronged no-go result for quantum mechanics: a "heptalemma". It shows that seven initially plausible theses about physical reality are jointly inconsistent with the predictions of quantum mechanics, while any six are jointly consistent. We must then decide which theses to retain and which to give up. Since different interpretations of quantum mechanics entail different responses to the heptalemma, we get a novel taxonomy of such interpretations. Beyond the application to quantum mechanics, the heptalemma offers a general diagnostic criterion for determining whether a given scientific domain should count as classical or not, and if not, how it departs from classicality.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-01T18:39:40Z</published>
+    <arxiv:comment>36 pages, 1 figure, 1 table. v2: Minor updates after feedback</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 56, 24 (2026)</arxiv:journal_ref>
+    <author>
+      <name>John B. DeBrota</name>
+    </author>
+    <author>
+      <name>Christian List</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-026-00919-9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-026-00919-9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.17878v1</id>
+    <title>Reply to Hofer-Szabó: the PBR theorem hasn't been saved</title>
+    <updated>2025-10-17T05:17:18Z</updated>
+    <link href="https://arxiv.org/abs/2510.17878v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.17878v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, in Found. Phys. 53: 64 (2023), it has been argued that there is no reality to the PBR theorem. In Found. Phys. 54: 36 (2024), Hofer-Szabó has commented that the argument is flawed and that PBR theorem remains in tact. Here we reply to Hofer-Szabó by showing that his counterargument does not hold up, concluding that the PBR theorem has been disproved.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-17T05:17:18Z</published>
+    <arxiv:comment>2 pp.; reply to arXiv:2405.06526, which comments on arXiv:2211.15469</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 54(5): 69 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Marcoen JTF Cabbolet</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00807-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00807-0" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.05504v1</id>
+    <title>Contemporary Perspectivism as a Framework of Scientific Inquiry in Quantum Mechanics and Beyond</title>
+    <updated>2025-10-13T11:17:13Z</updated>
+    <link href="https://arxiv.org/abs/2511.05504v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.05504v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Contemporary perspectivism is viewed as a framework of scientific inquiry concerning the origin, generation and systematization of scientific knowledge of nature by focusing on the conditions under which such knowledge may arise in perspectivist terms and investigating the essential ramifications of these conditions. To this end, we develop the conceptual, methodological and semantic framework of contemporary perspectivism according to the norms of the proposed endo-theoretic approach. Implementation of the preceding three-fold scheme in quantum mechanics implies that the global structure of a quantum algebra of events can be consistently comprehended through a multilevel structure of locally variable Boolean perspectives, interconnected in a category-theoretic environment, yielding jointly all the information encoded in the former. In this respect, the proposed approach validates the perspectivist/contextual nature of quantum mechanics at a fundamental level of discourse. Furthermore, due to its general character, it may acquire the form of a theoretical pattern of scientific inquiry in the natural sciences, especially when dealing with complex trans-perspectival phenomena, the analysis of which requires the use of information resulting from more than one perspective. Finally, in the appendix, we provide a concise comparative assessment between our perspectivist framework of quantum theory and Rovelli's relational interpretation of quantum mechanics.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-13T11:17:13Z</published>
+    <arxiv:comment>36 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 2025, 55:76</arxiv:journal_ref>
+    <author>
+      <name>Vassilios Karakostas</name>
+    </author>
+    <author>
+      <name>Elias Zafiris</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00888-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00888-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.03203v1</id>
+    <title>Thermodynamic Signature of Logical Depth in Quantum Circuits</title>
+    <updated>2025-08-05T08:23:00Z</updated>
+    <link href="https://arxiv.org/abs/2508.03203v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.03203v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate that the internal logical structure of a quantum circuit can leave a distinct thermodynamic signature under progressive decoherence. By comparing deep, conditionally branching circuits with shallow, uniform counterparts-while controlling for overall halting probability and physical resources-we show that branching architectures induce greater entropy flow into the environment. This effect is captured by a logical depth factor $L_d$, which quantifies entropy accumulation during environmental interactions. We validate our framework through detailed analysis of two 4-branch quantum circuits, demonstrating greater entropy production with $L_d \approx 1.615$ for conditional versus uniform architectures. An ancilla-based experimental protocol using controlled-phase gates provides a concrete pathway for detecting these thermodynamic signatures on current quantum platforms. Our results establish logical depth as a physically measurable quantity with implications for circuit design, compilation strategies, and verification protocols.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-05T08:23:00Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, Volume 55, article number 71, (2025)</arxiv:journal_ref>
+    <author>
+      <name>Issam Ibnouhsein</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00883-w</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00883-w" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.21179v1</id>
+    <title>How Anomalous is the Electron's Magnetic Moment?</title>
+    <updated>2025-04-29T21:12:47Z</updated>
+    <link href="https://arxiv.org/abs/2504.21179v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.21179v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The electron's spin magnetic moment is ordinarily described as anomalous in comparison to what one would expect from the Dirac equation. But, what exactly should one expect from the Dirac equation? The standard answer would be the Bohr magneton, which is a simple estimate of the electron's spin magnetic moment that can be derived from the Dirac equation either by taking the non-relativistic limit to arrive at the Pauli equation or by examining the Gordon decomposition of the electron's current density. However, these derivations ignore two effects that are central to quantum field theoretic calculations of the electron's magnetic moment: self-interaction and mass renormalization. Those two effects can and should be incorporated when analyzing the Dirac equation, to better isolate the distinctive improvements of quantum field theory. Either of the two aforementioned derivations can be modified accordingly. Doing so yields a magnetic moment that depends on the electron's state (even among $z$-spin up states). This poses a puzzle for future research: How does the move to quantum field theory take you from a state-dependent magnetic moment to a fixed magnetic moment?</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-29T21:12:47Z</published>
+    <arxiv:comment>30 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 55, 48 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Charles T. Sebens</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00846-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00846-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.09804v1</id>
+    <title>Calculation of Dark Matter as a Feature of Space-Time</title>
+    <updated>2025-03-12T20:14:54Z</updated>
+    <link href="https://arxiv.org/abs/2503.09804v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.09804v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We derive the first analytical formula for the density of "Dark Matter" (DM) at all length scales, thus also for the rotation curves of stars in galaxies, for the baryonic Tully-Fisher relation and for planetary systems, from Einstein's equations (EE) and classical approximations, in agreement with observations. DM is defined in Part I as the energy of the coherent gravitational field of the universe, represented by the additional equivalent ordinary matter (OM), needed at all length scales, to explain classically, with inclusion of the OM, the observed coherent gravitational field. Our derivation uses both EE and the Newtonian approximation of EE in Part I, to describe semi-classically in Part II the advection of DM, created at the level of the universe, into galaxies and clusters thereof. This advection happens proportional with their own classically generated gravitational field g, due to self-interaction of the gravitational field. It is based on the universal formula rD=lgg'g' for the density rD of DM advected into medium and lower scale structures of the observable universe, where l is a universal constant fixed by the Tully-Fisher relations. Here g' is the gravitational field of the universe; g' is in main part its own source, as implied in Part I from EE. We start from a simple electromagnetic analogy that helps to make the paper generally accessible. This paper allows for the first time the exact calculation of DM in galactic halos and at all levels in the universe, based on EE and Newtonian approximations, in agreement with observations.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-12T20:14:54Z</published>
+    <arxiv:comment>38 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Foundations of Physics. 53(5) (2023)</arxiv:journal_ref>
+    <author>
+      <name>Peter H. Handel</name>
+    </author>
+    <author>
+      <name>Klara E. Splett</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00705-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00705-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.07668v1</id>
+    <title>Curved spacetimes from quantum mechanics</title>
+    <updated>2025-02-11T16:13:23Z</updated>
+    <link href="https://arxiv.org/abs/2502.07668v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.07668v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The ultimate extension of Penrose's Spin Geometry Theorem is given. It is shown how the \emph{local} geometry of any \emph{curved} Lorentzian 4-manifold (with $C^2$ metric) can be derived in the classical limit using only the observables in the algebraic formulation of abstract Poincaré-invariant elementary quantum mechanical systems. In particular, for any point $q$ of the classical spacetime manifold and curvature tensor there, there exists a composite system built from finitely many Poincaré-invariant elementary quantum mechanical systems and a sequence of its states, defining the classical limit, such that, in this limit, the value of the distance observables in these states tends with asymptotically vanishing uncertainty to lengths of spacelike geodesic segments in a convex normal neighbourhood $U$ of $q$ that determine the components of the curvature tensor at $q$. Since the curvature at $q$ determines the metric on $U$ up to third order corrections, the metric structure of curved $C^2$ Lorentzian 4-manifolds is recovered from (or, alternatively, can be \emph{defined} by the observables of) abstract Poincaré-invariant quantum mechanical systems.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-11T16:13:23Z</published>
+    <arxiv:comment>22 pages</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Foundations of Physics, vol 55, 33 (2025)</arxiv:journal_ref>
+    <author>
+      <name>László B. Szabados</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00847-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00847-0" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.06487v2</id>
+    <title>Equivalent Gravities and Equivalence Principle: Foundations and experimental implications</title>
+    <updated>2025-09-03T16:01:17Z</updated>
+    <link href="https://arxiv.org/abs/2501.06487v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.06487v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The so-called Geometric Trinity of Gravity includes General Relativity (GR), based on spacetime curvature; the Teleparallel Equivalent of GR (TEGR), which relies on spacetime torsion; and the Symmetric Teleparallel Equivalent of GR (STEGR), grounded in nonmetricity. Recent studies demonstrate that GR, TEGR, and STEGR are dynamically equivalent, raising questions about the fundamental structure of spacetime, the under-determination of these theories, and whether empirical distinctions among them are possible. The aim of this work is to show that they are equivalent in many features but not exactly in everything. In particular, their relationship with the Equivalence Principle (EP) is different. The EP is a deeply theory-laden assumption, which is assumed as fundamental in constructing GR, with significant implications for our understanding of spacetime. However, it introduces unresolved conceptual issues, including its impact on the nature of the metric and connection, its meaning at the quantum level, tensions with other fundamental interactions and new physics, and its role in dark matter and dark energy problems. In contrast, TEGR and STEGR recover the EP, in particular in its strong formulation, but do not rely on it as a foundational principle. The fact that GR, TEGR, and STEGR are equivalent in non-trivial predictions, but the EP is not necessary for TEGR and STEGR, suggests that it may not be a fundamental feature but an emergent one, potentially marking differences in the empirical content of the three theories. Thus, the developments within the Geometric Trinity framework challenge traditional assumptions about spacetime and may help to better understand some of the unresolved foundational difficulties related to the EP.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-11T09:10:08Z</published>
+    <arxiv:comment>30 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Foundations of Physics (2025) 55:69</arxiv:journal_ref>
+    <author>
+      <name>Christian Mancini</name>
+    </author>
+    <author>
+      <name>Guglielmo Maria Tino</name>
+    </author>
+    <author>
+      <name>Salvatore Capozziello</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00882-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00882-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.22132v1</id>
+    <title>Quantum Reconstructions as Stepping Stones toward Psi-Doxastic Interpretations?</title>
+    <updated>2024-10-29T15:29:44Z</updated>
+    <link href="https://arxiv.org/abs/2410.22132v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.22132v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In quantum foundations, there is growing interest in the program of reconstructing the quantum formalism from clear physical principles. These reconstructions are formulated in an operational framework, deriving the formalism from information-theoretic principles. It has been recognized that this project is in tension with standard Psi-ontic interpretations. This paper presupposes that the quantum reconstruction program (QRP) (i) is a worthwhile project and (ii) puts pressure on Psi-ontic interpretations. Where does this leave us? Prima facie, it seems that Psi-epistemic interpretations perfectly fit the spirit of information-based reconstructions. However, Psi-epistemic interpretations, understood as saying that the wave functions represents one's knowledge about a physical system, recently have been challenged on technical and conceptual grounds. More importantly, for some researchers working on reconstructions, the lesson of successful reconstructions is that the wave function does not represent objective facts about the world. Since knowledge is a factive concept, this speaks against epistemic interpretations. In this paper, I discuss whether Psi-doxastic interpretations constitute a reasonable alternative. My thesis is that if we want to engage QRP with Psi-doxastic interpretations, then we should aim at a reconstruction that is spelled out in non-factive experiential terms.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-29T15:29:44Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 54: 46, 2024</arxiv:journal_ref>
+    <author>
+      <name>Philipp Berghofer</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00778-2</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00778-2" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.06470v2</id>
+    <title>From Unitarity to Irreversibility: The Role of Infinite Tensor Products and Nested Wigner's Friends</title>
+    <updated>2026-01-21T11:40:28Z</updated>
+    <link href="https://arxiv.org/abs/2409.06470v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.06470v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The transition from unitary, reversible von Neumann-Everett quantum processes to non-unitary, irreversible processes and measurements is explored through infinite tensor products interpreted as nested, chained, or iterated Wigner's friend scenarios. Infinite tensor products can disrupt unitary equivalence through sectorization and factorization, drawing parallels to concepts from real analysis, recursive mathematics, and statistical physics.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-10T12:53:22Z</published>
+    <arxiv:comment>10 pages, final form</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 56, 4 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Karl Svozil</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00903-9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00903-9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.10253v2</id>
+    <title>On the alternatives to the ideal mathematical points-like separatedness</title>
+    <updated>2024-09-17T19:50:00Z</updated>
+    <link href="https://arxiv.org/abs/2408.10253v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.10253v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In a recent paper as an alternative to models based on the notion of ideal mathematical point, characterized by a property of separatedness, we considered a viewpoint based on the notion of continuous change, making use of elements of a non-classical logic, in particular the fuzzy sets theory, with events represented as spatiotemporally blurred blobs. Here we point out and discuss a number of aspects of this imperfect symbolic description that might potentially be misleading. Besides that, we analyze its relation to various concepts used commonly to model physical systems, denoted by terms like: point, set, continuous, discrete, infinite, or local, clarifying further how our viewpoint is different and asking whether, in light of our main postulate, any of these notions, or their opposites, if exist, are in their usual meanings suitable to accurately describe the natural phenomena.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-10T18:07:31Z</published>
+    <arxiv:comment>12 pages, 1 figure; added references, refined argumentation</arxiv:comment>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <arxiv:journal_ref>Foundations of Physics 55: 1 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Bartosz Jura</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00812-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00812-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.04607v2</id>
+    <title>Arrival Times Versus Detection Times</title>
+    <updated>2024-07-11T13:20:42Z</updated>
+    <link href="https://arxiv.org/abs/2405.04607v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.04607v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>How to compute the probability distribution of a detection time, i.e., of the time which a detector registers as the arrival time of a quantum particle, is a long-debated problem. In this regard, Bohmian mechanics provides in a straightforward way the distribution of the time at which the particle actually does arrive at a given surface in 3-space in the absence of detectors. However, as we discuss here, since the presence of detectors can change the evolution of the wave function and thus the particle trajectories, it cannot be taken for granted that the arrival time of the Bohmian trajectories in the absence of detectors agrees with the one in the presence of detectors, and even less with the detection time. In particular, we explain why certain distributions that Das and Dürr [arXiv:1802.07141] presented as the distribution of the detection time in a case with spin, based on assuming that all three times mentioned coincide, is actually not what Bohmian mechanics predicts.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-07T18:43:14Z</published>
+    <arxiv:comment>24 pages LaTeX, 2 figures; v2 appendices added, two paragraphs on page 2 added</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 54: 63 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Sheldon Goldstein</name>
+    </author>
+    <author>
+      <name>Roderich Tumulka</name>
+    </author>
+    <author>
+      <name>Nino Zanghì</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00798-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00798-y" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.03418v1</id>
+    <title>The Decoherent Arrow of Time and the Entanglement Past Hypothesis</title>
+    <updated>2024-05-06T12:34:49Z</updated>
+    <link href="https://arxiv.org/abs/2405.03418v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.03418v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>If an asymmetry in time does not arise from the fundamental dynamical laws of physics, it may be found in special boundary conditions. The argument normally goes that since thermodynamic entropy in the past is lower than in the future according to the Second Law of Thermodynamics, then tracing this back to the time around the Big Bang means the universe must have started off in a state of very low thermodynamic entropy: the Thermodynamic Past Hypothesis. In this paper, we consider another boundary condition that plays a similar role, but for the decoherent arrow of time, i.e. the quantum state of the universe is more mixed in the future than in the past. According to what we call the Entanglement Past Hypothesis, the initial quantum state of the universe had very low entanglement entropy. We clarify the content of the Entanglement Past Hypothesis, compare it with the Thermodynamic Past Hypothesis, and identify some challenges and open questions for future research.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-06T12:34:49Z</published>
+    <arxiv:comment>10 pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 54, 49 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Jim Al-Khalili</name>
+    </author>
+    <author>
+      <name>Eddy Keming Chen</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00785-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00785-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.20282v2</id>
+    <title>Deriving Ontological Statements from the Unnatural Higgs Mass</title>
+    <updated>2024-07-28T11:09:54Z</updated>
+    <link href="https://arxiv.org/abs/2403.20282v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.20282v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We provide novel, metatheoretical arguments strengthening the position that the naturalness problem of the light Higgs mass is a pseudo-problem: No physics beyond the standard model of particle physics is needed to explain the small value of the Higgs boson. By evaluating previous successes of the guiding principle of technical naturalness, we restrict its applicability to non-fundamental phenomena in the realm of provisional theories within limited energy scales. In view of further breaches of autonomy of scales in apparently fundamental phenomena outside particle physics, the hierarchy problem of the Higgs mass is instead reinterpreted as an indication of the ontologically fundamental status of the Higgs boson. Applying the concept of Selective Realism justifies this seemingly contradictory attribution within the effective theories of the standard model of particle physics. Moreover, we argue that the ongoing naturalness debate about the Higgs mass is partly based on the adherence to the methodology of effective theories (often claimed to be universally applicable), for which there is no justification when dealing with presumably fundamental phenomena such as the Higgs mechanism, even if it is embedded into an effective theory.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-29T16:51:25Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics Vol. 55, Article 39 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Johannes Branahl</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00852-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00852-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.06185v4</id>
+    <title>Ozawa's Intersubjectivity Theorem as justification of RQM's postulate on internally consistent descriptions</title>
+    <updated>2024-05-17T12:21:56Z</updated>
+    <link href="https://arxiv.org/abs/2401.06185v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.06185v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Ozawa's Intersubjectivity Theorem (OIT) proved within quantum measurement theory supports the new postulate of relational quantum mechanics (RQM), the postulate on internally consistent descriptions. We remark that this postulate was proposed only recently to resolve the problem of intersubjectivity of information in RQM. In contrast to RQM for which OIT is a supporting theoretical statement, QBism is challenged by OIT.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-11T08:07:33Z</published>
+    <arxiv:comment>discussion on interrelation of the conditions of "probability reproducibility" and "measurement in the same basis", stimulated by prof. Ozawa</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 54, 29 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Andrei Khrennikov</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00762-w</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00762-w" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.00994v1</id>
+    <title>Synchronization and Fundamental Time: a Connection between Relativity and Quantum Mechanics</title>
+    <updated>2023-09-02T17:30:20Z</updated>
+    <link href="https://arxiv.org/abs/2309.00994v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.00994v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An interesting connection between special relativity and quantum mechanics was put forward by Louis de Broglie, about 60 years ago, who focused on the link between synchronization in a rotating frame and the quantization of the angular momentum. Here we generalise his approach to curved spacetime, using the gravitoelectromagnetic analogy, which can be applied to describe the weak gravitational field around rotating sources, and give a new interpretation of the results.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-02T17:30:20Z</published>
+    <arxiv:comment>11 pages; accepted for publication in Foundations of Physics</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Foundations of Physics (2023) 53:83</arxiv:journal_ref>
+    <author>
+      <name>Matteo Luca Ruggiero</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00724-8</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00724-8" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.13113v1</id>
+    <title>On the Boundary of the Cosmos</title>
+    <updated>2023-08-24T23:32:17Z</updated>
+    <link href="https://arxiv.org/abs/2308.13113v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.13113v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Intuitively, the totality of physical reality -- the Cosmos -- has a beginning only if (i) all parts of the Cosmos agree on the direction of time (the Direction Condition) and (ii) there is a boundary to the past of all non-initial spacetime points such that there are no spacetime points to the past of the boundary (the Boundary Condition). Following a distinction previously introduced by J. Brian Pitts, the Boundary Condition can be conceived of in two distinct ways: either topologically, i.e., in terms of a closed boundary, or metrically, i.e., in terms of the Cosmos having a finite past. This article proposes that the Boundary Condition should be posed disjunctively, modifies and improves upon the metrical conception of the Cosmos's beginning in light of a series of surprising yet simple thought experiments, and suggests that the Direction and Boundary Conditions should be thought of as more fundamental to the concept of the Cosmos's beginning than classical Big Bang cosmology.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-24T23:32:17Z</published>
+    <arxiv:comment>47 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>2023, Foundations of Physics</arxiv:journal_ref>
+    <author>
+      <name>Daniel Linford</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00718-6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00718-6" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.01408v1</id>
+    <title>Aharonov-Bohm effect in Presence of Superconductors</title>
+    <updated>2023-05-02T13:30:02Z</updated>
+    <link href="https://arxiv.org/abs/2305.01408v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.01408v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The analysis of a previous paper, in which it was shown that the energy for the Aharonov-Bohm effect could be traced to the interaction energy between the magnetic field of the electron and the background magnetic field, is extended to cover the case in which the magnetic field of the electron is shielded from the background magnetic field by superconducting material. The paradox that arises from the fact that such a shielding would apparently preclude the possibility of an interaction energy is resolved and, within the limits of the ideal situation considered, the observed experimental result is derived.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-02T13:30:02Z</published>
+    <arxiv:comment>Published version: Foundations of Physics, Vol. 23 (1993) 703-709 doi: 10.1007/BF01883804 arXiv-ed February 18, 1993 ; \LaTeX-ed May 1, 2023 Uploaded to arXiv to help researchers with limited library facilities</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, Vol. 23 (1993) 703-709</arxiv:journal_ref>
+    <author>
+      <name>L. O'Raifeartaigh</name>
+    </author>
+    <author>
+      <name>N. Straumann</name>
+    </author>
+    <author>
+      <name>A. Wipf</name>
+    </author>
+    <arxiv:doi>10.1007/BF01883804</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/BF01883804" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.10371v5</id>
+    <title>Has the problem of the motion of a heavy symmetric top been solved in quadratures?</title>
+    <updated>2023-10-07T15:48:26Z</updated>
+    <link href="https://arxiv.org/abs/2304.10371v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.10371v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We have revised the problem of the motion of a heavy symmetric top. When formulating equations of the Lagrange top with the diagonal inertia tensor, the potential energy has more complicated form as compared with that assumed in the literature on dynamics of a rotating body. This implies the corresponding improvements in equations of motion. Using the Liouville's theorem, we solve the improved equations in quadratures and present the explicit expressions for the resulting elliptic integrals.</summary>
+    <category term="physics.class-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-17T16:46:02Z</published>
+    <arxiv:comment>6 pages, typos fixed once again, notation improved, discussion extended</arxiv:comment>
+    <arxiv:primary_category term="physics.class-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2024) 54:41</arxiv:journal_ref>
+    <author>
+      <name>Alexei A. Deriglazov</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00771-9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00771-9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.03423v1</id>
+    <title>A decoherence-based approach to the classical limit in Bohm's theory</title>
+    <updated>2023-04-07T00:30:30Z</updated>
+    <link href="https://arxiv.org/abs/2304.03423v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.03423v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The paper explains why the de Broglie-Bohm theory reduces to Newtonian mechanics in the macroscopic classical limit. The quantum-to-classical transition is based on three steps: (i) interaction with the environment produces effectively factorized states, leading to the formation of effective wave functions and hence decoherence; (ii) the effective wave functions selected by the environment--the pointer states of decoherence theory--will be well-localized wave packets, typically Gaussian states; (iii) the quantum potential of a Gaussian state becomes negligible under standard classicality conditions; therefore, the effective wave function will move according to Newtonian mechanics in the correct classical limit. As a result, a Bohmian system in interaction with the environment will be described by an effective Gaussian state and--when the system is macroscopic--it will move according to Newtonian mechanics.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-07T00:30:30Z</published>
+    <arxiv:comment>Article published in the special issue edited by A. Drezet: "Pilot-wave and beyond: Louis de Broglie and David Bohm's quest for a quantum ontology", Foundations of Physics, Springer</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 53, 41 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Davide Romano</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00679-w</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00679-w" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.13772v1</id>
+    <title>A viable varying speed of light model in the RW metric</title>
+    <updated>2023-03-24T03:15:44Z</updated>
+    <link href="https://arxiv.org/abs/2303.13772v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.13772v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Robertson-Walker (RW) metric allows us to apply general relativity to model the behavior of the Universe as a whole (i.e., cosmology). We can properly interpret various cosmological observations, like the cosmological redshift, the Hubble parameter, geometrical distances, and so on, if we identify fundamental observers with individual galaxies. That is to say that the interpretation of observations of modern cosmology relies on the RW metric. The RW model satisfies the cosmological principle in which the 3-space always remains isotropic and homogeneous. One can derive the cosmological redshift relation from this condition. We show that it is still possible for us to obtain consistent results in a specific time-varying speed-of-light model without spoiling the success of the standard model. The validity of this model needs to be determined by observations.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-24T03:15:44Z</published>
+    <arxiv:comment>13 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 53, 40 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Seokcheon Lee</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00682-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00682-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.12393v1</id>
+    <title>Entanglement of observables: Quantum conditional probability approach</title>
+    <updated>2023-03-22T08:58:15Z</updated>
+    <link href="https://arxiv.org/abs/2303.12393v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.12393v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper is devoted to clarification of the notion of entanglement through decoupling it from the tensor product structure and treating as a constraint posed by probabilistic dependence of quantum observable A and B. In our framework, it is meaningless to speak about entanglement without pointing to the fixed observables A and B, so this is AB-entanglement. Dependence of quantum observables is formalized as non-coincidence of conditional probabilities. Starting with this probabilistic definition, we achieve the Hilbert space characterization of the AB-entangled states as amplitude non-factorisable states. In the tensor product case, $AB$-entanglement implies standard entanglement, but not vice verse. AB-entanglement for dichotomous observables is equivalent to their correlation. We describe the class of quantum states that are A_u B_u-entangled for a family of unitary operators (u). Finally, observables entanglement is compared with dependence of random variables in classical probability theory.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-22T08:58:15Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 53, Article number: 84 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Andrei Khrennikov</name>
+    </author>
+    <author>
+      <name>Irina Basieva</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00725-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00725-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.14129v2</id>
+    <title>Relational space-time and de Broglie waves</title>
+    <updated>2024-08-29T00:18:10Z</updated>
+    <link href="https://arxiv.org/abs/2303.14129v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.14129v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Relative motion of particles is examined in the context of relational space-time. It is shown that de Broglie waves may be derived as a representation of the coordinate maps between the rest-frames of these particles. Energy and momentum are not absolute characteristics of these particles, they are understood as parameters of the coordinate maps between their rest-frames. It is also demonstrated the position of a particle is not an absolute, it is contingent on the frame of reference used to observe the particle.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-17T02:14:19Z</published>
+    <arxiv:comment>26 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 53, 2023</arxiv:journal_ref>
+    <author>
+      <name>Tony Lyons</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00715-9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00715-9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.10597v1</id>
+    <title>Can a Bohmian be a Rovellian for all practical purposes?</title>
+    <updated>2023-02-21T11:00:56Z</updated>
+    <link href="https://arxiv.org/abs/2302.10597v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.10597v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The aim of this article is to discuss the preferred basis problem in relational quantum mechanics (RQM). The issue is at the heart of quantum mechanics and we first show that the mathematical formalism of RQM is immune to recent critics concerning consistency. Moreover, we also analyse the notion of interaction in RQM and provide a For All Practical Purposes (FAPP) reading of RQM comparing it with Bohmian mechanics.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-21T11:00:56Z</published>
+    <arxiv:comment>9 pages; this is a preprint version of an article published in Foundations of Physics</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2023) 53:30</arxiv:journal_ref>
+    <author>
+      <name>Aurélien Drezet</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00670-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00670-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.13973v2</id>
+    <title>Quantum and Relativistic corrections to Maxwell-Boltzmann ideal gas model from a Quantum Phase Space approach</title>
+    <updated>2023-05-17T14:31:53Z</updated>
+    <link href="https://arxiv.org/abs/2302.13973v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.13973v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The quantum corrections related to the ideal gas model that are often considered are those which are related to the particles nature: bosons or fermions. These corrections lead respectively to the Bose-Einstein and Fermi-Dirac statistics. However, in this work, other kinds of corrections which are related to the quantum nature of phase space are considered. These corrections are introduced as improvement in the expression of the partition function of an ideal gas. Then corrected thermodynamics properties of the gas are deduced. Both the non-relativistic quantum and relativistic quantum cases are considered. It is shown that the corrections in the non-relativistic quantum case may be particularly useful to describe the deviation from classical behavior of a Maxwell-Boltzmann gas at low temperature and in confined space. These corrections can be considered as including the description of quantum size and shape effects. For the relativistic quantum case, the corrections could be relevant for confined space and when the thermal energy of each particle is comparable to their rest energy. The corrections appear mainly as modifications in the thermodynamic equation of state and in the expressions of the partition function and thermodynamic functions like entropy, internal energy, and free energy. Classical expressions are obtained as asymptotic limits.</summary>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-18T15:05:48Z</published>
+    <arxiv:comment>18 pages</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.stat-mech"/>
+    <arxiv:journal_ref>Foundations of Physics 53(5):88, 2023</arxiv:journal_ref>
+    <author>
+      <name>Rivo Herivola Manjakamanana Ravelonjato</name>
+    </author>
+    <author>
+      <name>Ravo Tokiniaina Ranaivoson</name>
+    </author>
+    <author>
+      <name>Raoelina Andriambololona</name>
+    </author>
+    <author>
+      <name>Roland Raboanary</name>
+    </author>
+    <author>
+      <name>Hanitriarivo Rakotoson</name>
+    </author>
+    <author>
+      <name>Naivo Rabesiranana</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00727-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00727-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.03464v1</id>
+    <title>Swampland Revisited</title>
+    <updated>2023-01-03T19:00:01Z</updated>
+    <link href="https://arxiv.org/abs/2301.03464v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.03464v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The transcendental expectation of string theory is that the nature of the fundamental forces, particle spectra and masses, together with coupling constants, is uniquely determined by mathematical and logical consistency, non-empirically, that is by pure reason. However pluralism triumphed with the explosive emergence of the multiverse. String theorists have extended a long-sought dream (their unique and final theory) to a landscape or a happy caparnaum. Proponents of string theory try to qualify their arguments via swampland conjectures while cosmologists retreat to their telescopes. We review the current status of the string theory swampland.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-03T19:00:01Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, volume 52 (4) 1-11 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Michel Cass\e'</name>
+    </author>
+    <author>
+      <name>Joseph Silk</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.15452v1</id>
+    <title>Structural Properties of Irreducible Two-Particle Representations of the Poincaré Group</title>
+    <updated>2022-11-22T11:54:01Z</updated>
+    <link href="https://arxiv.org/abs/2211.15452v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.15452v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Two particles, described by an irreducible two-particle representation of the Poincaré group, are correlated by the constraints that the constancy of the Casimir operators imposes on the state space. This correlation can be understood as a geometrically caused interaction between the particles, the strength of which is related to the normalisation constant $ω$ of the two-particle states by $4π\,ω^2$. The numerical value of $4π\,ω^2$ is found to match the experimental value of the electromagnetic fine structure constant $α$. This strongly suggests that the correlation of two particles in an irreducible two-particle representation of the Poincaré group manifests itself in the electromagnetic interaction.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-22T11:54:01Z</published>
+    <arxiv:comment>Resubmission (MOD-19554), 12 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2019) 49:728-740</arxiv:journal_ref>
+    <author>
+      <name>Walter Smilga</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-019-00277-9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-019-00277-9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.15469v2</id>
+    <title>On the nonreality of the PBR theorem</title>
+    <updated>2023-06-26T00:06:05Z</updated>
+    <link href="https://arxiv.org/abs/2211.15469v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.15469v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The PBR theorem has been hailed as one of the most important theorems in the foundations of quantum mechanics (QM), , cf. E. Samuel Reich, "Quantum theorem shakes foundations", Nature (2011). Here we argue that the special measurement, used by Pusey et al. to derive the theorem, is nonexisting from the Einsteinian view on QM.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-21T11:13:39Z</published>
+    <arxiv:comment>5 pages, 2 figures, published after minor revisions</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 53: 64 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Marcoen J. T. F. Cabbolet</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00704-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00704-y" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.08325v1</id>
+    <title>The Point of Primitive Ontology</title>
+    <updated>2022-11-15T17:27:26Z</updated>
+    <link href="https://arxiv.org/abs/2211.08325v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.08325v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bohmian mechanics grounds the predictions of quantum mechanics in precise dynamical laws for a primitive ontology of point particles. In an appraisal of the de-Broglie-Bohm theory, the paper discusses the crucial epistemological and conceptual role that a primitive ontology plays within a physical theory. It argues that quantum theories without primitive ontology fail to make contact with observable reality in a clear and consistent manner. Finally, it discusses Einstein's epistemological model and why it supports the primitive ontology approach.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-15T17:27:26Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 52:120 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Dustin Lazarovici</name>
+    </author>
+    <author>
+      <name>Paula Reichert</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00639-w</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00639-w" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.05674v1</id>
+    <title>Perspectival Quantum Realism</title>
+    <updated>2022-11-10T16:23:54Z</updated>
+    <link href="https://arxiv.org/abs/2211.05674v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.05674v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The theories of pre-quantum physics are standardly seen as representing physical systems and their properties. Quantum mechanics in its standard form is a more problematic case: here, interpretational problems have led to doubts about the tenability of realist views. Thus, QBists and Quantum Pragmatists maintain that quantum mechanics should not be thought of as representing physical systems, but rather as an agent-centered tool for updating beliefs about such systems. It is part and parcel of such views that different agents may have different beliefs and may assign different quantum states. What results is a collection of agent-centered perspectives rather than a unique representation of the physical world.
+  In this paper we argue that the problems identified by QBism and Quantum Pragmatism do not necessitate abandoning the ideal of representing the physical world. We can avail ourselves of the same puzzle-solving strategies as employed by QBists and pragmatists by adopting a \emph{perspectival quantum realism}. According to this perspectivalism (close to the relational interpretation of quantum mechanics) objects may possess different, but equally objective properties with respect to different physically defined perspectives. We discuss two options for such a perspectivalism, a local and a nonlocal one, and apply them to Wigner's friend and EPR scenarios. Finally, we connect quantum perspectivalism to the recently proposed philosophical position of \emph{fragmentalism}.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-10T16:23:54Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2022) 52:95</arxiv:journal_ref>
+    <author>
+      <name>Dennis Dieks</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00611-8</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00611-8" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.01463v2</id>
+    <title>Contextual unification of classical and quantum physics</title>
+    <updated>2023-03-26T13:49:26Z</updated>
+    <link href="https://arxiv.org/abs/2209.01463v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.01463v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Following an article by John von Neumann on infinite tensor products, we develop the idea that the usual formalism of quantum mechanics, associated with unitary equivalence of representations, stops working when countable infinities of particles (or degrees of freedom) are encountered. This is because the dimension of the corresponding Hilbert space becomes uncountably infinite, leading to the loss of unitary equivalence, and to sectorization. By interpreting physically this mathematical fact, we show that it provides a natural way to describe the "Heisenberg cut", as well as a unified mathematical model including both quantum and classical physics, appearing as required incommensurable facets in the description of nature.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-03T16:51:19Z</published>
+    <arxiv:comment>13 pages, no figure. In v2 some clarifications added</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 53:45 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Mathias Van Den Bossche</name>
+    </author>
+    <author>
+      <name>Philippe Grangier</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00678-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00678-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.07135v1</id>
+    <title>Non-symmetric transition probability in generalized qubit models</title>
+    <updated>2022-08-15T12:09:55Z</updated>
+    <link href="https://arxiv.org/abs/2208.07135v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.07135v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The quantum mechanical transition probability is symmetric. A probabilistically motivated and more general quantum logical definition of the transition probability was introduced in two preceding papers without postulating its symmetry, but in all the examples considered there it remains symmetric. Here we present a class of binary models where the transition probability is not symmetric, using the extreme points of the unit interval in an order unit space as quantum logic. We show that their state spaces are strictly convex smooth compact convex sets and that each such set K gives rise to a quantum logic of this class with the state space K. The transition probabilities are symmetric iff K is the unit ball in a Hilbert space. In this case, the quantum logic becomes identical with the projection lattice in a spin factor which is a special type of formally real Jordan algebra.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-15T12:09:55Z</published>
+    <arxiv:comment>19 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2024) 54:9</arxiv:journal_ref>
+    <author>
+      <name>Gerd Niestegge</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00744-4</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00744-4" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2206.09472v2</id>
+    <title>Eliminating Electron Self-Repulsion</title>
+    <updated>2023-05-04T18:03:03Z</updated>
+    <link href="https://arxiv.org/abs/2206.09472v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2206.09472v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Problems of self-interaction arise in both classical and quantum field theories. To understand how such problems are to be addressed in a quantum theory of the Dirac and electromagnetic fields (quantum electrodynamics), we can start by analyzing a classical theory of these fields. In such a classical field theory, the electron has a spread-out distribution of charge that avoids some of the problems of self-interaction facing point charge models. However, there remains the problem that the electron will experience self-repulsion. This self-repulsion cannot be eliminated within classical field theory without also losing Coulomb interactions between distinct particles. But, electron self-repulsion can be eliminated from quantum electrodynamics in the Coulomb gauge by fully normal-ordering the Coulomb term in the Hamiltonian. After normal-ordering, the Coulomb term contains pieces describing attraction and repulsion between distinct particles and also pieces describing particle creation and annihilation, but no pieces describing self-repulsion.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-06-19T19:30:33Z</published>
+    <arxiv:comment>16 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 53, 65, pg. 1-15 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Charles T. Sebens</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-023-00702-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-023-00702-0" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2206.02945v1</id>
+    <title>Entanglement and the Path Integral</title>
+    <updated>2022-06-06T23:22:01Z</updated>
+    <link href="https://arxiv.org/abs/2206.02945v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2206.02945v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The path integral is not typically utilized for analyzing entanglement experiments, in part because there is no standard toolbox for converting an arbitrary experiment into a form allowing a simple sum-over-history calculation. After completing the last portion of this toolbox (a technique for implementing multi-particle measurements in an entangled basis), some interesting 4- and 6-particle experiments are analyzed with this alternate technique. While the joint probabilities of measurement outcomes are always equivalent to conventional quantum mechanics, differences in the calculations motivate a number of foundational insights, concerning nonlocality, retrocausality, and the objectivity of entanglement itself.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-06-06T23:22:01Z</published>
+    <arxiv:comment>23 pages, 6 figures, comments welcome</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics v53, 23 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Ken Wharton</name>
+    </author>
+    <author>
+      <name>Raylor Liu</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00664-9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00664-9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.12071v1</id>
+    <title>The Bell experiment and the Limitations of Actors</title>
+    <updated>2022-05-24T13:40:15Z</updated>
+    <link href="https://arxiv.org/abs/2205.12071v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.12071v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The well known Bell experiment with two actors Alice and Bob is considered. First the simple deduction leading to the CHSH inequality under local realism is reviewed, and some arguments from the literature are recapitulated. Then I take up certain background themes before I enter a discussion of Alice's analysis of the situation. An important point is that her mind is limited by the fact that her Hilbert space in this context is two-dimensional. General statements about a mind's limitation during a decision process are derived from recent results on the reconstruction of quantum theory from conceptual variables. These results apply to any decision situation. Let all the data from the Bell experiment be handed over to a new actor Charlie, who performs a data analysis. But his mind is also limited: He has a four-dimensional Hilbert space in the context determined by the experiment. I show that this implies that neither Alice nor Charlie can have the argument leading to the CHSH inequality as a background for making decisions related to the experiment. Charlie may be any data analyst, and he may communicate with any person. It is argued that no rational person can be convinced by the CHSH argument when making empirical decisions on the Bell situation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-24T13:40:15Z</published>
+    <arxiv:comment>22 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 52, 55 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Inge S. Helland</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00572-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00572-y" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.05520v2</id>
+    <title>Limitations to Genuine Measurements in Ontological Models of Quantum Mechanics</title>
+    <updated>2022-09-09T08:57:52Z</updated>
+    <link href="https://arxiv.org/abs/2205.05520v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.05520v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Given an ontological model of a quantum system, a "genuine measurement," as opposed to a quantum measurement, means an experiment that determines the value of a beable, i.e., of a variable that, according to the model, has an actual value in nature before the experiment. We prove a theorem showing that in every ontological model, it is impossible to measure all beables. Put differently, there is no experiment that would reliably determine the ontic state. This result shows that the positivistic idea that a physical theory should only involve observable quantities is too optimistic.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-11T14:10:44Z</published>
+    <arxiv:comment>7 pages LaTeX, no figures; v2 has more detailed explanations</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 52: 110 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Roderich Tumulka</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00633-2</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00633-2" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.12080v6</id>
+    <title>Phenomenology of Holography via Quantum Coherence on Causal Horizons</title>
+    <updated>2025-05-26T08:07:00Z</updated>
+    <link href="https://arxiv.org/abs/2204.12080v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.12080v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There is much recent development towards interferometric measurements of holographic quantum uncertainties in an emergent background space-time. Despite increasing promise for the target detection regime of Planckian strain power spectral density, the foundational insights of the motivating theories have not been connected to a phenomenological model of observables measured in a realistic experiment. This work proposes a candidate model, based on the central hypothesis that all horizons are universal boundaries of coherent quantum information -- where the decoherence of space-time happens for the observer. The prediction is inspired by 't Hooft's algebra for black hole information that gives coherent states on horizons, whose spatial correlations were shown by Verlinde and Zurek to also appear on holographic fluctuations of causal boundaries in flat space-time (conformal Killing horizons). Time-domain correlations are projected from Planckian jitters whose coherence scales match causal diamonds, motivated by Banks' framework for the emergence of space-time and locality. The universality of this coherence on causal horizons compels a multimodal research program probing concordant signatures: An analysis of cosmological data to probe primordial correlations, motivated by Hogan's interpretation of well-known CMB anomalies as coherent fluctuations on the inflationary horizon, and upcoming 3D interferometers to probe causal diamonds in flat space-time. Candidate interferometer geometries are presented, with a modeled frequency spectrum for each design.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-26T05:29:54Z</published>
+    <arxiv:comment>27 pages, 14 figures. Minor edits added for clarity but largely consistent --- version of record at Foundations of Physics</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Foundations of Physics 55, 19 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Ohkyung Kwon</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-025-00827-4</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-025-00827-4" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.07161v3</id>
+    <title>Spatio-temporally graded causality: a model</title>
+    <updated>2023-10-23T13:00:54Z</updated>
+    <link href="https://arxiv.org/abs/2204.07161v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.07161v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we consider a claim that in the natural world there is no fact of the matter about the spatio-temporal separation of events. In order to make sense of such a notion and construct useful models of the world, it is proposed to use elements of a non-classical logic. Specifically, a model is proposed here, according to which causality can be considered to be spatio-temporally graded. It is outlined how this can be described using the formalism of fuzzy sets theory, with the degree of causality varying between 1, that is no separation between causes and effects, and 0, that is perfect separation between causes and their effects as in classical 'billiard balls' models of physical systems, namely such based on the notion of ideal mathematical point. Our model posits that subjective moments of time are like fuzzy sets, with their extension determined by local degrees of causality, resulting from information integration processes extended gradually in space and time. This, we argue, is how a notion of causality could be, to a certain degree, spared and reconciled with a variant of Bergsonian duration theory as formulated in the theory of continuous change. Relation of the proposed viewpoint to other theories, as well as possible solutions it suggests to various problems, in particular the measurement problem, are also discussed.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-17T11:34:24Z</published>
+    <arxiv:comment>7 pages, 1 figure; added references, extended discussion; rephrased abstract, added brief summary section</arxiv:comment>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <arxiv:journal_ref>Foundations of Physics 54: 22 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Bartosz Jura</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-024-00761-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-024-00761-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.08691v1</id>
+    <title>Reconsidering the relation between "matter wave interference" and "wave-particle duality"</title>
+    <updated>2022-03-16T15:27:53Z</updated>
+    <link href="https://arxiv.org/abs/2203.08691v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.08691v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Interference of more and more massive objects provides a spectacular confirmation of quantum theory. It is usually regarded as support for "wave-particle duality" and in an extension of this duality even as support for "complementarity". We first give an outline of the historical development of these notions. Already here it becomes evident that they are hard to define rigorously, i.e. have mainly a heuristic function. Then we discuss recent interference experiments of large and complex molecules which seem to support this heuristic function of "duality". However, we show that in these experiments the diffraction of a {\em delocalized} center-of-mass wave function depends on the interaction of the {\em localized} structure of the molecule with the diffraction element. Thus, the molecules display "dual features" at the same time, which contradicts the usual understanding of wave-particle duality. We conclude that the notion of "wave-particle duality" deserves no place in modern quantum physics.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-16T15:27:53Z</published>
+    <arxiv:comment>15 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics 52(2)2022</arxiv:journal_ref>
+    <author>
+      <name>Lukas Mairhofer</name>
+    </author>
+    <author>
+      <name>Oliver Passon</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00544-2</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00544-2" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.04827v4</id>
+    <title>Three-space from quantum mechanics</title>
+    <updated>2022-09-06T21:22:51Z</updated>
+    <link href="https://arxiv.org/abs/2203.04827v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.04827v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The spin geometry theorem of Penrose is extended from $SU(2)$ to $E(3)$ (Euclidean) invariant elementary quantum mechanical systems. Using the natural decomposition of the total angular momentum into its spin and orbital parts, the \emph{distance} between the centre-of-mass lines of the elementary subsystems of a classical composite system can be recovered from their \emph{relative orbital angular momenta} by $E(3)$-invariant classical observables. Motivated by this observation, an expression for the `empirical distance' between the elementary subsystems of a \emph{composite quantum mechanical system}, given in terms of $E(3)$-invariant quantum observables, is suggested. It is shown that, in the classical limit, this expression reproduces the \emph{a priori} Euclidean distance between the subsystems, though at the quantum level it has a discrete character. `Empirical' angles and 3-volume elements are also considered.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-09T15:59:47Z</published>
+    <arxiv:comment>27 pages; v2: the whole paper rewritten, discussion improved, typos corrected, the uncertainty of the empirical distance also calculated, the key result strengthen and sharpen, references added; v3: references updated, typos corrected; v4: final version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2022) 52:102</arxiv:journal_ref>
+    <author>
+      <name>László B. Szabados</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00617-2</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00617-2" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.07041v2</id>
+    <title>Symplectic Reduction of Classical Mechanics on Shape Space</title>
+    <updated>2022-03-15T06:56:00Z</updated>
+    <link href="https://arxiv.org/abs/2203.07041v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.07041v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>One of the foremost goals of research in physics is to find the most basic and universal theories that describe our universe. Many theories assume the presence of an absolute space and time in which the physical objects are located and physical processes take place. However, it is more fundamental to understand time as relative to the motion of another object, e.g. the number of swings of a pendulum, and the position of an object primarily as relative to other objects. The goals of this paper is to explain, how using the principle of relationalism (to be introduced below), classical mechanics can be formulated on a most elementary space, which is freed from absolute entities: shape space. On shape space only the relative orientation and length of subsystems are taken into account. In order to find out how the shape of a classical system evolves in time, the method of "symplectic reduction of Hamiltonian systems" is extended to include scale transformations, and in this way the reduction of a classical system with respect to the full similarity group is achieved. A necessary requirement for the validity of the principle of relationalism is that changing the length scale of a system, all parameters of the theory that depend on the length, get changed accordingly. In particular, the principle of relationalism requires a proper transformation of the coupling constants of the interaction potentials in Classical Physics. This leads consequently to a transformation in Planck's measuring units, which enables us to derive a metric on shape space in a unique way. Later in this paper, we will explain the derivation of the reduced Hamiltonian and symplectic form on shape space.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.class-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-25T15:22:02Z</published>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2022)</arxiv:journal_ref>
+    <author>
+      <name>Sahand Tokasi</name>
+    </author>
+    <author>
+      <name>Peter Pickl</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00613-6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00613-6" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.11561v2</id>
+    <title>A Machian reformulation of Quantum Mechanics</title>
+    <updated>2022-03-08T13:04:56Z</updated>
+    <link href="https://arxiv.org/abs/2202.11561v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.11561v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The widely known but also somewhat esoteric Mach principle envisages a fully relational formulation of physical theories without any reference to a concept of `absolute space'. When applied to classical mechanics, under the guise of an extended symmetry group, this procedure is known to lead to an equation of motion with inertial-like forces that are sourced by the mass distribution of the system itself. In this paper we follow a similar procedure and reformulate the Schrödinger equation of non-relativistic quantum mechanics in a fully Machian way. Just like its classical counterpart, the resulting quantum theory is fully relational in the positions and momenta of the bodies comprising a given physical system, leaving no room for the notion of absolute space.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-23T15:18:04Z</published>
+    <arxiv:comment>12 pages, no figures. Final published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2022) 52:36</arxiv:journal_ref>
+    <author>
+      <name>Kostas Glampedakis</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00551-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00551-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.07374v2</id>
+    <title>The paradox of classical reasoning</title>
+    <updated>2022-07-30T15:42:31Z</updated>
+    <link href="https://arxiv.org/abs/2202.07374v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.07374v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Intuitively, the more powerful a theory is, the greater the variety and quantity of ideas can be expressed through its formal language. Therefore, when comparing two theories concerning the same subject, it seems only reasonable to compare the expressive powers of their formal languages. On condition that the quantum mechanical description is universal and so can be applied to macroscopic systems, quantum theory is required to be more powerful than classical mechanics. This implies that the formal language of Hilbert space theory must be more expressive than that of Zermelo-Fraenkel set theory (the language of classical formalism). However, as shown in the paper, such a requirement cannot be met. As a result, classical and quantum formalisms cannot be in a hierarchical relation, that is, include one another. This fact puts in doubt the quantum-classical correspondence and undermines the reductionist approach to the physical world.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-15T12:58:04Z</published>
+    <arxiv:comment>This is a preprint of an article published in Foundations of Physics. The final authenticated version is available online at: 10.1007/s10701-022-00604-7</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, 2022</arxiv:journal_ref>
+    <author>
+      <name>Arkady Bolotin</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00604-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00604-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.00958v1</id>
+    <title>Dark Matter Realism</title>
+    <updated>2022-02-02T11:05:15Z</updated>
+    <link href="https://arxiv.org/abs/2202.00958v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.00958v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>According to the standard model of cosmology, LambdaCDM, the mass-energy budget of the current stage of the universe is not dominated by the luminous matter that we are familiar with, but instead by some form of dark matter (and dark energy). It is thus tempting to adopt scientific realism about dark matter. However, there are barely any constraints on the myriad of possible properties of this entity -- it is not even certain that it is a form of matter. In light of this underdetermination I advocate caution: we should not (yet) be dark matter realists. The "not(-yet)-realism" that I have in mind is different from Hacking's (1989) anti-realism, in that it is semantic rather than epistemological. It also differs from the semantic anti-realism of logical empiricism, in that it is naturalistic, such that it may only be temporary and does not automatically apply to all other unobservables (or even just to all other astronomical unobservables, as with Hacking's anti-realism). The argument is illustrated with the analogy of the much longer history of the concept of a gene, as the current state of the concept of dark matter resembles in some relevant ways that of the early concept of genes.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-02T11:05:15Z</published>
+    <arxiv:comment>22 pages, 2 figures, Winner of the New Directions in Philosophy of Cosmology Essay Award (Dec 2020)</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <arxiv:journal_ref>Foundations of Physics (2022), 52:16</arxiv:journal_ref>
+    <author>
+      <name>Niels C. M. Martens</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-021-00524-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-021-00524-y" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.14538v4</id>
+    <title>A note on Penrose's Spin-Geometry Theorem and the geometry of `empirical quantum angles'</title>
+    <updated>2022-08-18T11:21:41Z</updated>
+    <link href="https://arxiv.org/abs/2112.14538v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.14538v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the traditional formalism of quantum mechanics, a simple direct proof of (a version of) the Spin Geometry Theorem of Penrose is given; and the structure of a model of the `space of the quantum directions', defined in terms of elementary $SU(2)$-invariant observables of the quantum mechanical systems, is sketched.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-29T13:28:27Z</published>
+    <arxiv:comment>10 pages; v2: a convention changed to be compatible with the standard one, the link in ref [5] is added, one reference is updated; v3: references added, typos corrected, discussion improved; v4: references updated and added, final version (Foundations of Physics)</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Foundations of Physics (2022) 52:96</arxiv:journal_ref>
+    <author>
+      <name>László B. Szabados</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00616-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00616-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.10022v4</id>
+    <title>Probabilities and certainties within a causally symmetric model</title>
+    <updated>2024-01-27T01:57:44Z</updated>
+    <link href="https://arxiv.org/abs/2112.10022v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.10022v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper is concerned with the causally symmetric version of the familiar de Broglie-Bohm interpretation, this version allowing the spacelike nonlocality and the configuration space ontology of the original model to be avoided via the addition of retrocausality. Two different features of this alternative formulation are considered here. With regard to probabilities, it is shown that the model provides a derivation of the Born rule identical to that in Bohm's original formulation. This derivation holds just as well for a many-particle, entangled state as for a single particle. With regard to "certainties", the description of a particles spin is examined within the model and it is seen that a statistical description is no longer necessary once final boundary conditions are specified in addition to the usual initial state, with the particle then possessing a definite (but hidden) value for every spin component at intermediate times. These values are consistent with being the components of a single, underlying spin vector. The case of a two-particle entangled spin state is also examined and it is found that, due to the retrocausal aspect, each particle possesses its own definite spin during the entanglement, independent of the other particle. In formulating this picture, it is demonstrated how such a realistic model can preserve Lorentz invariance in the face of Bell's theorem and avoid the need for a preferred reference frame.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-18T22:59:14Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Foundations of Physics, Vol. 52, Article 75 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Roderick Sutherland</name>
+    </author>
+    <arxiv:doi>10.1007/s10701-022-00573-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10701-022-00573-x" title="doi"/>
+  </entry>
+</feed>

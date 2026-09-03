@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/TUSq2cRlo4qPfB+dnvnYQ7QHrOI</id>
+  <title>arXiv Query: search_query=all:"superdeterminism"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-02T21:45:03Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22superdeterminism%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>78</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2405.02469v3</id>
+    <title>Generating functional of correlators of twist-$2$ operators in $\mathcal{N} = 1$ SUSY Yang-Mills theory, II</title>
+    <updated>2026-09-01T08:22:32Z</updated>
+    <link href="https://arxiv.org/abs/2405.02469v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.02469v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This article represents the second installment, in which we calculate the generating functional of correlators of collinear twist-$2$ operators that are components of unbalanced superfields-i.e., superfields possessing an unequal number of dotted and undotted indices in their spinor representation-in $\mathcal{N} = 1$ SUSY SU($N$) YM theory. The analysis is performed in both Minkowskian and Euclidean space-time, in the conformal limit and its renormalization-group (RG) improved form to the leading and next-to-leading order of the large-$N$ expansion. The corresponding generating functional for correlators of balanced superfields was addressed in the first installment of this work. Finally, we compare our asymptotic RG-improved generating functional at the next-to-leading large-$N$ order with the corresponding nonperturbative object that originates from the glueball/gluinoball one-loop effective action, to which it should be asymptotic at short distances due to asymptotic freedom. It is noteworthy that we discover both objects share the structure of the logarithm of a functional superdeterminant. Consequently, our large-$N$ calculation imposes stringent ultraviolet asymptotic constraints on the nonperturbative solution of large-$N$ $\mathcal{N} = 1$ SUSY YM theory, which could serve as a crucial guide in the quest for such a solution.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-03T20:08:38Z</published>
+    <arxiv:comment>48 pages; v2 has been partially rewritten in order to display more explicitly the nonperturbative implications</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>M. Bochicchio</name>
+    </author>
+    <author>
+      <name>M. Papinutto</name>
+    </author>
+    <author>
+      <name>F. Scardino</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.14316v2</id>
+    <title>The burden of Fundamentality: Metaphysical ambiguities and the issue of Superdeterminism</title>
+    <updated>2026-08-02T15:52:25Z</updated>
+    <link href="https://arxiv.org/abs/2601.14316v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.14316v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we approach the problem of superdeterminism from a novel point of view, highlighting its character as a more metaphysical than scientific proposition. First, we introduce a distinction between two types of superdeterministic theories, naïve (NSD) and metaphysical (MSD), and argue how NSD presents significant epistemic flaws. We show how NSD justifies itself through claims to fundamentality, thus connoting itself as a metaphysical theory rather than a scientific one. We finally illustrate that the most developed MSD model so far, Invariant Set Theory, implicitly proposes a confused form of priority monism. Our paper thus reinforces the thesis that theories should demonstrate rather than assume fundamentality and that it is methodologically flawed for a theory to assume its own fundamentality for the sole purpose of defending against criticisms.</summary>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-19T12:38:54Z</published>
+    <arxiv:comment>24 pages, 2 figures. Accepted for publication in Philosophy of Science, matches accepted version</arxiv:comment>
+    <arxiv:primary_category term="physics.hist-ph"/>
+    <author>
+      <name>Gabriele Cafiero</name>
+    </author>
+    <author>
+      <name>Luca Molinari</name>
+    </author>
+    <author>
+      <name>Jonte R. Hance</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.18383v1</id>
+    <title>Adlam's Frame: comment on "Wigner's Frame"</title>
+    <updated>2026-07-20T18:00:01Z</updated>
+    <link href="https://arxiv.org/abs/2607.18383v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.18383v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent no-go theorems based on extended Wigner's Friend scenarios (EWFS) reveal a deep tension between the universal validity of quantum theory and local friendliness (LF), the conjunction of three natural assumptions: the absoluteness of observed events, locality, and no-superdeterminism. In a recent work, Adlam argues that this tension can be dissolved by appealing to quantum reference frames (QRFs). We present and critically assess her proposal. We show that her proposed resolution does not arise from QRFs, but instead relies on three independent modifications: certain degrees of freedom are always definite, observers can flip upon measuring spins, and the outcomes the superobservers record and use to test the inequalities are not their friends' observed results. The proposal and the arguments for the plausibility of these modifications rest on several misconceptions about QRFs and EWFS, which we rectify. We conclude that, within standard quantum theory, quantum reference frames do not evade the EWFS no-go theorems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-20T18:00:01Z</published>
+    <arxiv:comment>13+5 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Andrea Di Biagio</name>
+    </author>
+    <author>
+      <name>Anne-Catherine de la Hamette</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.29589v1</id>
+    <title>Bell's theorem: why probability factorisation fails</title>
+    <updated>2026-05-28T08:33:35Z</updated>
+    <link href="https://arxiv.org/abs/2605.29589v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.29589v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The empirical proof of Bell inequality violations was a landmark moment for research into quantum foundations. It commits us to a universe without strict relativistic locality or requires that we escape through a potential loophole like many-worlds or superdeterminism. In this work, we consider a sequential, single-spin experiment whose auto-correlations match the two-spin entangled correlations of a Bell scenario. We use a counterfactual equivalence between the two to argue that Bell-type correlations are actually just a different implementation of the sequential experiment. This comports well with the counterfactual basis of the original EPR argument, and explains any apparent non-locality as a consequence of indirectly measuring quantities that do not have predefined values, due to the state-altering nature of sequential spin measurements.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T08:33:35Z</published>
+    <arxiv:comment>14 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Geoff Beck</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.00311v1</id>
+    <title>On measurement, superdeterminism, free will, and contextuality</title>
+    <updated>2026-03-31T23:25:54Z</updated>
+    <link href="https://arxiv.org/abs/2604.00311v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.00311v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Superdeterminism has received recent attention as a possible path toward a locally causal explanation of the entanglement correlations that appear in experimental tests of Bell's theorem. While the term `superdeterminism' was coined by Bell to refer to restrictions on the free will of experimenters, it was not rigorously defined until recently. It has now been defined as a property of any physical theory that produces systematic violations of statistical independence. Here we focus on formalizing the requirements that being nonsuperdeterministic places on a physical theory, and setting a standard that must be met before we can conclude that a given theory is not superdeterministic. We begin by carefully examining how a physical theory determines what outcomes we observe when performing measurements in terms of ontic states and response functions, and how this differs between superdeterministic and nonsuperdeterministic theories, in terms of the behavior of the types of vetted random sampling procedures that we use in experiments. The core result is that individual samples and measurement outcomes must be representative of the observed distributions, which is explained in detail. This also has a bearing on how measurement settings are chosen by agents, whether freely or randomly, and we argue that this standard ultimately defines what freedom/independence actually mean. We then discuss contextuality, and show that in most cases, superdeterminism is contextual. Finally, we discuss how different physical theories, with different notions of ontic states and response functions, can give rise to the same empirical data, and how the same operational contextuality may appear in different forms.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-31T23:25:54Z</published>
+    <arxiv:comment>14 pages (12 plus title page and table of contents)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Mordecai Waegell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.09191v3</id>
+    <title>About possible measures in Quantum Gravity</title>
+    <updated>2026-03-03T19:33:35Z</updated>
+    <link href="https://arxiv.org/abs/2512.09191v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.09191v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There exist several different proposals for a measure in Quantum Gravity theories. Although sometimes being labelled as non covariant, the measure derived in [7] for GR has the particularity that, in the extremal, the volume divergences cancel out. The analogous for Quadratic Gravity [1]-[2] was considered in [44]-[45]. However, as far as the author knows, the issue of volume divergences was not considered for this last measure. The present work fills this gap and presents an analysis showing that, in the extremal, these divergences cancel as well. This is up to some subtleties related to superdeterminants. The possibility of employing non invariant measures may be accepted if the anomaly in the measure is compensated by counter term redefinitions of the model under analysis. This makes difficult to disprove, at the present times, some choices of measures. Quadratic Gravity[1]-[2], is known to be renormalizable in flat space, and there are a finite number of counter terms needed in order to renormalize its effective action. However, around a curved space this is not known, and this complicates considerably the analysis. These issues are reviewed in the text, together with an analysis of covariant measures. In particular, it is shown how these measures [47]-[49] can be found if one condition in [7] is relaxed.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-09T23:32:17Z</published>
+    <arxiv:comment>Some phrases added which clarify which clarify which affirmations are assumptions and which are more rigourous</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <author>
+      <name>O. P. Santillán</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.03184v3</id>
+    <title>Kolmogorovian Censorship, Predictive Incompleteness, and the locality loophole in Bell experiments</title>
+    <updated>2025-12-17T15:41:28Z</updated>
+    <link href="https://arxiv.org/abs/2405.03184v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.03184v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We revisit the status of quantum probabilities in light of Kolmogorovian Censorship (KC) and the Contexts, Systems and Modalities (CSM) framework, and we compare KC-based frameworks with alternatives such as superdeterminism, supermeasurements, and predictive incompleteness. After briefly recalling the technical content of KC and its scope, we show that KC correctly identifies that probabilities are classical within a fixed measurement context but does not by itself remove the conceptual tension that motivates nonlocal or conspiratorial explanations of Bell-inequality violations. We argue that predictive incompleteness - the view that the quantum state is operationally incomplete until the measurement context is specified - provides a simple, minimal, and explanatory framework that preserves relativistic locality while matching experimental practice. Finally we clarify logical relations among these positions, highlight the assumptions behind them, and justify the move from Kolmogorov's to Gleason's framework for quantum probabilities.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-06T06:20:54Z</published>
+    <arxiv:comment>7 pages, no figure. In v2 some clarifications and discussions have been added. In v3 the paper has been refurbished and expanded</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Philippe Grangier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.06043v1</id>
+    <title>Quantum-Like Correlations from Local Hidden-Variable Theories Under Conservation Law</title>
+    <updated>2025-11-08T15:32:13Z</updated>
+    <link href="https://arxiv.org/abs/2511.06043v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.06043v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The precision with which we can measure operators that do not commute with conserved quantities is limited by the need to preserve the associated global symmetries. We show how to construct a local hidden-variable model that violates Bell inequalities by interpreting this measurement error as altering the measure space of the hidden variables. This provides a physically-motivated example of a supermeasured model, where the statistical independence assumption used to form Bell inequalities is violated without there being a causal dependence of the measurement settings on the hidden variables (superdeterminism) or a causal dependence of the hidden variables on the measurement settings (retrocausality). The model also gives subtly different predictions to quantum mechanics, that could be tested experimentally.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-08T15:32:13Z</published>
+    <arxiv:comment>6 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alejandro J. Garza</name>
+    </author>
+    <author>
+      <name>Jonte R. Hance</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.23047v1</id>
+    <title>From statistical dependence to the space of possible superdeterministic theories</title>
+    <updated>2025-09-27T01:52:48Z</updated>
+    <link href="https://arxiv.org/abs/2509.23047v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.23047v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's theorem demonstrates that any physical theory that is consistent with the predictions of quantum mechanics, and which satisfies some apparently innocuous assumptions, must violate the principle of local causality. It may therefore be possible to maintain local causality by rejecting one of these other assumptions instead. One possibility that has recently received significant attention involves rejecting the principle of statistical independence (SI). In this paper, we consider the frequency interpretation of SI, which states that $ρ(λ) \approx ρ(λ| Z)$, where $ρ(λ)$ is the relative frequency of an element of an ensemble being in the state $λ$, and $Z$ is a label that separates the ensemble into apparently randomly selected sub-ensembles. SI is violated when the sub-ensemble frequency $ρ(λ| Z)$ fails to be representative of the ensemble frequency $ρ(λ)$. We argue that physical theories that systematically violate SI should all be understood as superdeterministic. This perspective on SI sheds light on a number of issues that are being debated in the superdeterminism literature, especially concerning its scope and philosophical consequences. Regarding scope, we argue that superdeterministic theories fall into three categories, deterministic theories with fine-tuned initial conditions, fluke theories, and nomic exclusion theories. We also argue that retrocausal and invariant set theories need not violate SI, which is contrary to how they are normally presented. Regarding philosophical implications, we argue that superdeterminism is incompatible with free will according to some prominent compatibilist accounts. We also argue that although superdeterminism is conspiratorial, it is not unscientific, but pre-scientific.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-27T01:52:48Z</published>
+    <arxiv:comment>Forthcoming in The European Journal for Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Mordecai Waegell</name>
+    </author>
+    <author>
+      <name>Kelvin J. McQueen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.14458v1</id>
+    <title>Bell Meets General Philosophers of Science : Reassessing Measurement Independence</title>
+    <updated>2025-09-17T22:18:08Z</updated>
+    <link href="https://arxiv.org/abs/2509.14458v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.14458v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's inequality is derived from three assumptions: measurement independence, outcome independence, and parameter independence. Among these, measurement independence, often taken for granted, holds that hidden variables are statistically uncorrelated with measurement settings. Under this assumption, the violation of Bell's inequality implies that either outcome independence or parameter independence fails to hold, meaning that local hidden variables do not exist. In this paper, we refer to this interpretive stance as the nonfactorizable position. In contrast, superdeterminism represents the view that measurement independence does not hold. Despite its foundational role, this assumption has received relatively little philosophical scrutiny. This paper offers a philosophical reassessment of measurement independence through three major frameworks in the philosophy of science: de Regt's contextual theory of scientific understanding, Kuhn's criteria for theory choice, and Lakatos's methodology of scientific research programmes. Using these lenses, we evaluate the two major responses to the violation of Bell's inequality, the nonfactorizable position and superdeterminism, and argue that the nonfactorizable position currently fares better across all three criteria. Beyond this binary, we introduce a spectrum of intermediate positions that allow for partial violations of measurement independence, modeled via mutual information. These positions modify the ``positive heuristic'' of superdeterminism, a crucial component in Lakatos's definition of research programmes, offering avenues for progressive research. This analysis reframes the debate surrounding Bell's inequality and illustrates how methodological tools can effectively guide theory evaluation in physics.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-17T22:18:08Z</published>
+    <arxiv:comment>28 pages. To appear in European Journal for Philosophy of Science</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yuichiro Kitajima</name>
+    </author>
+    <arxiv:doi>10.1007/s13194-025-00689-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s13194-025-00689-7" title="doi"/>
+  </entry>
+</feed>

@@ -1,0 +1,113 @@
+==============================================================================
+METRIC COMPARISON  (exact Q(sqrt2) parts + mpmath MI)
+==============================================================================
+[A] Q(sqrt2) arithmetic self-test: PASS
+
+--- N4-signalling  (N=4, signalling) ---
+  F* (target)      = (-1/4 + 1/4*sqrt2)
+  per-row TV       = ['(-1/4 + 1/4*sqrt2)', '(-1/4 + 1/4*sqrt2)', '(-1/4 + 1/4*sqrt2)', '(-1/4 + 1/4*sqrt2)']
+  F = max row TV   = (-1/4 + 1/4*sqrt2)
+  S                = (0 + 2*sqrt2)
+  pairwise TV      = 00-01:(-1/4 + 1/4*sqrt2), 00-10:(-1/2 + 1/2*sqrt2), 00-11:(-1/2 + 1/2*sqrt2), 01-10:(-1/2 + 1/2*sqrt2), 01-11:(-1/2 + 1/2*sqrt2), 10-11:(-1/4 + 1/4*sqrt2)
+  M_model (max TV) = (-1/2 + 1/2*sqrt2)
+  M_full (=2*M_mod)= (-1 + 1*sqrt2)   [Hall L1 convention, in [0,2]]
+  NS residuals     = ['(-1/2 + 1/2*sqrt2)', '(-1/2 + 1/2*sqrt2)', '(-1 + 1*sqrt2)', '0']
+
+--- N4-NS  (N=4, NS) ---
+  F* (target)      = (-1/4 + 1/4*sqrt2)
+  per-row TV       = ['(-1/4 + 1/4*sqrt2)', '(-1/4 + 1/4*sqrt2)', '(-1/4 + 1/4*sqrt2)', '(-1/4 + 1/4*sqrt2)']
+  F = max row TV   = (-1/4 + 1/4*sqrt2)
+  S                = (0 + 2*sqrt2)
+  pairwise TV      = 00-01:(-1/2 + 1/2*sqrt2), 00-10:(-1/4 + 1/4*sqrt2), 00-11:(-1/2 + 1/2*sqrt2), 01-10:(-1/2 + 1/2*sqrt2), 01-11:(-1/4 + 1/4*sqrt2), 10-11:(-1/2 + 1/2*sqrt2)
+  M_model (max TV) = (-1/2 + 1/2*sqrt2)
+  M_full (=2*M_mod)= (-1 + 1*sqrt2)   [Hall L1 convention, in [0,2]]
+  NS residuals     = ['0', '0', '0', '0']
+
+--- N2-roundrobin  (N=2, signalling) ---
+  F* (target)      = (-1/2 + 1/2*sqrt2)
+  per-row TV       = ['0', '0', '(-1/2 + 1/2*sqrt2)', '(-1/2 + 1/2*sqrt2)']
+  F = max row TV   = (-1/2 + 1/2*sqrt2)
+  S                = (0 + 2*sqrt2)
+  pairwise TV      = 00-01:0, 00-10:(-1/2 + 1/2*sqrt2), 00-11:(-1/2 + 1/2*sqrt2), 01-10:(-1/2 + 1/2*sqrt2), 01-11:(-1/2 + 1/2*sqrt2), 10-11:(-1 + 1*sqrt2)
+  M_model (max TV) = (-1 + 1*sqrt2)
+  M_full (=2*M_mod)= (-2 + 2*sqrt2)   [Hall L1 convention, in [0,2]]
+  NS residuals     = ['0', '(-2 + 2*sqrt2)', '0', '0']
+
+--- N3-roundrobin  (N=3, signalling) ---
+  F* (target)      = (-1/3 + 1/3*sqrt2)
+  per-row TV       = ['(-1/3 + 1/3*sqrt2)', '0', '(-1/3 + 1/3*sqrt2)', '(-1/3 + 1/3*sqrt2)']
+  F = max row TV   = (-1/3 + 1/3*sqrt2)
+  S                = (0 + 2*sqrt2)
+  pairwise TV      = 00-01:(-1/3 + 1/3*sqrt2), 00-10:(-2/3 + 2/3*sqrt2), 00-11:(-2/3 + 2/3*sqrt2), 01-10:(-1/3 + 1/3*sqrt2), 01-11:(-1/3 + 1/3*sqrt2), 10-11:(-2/3 + 2/3*sqrt2)
+  M_model (max TV) = (-2/3 + 2/3*sqrt2)
+  M_full (=2*M_mod)= (-4/3 + 4/3*sqrt2)   [Hall L1 convention, in [0,2]]
+  NS residuals     = ['0', '(-4/3 + 4/3*sqrt2)', '(-2/3 + 2/3*sqrt2)', '0']
+
+--- N3-NS  (N=3, NS) ---
+  F* (target)      = (-1/3 + 1/3*sqrt2)
+  per-row TV       = ['(-1/3 + 1/3*sqrt2)', '(-1/3 + 1/3*sqrt2)', '(-1/6 + 1/6*sqrt2)', '(-1/3 + 1/3*sqrt2)']
+  F = max row TV   = (-1/3 + 1/3*sqrt2)
+  S                = (0 + 2*sqrt2)
+  pairwise TV      = 00-01:(-1/2 + 1/2*sqrt2), 00-10:(-1/6 + 1/6*sqrt2), 00-11:(-1/2 + 1/2*sqrt2), 01-10:(-1/2 + 1/2*sqrt2), 01-11:(-1/2 + 1/2*sqrt2), 10-11:(-1/3 + 1/3*sqrt2)
+  M_model (max TV) = (-1/2 + 1/2*sqrt2)
+  M_full (=2*M_mod)= (-1 + 1*sqrt2)   [Hall L1 convention, in [0,2]]
+  NS residuals     = ['0', '0', '0', '0']
+
+[saturation] checking M_model == 2*F* exactly for the enumerated witnesses:
+  N4-signalling: M_model=(-1/2 + 1/2*sqrt2)  2*F*=(-1/2 + 1/2*sqrt2)  -> EQUAL
+  N4-NS: M_model=(-1/2 + 1/2*sqrt2)  2*F*=(-1/2 + 1/2*sqrt2)  -> EQUAL
+  N2-roundrobin: M_model=(-1 + 1*sqrt2)  2*F*=(-1 + 1*sqrt2)  -> EQUAL
+  N3-roundrobin: M_model=(-2/3 + 2/3*sqrt2)  2*F*=(-2/3 + 2/3*sqrt2)  -> EQUAL
+  N3-NS: M_model=(-1/2 + 1/2*sqrt2) = (sqrt2-1)/2 exactly; M_model/F* = 3/2 — NOT saturated (slack F*/2 in the triangle bound)
+  solN3 (saved bisection array): M_model=0.276153564 vs 2*F*=0.276142375 (diff 1.1e-05; saturates within the 1e-5 search tolerance)
+  => triangle bound M_model <= 2F is SATURATED by every enumerated closed-form witness (and the saved solN3 array, within tolerance); NOT by N3-NS (ratio 3/2). PASS
+
+[converse] F vs M_model:
+  N4-signalling: center TV(p_avg||rho)=(-1/8 + 1/8*sqrt2); F=(-1/4 + 1/4*sqrt2) <= M_model+center=(-5/8 + 5/8*sqrt2); F_avg(max TV to p_avg)=(-5/16 + 5/16*sqrt2) <= M_model=(-1/2 + 1/2*sqrt2)
+  N4-NS: center TV(p_avg||rho)=(-1/8 + 1/8*sqrt2); F=(-1/4 + 1/4*sqrt2) <= M_model+center=(-5/8 + 5/8*sqrt2); F_avg(max TV to p_avg)=(-5/16 + 5/16*sqrt2) <= M_model=(-1/2 + 1/2*sqrt2)
+  N2-roundrobin: center TV(p_avg||rho)=0; F=(-1/2 + 1/2*sqrt2) <= M_model+center=(-1 + 1*sqrt2); F_avg(max TV to p_avg)=(-1/2 + 1/2*sqrt2) <= M_model=(-1 + 1*sqrt2)
+  N3-roundrobin: center TV(p_avg||rho)=0; F=(-1/3 + 1/3*sqrt2) <= M_model+center=(-2/3 + 2/3*sqrt2); F_avg(max TV to p_avg)=(-1/3 + 1/3*sqrt2) <= M_model=(-2/3 + 2/3*sqrt2)
+  N3-NS: center TV(p_avg||rho)=(-1/24 + 1/24*sqrt2); F=(-1/3 + 1/3*sqrt2) <= M_model+center=(-13/24 + 13/24*sqrt2); F_avg(max TV to p_avg)=(-3/8 + 3/8*sqrt2) <= M_model=(-1/2 + 1/2*sqrt2)
+  counterexample (all rows = 1/2,...): M_model=0 but F=1/4 > 0
+  => NO bound F <= f(M_model) exists for a FIXED external baseline. PASS
+
+[Hall bound] S <= min{2+3*M_full, 4}:
+  N4-signalling: M_full=(-1 + 1*sqrt2) -> 2+3*M_full=(-1 + 3*sqrt2); actual S=2*sqrt2=(0 + 2*sqrt2) (slack=(-1 + 1*sqrt2))
+  N4-NS: M_full=(-1 + 1*sqrt2) -> 2+3*M_full=(-1 + 3*sqrt2); actual S=2*sqrt2=(0 + 2*sqrt2) (slack=(-1 + 1*sqrt2))
+
+==============================================================================
+PART G: I(X,Y;Lambda) in bits   (mpmath, dps=60; high-precision numerics)
+==============================================================================
+  N4-signalling:  I(X,Y;Lambda) = 0.056036 bits   (H(Lambda)=1.992251, avg H(Lambda|ab)=1.936215)
+  N4-NS:  I(X,Y;Lambda) = 0.056036 bits   (H(Lambda)=1.992251, avg H(Lambda|ab)=1.936215)
+  N2-roundrobin:  I(X,Y;Lambda) = 0.063785 bits   (H(Lambda)=1.000000, avg H(Lambda|ab)=0.936215)
+  N3-roundrobin:  I(X,Y;Lambda) = 0.063785 bits   (H(Lambda)=1.584963, avg H(Lambda|ab)=1.521177)
+  N3-NS:  I(X,Y;Lambda) = 0.054810 bits   (H(Lambda)=1.583673, avg H(Lambda|ab)=1.528863)
+
+  Hall-Branciard reference at S=2*sqrt2=2.828427:
+    I_R (retrocausal min, Eq 29) = 0.046274 bits
+    I_C (causal min,      Eq 41) = 0.080170 bits   (paper states ~0.080)
+
+  comparison (our witnesses vs H&B minima):
+    N4-signalling: I=0.056036  |  vs I_R=0.046274: ABOVE (diff +0.009762)  |  vs I_C=0.080170: BELOW (diff -0.024133)
+    N4-NS: I=0.056036  |  vs I_R=0.046274: ABOVE (diff +0.009762)  |  vs I_C=0.080170: BELOW (diff -0.024133)
+    N2-roundrobin: I=0.063785  |  vs I_R=0.046274: ABOVE (diff +0.017511)  |  vs I_C=0.080170: BELOW (diff -0.016384)
+    N3-roundrobin: I=0.063785  |  vs I_R=0.046274: ABOVE (diff +0.017511)  |  vs I_C=0.080170: BELOW (diff -0.016384)
+    N3-NS: I=0.054810  |  vs I_R=0.046274: ABOVE (diff +0.008536)  |  vs I_C=0.080170: BELOW (diff -0.025359)
+
+[causal factorization] does the witness satisfy p(x,y|lam)=p(x|lam)p(y|lam)?
+  N4-signalling: NOT factorized at 4/4 lambda (retrocausal-only)
+  N4-NS: NOT factorized at 4/4 lambda (retrocausal-only)
+  N2-roundrobin: NOT factorized at 2/2 lambda (retrocausal-only)
+  N3-roundrobin: NOT factorized at 3/3 lambda (retrocausal-only)
+  N3-NS: NOT factorized at 3/3 lambda (retrocausal-only)
+
+[cross-check] MI from saved .npy witnesses (float, bisection tolerance):
+  solN2: I=0.063786 bits   (exact-construction value 0.063785; diff 4.85e-07)
+  solN3: I=0.063791 bits   (exact-construction value 0.063785; diff 5.34e-06)
+  solN4: I=0.056037 bits   (exact-construction value 0.056036; diff 4.28e-07)
+  ns_solN4: I=0.056036 bits   (exact-construction value 0.056036; diff 1.41e-17)
+
+==============================================================================
+ALL ASSERTIONS PASSED
+==============================================================================

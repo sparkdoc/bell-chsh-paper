@@ -1,0 +1,85 @@
+=== TASK 3 (construction): NS witness N=3, F=(sqrt2-1)/3=0.138071187457698 ===
+enumerated all 4096 vertices, one NS LP each (Pool nproc=96); enumeration 0.2s, total 0.2s
+winning vertex m=659  S_LP=2.828427124746  (target 2*sqrt(2)=2.828427124746)
+u =
+[[ 1.  1. -1.]
+ [-1.  1. -1.]]
+v =
+[[-1.  1. -1.]
+ [ 1. -1. -1.]]
+p[ab,lam] (rows 00,01,10,11) =
+[[0.195262145876 0.402368927062 0.402368927062]
+ [0.402368927062 0.195262145876 0.402368927062]
+ [0.264297739604 0.402368927062 0.333333333333]
+ [0.402368927062 0.402368927062 0.195262145876]]
+note: raw HiGHS point saved as-is (no post-processing)
+S recomputed from saved arrays = 2.828427124746   S - 2*sqrt(2) = +0.000e+00
+row 0 (00): E=+0.609475708249  TV=0.138071187458 (<= F+1e-9: ok)  rowsum=1.000000000000000
+row 1 (01): E=+0.609475708249  TV=0.138071187458 (<= F+1e-9: ok)  rowsum=1.000000000000000
+row 2 (10): E=+1.000000000000  TV=0.069035593729 (<= F+1e-9: ok)  rowsum=1.000000000000000
+row 3 (11): E=-0.609475708249  TV=0.138071187458 (<= F+1e-9: ok)  rowsum=1.000000000000000
+NS residuals = ['+0.000e+00', '-5.551e-17', '+5.551e-17', '+0.000e+00']  (all < 1e-8: ok)
+max per-row TV = 0.138071187458 vs F = 0.138071187458  (at least one row ~ F: yes)
+construction PASS/FAIL: S~2sqrt2=True  TV<=F+1e-9=True  rows=1+/-1e-9=True  NS<1e-8=True
+
+=== TASK 3 (construction): NS witness N=4, F=(sqrt2-1)/4=0.103553390593274 ===
+enumerated all 65536 vertices, one NS LP each (Pool nproc=96); enumeration 0.9s, total 0.9s
+winning vertex m=4707  S_LP=2.828427124746  (target 2*sqrt(2)=2.828427124746)
+u =
+[[ 1.  1. -1. -1.]
+ [-1.  1.  1. -1.]]
+v =
+[[-1.  1. -1. -1.]
+ [ 1. -1. -1. -1.]]
+p[ab,lam] (rows 00,01,10,11) =
+[[0.146446609407 0.353553390593 0.25           0.25          ]
+ [0.353553390593 0.146446609407 0.25           0.25          ]
+ [0.25           0.353553390593 0.146446609407 0.25          ]
+ [0.353553390593 0.25           0.25           0.146446609407]]
+note: raw HiGHS point saved as-is (no post-processing)
+S recomputed from saved arrays = 2.828427124746   S - 2*sqrt(2) = -4.441e-16
+row 0 (00): E=+0.707106781187  TV=0.103553390593 (<= F+1e-9: ok)  rowsum=1.000000000000000
+row 1 (01): E=+0.707106781187  TV=0.103553390593 (<= F+1e-9: ok)  rowsum=1.000000000000000
+row 2 (10): E=+0.707106781187  TV=0.103553390593 (<= F+1e-9: ok)  rowsum=1.000000000000000
+row 3 (11): E=-0.707106781187  TV=0.103553390593 (<= F+1e-9: ok)  rowsum=1.000000000000000
+NS residuals = ['-5.551e-17', '+0.000e+00', '+0.000e+00', '+5.551e-17']  (all < 1e-8: ok)
+max per-row TV = 0.103553390593 vs F = 0.103553390593  (at least one row ~ F: yes)
+construction PASS/FAIL: S~2sqrt2=True  TV<=F+1e-9=True  rows=1+/-1e-9=True  NS<1e-8=True
+
+=== TASK 3 (re-verification, fresh process): N=3, F=(sqrt2-1)/3=0.138071187457698 ===
+loaded ns_solN3_{u,v,p}.npy: shapes u(2, 3) v(2, 3) p(4, 3), dtypes float64/float64/float64
+[PASS] shapes/conventions: u(2,N), v(2,N), p(4,N), entries +/-1
+[PASS] row 0 TV=0.138071187458 <= F+1e-9=0.138071188458
+[PASS] row 0 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] row 1 TV=0.138071187458 <= F+1e-9=0.138071188458
+[PASS] row 1 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] row 2 TV=0.069035593729 <= F+1e-9=0.138071188458
+[PASS] row 2 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] row 3 TV=0.138071187458 <= F+1e-9=0.138071188458
+[PASS] row 3 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] NS residual 0 = +0.000e+00 (|.| < 1e-8)
+[PASS] NS residual 1 = -5.551e-17 (|.| < 1e-8)
+[PASS] NS residual 2 = +5.551e-17 (|.| < 1e-8)
+[PASS] NS residual 3 = +0.000e+00 (|.| < 1e-8)
+[PASS] S = 2.828427124746 ~= 2*sqrt(2) = 2.828427124746 (diff +0.000e+00, tol 1e-5)
+--- N=3: PASS ---
+
+=== TASK 3 (re-verification, fresh process): N=4, F=(sqrt2-1)/4=0.103553390593274 ===
+loaded ns_solN4_{u,v,p}.npy: shapes u(2, 4) v(2, 4) p(4, 4), dtypes float64/float64/float64
+[PASS] shapes/conventions: u(2,N), v(2,N), p(4,N), entries +/-1
+[PASS] row 0 TV=0.103553390593 <= F+1e-9=0.103553391593
+[PASS] row 0 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] row 1 TV=0.103553390593 <= F+1e-9=0.103553391593
+[PASS] row 1 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] row 2 TV=0.103553390593 <= F+1e-9=0.103553391593
+[PASS] row 2 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] row 3 TV=0.103553390593 <= F+1e-9=0.103553391593
+[PASS] row 3 sum=1.000000000000000 = 1 +/- 1e-9
+[PASS] NS residual 0 = -5.551e-17 (|.| < 1e-8)
+[PASS] NS residual 1 = +0.000e+00 (|.| < 1e-8)
+[PASS] NS residual 2 = +0.000e+00 (|.| < 1e-8)
+[PASS] NS residual 3 = +5.551e-17 (|.| < 1e-8)
+[PASS] S = 2.828427124746 ~= 2*sqrt(2) = 2.828427124746 (diff -4.441e-16, tol 1e-5)
+--- N=4: PASS ---
+
+OVERALL TASK 3 RE-VERIFICATION: PASS

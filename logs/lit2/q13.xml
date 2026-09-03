@@ -1,0 +1,1312 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Z3/rMzwQDa3HdyHveuQOuKKM6I8</id>
+  <title>arXiv Query: search_query=all:"free will" AND all:"CHSH"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T04:05:50Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22free+will%22+AND+all:%22CHSH%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>82</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26407v1</id>
+    <title>Recovery-Free CHSH Nonlocality with Particle Loss</title>
+    <updated>2026-08-26T21:20:13Z</updated>
+    <link href="https://arxiv.org/abs/2608.26407v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26407v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Can CHSH nonlocality survive particle loss without applying an explicit recovery operation? In principle, any deterministic recovery can be absorbed into the measurement. Operationally, we show that the answer depends on the allowed measurements on the lossy system. We distinguish flagged erasure, in which each lost particle leaves a detectable record, from unflagged deletion, in which no such record remains. For flagged erasure and survival probability $η&gt;1/2$, using known quantum-capacity results, we show measurements that asymptotically approach the quantum maximum $2\sqrt2$. In contrast, for $η\le1/2$, CHSH violation is impossible for both loss models. Then, we construct explicit recovery-free protocols using permutation-invariant encodings built from $n$-qubit Dicke states $| D_N^n\rangle$ and measurements on the surviving particles. A one-excitation $(N=1)$ encoding violates CHSH for $η&gt;1/\sqrt{2}$. Increasing the excitation number $N$ yields a family of protocols that violates CHSH for $η&gt;η_G=(\sqrt{5}-1)/2$, with the asymptotic golden ratio approached as $N \to \infty$. Finally, we present a sparse-deletion binomial PI protocol that guarantees CHSH violation for up to $O(\sqrt n)$ deletion errors. Our results distinguish fundamental limits imposed by loss from those set by explicit measurements without recovery.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-26T21:20:13Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Giovanni Scala</name>
+    </author>
+    <author>
+      <name>Cosmo Lupo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20926v1</id>
+    <title>Finite Weyl polynomials and the approach to Tsirelson's bound in relativistic scalar quantum field theory</title>
+    <updated>2026-08-21T09:42:23Z</updated>
+    <link href="https://arxiv.org/abs/2608.20926v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20926v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We construct four bounded Hermitian operators, each one a finite polynomial in the unitary Weyl operators, for the Bell-CHSH inequality in a free massive scalar field in $1+1$ dimensions. The operators are localized in complementary wedges. Odd Weyl harmonics provide two exactly anticommuting axis observables in each wedge, while normalizable packets with compact support in the spectrum of the boost generator give exact modular inner products at nonvanishing bandwidth. The resulting Bell-CHSH correlator is a finite double sum. An operator with six Weyl terms per axis already gives $2.14885$. Using normalized Fejér approximants of $\operatorname{sgn}(\cos(x))$, we show that the supremum over the finite-polynomial family equals $2\sqrt{2}$, although no finite member attains it; a degree-$511$ example gives $2.80027$. We also point out that, in a centered quasifree state, a Bell-CHSH test whose four final settings are bounded functions of individual quadratures admits one common Gaussian representation and therefore stays below $2$. The finite-Weyl construction avoids this restriction because Bob's final settings mix two noncommuting axis observables.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T09:42:23Z</published>
+    <arxiv:comment>22 pages</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>J. G. A. Caribé</name>
+    </author>
+    <author>
+      <name>M. S. Guimaraes</name>
+    </author>
+    <author>
+      <name>I. Roditi</name>
+    </author>
+    <author>
+      <name>S. P. Sorella</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18886v2</id>
+    <title>The exact price of local realism in CHSH experiments: a measurement-dependence-detection trade-off surface, a moiré phase-locking mechanism that saturates it, and an unmeasured fringe in the fourfold coincidence sum</title>
+    <updated>2026-08-21T02:09:51Z</updated>
+    <link href="https://arxiv.org/abs/2608.18886v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18886v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For local hidden-variable accounts of the CHSH experiment that are faithful -- reproducing the observed singles and coincidence rates and unbiased marginals of a polarization singlet with symmetric detector efficiency $η_{\rm eff}$ -- I determine the minimal measurement dependence $M$ (Hall's variational measure) needed to achieve a CHSH value $S$. Linear programming over all local strategies yields, to machine precision at 32 grid points, $M(S,η_{\rm eff})=\max\{0,η_{\rm eff}((S+2)η_{\rm eff}-4)/6\}$, whose edges reproduce Hall's tight bound at $η_{\rm eff}=1$, the Garg-Mermin detection threshold, and the postselection ceiling $S=4/η_{\rm eff}-2$. The quantum point is certified exactly: $M(2\sqrt{2},9/10)=(27\sqrt{2}-33)/100$, with primal and dual certificates in $\mathbb{Q}(\sqrt{2})$ arithmetic. I solve the unique detection profile $D(m)=\sqrt{m}\,h(m)$ under which a deterministic sign model reproduces the singlet exactly, derive the $\sqrt{m}$ edge law, and prove exact quantum correlations and angle-independent coincidence rates jointly impossible for pure-detection models. Surviving local accounts trade off measurement dependence against a $\cos 4(a-b)$ modulation of the fourfold coincidence sum, of relative amplitude up to 12.4%, which vanishes at the CHSH angles and has never been bounded below 1%. A settings-torus protocol reaches $5σ$ sensitivity at 0.1% within hours: a flat result forces $M\gtrsim 95\%$ of Hall's floor; a fringe would contradict the flat-rate prediction of quantum mechanics. Finally I exhibit a local mechanism -- moire phase locking -- with deterministic phase evolution and all randomness quenched in frozen offsets and flight times; with 1024 offsets it attains the certified floor exactly at $η_{\rm eff}=1$ at every tested fidelity, from 10% down to 1%, and its softening of the correlation extremes is a falsifiable fingerprint.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T13:14:52Z</published>
+    <arxiv:comment>10 pages, 5 figures. Code and exact certificates at https://github.com/RandomInternetPreson/moire-phase-space-sampler. v2: offset-ensemble robustness battery added (Sec. 7); with 1024-offset ensembles the mechanism attains Hall's floor at all tested fidelities; fingerprint confirmed lattice-free; code and data extended</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aaron Alai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.06359v1</id>
+    <title>Bell nonlocality from twisted statistics</title>
+    <updated>2026-08-06T17:55:50Z</updated>
+    <link href="https://arxiv.org/abs/2608.06359v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.06359v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate Bell correlations for a free real quantum scalar field on the noncommutative Moyal plane. Although the free field dynamics and the one-particle sector remain unchanged, the deformation enters through twisted multiparticle statistics and its Fock-space dressing representation. A classical external source coupled locally to the twist-dressed quantum field prepares coherent superpositions of momentum-pair configurations propagating toward two spacelike-separated laboratories. The momentum-dependent twist phases are generally nonfactorizable and generate entanglement between the corresponding wave-packet modes. We show that suitable local mode measurements lead to a violation of the CHSH Bell inequality. The resulting correlations provide an operational probe of the noncommutative structure encoded in the multiparticle sector of the quantum field.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-06T17:55:50Z</published>
+    <arxiv:comment>12 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ivana Đorđ ević</name>
+    </author>
+    <author>
+      <name>Jovan Potrebić</name>
+    </author>
+    <author>
+      <name>Aleksandra Gočanin</name>
+    </author>
+    <author>
+      <name>Dragoljub Gočanin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.04128v1</id>
+    <title>Quantum Contextuality and Entanglement-Free Grover Search in a Trapped-Ion Optical Qudit</title>
+    <updated>2026-08-04T18:27:03Z</updated>
+    <link href="https://arxiv.org/abs/2608.04128v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.04128v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computational advantage is generally attributed to coherent interference and other non-classical resources, yet their respective roles remain difficult to disentangle in experimental platforms where multipartite entanglement is inherently present. High-dimensional quantum systems provide an attractive route for investigating these resources while simultaneously reducing hardware overhead for quantum information processing. Here we realize a programmable four-dimensional optical qudit encoded in a single trapped $^{138}\mathrm{Ba}^{+}$ ion and demonstrate universal coherent control through phase-programmable optical rotations. Using this platform, we implement an entanglement-free realization of Grover's quantum search algorithm, achieving target-state identification probabilities of up to $94.5\pm2.0\%$. Within the same processor, we further demonstrate state-dependent quantum contextuality through a Clauser--Horne--Shimony--Holt (CHSH)-type noncontextuality inequality, obtaining a maximum violation of $S = 2.816 \pm 0.082$, in close agreement with the Tsirelson bound. By integrating programmable quantum computation and contextuality measurements within a single multilevel trapped-ion platform, our work establishes a versatile architecture for investigating the relationship between coherent interference and contextuality in quantum information processing and provides a scalable route toward high-dimensional quantum technologies.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.atom-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-04T18:27:03Z</published>
+    <arxiv:comment>12 pages, 10 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Tarun Dutta</name>
+    </author>
+    <author>
+      <name>Jasper Phua Sing Cheng</name>
+    </author>
+    <author>
+      <name>Alex Jin</name>
+    </author>
+    <author>
+      <name>Sergi Ramos-Calderer</name>
+    </author>
+    <author>
+      <name>José Ignacio Latorre</name>
+    </author>
+    <author>
+      <name>Manas Mukherjee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.15153v1</id>
+    <title>Quantum spin correlations in $Z^\prime$-mediated $t\bar{t}$ production at future lepton colliders</title>
+    <updated>2026-07-16T15:53:18Z</updated>
+    <link href="https://arxiv.org/abs/2607.15153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.15153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study quantum spin correlations in top-quark pair production at future lepton colliders in the presence of a neutral gauge boson from anomaly-free general $U(1)$ extensions of the Standard Model. The process $\ell^+\ell^-\to t\bar t$, with $\ell=e,μ$, is analyzed through the spin-density matrix including $γ$, $Z$ and $Z^\prime$ exchange and their interference. We focus on quantum-information observables such as the sufficient entanglement marker $\mathcal{D}_{\min}$, concurrence, purity and the maximal Clauser-Horne-Shimony-Holt (CHSH) parameter, and compare their behavior with conventional rate information. Within the $U(1)_X$ framework, we consider several representative charge assignments to investigate how different chiral structures influence these observables, with particular emphasis on the $Z^\prime$ resonance region and polarized $e^-e^+$ collisions, where the two allowed initial-state helicity configurations can be selectively enhanced. We show that electron-beam polarization provides a direct handle on the left- and right-handed lepton charges of various $U(1)_X$ scenarios. These results demonstrate that quantum spin observables provide information complementary to cross sections and angular distributions in searches for chiral neutral gauge interactions.</summary>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-16T15:53:18Z</published>
+    <arxiv:comment>20 pages, 10 figures, and 3 tables</arxiv:comment>
+    <arxiv:primary_category term="hep-ph"/>
+    <author>
+      <name>ShivaSankar K. A.</name>
+    </author>
+    <author>
+      <name>Arindam Das</name>
+    </author>
+    <author>
+      <name>Sanjoy Mandal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.07949v2</id>
+    <title>More on Majorana fields, modular localization and near saturation of the Tsirelson bound</title>
+    <updated>2026-07-14T12:22:36Z</updated>
+    <link href="https://arxiv.org/abs/2607.07949v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.07949v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The free massless Majorana field in 1+1 dimensions is employed to study the Bell-CHSH inequality in Quantum Field Theory. Use of the modular wedge localization enables us to show the near saturation of the Tsirelson bound.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-08T21:56:23Z</published>
+    <arxiv:comment>Updated the author emails</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>J. R. Apfata</name>
+    </author>
+    <author>
+      <name>J. G. A. Caribé</name>
+    </author>
+    <author>
+      <name>S. P. Sorella</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.25609v2</id>
+    <title>High fidelity preservation of photonic hyperentanglement in a free-space optical delay line</title>
+    <updated>2026-08-19T02:29:14Z</updated>
+    <link href="https://arxiv.org/abs/2605.25609v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.25609v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Photonic hyperentanglement enables increased information capacity and enhanced functionality for quantum communication and networking. However, synchronization of hyperentangled photon pairs requires maintaining correlations simultaneously across multiple degrees of freedom (DOFs). The preservation of polarization and energy-time entanglement in hyperentangled photon pairs is demonstrated using a free-space optical delay line based on nested Herriott cells. After a delay of 647 ns, a two-photon interference visibility of 93.9(3)% is observed in the energy-time DOF, while a CHSH parameter of 2.758(5) is obtained in the polarization DOF. These results confirm that entanglement correlations in both DOFs are preserved after propagation through the delay line. They demonstrate that free-space optical delay lines are compatible with complex photonic quantum states and provide a promising route toward delay-based memories for synchronization and multiplexing in quantum networks.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-25T09:02:14Z</published>
+    <arxiv:comment>4 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Optics Letters Vol. 51, Issue 17, pp. 4781-4784 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Yu Guo</name>
+    </author>
+    <author>
+      <name>Arya Chowdhury</name>
+    </author>
+    <author>
+      <name>Pranay Tiwari</name>
+    </author>
+    <author>
+      <name>Jia Boon Chin</name>
+    </author>
+    <author>
+      <name>Anindya Banerji</name>
+    </author>
+    <author>
+      <name>Alexander Ling</name>
+    </author>
+    <arxiv:doi>10.1364/OL.606763</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1364/OL.606763" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.13154v1</id>
+    <title>Three ways to find comfort with the Bell proof and the results of the Bell experiments</title>
+    <updated>2026-05-13T08:19:46Z</updated>
+    <link href="https://arxiv.org/abs/2605.13154v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.13154v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's theorem states that no description of a Bell experiment can be simultaneously local, realistic in the sense of counterfactual definiteness, and free of conspiracy between settings and hidden state. The recent generation of experiments has confirmed the predicted violation of the CHSH inequality, so one of the assumptions must be abandoned. Which one, and how one reconstructs a coherent worldview after doing so, is a question on which many authors disagree. This paper is written by three such authors. All three reject both counterfactual definiteness and conspiratorial violation of statistical independence of setting choices and state. After a joint exposition of the classical half of Bell's theorem in the language of Pearl-style causal graphs, a joint summary of the loophole-free experiments, and a joint survey of the recent literature, each author states where they have presently arrived. Gill accepts irreducible and non-local quantum randomness and finds the choice between locality and realism a false dichotomy. In his later works, Bell derives counterfactual definiteness from classical local causality, and that is what has to go. The metaphysical concepts "realism", "locality", "causality" need to be reconsidered. Helland reconstructs the Hilbert-space formalism from a theory of accessible variables, and from this theory he concludes that every observer must be limited in a specific sense. Jongejan proposes a geometric hidden-variable construction in which the degree of violation of the CHSH inequality depends on the number of dimensions of space, Tsirelson's bound corresponding to three dimensions. The authors conclude with a discussion.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-13T08:19:46Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Richard D Gill</name>
+    </author>
+    <author>
+      <name>Inge S. Helland</name>
+    </author>
+    <author>
+      <name>Bart Jongejan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.05109v1</id>
+    <title>Near-Tsirelson Bell-CHSH Violations in Quantum Field Theory via Carleman and Hankel Operators</title>
+    <updated>2026-04-06T19:14:54Z</updated>
+    <link href="https://arxiv.org/abs/2604.05109v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.05109v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study Bell-Clauser-Horne-Shimony-Holt (Bell-CHSH) violations in the vacuum state of free spinor fields in $(1+1)$-dimensional Minkowski spacetime. We construct explicit smooth compactly supported test functions with spacelike separated supports whose Bell-CHSH correlators converge to Tsirelson's bound $2\sqrt2$. In the massless case, after passage to the time-zero slice and a natural symmetry reduction, the problem reduces to the quadratic form of the Carleman operator on $L^2([0,\infty))$. Near-maximal Bell violation is then governed by the spectral edge $π$, and explicit near-extremizers are obtained from compactly supported cutoffs of the generalized eigenfunction $x^{-1/2}$. This also explains the appearance of the constant $π$ in earlier wavelet-based formulations. In the massive case, the same reduction leads to a Hankel operator with kernel $mK_1(m(x+y))$, where $K_1$ denotes the modified Bessel function of the second kind of order $1$, and exponentially damped variants of the massless test functions again yield Bell-CHSH values converging to $2\sqrt2$. Therefore, we establish a direct link between Bell-CHSH violations for free $(1+1)$-dimensional spinor fields and the spectral theory of Carleman and Hankel operators on the half-line.</summary>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-06T19:14:54Z</published>
+    <arxiv:comment>17 pages</arxiv:comment>
+    <arxiv:primary_category term="math-ph"/>
+    <author>
+      <name>David Dudal</name>
+    </author>
+    <author>
+      <name>Ken Vandermeersch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19103v1</id>
+    <title>Near-perfect Noisy Quantum State Teleportation</title>
+    <updated>2026-02-22T09:24:34Z</updated>
+    <link href="https://arxiv.org/abs/2602.19103v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19103v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Achieving high fidelity of quantum teleportation (QT) in a noisy environment is an essential requirement for its real-world applications. To this end, we devise a distinctive protocol for ensuring teleportation fidelity {\it close to unity}, hinging essentially on the timing of Alice's Bell-basis measurement (BM) dependent on the choice of Bob's local noise parameters, but is independent of Alice's local noise. Our scheme is enabled by Alice communicating to Bob only two of the BM outcomes corresponding to the states that are decoherence-free under common dephasing at Alice's wing. On the other hand, Bob is asked to discard the states of his qubit for the other two BM outcomes in order to maximize fidelity of the teleported state. This ensures the teleportation fidelity's independence of noise parameters in Alice's wing. We formulate the protocol in terms of a generic two-level quantum system, subjected to non-Markovian dephasing noise, applicable for any pure maximally/non-maximally entangled state as well as a Werner-type mixed state as resource. Notably, we show that high fidelity is achievable even using resource states with small values of the entanglement measure. Remarkably, even within the local regime of Werner states, where Bell-CHSH inequalities are not violated, the teleportation fidelity remains significantly high. Finally, we discuss the empirical feasibility of our scheme using photonic qubits.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-22T09:24:34Z</published>
+    <arxiv:comment>28 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Md Manirul Ali</name>
+    </author>
+    <author>
+      <name>Sovik Roy</name>
+    </author>
+    <author>
+      <name>Dipankar Home</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.08947v1</id>
+    <title>Long distance quantum illumination and ranging using polarization entangled photon pairs in a lossy environment</title>
+    <updated>2026-02-09T17:44:09Z</updated>
+    <link href="https://arxiv.org/abs/2602.08947v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.08947v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Using polarization entangled photon pairs, we demonstrate a robust scheme for quantum illumination and ranging in a lossy environment. Entangled photon pairs are generated in a Sagnac interferometer configuration, yielding high-visibility two-photon polarization entanglement with a measured CHSH parameter of $S =2.802\pm0.002$. One of the photons from the entangled pair is retained as idler and the other one is directed into either of the two paths, namely reference and probe, of which probe is sent toward a distant object through a lossy free-space channel, and the reflected photons are collected after round-trip free-space propagation over distances approaching $1$ km. Remarkably, strong correlations are observed with CHSH values $S &gt;2.6$ even when only a few tens of probe photons are returned, confirming the robustness of polarization entanglement under long-distance free-space propagation. This work reports the robustness of encoding photons in different basis before it is sent towards the object and recovery of polarization entanglement even after a kilometer-scale scattering from the objects, establishing a practical foundation for scalable quantum-assisted object detection and ranging.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-09T17:44:09Z</published>
+    <arxiv:comment>9 pages, 7 figures, 38 references</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Sujai Matta</name>
+    </author>
+    <author>
+      <name>Soumya Asokan</name>
+    </author>
+    <author>
+      <name>Sanchari Chakraborti</name>
+    </author>
+    <author>
+      <name>Mayank Joshi</name>
+    </author>
+    <author>
+      <name>Rahul Dalal</name>
+    </author>
+    <author>
+      <name>C. M. Chandrashekar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.05216v1</id>
+    <title>Cat states and violation of the Bell-CHSH inequality in relativistic Quantum Field Theory</title>
+    <updated>2026-01-08T18:41:06Z</updated>
+    <link href="https://arxiv.org/abs/2601.05216v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.05216v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A cat state localized in the right Rindler wedge is employed to study the violation of the Bell-CHSH inequality in a relativistic scalar free Quantum Field Theory. By means of the bounded Hermitian operator $sign(\varphi(f))$, where $\varphi(f)$ stands for the smeared scalar field, it turns out that the Bell-CHSH correlator can be evaluated in closed analytic form in terms of the imaginary error function. Being the superposition of two coherent states, cat states allow for the existence of interference terms which give rise to a violation of the Bell-CHSH inequality. As such, the present setup can be considered as an explicit realization of the results obtained by Summers-Werner.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-08T18:41:06Z</published>
+    <arxiv:comment>13 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>M. S. Guimaraes</name>
+    </author>
+    <author>
+      <name>I. Roditi</name>
+    </author>
+    <author>
+      <name>S. P. Sorella</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.00077v2</id>
+    <title>Detection Efficiency Bounds in (Semi-)Device-Independent Scenarios</title>
+    <updated>2026-03-23T06:12:28Z</updated>
+    <link href="https://arxiv.org/abs/2601.00077v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.00077v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This article provides a comprehensive review of the critical role of detection efficiency in demonstrating non-classicality across various device-independent and semi-device-independent scenarios. The central focus is the detection loophole, a challenge in which imperfect detectors can allow classical hidden variable models to mimic quantum correlations, thus masking genuine non-classicality. As a review, the article revisits the paradigmatic Bell scenario, detailing the efficiency requirements for the CHSH inequality, such as the 2/3 threshold for symmetric efficiencies, and traces the historical trajectory toward the first loophole-free tests. The analysis extends to other causal structures to explore how efficiency requirements are affected in different contexts. These include the instrumental scenario, which for binary variables has recently been shown to follow the same inefficiency bounds as the bipartite dichotomic Bell scenario; the prepare-and-measure scenario, where inefficiencies impact the certification of a quantum system's dimension and create security breaches in protocols such as Quantum Key Distribution (QKD); and the bilocality scenario, which exemplifies how employing multiple independent sources can significantly relax the required efficiencies to certify non-classical correlations.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-31T19:09:00Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Tailan S. Sarubi</name>
+    </author>
+    <author>
+      <name>Santiago Zamora</name>
+    </author>
+    <author>
+      <name>Moisés Alves</name>
+    </author>
+    <author>
+      <name>Vinícius F. Alves</name>
+    </author>
+    <author>
+      <name>Gandhi Viswanathan</name>
+    </author>
+    <author>
+      <name>Rafael Chaves</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.10378v1</id>
+    <title>Loophole-free Bell-inequality violation between atomic states in cavity-QED systems mediated by hybrid atom-light entanglement</title>
+    <updated>2025-12-11T07:42:30Z</updated>
+    <link href="https://arxiv.org/abs/2512.10378v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.10378v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a feasible and scalable approach to testing Bell nonlocality and implementing device-independent quantum key distribution (DI-QKD) between distant atomic states in cavity-based architectures, mediated by hybrid atom-light entanglement. We develop a full theoretical model that incorporates realistic sources of noise -- such as transmission loss, limited light-matter coupling efficiency, and imperfect detection. Our analysis shows that strong Bell-Clauser-Horne-Shimony-Holt (CHSH) violations and secure key generation over tens of kilometers are within reach using current or near-term technology. These results position cavity-based platforms with coherent-state encodings as a promising foundation for future scalable, DI quantum communication networks.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-11T07:42:30Z</published>
+    <arxiv:comment>7 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Pei-Zhe Li</name>
+    </author>
+    <author>
+      <name>Soumyakanti Bose</name>
+    </author>
+    <author>
+      <name>Hyunseok Jeong</name>
+    </author>
+    <author>
+      <name>William J. Munro</name>
+    </author>
+    <author>
+      <name>Kae Nemoto</name>
+    </author>
+    <author>
+      <name>Nicolò Lo Piparo</name>
+    </author>
+    <arxiv:doi>10.1088/2058-9565/ae5089</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/2058-9565/ae5089" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.04016v1</id>
+    <title>TARA Test-by-Adaptive-Ranks for Quantum Anomaly Detection with Conformal Prediction Guarantees</title>
+    <updated>2025-12-03T17:53:38Z</updated>
+    <link href="https://arxiv.org/abs/2512.04016v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.04016v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum key distribution (QKD) security fundamentally relies on the ability to distinguish genuine quantum correlations from classical eavesdropper simulations, yet existing certification methods lack rigorous statistical guarantees under finite-sample conditions and adversarial scenarios. We introduce TARA (Test by Adaptive Ranks), a novel framework combining conformal prediction with sequential martingale testing for quantum anomaly detection that provides distribution-free validity guarantees. TARA offers two complementary approaches. TARA k, based on Kolmogorov Smirnov calibration against local hidden variable (LHV) null distributions, achieving ROC AUC = 0.96 for quantum-classical discrimination. And TARA-m, employing betting martingales for streaming detection with anytime valid type I error control that enables real time monitoring of quantum channels. We establish theoretical guarantees proving that under (context conditional) exchangeability, conformal p-values remain uniformly distributed even for strongly contextual quantum data, confirming that quantum contextuality does not break conformal prediction validity a result with implications beyond quantum certification to any application of distribution-free methods to nonclassical data. Extensive validation on both IBM Torino (superconducting, CHSH = 2.725) and IonQ Forte Enterprise (trapped ion, CHSH = 2.716) quantum processors demonstrates cross-platform robustness, achieving 36% security margins above the classical CHSH bound of 2. Critically, our framework reveals a methodological concern affecting quantum certification more broadly: same-distribution calibration can inflate detection performance by up to 44 percentage points compared to proper cross-distribution calibration, suggesting that prior quantum certification studies using standard train test splits may have systematically overestimated adversarial robustness.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-03T17:53:38Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Davut Emre Tasar</name>
+    </author>
+    <author>
+      <name>Ceren Ocal Tasar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.01525v2</id>
+    <title>Graph Structured Operator Inequalities and Tsirelson-Type Bounds</title>
+    <updated>2026-04-11T02:05:00Z</updated>
+    <link href="https://arxiv.org/abs/2511.01525v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.01525v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We establish operator norm bounds for bipartite tensor sums of self-adjoint contractions. The inequalities generalize the analytic structure underlying the Tsirelson and CHSH bounds, giving dimension-free estimates expressed through commutator and anticommutator norms. A graph based formulation captures sparse interaction patterns via constants depending only on graph connectivity. The results link analytic operator inequalities with quantum information settings such as Bell correlations and network nonlocality, offering closed-form estimates that complement semidefinite and numerical methods.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-03T12:41:00Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>James Tian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.10200v2</id>
+    <title>Time-resolved certification of frequency-bin entanglement over multi-mode channels</title>
+    <updated>2026-01-26T22:23:54Z</updated>
+    <link href="https://arxiv.org/abs/2508.10200v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.10200v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Frequency-bin entangled photons can be efficiently produced on-chip which offers a scalable, robust and low-footprint platform for quantum communication, particularly well-suited for resource-constrained settings such as mobile or satellite-based systems. However, analyzing such entangled states typically requires active and lossy components, limiting scalability and multi-mode compatibility. We demonstrate a novel technique for processing frequency-encoded photons using linear interferometry and time-resolved detection. Our approach is fully passive and compatible with spatially multi-mode light, making it suitable for free-space and satellite to ground applications. As a proof-of-concept, we utilize frequency-bin entangled photons generated from a high-brightness multi-resonator source integrated on-chip to show the ability to perform arbitrary projective measurements over both single- and multi-mode channels. We report the first measurement of the joint temporal intensity between frequency-bin entangled photons, which allows us to certify entanglement by violating the Clauser-Horne-Shimony-Holt (CHSH) inequality, with a measured value of $|S|=2.32\pm0.05$ over multi-mode fiber. By combining time-resolved detection with energy-correlation measurements, we perform full quantum state tomography, yielding a state fidelity of up to $91\%$. We further assess our ability to produce non-classical states via a violation of time-energy entropic uncertainty relations and investigate the feasibility of a quantum key distribution protocol. Our work establishes a resource-efficient and scalable approach toward the deployment of robust frequency-bin entanglement over free-space and satellite-based links.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-13T21:23:15Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Stéphane Vinet</name>
+    </author>
+    <author>
+      <name>Marco Clementi</name>
+    </author>
+    <author>
+      <name>Marcello Bacchi</name>
+    </author>
+    <author>
+      <name>Yujie Zhang</name>
+    </author>
+    <author>
+      <name>Massimo Giacomin</name>
+    </author>
+    <author>
+      <name>Luke Neal</name>
+    </author>
+    <author>
+      <name>Paolo Villoresi</name>
+    </author>
+    <author>
+      <name>Matteo Galli</name>
+    </author>
+    <author>
+      <name>Daniele Bajoni</name>
+    </author>
+    <author>
+      <name>Thomas Jennewein</name>
+    </author>
+    <arxiv:doi>10.1038/s41534-026-01183-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41534-026-01183-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.12870v1</id>
+    <title>Temporal nonlocality from indefinite causal orders</title>
+    <updated>2025-01-22T13:27:05Z</updated>
+    <link href="https://arxiv.org/abs/2501.12870v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.12870v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A temporal counterpart to Bell nonlocality would intuitively refer to the presence of non-classical correlations between timelike-separated events. The hypothesis of temporal nonlocality has received recent support in the literature, and its existence would likely influence the future development of physical theories. This paper shows how Adlam's principle of temporal locality can be violated within a protocol involving indefinite causal orders. While the derivations of Leggett-Garg inequalities or the temporal CHSH inequality are said to involve problematic assumptions preventing a targeted probing of a well-defined notion of temporal nonlocality, the present test is free from such worries. However, it is shown that the test, in its current formulation, fails to be fully model-independent. We provide several considerations regarding the physicality of ICOs that could help alleviate this drawback. In the present work, a specific physical interpretation of ICOs in terms of retrocausal influences would explain the presence of temporally nonlocal correlations. It is argued that, as the physical underpinnings of temporal nonlocality might also account for standard Bell nonlocality, focusing on the former as a consequence of ICOs might support under-explored strategies to make sense of the latter.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-22T13:27:05Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Laurie Letertre</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.02510v1</id>
+    <title>Consequences of the single-pair measurement of the Bell parameter</title>
+    <updated>2024-09-04T08:11:40Z</updated>
+    <link href="https://arxiv.org/abs/2409.02510v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.02510v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell inequalities represent a milestone for contemporary Physics, both for quantum foundations investigation and technological applications (e.g., quantum communication and entanglement certification). Although loophole-free tests have been recently performed, a strong debate is still ongoing on the actual meaning of Bell inequality tests, for example on the possible additional hypotheses (end eventual loopholes) to be included in Bell's theorem, as well as on the implications for certain interpretations of quantum mechanics. A recent work [S. Virzì et al., Quantum Sci. Technol. 9, 045027 (2024)] challenges some of the statements appeared in this debate, achieving for the first time an experimental estimation of the entire Bell-CHSH parameter from a single entangled pair thanks to a weak-interaction-based measurement approach. Here we analyse the implications of this result for quantum mechanics foundations investigation, illustrating how it can tackle some of the aforementioned interpretations of Bell inequality tests and, more in general, of quantum mechanics itself.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-04T08:11:40Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 111, 022204 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Marco Genovese</name>
+    </author>
+    <author>
+      <name>Fabrizio Piacentini</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.111.022204</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.111.022204" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.10489v1</id>
+    <title>Interplay of Quantum Resources in Nonlocality Tests</title>
+    <updated>2024-08-20T02:03:22Z</updated>
+    <link href="https://arxiv.org/abs/2408.10489v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.10489v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Nonlocality, evidenced by the violation of Bell inequalities, not only signifies entanglement but also highlights measurement incompatibility in quantum systems. Utilizing the generalized Clauser-Horne-Shimony-Holt (CHSH) Bell inequality, our high-efficiency optical setup achieves a loophole-free violation of $2.0132$. This result provides a device-independent lower bound on entanglement, quantified as the entanglement of formation at $0.0159$. Moreover, by tuning the parameters of the generalized Bell inequality, we enhance the estimation of measurement incompatibility, which is quantified by an effective overlap of $4.3883 \times 10^{-5}$. To explore the intricate interplay among nonlocality, entanglement, and measurement incompatibility, we generate mixed states, allowing for flexible modulation of entanglement via fast switching among the four Bell states using Pockels cells, achieving a fidelity above $99.10\%$. Intriguingly, our results reveal a counterintuitive relationship where increasing incompatibility initially boosts nonlocality but eventually leads to its reduction. Typically, maximal nonlocality does not coincide with maximal incompatibility. This experimental study sheds light on the optimal management of quantum resources for Bell-inequality-based quantum information processing.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-20T02:03:22Z</published>
+    <arxiv:comment>15 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Physical Review RESEARCH 7, L022055 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Hai-Hao Dong</name>
+    </author>
+    <author>
+      <name>Yuwei Zhu</name>
+    </author>
+    <author>
+      <name>Su-Yi Cheng</name>
+    </author>
+    <author>
+      <name>Xingjian Zhang</name>
+    </author>
+    <author>
+      <name>Cheng-Long Li</name>
+    </author>
+    <author>
+      <name>Ying-Zhao Li</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Lixing You</name>
+    </author>
+    <author>
+      <name>Xiongfeng Ma</name>
+    </author>
+    <author>
+      <name>Qiang Zhang</name>
+    </author>
+    <author>
+      <name>Jian-Wei Pan</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevResearch.7.L022055</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevResearch.7.L022055" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.04736v1</id>
+    <title>CHSH Bell Tests For Optical Hybrid Entanglement</title>
+    <updated>2024-06-07T08:36:17Z</updated>
+    <link href="https://arxiv.org/abs/2406.04736v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.04736v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optical hybrid entanglement can be created between two qubits, one encoded in a single photon and another one in coherent states with opposite phases. It opens the path to a variety of quantum technologies, such as heterogeneous quantum networks, merging continuous and discrete variable encoding, and enabling the transport and interconversion of information. However, reliable characterization of the nature of this entanglement is limited so far to full quantum state tomography. Here, we perform a thorough study of Clauser-Horne-Shimony-Holt (CHSH) Bell inequality tests, enabling practical verification of quantum correlations for optical hybrid entanglement. We show that a practical violation of this inequality is possible with simple photon number on/off measurements if detection efficiencies stay above 82%. Another approach, based on photon-number parity measurements, requires 94% efficiency but works well in the limit of higher photon populations. Both tests use no postselection of the measurement outcomes and they are free of the fair-sampling hypothesis. Our proposal paves the way to performing loophole-free tests using feasible experimental tasks such as coherent state interference and photon counting, and to verification of hybrid entanglement in real-world applications.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-07T08:36:17Z</published>
+    <arxiv:comment>9 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>New J. Phys. 26 033019 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Morteza Moradi</name>
+    </author>
+    <author>
+      <name>Juan Camilo López Carreño</name>
+    </author>
+    <author>
+      <name>Adam Buraczewski</name>
+    </author>
+    <author>
+      <name>Thomas McDermott</name>
+    </author>
+    <author>
+      <name>Beate Elisabeth Asenbeck</name>
+    </author>
+    <author>
+      <name>Julien Laurat</name>
+    </author>
+    <author>
+      <name>Magdalena Stobińska</name>
+    </author>
+    <arxiv:doi>10.1088/1367-2630/ad2d40</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1367-2630/ad2d40" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.08743v2</id>
+    <title>Self-testing tilted strategies for maximal loophole-free nonlocality</title>
+    <updated>2025-05-13T19:57:16Z</updated>
+    <link href="https://arxiv.org/abs/2405.08743v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.08743v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The degree of experimentally attainable nonlocality, as gauged by the loophole-free or effective violation of Bell inequalities, remains severely limited due to inefficient detectors. We address an experimentally motivated question: Which quantum strategies attain the maximal loophole-free nonlocality in the presence of inefficient detectors? For any Bell inequality and any specification of detection efficiencies, the optimal strategies are those that maximally violate a tilted version of the Bell inequality in ideal conditions. In the simplest scenario, we demonstrate that the quantum strategies that maximally violate the doubly-tilted versions of Clauser-Horne-Shimony-Holt inequality are unique up to local isometries. We utilize a Jordan's lemma and Gröbner basis-based proof technique to analytically derive self-testing statements for the entire family of doubly-tilted CHSH inequalities and numerically demonstrate their robustness. These results enable us to reveal the insufficiency of even high levels of the Navascués--Pironio--Acín hierarchy to saturate the maximum quantum violation of these inequalities.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-14T16:31:06Z</published>
+    <arxiv:comment>Final version, close to published</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>npj Quantum Information 11, 82 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Nicolas Gigena</name>
+    </author>
+    <author>
+      <name>Ekta Panwar</name>
+    </author>
+    <author>
+      <name>Giovanni Scala</name>
+    </author>
+    <author>
+      <name>Mateus Araújo</name>
+    </author>
+    <author>
+      <name>Máté Farkas</name>
+    </author>
+    <author>
+      <name>Anubhav Chaturvedi</name>
+    </author>
+    <arxiv:doi>10.1038/s41534-025-01029-6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41534-025-01029-6" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.00725v2</id>
+    <title>Quantum Nonlocality: how does Nature do it?</title>
+    <updated>2024-02-27T23:00:20Z</updated>
+    <link href="https://arxiv.org/abs/2402.00725v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.00725v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In his article in Science, Nicolas Gisin claimed that quantum correlations emerge from outside space time. We explain that they are due to space time symmetries. This paper is a critical review of metaphysical conclusions found in many recent articles. It advocates the importance of contextuality, Einstein causality and global symmetries. Bell tests allow only rejecting probabilistic coupling provided by a local hidden variable model, but they do not justify metaphysical speculations about quantum nonlocality and objects which know about each other state, even when separated by large distances. The violation of Bell inequalities in physics and in cognitive science can be explained using the notion of Bohr contextuality. If contextual variables, describing varying experimental contexts, are correctly incorporated into a probabilistic model, then the Bell and CHSH inequalities cannot be proven and nonlocal correlations may be explained in an intuitive way. We also elucidate the meaning of statistical independence assumption incorrectly called free choice, measurement independence or no conspiracy. Since correlation does not imply causation, the violation of statistical independence should be called contextuality and it does not restrict the experimenter freedom of choice. Therefore, contrary to what is believed, closing the freedom of choice loophole does not close the contextuality loophole.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-01T16:16:10Z</published>
+    <arxiv:comment>17 pages, 97 references</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Entropy 2024, 26, 191</arxiv:journal_ref>
+    <author>
+      <name>Marian Kupczynski</name>
+    </author>
+    <arxiv:doi>10.3390/e26030191</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e26030191" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.07455v1</id>
+    <title>Influence of Initial Entangled States on the Temperature-Dependent CHSH Inequality</title>
+    <updated>2023-09-14T06:29:32Z</updated>
+    <link href="https://arxiv.org/abs/2309.07455v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.07455v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate that the temperature affects the validity of the CHSH inequality in an open bipartite two-qubit system. Specifically, for initial entangled states within the decoherence-free subspace (DFS), the CHSH inequality remains temperature-independent. In contrast, other entangled states exhibit a temperature threshold beyond which the inequality holds.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-14T06:29:32Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Esteban Marulanda</name>
+    </author>
+    <author>
+      <name>Andrés Gómez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.05299v2</id>
+    <title>Partial Loopholes Free Device Independent Quantum Random Number Generator Using IBM's Quantum Computers</title>
+    <updated>2023-09-26T03:45:53Z</updated>
+    <link href="https://arxiv.org/abs/2309.05299v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.05299v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Random numbers form an intrinsic part of modern day computing with applications in a wide variety of fields. But due to their limitations, the use of pseudo random number generators (PRNGs) is certainly not desirable for sensitive applications. Quantum systems due to their intrinsic randomness form a suitable candidate for generation of true random numbers that can also be certified. In this work, the violation of CHSH inequality has been used to propose a scheme by which one can generate device independent quantum random numbers by use of IBM quantum computers that are available on the cloud. The generated random numbers have been tested for their source of origin through experiments based on the testing of CHSH inequality through available IBM quantum computers. The performance of each quantum computer against the CHSH test has been plotted and characterized. Further, efforts have been made to close as many loopholes as possible to produce device independent quantum random number generators. This study will provide new directions for the development of self-testing and semi-self-testing random number generators using quantum computers.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-11T08:34:45Z</published>
+    <arxiv:comment>We present a scheme by which one can generate device independent quantum random numbers by use of IBM quantum computers that are available on the cloud</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Abhishek Yadav</name>
+    </author>
+    <author>
+      <name>Sandeep Mishra</name>
+    </author>
+    <author>
+      <name>Anirban Pathak</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.02941v2</id>
+    <title>Weyl operators, Tomita-Takesaki theory, and Bell-Clauser-Horne-Shimony-Holt inequality violations</title>
+    <updated>2023-10-16T18:03:31Z</updated>
+    <link href="https://arxiv.org/abs/2309.02941v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.02941v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The violation of the Bell-CHSH inequality in the vacuum state of a relativistic free real scalar field is established by means of the Tomita-Takesaki construction and of the direct computation of the correlation functions of Weyl operators.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-06T12:15:03Z</published>
+    <arxiv:comment>10 pages, 2 figures, revised version. Accepted for publication in PRD</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys. Rev. D 108, 085026 (2023)</arxiv:journal_ref>
+    <author>
+      <name>P. De Fabritiis</name>
+    </author>
+    <author>
+      <name>F. M. Guedes</name>
+    </author>
+    <author>
+      <name>M. S. Guimaraes</name>
+    </author>
+    <author>
+      <name>G. Peruzzo</name>
+    </author>
+    <author>
+      <name>I. Roditi</name>
+    </author>
+    <author>
+      <name>S. P. Sorella</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.108.085026</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.108.085026" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.02149v2</id>
+    <title>Use of Non-Maximal entangled state for free space BBM92 quantum key distribution protocol</title>
+    <updated>2023-07-06T10:51:52Z</updated>
+    <link href="https://arxiv.org/abs/2307.02149v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.02149v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Satellite-based quantum communication for secure key distribution is becoming a more demanding field of research due to its unbreakable security. Prepare and measure protocols such as BB84 consider the satellite as a trusted device, fraught with danger looking at the current trend for satellite-based optical communication. Therefore, entanglement-based protocols must be preferred since, along with overcoming the distance limitation, one can consider the satellite as an untrusted device too. E91 protocol is a good candidate for satellite-based quantum communication; but the key rate is low as most of the measured qubits are utilized to verify a Bell-CHSH inequality to ensure security against Eve. An entanglement-based protocol requires a maximally entangled state for more secure key distribution. The current work discusses the effect of non-maximality on secure key distribution. It establishes a lower bound on the non-maximality condition below which no secure key can be extracted. BBM92 protocol will be more beneficial for key distribution as we found a linear connection between the extent of violation for Bell-CHSH inequality and the quantum bit error rate for a given setup.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-05T09:45:00Z</published>
+    <arxiv:comment>6 pages, 5 figures, and 1 table</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ayan Biswas</name>
+    </author>
+    <author>
+      <name>Sarika Mishra</name>
+    </author>
+    <author>
+      <name>Satyajeet Patil</name>
+    </author>
+    <author>
+      <name>Anindya Banerji</name>
+    </author>
+    <author>
+      <name>Shashi Prabhakar</name>
+    </author>
+    <author>
+      <name>Ravindra P. Singh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.01028v2</id>
+    <title>BRST invariant formulation of the Bell-CHSH inequality in gauge field theories</title>
+    <updated>2023-10-17T01:08:54Z</updated>
+    <link href="https://arxiv.org/abs/2304.01028v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.01028v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A study of the Bell-CHSH inequality in gauge field theories is presented. By using the Kugo-Ojima analysis of the BRST charge cohomology in Fock space, the Bell-CHSH inequality is formulated in a manifestly BRST invariant way. The examples of the free four-dimensional Maxwell theory and the Abelian Higgs model are scrutinized. The inequality is probed by using BRST invariant squeezed states, allowing for large Bell-CHSH inequality violations, close to Tsirelson's bound. An illustrative comparison with the entangled state of two $1/2$ spin particles in Quantum Mechanics is provided.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-03T14:27:55Z</published>
+    <arxiv:comment>12 pages. Revised version. Accepted for publication in SciPost Physics</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>SciPost Phys. 15, 201 (2023)</arxiv:journal_ref>
+    <author>
+      <name>David Dudal</name>
+    </author>
+    <author>
+      <name>Philipe De Fabritiis</name>
+    </author>
+    <author>
+      <name>Marcelo S. Guimaraes</name>
+    </author>
+    <author>
+      <name>Giovani Peruzzo</name>
+    </author>
+    <author>
+      <name>Silvio P. Sorella</name>
+    </author>
+    <arxiv:doi>10.21468/SciPostPhys.15.5.201</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21468/SciPostPhys.15.5.201" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.09519v16</id>
+    <title>Bell's Theorem Begs the Question</title>
+    <updated>2025-11-17T17:39:13Z</updated>
+    <link href="https://arxiv.org/abs/2302.09519v16" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.09519v16" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I demonstrate that Bell's theorem is based on circular reasoning and thus a fundamentally flawed argument. It unjustifiably assumes the additivity of expectation values for dispersion-free states of contextual hidden variable theories for non-commuting observables involved in Bell-test experiments, which is tautologous to assuming the bounds of $\pm2$ on the Bell-CHSH sum of expectation values. Its premises thus assume in a different guise the bounds of $\pm2\,$ it sets out to prove. Once this oversight is ameliorated from Bell's argument by identifying the impediment that leads to it and local realism is implemented correctly, the bounds on the Bell-CHSH sum of expectation values work out to be ${\pm2\sqrt{2}}$ instead of ${\pm2}$, thereby mitigating the conclusion of Bell's theorem. Consequently, what is ruled out by any of the Bell-test experiments is not local realism but the linear additivity of expectation values, which does not hold for non-commuting observables in any hidden variable theories to begin with. I also identify similar oversight in the GHZ variant of Bell's theorem, invalidating its claim of having found an inconsistency in the premisses of the argument by EPR for completing quantum mechanics. Conceptually, the oversight in both Bell's theorem and its GHZ variant traces back to the oversight in von Neumann's theorem against hidden variable theories identified by Grete Hermann in the 1930s.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-19T09:33:12Z</published>
+    <arxiv:comment>27 pages, 1 figure; A new appendix is added (Appendix E), which provides a consistency check on the main argument presented in the paper</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <author>
+      <name>Joy Christian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.08475v1</id>
+    <title>The tilted CHSH games: an operator algebraic classification</title>
+    <updated>2023-02-16T18:33:59Z</updated>
+    <link href="https://arxiv.org/abs/2302.08475v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.08475v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce a general systematic procedure for solving any binary-input binary-output game using operator algebraic techniques on the representation theory for the underlying group, which we then illustrate on the prominent class of tilted CHSH games: We derive for those an entire characterisation on the region exhibiting some quantum advantage and in particular derive a greatly simplified description for the required amount of anticommutation on observables (as being an essential ingredient in several adjacent articles).
+  We further derive an abstract algebraic representation--free classification on the unique operator algebraic state maximising above quantum value. In particular the resulting operator algebraic state entails uniqueness for its corresponding correlation, including all higher and mixed moments.
+  Finally the main purpose of this article is to provide above simplified description for the required amount of anticommutation and an abstract algebraic characterisation for their corresponding unique optimal state, both defining a key ingredient in upcoming work by the authors.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-16T18:33:59Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexander Frei</name>
+    </author>
+    <author>
+      <name>Azin Shahiri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.01805v1</id>
+    <title>Model-free inequality for data of Einstein-Podolsky-Rosen-Bohm experiments</title>
+    <updated>2023-02-03T15:17:07Z</updated>
+    <link href="https://arxiv.org/abs/2302.01805v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.01805v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a new inequality constraining correlations obtained when performing Einstein-Podolsky-Rosen-Bohm experiments. The proof does not rely on mathematical models that are imagined to have produced the data and is therefore ``model-free''. The new inequality contains the model-free version of the well-known Bell-CHSH inequality as a special case. A violation of the latter implies that not all the data pairs in four data sets can be reshuffled to create quadruples. This conclusion provides a new perspective on the implications of the violation of Bell-type inequalities by experimental data.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-03T15:17:07Z</published>
+    <arxiv:comment>Extended version of Annals of Physics, Volume 453, 169314, 2023 (https://doi.org/10.1016/j.aop.2023.169314)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Hans De Raedt</name>
+    </author>
+    <author>
+      <name>Mikhail I. Katsnelson</name>
+    </author>
+    <author>
+      <name>Manpreet S. Jattana</name>
+    </author>
+    <author>
+      <name>Vrinda Mehta</name>
+    </author>
+    <author>
+      <name>Madita Willsch</name>
+    </author>
+    <author>
+      <name>Dennis Willsch</name>
+    </author>
+    <author>
+      <name>Kristel Michielsen</name>
+    </author>
+    <author>
+      <name>Fengping Jin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.14407v3</id>
+    <title>On the Feynman path integral formulation of the Bell-Clauser-Horne-Shimony-Holt inequality in Quantum Field Theory</title>
+    <updated>2023-03-15T23:25:23Z</updated>
+    <link href="https://arxiv.org/abs/2212.14407v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.14407v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>By employing a free scalar Quantum Field Theory model previously introduced \cite{Peruzzo:2022pwv}, we attempt at formulating the Bell-CHSH inequality within the Feynman path integral. This possibility relies on the observation that the Bell-CHSH inequality exhibits a natural extension to Quantum Field Theory in such a way that it is compatible with the time ordering $T$. By treating the Feynman propagator as a distribution and by introducing a suitable localizing set of compact support smooth test functions, we work out the path integral setup for the Bell-CHSH inequality, recovering the same results of the canonical quantization.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-29T18:28:58Z</published>
+    <arxiv:comment>15 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Giovani Peruzzo</name>
+    </author>
+    <author>
+      <name>Silvio Paolo Sorella</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.107.105001</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.107.105001" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.15033v1</id>
+    <title>Eberhard limit for photon-counting Bell tests and its utility in quantum key distribution</title>
+    <updated>2022-11-28T03:38:17Z</updated>
+    <link href="https://arxiv.org/abs/2211.15033v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.15033v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Loophole-free Bell tests are essential if one wishes to perform device-independent quantum key distribution (QKD), since any loophole could be used by a potential adversary to undermine the security of the protocol. Crucial work by Eberhard demonstrated that weakly entangled two-qubit states have a far greater resistance to the detection loophole than maximally entangled states, allowing one to close the loophole with detection efficiency greater than 2/3. Here we demonstrate that this same limit holds for photon-counting CHSH Bell tests which can demonstrate non-locality for higher dimensional multiphoton states such as two-mode squeezed vacuum and generalized Holland-Burnett states. In fact, we show evidence that these tests are in some sense universal, allowing feasible detection loophole-free tests for any multiphoton bipartite state, as long as the two modes are well correlated in photon number. Additionally, by going beyond the typical two-input two-output Bell scenario, we show that there are also photon-counting CGLMP inequalities which can also match the Eberhard limit, paving the way for more exotic loophole-free Bell tests. Finally we show that by exploiting this increased loss tolerance of non maximally entangled states, one can increase the key rates and loss tolerances of QKD protocols based on photon-counting tests.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-28T03:38:17Z</published>
+    <arxiv:comment>Main text: 8 pages, 4 figures. Supplementary: 7 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Thomas McDermott</name>
+    </author>
+    <author>
+      <name>Morteza Moradi</name>
+    </author>
+    <author>
+      <name>Antoni Mikos-Nuszkiewicz</name>
+    </author>
+    <author>
+      <name>Magdalena Stobińska</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.05569v2</id>
+    <title>Bell's theorem is an exercise in the statistical theory of causality</title>
+    <updated>2023-03-20T15:13:57Z</updated>
+    <link href="https://arxiv.org/abs/2211.05569v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.05569v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this short note, I derive the Bell-CHSH inequalities as an elementary result in the present-day theory of statistical causality based on graphical models or Bayes' nets, defined in terms of DAGs (Directed Acyclic Graphs) representing direct statistical causal influences between a number of observed and unobserved random variables. I show how spatio-temporal constraints in loophole-free Bell experiments, and natural classical statistical causality considerations, lead to Bell's notion of local hidden variables, and thence to the CHSH inequalities. The word "local" applies to the way that the chosen settings influence the observed outcomes. The case of contextual setting-dependent hidden variables (thought of as being located in the measurement devices and dependent on the measurement settings) is automatically covered, despite recent claims that Bell's conclusions can be circumvented in this way.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-10T13:47:08Z</published>
+    <arxiv:comment>5 pages; version 2: corrected some annoying (because confusing) math typos. arXiv admin note: substantial text overlap with arXiv:2208.09930</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Richard D. Gill</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.16372v1</id>
+    <title>Remarks on the Clauser-Horne-Shimony-Holt inequality in relativistic quantum field theory</title>
+    <updated>2022-10-28T19:15:57Z</updated>
+    <link href="https://arxiv.org/abs/2210.16372v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.16372v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present an investigation of the $CHSH$ inequality within a relativistic quantum field theory model built up with a pair of free massive scalar fields $(\varphi_A, \varphi_B)$ where, as it is customary, the indices $(A,B)$ refer to Alice and Bob, respectively. A set of bounded Hermitian operators is introduced by making use of the Weyl operators. A $CHSH$ type correlator is constructed and evaluated in the Fock vacuum by means of the canonical quantization. Although the observed violation of the $CHSH$ inequality turns out to be rather small as compared to Tsirelson's bound of Quantum Mechanics, the model can be employed for the study of Bell's inequalities in the more physical case of gauge theories such as: the Higgs models, for which local $BRST$ invariant operators describing both the massive gauge boson as well as the Higgs particle have been devised. These operators can be naturally exponentiated, leading to $BRST$ invariant type of Weyl operators useful to analyze Bell's inequalities within an invariant $BRST$ environment.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-28T19:15:57Z</published>
+    <arxiv:comment>22 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Giovani Peruzzo</name>
+    </author>
+    <author>
+      <name>Silvio Paolo Sorella</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.106.125020</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.106.125020" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.09930v8</id>
+    <title>Kupczynski's Contextual Locally Causal Probabilistic Models are constrained by Bell's theorem</title>
+    <updated>2023-06-02T04:08:04Z</updated>
+    <link href="https://arxiv.org/abs/2208.09930v8" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.09930v8" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In a sequence of papers, Marian Kupczynski has argued that Bell's theorem can be circumvented if one takes correct account of contextual setting-dependent parameters describing measuring instruments. We show that this is not true. Despite first appearances, Kupczynksi's concept of a contextual locally causal probabilistic model is mathematically a special case of a Bell local hidden variables model. Thus, even if one takes account of contextuality in the way he suggests, the Bell-CHSH inequality can still be derived. Violation thereof by quantum mechanics cannot be easily explained away: quantum mechanics and local realism (including Kupczynski's claimed enlargement of the concept) are not compatible with one another. Further inspection shows that Kupczynski is actually falling back on the detection loophole. Since 2015, numerous loophole-free experiments have been performed, in which the Bell-CHSH inequality is violated, so despite any other possible imperfections of such experiments, Kupczynski's escape route for local realism is not available</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-21T17:44:30Z</published>
+    <arxiv:comment>Version 8. 15 pages. Final version for "Quantum reports"</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Richard D. Gill</name>
+    </author>
+    <author>
+      <name>Justo Pastor Lambare</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2012.06918v1</id>
+    <title>Quantum Bell Nonlocality is Entanglement</title>
+    <updated>2020-12-12T23:02:06Z</updated>
+    <link href="https://arxiv.org/abs/2012.06918v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2012.06918v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell nonlocality describes a manifestation of quantum mechanics that cannot be explained by any local hidden variable model. Its origin lies in the nature of quantum entanglement, although understanding the precise relationship between nonlocality and entanglement has been a notorious open problem. In this paper, we resolve this problem by developing a dynamical framework in which quantum Bell nonlocality emerges as special form of entanglement, and both are unified as resources under local operations and classical communication (LOCC). Our framework is built on the notion of quantum processes, which are abstract quantum channels mapping elements between fixed intervals in space and time. Entanglement is then identified as a quantum process that cannot be generated by LOCC while Bell nonlocality is the subset of these processes that have an instantaneous input-output delay time. LOCC pre-processing is a natural set of free operations in this theory, thereby enabling all entangled states to activate some form of Bell nonlocality. In addition, we generalize the CHSH witnesses from the state domain to the domain of entangled quantum measurements, and provide a systematic method to quantify the Bell nonlocality of a bipartite quantum channel.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-12T23:02:06Z</published>
+    <arxiv:comment>12 pages (main text) + 3 pages (appendix), 11 Figures, comments are welcome!</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 104, 052208 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Kuntal Sengupta</name>
+    </author>
+    <author>
+      <name>Rana Zibakhsh</name>
+    </author>
+    <author>
+      <name>Eric Chitambar</name>
+    </author>
+    <author>
+      <name>Gilad Gour</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.104.052208</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.104.052208" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2012.04086v2</id>
+    <title>Nonlocal realism tests and quantum state tomography in Sagnac-based type-II polarization-entanglement SPDC-source</title>
+    <updated>2021-06-20T18:32:16Z</updated>
+    <link href="https://arxiv.org/abs/2012.04086v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2012.04086v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We have experimentally created a robust, ultrabright and phase-stable polarization-entangled state close to maximally entangled Bell-state with $ \% 98 $-fidelity using the type-II spontaneous parametric down-conversion (SPDC) process in periodically-poled KTiOPO$ _4 $ (PPKTP) collinear crystal inside a Sagnac interferometer (SI). Bell inequality measurement, Freedman's test, as the different versions of CHSH inequality, and also visibility test which all can be seen as the nonlocal realism tests, imply that our created entangled state shows a strong violation from the classical physics or any hidden-variable theory. We have obtained very reliable and very strong Bell violation as $ S=2.78 \pm 0.01 $ with high brightness $ \mathcal{V}_{\rm HV}= \% (99.969 \pm 0.003) $ and $\mathcal{V}_{\rm DA}= \% (96.751 \pm 0.002) $ and very strong violation due to Freedman test as $ δ_{\rm F} = 0.01715 \pm 0.00001 $. Furthermore, using the tomographic reconstruction of quantum states together a maximum-likelihood-technique (MLT) as the numerical optimization, we obtain the physical non-negative definite density operator which shows the nonseparability and entanglement of our prepared state. By having the maximum likelihood density operator, we calculate some important entanglement-measures and entanglement entropies. The Sagnac configuration provides bidirectional crystal pumping yields to high-rate entanglement source which is very applicable in quantum communication, sensing and metrology as well as quantum information protocols, and has potential to be used in quantum illumination-based LIDAR and free-space quantum key distribution (QKD).</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-04T17:12:17Z</published>
+    <arxiv:comment>The first entanglement experiment and state tomography using high rate and phase stable PPKTP SPDC-source in IRAN; towards the free-space entanglement experiments such as QKD and Quantum illumination; 10pages; 5 figures and 4 tables. Accepted in Heliyon. arXiv admin note: text overlap with arXiv:2012.02658</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Heliyon 7, e07384 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Ali Motazedifard</name>
+    </author>
+    <author>
+      <name>Seyed Ahmad Madani</name>
+    </author>
+    <author>
+      <name>J. Jafari Dashkasan</name>
+    </author>
+    <author>
+      <name>N. Sobhkhiz Vayaghan</name>
+    </author>
+    <arxiv:doi>10.1016/j.heliyon.2021.e07384</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.heliyon.2021.e07384" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.02691v2</id>
+    <title>Device-Independent Quantum Key Distribution with Random Key Basis</title>
+    <updated>2021-05-19T14:12:38Z</updated>
+    <link href="https://arxiv.org/abs/2005.02691v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.02691v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Device-independent quantum key distribution (DIQKD) is the art of using untrusted devices to distribute secret keys in an insecure network. It thus represents the ultimate form of cryptography, offering not only information-theoretic security against channel attacks, but also against attacks exploiting implementation loopholes. In recent years, much progress has been made towards realising the first DIQKD experiments, but current proposals are just out of reach of today's loophole-free Bell experiments. Here, we significantly narrow the gap between the theory and practice of DIQKD with a simple variant of the original protocol based on the celebrated Clauser-Horne-Shimony-Holt (CHSH) Bell inequality. By using two randomly chosen key generating bases instead of one, we show that our protocol significantly improves over the original DIQKD protocol, enabling positive keys in the high noise regime for the first time. We also compute the finite-key security of the protocol for general attacks, showing that approximately 1E8 to 1E10 measurement rounds are needed to achieve positive rates using state-of-the-art experimental parameters. Our proposed DIQKD protocol thus represents a highly promising path towards the first realisation of DIQKD in practice.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-06T09:57:47Z</published>
+    <arxiv:comment>22 pages;Main article (10 pages); Supplementary Information (12 pages)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nat Commun 12, 2880 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Rene Schwonnek</name>
+    </author>
+    <author>
+      <name>Koon Tong Goh</name>
+    </author>
+    <author>
+      <name>Ignatius W. Primaatmaja</name>
+    </author>
+    <author>
+      <name>Ernest Y. -Z. Tan</name>
+    </author>
+    <author>
+      <name>Ramona Wolf</name>
+    </author>
+    <author>
+      <name>Valerio Scarani</name>
+    </author>
+    <author>
+      <name>Charles C. -W. Lim</name>
+    </author>
+    <arxiv:doi>10.1038/s41467-021-23147-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41467-021-23147-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.00124v3</id>
+    <title>Quantum Random Number Generator based on Violations of the Free CHSH-3 Inequality</title>
+    <updated>2020-07-30T09:40:57Z</updated>
+    <link href="https://arxiv.org/abs/2003.00124v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2003.00124v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe a protocol for generating random numbers based on the existence of quantum violations of a free Clauser-Horne-Shimony-Holt inequality, namely CHSH-3. Our method uses semidefinite programming relaxations to compute such violations. In a standard setting the CHSH-3 inequality involves two separated qutrits and compatible measurement, that is, commuting with each other, yielding the known quantum bound of $1+\sqrt{11/3} \approx 2.9149$. In our framework, $d$-dimensional quantum systems (qudits) where $d$ is not fixed a priori, and measurement operators possibly not compatible, are allowed. This loss of constraints yields a higher value for the maximum expectation of the CHSH-3 inequality. Based on such upper bound on the violation of CHSH-3, we develop a random number generator of type prepare-and-measure, but with one part. Our protocol generates a maximal entropy and its security is based, through self testing arguments, on the attainability of the maximal violation of the free CHSH-3 for quantum systems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-28T23:47:05Z</published>
+    <arxiv:comment>11 pages, 1 figure ; it replaces the preprint "Maximal violations of CHSH-3 inequality" of the same authors</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Don Jean Baptiste Anoman</name>
+    </author>
+    <author>
+      <name>François Arnault</name>
+    </author>
+    <author>
+      <name>Simone Naldi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1904.06179v2</id>
+    <title>Heralded amplification of nonlocality via entanglement swapping for long-distance device-independent quantum key distribution</title>
+    <updated>2019-05-07T08:38:57Z</updated>
+    <link href="https://arxiv.org/abs/1904.06179v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1904.06179v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To realize the practical implementation of device-independent quantum key distribution~(DIQKD), the main difficulty is that its security relies on the detection-loophole-free violation of the Clauser-Horne-Shimony-Holt~(CHSH) inequality, i.e. the CHSH value $S&gt;2$, which is easily destroyed by the loss in transmission channels. One of the simplest methods to circumvent it is to utilize the entanglement swapping relay~(ESR). Here, we propose and experimentally test an improved version of the heralded nonlocality amplifier protocol based on the ESR, and numerically show that our scheme is much more robust against the transmission loss than the previously developed protocol. In the experiment, we observe that the obtained probability distribution is in excellent agreement with those expected by the numerical simulation with experimental parameters which are precisely characterized in a separate measurement. Moreover, we experimentally estimate the nonlocality of the heralded state after the transmission of 10~dB loss just before detection. It is estimated to be $S=2.104&gt;2$, which indicates that our final state possesses strong nonlocality even with various experimental imperfections. Our result clarifies an important benchmark of the ESR protocol, and paves the way towards the long-distance realization of the loophole-free CHSH-violation as well as DIQKD.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-04-12T12:15:06Z</published>
+    <arxiv:comment>typos corrected</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>New Journal of Physics 22, 023008 (2020)</arxiv:journal_ref>
+    <author>
+      <name>Yoshiaki Tsujimoto</name>
+    </author>
+    <author>
+      <name>Chenglong You</name>
+    </author>
+    <author>
+      <name>Kentaro Wakui</name>
+    </author>
+    <author>
+      <name>Mikio Fujiwara</name>
+    </author>
+    <author>
+      <name>Kazuhiro Hayasaka</name>
+    </author>
+    <author>
+      <name>Shigehito Miki</name>
+    </author>
+    <author>
+      <name>Hirotaka Terai</name>
+    </author>
+    <author>
+      <name>Masahide Sasaki</name>
+    </author>
+    <author>
+      <name>Jonathan P. Dowling</name>
+    </author>
+    <author>
+      <name>Masahiro Takeoka</name>
+    </author>
+    <arxiv:doi>10.1088/1367-2630/ab61da</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1367-2630/ab61da" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1809.01307v2</id>
+    <title>Relaxed Bell Inequalities with Arbitrary Measurement Dependence for Each Observer</title>
+    <updated>2019-01-24T15:48:18Z</updated>
+    <link href="https://arxiv.org/abs/1809.01307v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1809.01307v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's inequality was originally derived under the assumption that experimenters are free to select detector settings independently of any local "hidden variables" that might affect the outcomes of measurements on entangled particles. This assumption has come to be known as "measurement independence" (also referred to as "freedom of choice" or "settings independence"). For a two-setting, two-outcome Bell test, we derive modified Bell inequalities that relax measurement independence, for either or both observers, while remaining locally causal. We describe the loss of measurement independence for each observer using the parameters $M_1$ and $M_2$, as defined by Hall in 2010, and also by a more complete description that adds two new parameters, which we call $\hat{M}_1$ and $\hat{M}_2$, deriving a modified Bell inequality for each description. These "relaxed" inequalities subsume those considered in previous work as special cases, and quantify how much the assumption of measurement independence needs to be relaxed in order for a locally causal model to produce a given violation of the standard Bell-Clauser-Horne-Shimony-Holt (Bell-CHSH) inequality. We show that both relaxed Bell inequalities are tight bounds on the CHSH parameter by constructing locally causal models that saturate them. For any given Bell inequality violation, the new two-parameter and four-parameter models each require significantly less mutual information between the hidden variables and measurement settings than previous models. We conjecture that the new models, with optimal parameters, require the minimum possible mutual information for a given Bell violation. We further argue that, contrary to various claims in the literature, relaxing freedom of choice need not imply superdeterminism.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-09-05T03:20:50Z</published>
+    <arxiv:comment>26pp, 7 figures. Minor edits to match published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 99, 012121 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Andrew S. Friedman</name>
+    </author>
+    <author>
+      <name>Alan H. Guth</name>
+    </author>
+    <author>
+      <name>Michael J. W. Hall</name>
+    </author>
+    <author>
+      <name>David I. Kaiser</name>
+    </author>
+    <author>
+      <name>Jason Gallicchio</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.99.012121</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.99.012121" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1710.03950v3</id>
+    <title>CHSH inequality test via disturbance-free measurement</title>
+    <updated>2018-08-02T01:43:33Z</updated>
+    <link href="https://arxiv.org/abs/1710.03950v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1710.03950v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose disturbance-free measurement using a "weak-value" scheme, in which a weakly measured quantum system is post-selected (to the initial state) to confirm that there is no disturbance. The probability of obtaining the non-disturbed state is asymptotically close to unity. We theoretically show that outcomes of the disturbance-free measurement for a two-qubit state satisfy the Clauser--Horne--Shimony--Holt inequality. We experimentally demonstrate the test for a typical (maximally entangled) two-qubit state based on a linear optical system. In experiments, polarization-entangled photon-pairs generated by the spontaneous parametric down-conversion process are measured by instruments such as strength-variable polarization-measurement apparatuses and a fiber-based Bell state analyzer.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-10-11T07:53:18Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum Science and Technology, Volume 3, Number 4, 045006 (2018)</arxiv:journal_ref>
+    <author>
+      <name>Sang Min Lee</name>
+    </author>
+    <author>
+      <name>Minsu Kim</name>
+    </author>
+    <author>
+      <name>Heonoh Kim</name>
+    </author>
+    <author>
+      <name>Han Seb Moon</name>
+    </author>
+    <author>
+      <name>Sang Wook Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1706.06596v2</id>
+    <title>Tight Bounds for the Pearle-Braunstein-Caves Chained Inequality Without the Fair-Coincidence Assumption</title>
+    <updated>2017-07-17T09:30:05Z</updated>
+    <link href="https://arxiv.org/abs/1706.06596v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.06596v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In any Bell test, loopholes can cause issues in the interpretation of the results, since an apparent violation of the inequality may not correspond to a violation of local realism. An important example is the coincidence-time loophole that arises when detector settings might influence the time when detection will occur. This effect can be observed in many experiments where measurement outcomes are to be compared between remote stations because the interpretation of an ostensible Bell violation strongly depends on the method used to decide coincidence. The coincidence-time loophole has previously been studied for the Clauser-Horne-Shimony-Holt (CHSH) and Clauser-Horne (CH) inequalities, but recent experiments have shown the need for a generalization. Here, we study the generalized "chained" inequality by Pearle-Braunstein-Caves (PBC) with two or more settings per observer. This inequality has applications in, for instance, Quantum Key Distribution where it has been used to re-establish security. In this paper we give the minimum coincidence probability for the PBC inequality for all N and show that this bound is tight for a violation free of the fair-coincidence assumption. Thus, if an experiment has a coincidence probability exceeding the critical value derived here, the coincidence-time loophole is eliminated.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-20T18:00:03Z</published>
+    <arxiv:comment>7 pages, 2 figures, minor corrections</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 96, 022102 (2017)</arxiv:journal_ref>
+    <author>
+      <name>Jonathan Jogenfors</name>
+    </author>
+    <author>
+      <name>Jan-Åke Larsson</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.96.022102</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.96.022102" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1704.02876v14</id>
+    <title>Oversights in the Respective Theorems of von Neumann and Bell are Homologous</title>
+    <updated>2020-11-25T16:51:53Z</updated>
+    <link href="https://arxiv.org/abs/1704.02876v14" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1704.02876v14" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show that the respective oversights in the von Neumann's general theorem against all hidden variable theories and Bell's theorem against their local-realistic counterparts are homologous. Both theorems unjustifiably assume the additivity of expectation values within hidden variable theories to derive their respective conclusions. However, for non-commuting observables, the equivalence of a sum of expectation values and the expectation value of the sum of measurement results, although respected within quantum mechanics, need not hold for hidden variable theories, regardless of specific characteristics such as local realism they may respect. Once this oversight is ameliorated from Bell's argument and local realism is implemented correctly, the bounds on the CHSH correlator work out to be ${\pm2\sqrt{2}}$ instead of ${\pm2}$, thereby mitigating the conclusion of Bell's theorem. Consequently, what is ruled out by the Bell-test experiments is not local realism but the additivity of expectation values.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-04-03T09:48:31Z</published>
+    <arxiv:comment>14 pages; No figures; The correct local-realistic bounds of $-2\sqrt{2}$ and $+2\sqrt{2}$ on the CHSH correlator are derived in Section V within a dispersion-free setting</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <author>
+      <name>Joy Christian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1607.01797v3</id>
+    <title>Simple and tight device-independent security proofs</title>
+    <updated>2019-03-26T23:11:57Z</updated>
+    <link href="https://arxiv.org/abs/1607.01797v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1607.01797v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Device-independent security is the gold standard for quantum cryptography: not only is security based entirely on the laws of quantum mechanics, but it holds irrespective of any a priori assumptions on the quantum devices used in a protocol, making it particularly applicable in a quantum-wary environment. While the existence of device-independent protocols for tasks such as randomness expansion and quantum key distribution has recently been established, the underlying proofs of security remain very challenging, yield rather poor key rates, and demand very high-quality quantum devices, thus making them all but impossible to implement in practice.
+  We introduce a technique for the analysis of device-independent cryptographic protocols. We provide a flexible protocol and give a security proof that provides quantitative bounds that are asymptotically tight, even in the presence of general quantum adversaries. At a high level our approach amounts to establishing a reduction to the scenario in which the untrusted device operates in an identical and independent way in each round of the protocol. This is achieved by leveraging the sequential nature of the protocol, and makes use of a newly developed tool, the "entropy accumulation theorem" of Dupuis et al.
+  As concrete applications we give simple and modular security proofs for device-independent quantum key distribution and randomness expansion protocols based on the CHSH inequality. For both tasks we establish essentially optimal asymptotic key rates and noise tolerance. In view of recent experimental progress, which has culminated in loophole-free Bell tests, it is likely that these protocols can be practically implemented in the near future.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-07-06T20:00:44Z</published>
+    <arxiv:comment>Published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>SIAM Journal on Computing 48.1 (2019): 181-225</arxiv:journal_ref>
+    <author>
+      <name>Rotem Arnon</name>
+    </author>
+    <author>
+      <name>Renato Renner</name>
+    </author>
+    <author>
+      <name>Thomas Vidick</name>
+    </author>
+    <arxiv:doi>10.1137/18M1174726</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1137/18M1174726" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1606.00784v3</id>
+    <title>Test of the no-signaling principle in the Hensen "loophole-free CHSH experiment"</title>
+    <updated>2017-04-14T19:46:00Z</updated>
+    <link href="https://arxiv.org/abs/1606.00784v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1606.00784v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We analyze the data from the loophole-free CHSH experiment performed by Hensen et al., and show that it is actually not exempt of an important loophole. By increasing the size of the sample of event-ready detections, one can exhibit in the experimental data a violation of the no-signaling principle with a statistical significance at least similar to that of the reported violation of the CHSH inequality, if not stronger.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-06-02T18:15:16Z</published>
+    <arxiv:comment>This version was updated on the basis of our talk at the conference "Quantum and Beyond", Växjö, Sweden, June 2016, and a few emails received from the readers of the first version of this arXiv, we improved statistical analysis and clarified essentially our point</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Fortschritte der Physik (Progress in Physics), 2017</arxiv:journal_ref>
+    <author>
+      <name>Guillaume Adenier</name>
+    </author>
+    <author>
+      <name>Andrei Yu. Khrennikov</name>
+    </author>
+    <arxiv:doi>10.1002/prop.201600096</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1002/prop.201600096" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1603.05705v2</id>
+    <title>Loophole-free Bell test using electron spins in diamond: second experiment and additional analysis</title>
+    <updated>2016-04-01T09:41:16Z</updated>
+    <link href="https://arxiv.org/abs/1603.05705v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1603.05705v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The recently reported violation of a Bell inequality using entangled electronic spins in diamonds (Hensen et al., Nature 526, 682-686) provided the first loophole-free evidence against local-realist theories of nature. Here we report on data from a second Bell experiment using the same experimental setup with minor modifications. We find a violation of the CHSH-Bell inequality of $2.35 \pm 0.18$, in agreement with the first run, yielding an overall value of $S = 2.38 \pm 0.14$. We calculate the resulting $P$-values of the second experiment and of the combined Bell tests. We provide an additional analysis of the distribution of settings choices recorded during the two tests, finding that the observed distributions are consistent with uniform settings for both tests. Finally, we analytically study the effect of particular models of random number generator (RNG) imperfection on our hypothesis test. We find that the winning probability per trial in the CHSH game can be bounded knowing only the mean of the RNG bias, implying that our experimental result is robust for any model underlying the estimated average RNG bias.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-03-17T22:00:06Z</published>
+    <arxiv:comment>Open dataset will be made available online at http://dx.doi.org/10.4121/uuid:53644d31-d862-4f9f-9ad2-0b571874b829</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>B. Hensen</name>
+    </author>
+    <author>
+      <name>N. Kalb</name>
+    </author>
+    <author>
+      <name>M. S. Blok</name>
+    </author>
+    <author>
+      <name>A. Dréau</name>
+    </author>
+    <author>
+      <name>A. Reiserer</name>
+    </author>
+    <author>
+      <name>R. F. L. Vermeulen</name>
+    </author>
+    <author>
+      <name>R. N. Schouten</name>
+    </author>
+    <author>
+      <name>M. Markham</name>
+    </author>
+    <author>
+      <name>D. J. Twitchen</name>
+    </author>
+    <author>
+      <name>K. Goodenough</name>
+    </author>
+    <author>
+      <name>D. Elkouss</name>
+    </author>
+    <author>
+      <name>S. Wehner</name>
+    </author>
+    <author>
+      <name>T. H. Taminiau</name>
+    </author>
+    <author>
+      <name>R. Hanson</name>
+    </author>
+    <arxiv:doi>10.1038/srep30289</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/srep30289" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1512.00223v3</id>
+    <title>Random and free observables saturate the Tsirelson bound for CHSH inequality</title>
+    <updated>2017-03-02T17:21:00Z</updated>
+    <link href="https://arxiv.org/abs/1512.00223v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1512.00223v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Maximal violation of the CHSH-Bell inequality is usually said to be a feature of anticommuting observables. In this work we show that even random observables exhibit near-maximal violations of the CHSH-Bell inequality. To do this, we use the tools of free probability theory to analyze the commutators of large random matrices. Along the way, we introduce the notion of "free observables" which can be thought of as infinite-dimensional operators that reproduce the statistics of random matrices as their dimension tends towards infinity. We also study the fine-grained uncertainty of a sequence of free or random observables, and use this to construct a steering inequality with a large violation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-12-01T11:01:09Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 95, 032101 (2017)</arxiv:journal_ref>
+    <author>
+      <name>Z. Yin</name>
+    </author>
+    <author>
+      <name>A. W. Harrow</name>
+    </author>
+    <author>
+      <name>M. Horodecki</name>
+    </author>
+    <author>
+      <name>M. Marciniak</name>
+    </author>
+    <author>
+      <name>A. Rutkowski</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.95.032101</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.95.032101" title="doi"/>
+  </entry>
+</feed>

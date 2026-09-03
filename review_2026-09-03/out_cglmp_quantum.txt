@@ -1,0 +1,4 @@
+Bob sign +1: max-entangled I3 = 0.000000   ADGL gamma=0.79229: I3 = 0.000000
+Bob sign -1: max-entangled I3 = 2.872934   ADGL gamma=0.79229: I3 = 2.914854
+  -> reproduces CGLMP's T = 2.872934; ADGL value 1+sqrt(11/3) = 2.914854; F*(N>=4) would be 0.114357 instead of 0.109117
+  scan over gamma: max I3 = 2.914854 at gamma = 0.7923

@@ -1,0 +1,19 @@
+=== TASK 1: cap/bend region cross-check ===
+LP route: phase2.exact_Smax, Pool(nproc=96), HiGHS; PASS tol |diff|<=1e-5
+
+--- Part A: N=5 LP evaluations at bend-region F (exact: 16/5+2F on [1/5,2/5]) ---
+F=0.20   LP Smax=3.600000000   exact=3.600000000   |diff|=1.776e-15   PASS   (runtime 11.3s)
+F=0.25   LP Smax=3.700000000   exact=3.700000000   |diff|=1.776e-15   PASS   (runtime 11.6s)
+F=0.30   LP Smax=3.800000000   exact=3.800000000   |diff|=1.776e-15   PASS   (runtime 11.8s)
+
+--- Part B: cap points by explicit construction (S=4, per-row TV = n_ab/N <= F) ---
+N=5 F=0.400000: S=4.000000000000  per-row TV=['0.400000000', '0.200000000', '0.200000000', '0.200000000']  n_ab/N=['2.0/5', '1.0/5', '1.0/5', '1.0/5']  rows-sum-1=True
+   construction gives S=4 (=> S_max>=4) and S<=4 trivial => S_max(5,0.400000)=4 exactly: PASS
+N=6 F=0.333333: S=4.000000000000  per-row TV=['0.333333333', '0.333333333', '0.166666667', '0.166666667']  n_ab/N=['2.0/6', '2.0/6', '1.0/6', '1.0/6']  rows-sum-1=True
+   construction gives S=4 (=> S_max>=4) and S<=4 trivial => S_max(6,0.333333)=4 exactly: PASS
+
+--- Part C (optional): N=6 at F=0.2, exact = 8/3+4*0.2 = 3.4666667 ---
+median N=5 eval runtime = 11.6s -> estimated N=6 runtime ~ 3.7 min (threshold 30 min)
+F=0.2   LP Smax=3.466666667   exact=3.466666667   |diff|=0.000e+00   PASS   (runtime 191.8s)
+
+OVERALL TASK 1: PASS

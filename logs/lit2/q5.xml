@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/+2nvQvUV8h+wKlrBka6BIv8QY8s</id>
+  <title>arXiv Query: search_query=all:"measurement independence" AND all:"CHSH"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-30T03:29:02Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22measurement+independence%22+AND+all:%22CHSH%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>19</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.18238v4</id>
+    <title>Ontic Dynamical Locality Reduces to Bell Locality</title>
+    <updated>2026-05-25T17:31:23Z</updated>
+    <link href="https://arxiv.org/abs/2604.18238v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.18238v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell inequalities exclude a broad class of local hidden-variable explanations of quantum correlations. A recurring objection is that the usual Bell form is static, whereas real measuring devices may contain local memory, stochastic dynamics, and measurement-induced disturbances of their hidden variables. We formulate this objection as a general transition-kernel model for dynamical hidden variables. The only locality assumption is imposed at the ontic level: conditional on the pre-measurement ontic state, the transition kernel and response function in each wing depend on the local setting but not on the distant setting or on distant post-measurement variables. Under measurement independence, all such dynamics can be absorbed into effective local response functions. The resulting probabilities have exactly the static Bell-local form and therefore obey the CHSH inequality. The result identifies the available escape routes for reproducing quantum correlations: violating ontic dynamical locality, violating measurement independence, or abandoning a classical hidden-variable ontology. As a consequence, local classical dynamical complexity cannot by itself spoof Bell-nonlocal statistics in device-independent protocols.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-20T13:23:09Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ming Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.08290v1</id>
+    <title>A Preparation Nonstationarity Loophole in Superconducting-Qubit Bell Tests</title>
+    <updated>2026-01-13T07:31:00Z</updated>
+    <link href="https://arxiv.org/abs/2601.08290v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.08290v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell or Clauser-Horne-Shimony-Holt (CHSH) tests on superconducting quantum processors are commonly interpreted under the assumption that repeated circuit executions sample a single, stationary preparation ensemble. Here we show that this assumption can be violated on contemporary hardware, with direct implications for the interpretation of observed Bell violations. We introduce an ensemble-divergence framework in which slow temporal drift of the preparation process induces context-dependent effective ensembles, even when measurement independence and locality are preserved. This leads to a relaxed Bell bound $|S| \le 2 + 6δ_{\mathrm{ens}}$, where $δ_{\mathrm{ens}}$ quantifies preparation nonstationarity. Because $δ_{\mathrm{ens}}$ is not directly observable, we develop an operational witness $δ_{\mathrm{op}}$ based on bin-resolved outcome statistics for fixed measurement channels. Using Pauli-axis measurements on IBM superconducting processors, we observe statistically significant operational drift that persists after full two-qubit readout mitigation, ruling out measurement artifacts. In contrast, drift extracted from CHSH-optimal measurements is eliminated by mitigation, demonstrating that such settings are unsuitable for diagnosing preparation nonstationarity. We further show that the observed Bell violations imply only modest ensemble divergences, comparable in scale to those required in Hall-type measurement-dependence models, but arising here solely from preparation drift combined with experimental scheduling. Our results identify a preparation-dependent loophole relevant to Bell tests on noisy intermediate-scale quantum devices and highlight the necessity of drift-aware protocols for reliable quantum certification.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-13T07:31:00Z</published>
+    <arxiv:comment>10+pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Prosanta Pal</name>
+    </author>
+    <author>
+      <name>Shubhanshu Karoliya</name>
+    </author>
+    <author>
+      <name>Gargee Sharma</name>
+    </author>
+    <author>
+      <name>Ramakrishna Podila</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.07867v2</id>
+    <title>Possible Vulnerability of Bell-Clauser-Horne-Shimony-Holt Tests used for Quantum Certification</title>
+    <updated>2026-01-18T17:20:57Z</updated>
+    <link href="https://arxiv.org/abs/2601.07867v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.07867v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A hidden variables (HVs) model is reported, which reproduces quantum predictions for Bell-Clauser-Horne-Shimony-Holt (Bell-CHSH) tests. The existence of such a model poses some limitations to quantum certifications that rely on Bell-CHSH inequality violations. The reported model does not prove wrong Bell's theorem. The latter assumes the factorability of the probability density $p_{AB}$, which rules the stochastic behavior of the HVs. The reported HVs model is based on an extended form of $p_{AB}$, which is suggested by Lebesgue's decomposition theorem for bounded functions. The considered $p_{AB}$ complies with locality and realism, and also with measurement independence, parameter independence and outcome independence.</summary>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-10T18:00:44Z</published>
+    <arxiv:comment>10 pages, 1 figure; typos after Eq.(8) corrected</arxiv:comment>
+    <arxiv:primary_category term="physics.gen-ph"/>
+    <arxiv:journal_ref>Annalen der Physik 538 (1) e00437, 2026</arxiv:journal_ref>
+    <author>
+      <name>F. De Zela</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.18513v1</id>
+    <title>Quantum Nonlocality and Device-Independent Randomness Robust to Relaxations of Bell Assumptions</title>
+    <updated>2025-12-20T21:20:18Z</updated>
+    <link href="https://arxiv.org/abs/2512.18513v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.18513v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The question of certifying quantum nonlocality under a relaxation of the assumptions in the Bell theorem has gained traction, with potential for device-independent applications under weak seeds and cross-talk. Recently, it was shown that quantum nonlocality can be certified even under a simultaneous arbitrary (but not full) relaxation of the assumptions of Measurement Independence (MI) and Parameter Independence (PI), using states of local dimension $d = poly((1-ε)^{-1})$ for an $ε\in [0,1)$-relaxation. Here, we derive three results strengthening the state-of-art. Firstly, we show that states of constant local dimension $d$ are already sufficient to certify quantum nonlocality under arbitrary MI and PI relaxation, albeit in a non-robust manner. Secondly, and as a theoretical paradigm to derive the above, we introduce the notion of \textit{measurement-dependent parameter-dependent locality} as the set of input-output behaviors under simultaneous relaxations of measurement and parameter independence. We provide a rigorous characterisation of the vertices of the polytope of joint input-output behaviors that obey a $μ$-relaxation of MI and $ε$-relaxation of PI. We highlight a relation between nonlocality certification under PI relaxation and that under detection inefficiencies by pointing out alternative extremal correlations to the Eberhard correlations that also allow to achieve detection efficiency of $η= 2/3$ in the two-input scenario. Finally, we study the implication of the relaxed assumptions for device-independent randomness certification. We analytically derive the quantum guessing probability for one player's outcomes in the CHSH Bell test, as a function of the noise in the test as well as of a leakage of an average amount of $I(X:B) &lt; 1$ bits of input information per measurement round.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-20T21:20:18Z</published>
+    <arxiv:comment>22 pages, 2 figures and 2 tables</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ravishankar Ramanathan</name>
+    </author>
+    <author>
+      <name>Yuan Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.17024v2</id>
+    <title>Subsystems (in)dependence in GIE proposals</title>
+    <updated>2025-12-22T06:31:55Z</updated>
+    <link href="https://arxiv.org/abs/2512.17024v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.17024v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent proposals suggest that detecting entanglement between two spatially superposed masses would establish the quantum nature of gravity. However, these gravitationally induced entanglement (GIE) experiments rely on assumptions about subsystem independence. We sharpen the theoretical underpinnings of such proposals by examining them through the lens of algebraic quantum field theory (AQFT), distinguishing distinct operational and algebraic notions of independence. We argue that state and measurement independence of subsystems, essential to the experimental logic, is nontrivial in the presence of gauge constraints and gravitational dressing. Using gravitationally dressed fields, we recall that commutation relations between spacelike separated observables are nontrivial, undermining strict Hilbert space factorization. We further explore the implications for entanglement witnesses, investigating the Tsirelson bound when subsystem algebras fail to commute, and showing that the Tsirelson bound persists for a suitably symmetrized CHSH observable even though the operational status of such "joint" observables becomes delicate when commensurability fails. Our analysis highlights how even within linearized covariant quantum gravity, violations of microcausality may affect both the interpretation, modelling, and design of proposed laboratory tests of quantum gravity, despite remaining negligible for current experimental regimes. Although we consider GIE-style protocols as a concrete case study, the subsystem-independence issues we highlight are generic to low-energy (perturbative) quantum gravity. Finally, we derive estimates for dressing-induced microcausality violations, which suggest a complementary avenue to current proposals: in principle, bounding dressing-induced microcausality violations themselves as a probe of the quantum nature of gravity.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-18T19:39:19Z</published>
+    <arxiv:comment>Minor revisions and references added. Comments are very welcome!</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. D 114, 025015 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Nicolas Boulle</name>
+    </author>
+    <author>
+      <name>Guilherme Franzmann</name>
+    </author>
+    <arxiv:doi>10.1103/tgjx-y7hl</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/tgjx-y7hl" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.11476v1</id>
+    <title>Bell, Spinors, and the Impossibility of a Classical Spin-Vector Model</title>
+    <updated>2025-12-12T11:20:01Z</updated>
+    <link href="https://arxiv.org/abs/2512.11476v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.11476v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We revisit the Bell--CHSH scenario for two spin-\(\tfrac{1}{2}\) particles and isolate the precise algebraic origin of the Bell contradiction. On the quantum side, spin-\(\tfrac{1}{2}\) is described by a noncommutative spinor (Clifford) algebra acting on the Hilbert space of two spin-\(\tfrac{1}{2}\) particles, with the singlet state yielding the usual correlation \(E(a,b) = -\,a\cdot b\) and Tsirelson's bound \(2\sqrt{2}\). On the classical side, the standard Bell assumptions amount to describing all measurement outcomes as \(\{\pm1\}\)-valued random variables on a single Kolmogorov probability space, i.e.\ elements of a commutative algebra \(\mathcal{C}(Λ)\).
+  We show that there is no representation of the spinor algebra of spin-\(\tfrac{1}{2}\) (with its singlet state and locality structure) into any such commutative Kolmogorov algebra that preserves the \(\{\pm1\}\) spectra of local spin components and the singlet correlations entering the CHSH expression, under the standard Bell assumptions of locality (factorization) and measurement independence. In this sense, the Bell--CHSH contradiction is exhibited as an algebraic mismatch between a noncommutative spinor/Clifford description of spin and the classical assumption of a single global Kolmogorov space supporting all outcomes. In the language of quantum probability, this is a C\(^*\)-algebraic reformulation of the known fact that the singlet correlations admit no local hidden-variable model with jointly distributed outcomes on one probability space.
+  We also give an explicit realization of the same spinor structure within the author's Quantum Index Algebra (QIA) framework, where locality appears as disjoint index slots and the singlet state as a simple index cocycle.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-12T11:20:01Z</published>
+    <arxiv:comment>15 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>G. A. Koroteev</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.00725v2</id>
+    <title>Quantum Nonlocality: how does Nature do it?</title>
+    <updated>2024-02-27T23:00:20Z</updated>
+    <link href="https://arxiv.org/abs/2402.00725v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.00725v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In his article in Science, Nicolas Gisin claimed that quantum correlations emerge from outside space time. We explain that they are due to space time symmetries. This paper is a critical review of metaphysical conclusions found in many recent articles. It advocates the importance of contextuality, Einstein causality and global symmetries. Bell tests allow only rejecting probabilistic coupling provided by a local hidden variable model, but they do not justify metaphysical speculations about quantum nonlocality and objects which know about each other state, even when separated by large distances. The violation of Bell inequalities in physics and in cognitive science can be explained using the notion of Bohr contextuality. If contextual variables, describing varying experimental contexts, are correctly incorporated into a probabilistic model, then the Bell and CHSH inequalities cannot be proven and nonlocal correlations may be explained in an intuitive way. We also elucidate the meaning of statistical independence assumption incorrectly called free choice, measurement independence or no conspiracy. Since correlation does not imply causation, the violation of statistical independence should be called contextuality and it does not restrict the experimenter freedom of choice. Therefore, contrary to what is believed, closing the freedom of choice loophole does not close the contextuality loophole.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-01T16:16:10Z</published>
+    <arxiv:comment>17 pages, 97 references</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Entropy 2024, 26, 191</arxiv:journal_ref>
+    <author>
+      <name>Marian Kupczynski</name>
+    </author>
+    <arxiv:doi>10.3390/e26030191</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e26030191" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.13634v4</id>
+    <title>Trade-off relations between measurement dependence and hidden information for factorizable hidden variable models</title>
+    <updated>2025-03-17T03:17:59Z</updated>
+    <link href="https://arxiv.org/abs/2208.13634v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.13634v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Bell theorem is explored in terms of a trade-off relation between underlying assumptions within the hidden variable model framework. In this paper, recognizing the incorporation of hidden variables as one of the fundamental assumptions, we propose a measure termed `hidden information' taking account of their distribution. This measure quantifies the number of hidden variables that essentially contribute to the empirical statistics. For factorizable models, hidden variable models that satisfy `locality' without adhering to the measurement independence criterion, we derive novel relaxed Bell-Clauser-Horne-Shimony-Holt (Bell-CHSH) inequalities. These inequalities elucidate trade-off relations between measurement dependence and hidden information in the CHSH scenario. It is also revealed that the relation gives a necessary and sufficient condition for the measures to be realized by a factorizable model.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-29T14:32:06Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1662 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Ryo Takakura</name>
+    </author>
+    <author>
+      <name>Kei Morisue</name>
+    </author>
+    <author>
+      <name>Issei Watanabe</name>
+    </author>
+    <author>
+      <name>Gen Kimura</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-03-14-1662</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-03-14-1662" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2206.06196v3</id>
+    <title>Relaxed Bell inequalities as a trade-off relation between measurement dependence and hiddenness</title>
+    <updated>2023-05-28T07:41:08Z</updated>
+    <link href="https://arxiv.org/abs/2206.06196v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2206.06196v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum correlations that violate the Bell inequality cannot be explained by any (measurement independent) local hidden variable theory. However, the violation only implies incompatibility of the underlying assumptions of reality, locality, and measurement independence, and does not address the extent to which each assumption is violated quantitatively. In contrast, Hall (2010,2011) gave a quantification of each assumption and generalized the Bell-CHSH inequality that gives a trade-off relationship between the underlying assumptions. In this paper, we introduce a quantification of hidden variables (hiddenness) and derive a new trade-off relation between the hiddenness and the measurement dependency that holds for any local hidden variable theory.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-06-13T14:29:30Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 108, 022214 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Gen Kimura</name>
+    </author>
+    <author>
+      <name>Yugo Susuki</name>
+    </author>
+    <author>
+      <name>Kei Morisue</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.108.022214</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.108.022214" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.09639v4</id>
+    <title>Contextuality or nonlocality; what would John Bell choose today?</title>
+    <updated>2023-02-03T13:05:54Z</updated>
+    <link href="https://arxiv.org/abs/2202.09639v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.09639v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A violation of Bell-CHSH inequalities does not justify speculations about quantum non-locality, conspiracy and retro-causation. Such speculations are rooted in a belief that setting dependence of hidden variables in a probabilistic model, called a violation of measurement independence, would mean a violation of experimenters freedom of choice. This belief is unfounded because it is based on a questionable use of Bayes Theorem and on incorrect causal interpretation of conditional probabilities. In Bell-local realistic model, hidden variables describe only photonic beams created by a source, thus they cannot depend on randomly chosen experimental settings. However, if hidden variables describing measuring instruments are correctly incorporated into a contextual probabilistic model a violation of inequalities and an apparent violation of no-signaling reported in Bell tests can be explained without evoking quantum nonlocality. Therefore, for us, a violation of Bell-CHSH inequalities proves only that hidden variables have to depend on settings confirming contextual character of quantum observables and an active role played by measuring instruments. Bell thought that he had to choose between nonlocality and the violation of experimenters freedom of choice. From two bad choices he chose nonlocality. Today he would probably choose the violation of statistical independence understood as contextuality.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-19T16:50:07Z</published>
+    <arxiv:comment>11 pages of text + 110 references , This is a substantially extended and revised final version of this article which has been just published in Entropy. It replaces also the first version of this articlewhich had a different title: A comment on Bell's Theorem Logical Consistency</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Entropy 2023, 25, 280</arxiv:journal_ref>
+    <author>
+      <name>Marian Kupczynski</name>
+    </author>
+    <arxiv:doi>10.3390/e25020280</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e25020280" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2102.06920v2</id>
+    <title>Parameter Dependence and Bell nonlocality</title>
+    <updated>2021-08-26T23:34:34Z</updated>
+    <link href="https://arxiv.org/abs/2102.06920v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2102.06920v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's theorem asserts that no model that satisfies all of the plausible physical assumptions of outcome independence (OI), measurement independence (MI) and Parameter Independence (PI) can reproduce quantum mechanics. Here I find the optimum model that saturates CHSH inequality for the case that outcome independence and measurement independence hold but parameter dependence is allowed. I find the bound as a function of a measure of parameter dependence and show that the model proposed by [New Journal of Physics,12(8):083051] is optimal for one-way parameter dependence. The symbolic optimizations to find the saturating models are performed using the open source software Analytical Optimizer v1.0.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-02-13T12:45:27Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 104, 032205 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Moji Ghadimi</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.104.032205</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.104.032205" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2007.11903v1</id>
+    <title>Measurement-dependence cost for Bell nonlocality: causal vs retrocausal models</title>
+    <updated>2020-07-23T10:16:44Z</updated>
+    <link href="https://arxiv.org/abs/2007.11903v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2007.11903v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Device independent protocols based on Bell nonlocality, such as quantum key distribution and randomness generation, must ensure no adversary can have prior knowledge of the measurement outcomes. This requires a measurement independence assumption: that the choice of measurement is uncorrelated with any other underlying variables that influence the measurement outcomes. Conversely, relaxing measurement independence allows for a fully `causal' simulation of Bell nonlocality. We construct the most efficient such simulation, as measured by the mutual information between the underlying variables and the measurement settings, for the Clauser-Horne-Shimony-Holt (CHSH) scenario, and find that the maximal quantum violation requires a mutual information of just $\sim 0.080$ bits. Any physical device built to implement this simulation allows an adversary to have full knowledge of a cryptographic key or `random' numbers generated by a device independent protocol based on violation of the CHSH inequality. We also show that a previous model for the CHSH scenario, requiring only $\sim 0.046$ bits to simulate the maximal quantum violation, corresponds to the most efficient `retrocausal' simulation, in which future measurement settings necessarily influence earlier source variables. This may be viewed either as an unphysical limitation of the prior model, or as an argument for retrocausality on the grounds of its greater efficiency. Causal and retrocausal models are also discussed for maximally entangled two-qubit states, as well as superdeterministic, one-sided and zigzag causal models.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-07-23T10:16:44Z</published>
+    <arxiv:comment>16 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 102, 052228 (2020)</arxiv:journal_ref>
+    <author>
+      <name>Michael J. W. Hall</name>
+    </author>
+    <author>
+      <name>Cyril Branciard</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.102.052228</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.102.052228" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1809.01307v2</id>
+    <title>Relaxed Bell Inequalities with Arbitrary Measurement Dependence for Each Observer</title>
+    <updated>2019-01-24T15:48:18Z</updated>
+    <link href="https://arxiv.org/abs/1809.01307v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1809.01307v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's inequality was originally derived under the assumption that experimenters are free to select detector settings independently of any local "hidden variables" that might affect the outcomes of measurements on entangled particles. This assumption has come to be known as "measurement independence" (also referred to as "freedom of choice" or "settings independence"). For a two-setting, two-outcome Bell test, we derive modified Bell inequalities that relax measurement independence, for either or both observers, while remaining locally causal. We describe the loss of measurement independence for each observer using the parameters $M_1$ and $M_2$, as defined by Hall in 2010, and also by a more complete description that adds two new parameters, which we call $\hat{M}_1$ and $\hat{M}_2$, deriving a modified Bell inequality for each description. These "relaxed" inequalities subsume those considered in previous work as special cases, and quantify how much the assumption of measurement independence needs to be relaxed in order for a locally causal model to produce a given violation of the standard Bell-Clauser-Horne-Shimony-Holt (Bell-CHSH) inequality. We show that both relaxed Bell inequalities are tight bounds on the CHSH parameter by constructing locally causal models that saturate them. For any given Bell inequality violation, the new two-parameter and four-parameter models each require significantly less mutual information between the hidden variables and measurement settings than previous models. We conjecture that the new models, with optimal parameters, require the minimum possible mutual information for a given Bell violation. We further argue that, contrary to various claims in the literature, relaxing freedom of choice need not imply superdeterminism.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-09-05T03:20:50Z</published>
+    <arxiv:comment>26pp, 7 figures. Minor edits to match published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 99, 012121 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Andrew S. Friedman</name>
+    </author>
+    <author>
+      <name>Alan H. Guth</name>
+    </author>
+    <author>
+      <name>Michael J. W. Hall</name>
+    </author>
+    <author>
+      <name>David I. Kaiser</name>
+    </author>
+    <author>
+      <name>Jason Gallicchio</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.99.012121</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.99.012121" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1807.05375v3</id>
+    <title>Experimental demonstration of nonbilocality with truly independent sources and strict locality constraints</title>
+    <updated>2018-12-11T09:58:57Z</updated>
+    <link href="https://arxiv.org/abs/1807.05375v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1807.05375v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Entanglement swapping entangles two particles that have never interacted[1], which implicitly assumes that each particle carries an independent local hidden variable, i.e., the presence of bilocality[2]. Previous experimental studies of bilocal hidden variable models did not fulfill the central requirement that the assumed two local hidden variable models must be mutually independent and hence their conclusions are flawed on the rejection of local realism[3-5]. By harnessing the laser phase randomization[6] rising from the spontaneous emission to the stimulated emission to ensure the independence between entangled photon-pairs created at separate sources and separating relevant events spacelike to satisfy the no-signaling condition, for the first time, we simultaneously close the loopholes of independent source, locality and measurement independence in an entanglement swapping experiment in a network. We measure a bilocal parameter of 1.181$\pm$0.004 and the CHSH game value of 2.652$\pm$0.059, indicating the rejection of bilocal hidden variable models by 45 standard deviations and local hidden variable models by 11 standard deviations. We hence rule out local realism and justify the presence of quantum nonlocality in our network experiment. Our experimental realization constitutes a fundamental block for a large quantum network. Furthermore, we anticipate that it may stimulate novel information processing applications[7,8].</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-07-14T10:34:12Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Qi-Chao Sun</name>
+    </author>
+    <author>
+      <name>Yang-Fan Jiang</name>
+    </author>
+    <author>
+      <name>Bing Bai</name>
+    </author>
+    <author>
+      <name>Weijun Zhang</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Xiao Jiang</name>
+    </author>
+    <author>
+      <name>Jun Zhang</name>
+    </author>
+    <author>
+      <name>Lixing You</name>
+    </author>
+    <author>
+      <name>Xianfeng Chen</name>
+    </author>
+    <author>
+      <name>Zhen Wang</name>
+    </author>
+    <author>
+      <name>Qiang Zhang</name>
+    </author>
+    <author>
+      <name>Jingyun Fan</name>
+    </author>
+    <author>
+      <name>Jian-Wei Pan</name>
+    </author>
+    <arxiv:doi>10.1038/s41566-019-0502-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41566-019-0502-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1504.08332v1</id>
+    <title>Demonstration of Quantum Nonlocality in presence of Measurement Dependence</title>
+    <updated>2015-04-30T18:31:54Z</updated>
+    <link href="https://arxiv.org/abs/1504.08332v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1504.08332v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum nonlocality stands as a resource for Device Independent Quantum Information Processing (DIQIP), as, for instance, Device Independent Quantum Key Distribution. We investigate experimentally the assumption of limited Measurement Dependence, i.e., that the measurement settings used in Bell inequality tests or DIQIP are partially influenced by the source of entangled particle and/or by an adversary. Using a recently derived Bell-like inequality [Phys. Rev. Lett. 113 190402] and a 99% fidelity source of partially entangled polarization photonic qubits, we obtain a clear violation of the inequality, excluding a much larger range of measurement dependent local models than would be possible with an adapted Clauser, Horne, Shimony and Holt (CHSH) inequality. It is therefore shown that the Measurement Independence assumption can be widely relaxed while still demonstrating quantum nonlocality.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-04-30T18:31:54Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 114, 220404 (2015)</arxiv:journal_ref>
+    <author>
+      <name>Djeylan Aktas</name>
+    </author>
+    <author>
+      <name>Sébastien Tanzilli</name>
+    </author>
+    <author>
+      <name>Anthony Martin</name>
+    </author>
+    <author>
+      <name>Gilles Pütz</name>
+    </author>
+    <author>
+      <name>Rob Thew</name>
+    </author>
+    <author>
+      <name>Nicolas Gisin</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.114.220404</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.114.220404" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1502.06972v1</id>
+    <title>Bell's Conspiracy, Schrödinger's Black Cat and Global Invariant Sets</title>
+    <updated>2015-02-24T21:00:23Z</updated>
+    <link href="https://arxiv.org/abs/1502.06972v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1502.06972v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A locally causal hidden-variable theory of quantum physics need not be constrained by the Bell inequalities if this theory also partially violates the measurement independence condition. However, such violation can appear unphysical, implying implausible conspiratorial correlations between the hidden-variables of particles being measured and earlier determinants of instrumental settings. A novel physically plausible explanation for such correlations is proposed, based on the hypothesis that states of physical reality lie precisely on a non-computational measure-zero dynamically invariant set in the state space of the universe: the Cosmological Invariant Set Postulate. To illustrate the relevance of the concept of a global invariant set, a simple analogy is considered where a massive object is propelled into a black hole depending on the decay of a radioactive atom. It is claimed that a locally causal hidden-variable theory constrained by the Cosmological Invariant Set Postulate can violate the CHSH inequality without being conspiratorial, superdeterministic, fine-tuned or retrocausal, and the theory readily accommodates the classical compatibilist notion of (experimenter) free will.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-02-24T21:00:23Z</published>
+    <arxiv:comment>To appear in Special Issue "New Geometric Concepts in the Foundations of Quantum Physics" of Phil Trans Roy Soc A</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>T. N. Palmer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1411.4648v1</id>
+    <title>A unifying framework for relaxations of the causal assumptions in Bell's theorem</title>
+    <updated>2014-11-17T21:00:10Z</updated>
+    <link href="https://arxiv.org/abs/1411.4648v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1411.4648v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell's Theorem shows that quantum mechanical correlations can violate the constraints that the causal structure of certain experiments impose on any classical explanation. It is thus natural to ask to which degree the causal assumptions -- e.g. locality or measurement independence -- have to be relaxed in order to allow for a classical description of such experiments. Here, we develop a conceptual and computational framework for treating this problem. We employ the language of Bayesian networks to systematically construct alternative causal structures and bound the degree of relaxation using quantitative measures that originate from the mathematical theory of causality. The main technical insight is that the resulting problems can often be expressed as computationally tractable linear programs. We demonstrate the versatility of the framework by applying it to a variety of scenarios, ranging from relaxations of the measurement independence, locality and bilocality assumptions, to a novel causal interpretation of CHSH inequality violations.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-11-17T21:00:10Z</published>
+    <arxiv:comment>6 pages + appendix, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 114, 140403 (2015)</arxiv:journal_ref>
+    <author>
+      <name>Rafael Chaves</name>
+    </author>
+    <author>
+      <name>Richard Kueng</name>
+    </author>
+    <author>
+      <name>Jonatan Bohr Brask</name>
+    </author>
+    <author>
+      <name>David Gross</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.114.140403</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.114.140403" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1304.7409v2</id>
+    <title>One Sided indeterminism alone is not a useful resource to simulate any nonlocal correlation</title>
+    <updated>2014-05-13T21:22:33Z</updated>
+    <link href="https://arxiv.org/abs/1304.7409v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1304.7409v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Determinism, no signaling and measurement independence are some of the constraints required for framing Bell inequality. Any model simulating nonlocal correlations must either individually or jointly give up these constraints. Recently M. J. W. Hall (Phys Review A, \textbf{84}, 022102 (2011)) derived different forms of Bell inequalities under the assumption of individual or joint relaxation of those constraints on both(i.e., two) the sides of a bipartite system. In this work we have investigated whether one sided relaxation can also be a useful resource for simulating nonlocal correlations or not. We have derived Bell-type inequalities under the assumption of joint relaxation of these constraints only by one party of a bipartite system. Interestingly we found that any amount of randomness in correlations of one party in absence of signaling between two parties is incapable of showing any sort of Bell-CHSH violation whereas signaling and measurement dependence individually can simulate any nonlocal correlations. We have also completed the proof of a recent conjecture due to Hall (Phys. Rev. A \textbf{82}, 062117 (2010); Phys. Rev. A \textbf{84}, 022102 (2011)) for one sided relaxation scenario only.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2013-04-27T22:17:47Z</published>
+    <arxiv:comment>7 pages, 4 figures, revtex, to appear in qip</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum Information Processing, Volume 13, Issue 8, pp 1687-1699, (2014)</arxiv:journal_ref>
+    <author>
+      <name>Biswajit Paul</name>
+    </author>
+    <author>
+      <name>Kaushiki Mukherjee</name>
+    </author>
+    <author>
+      <name>Debasis Sarkar</name>
+    </author>
+    <arxiv:doi>10.1007/s11128-014-0761-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s11128-014-0761-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1007.5518v4</id>
+    <title>Local deterministic model of singlet state correlations based on relaxing measurement independence</title>
+    <updated>2010-12-21T10:10:32Z</updated>
+    <link href="https://arxiv.org/abs/1007.5518v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1007.5518v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The derivation of Bell inequalities requires an assumption of measurement independence, related to the amount of free will experimenters have in choosing measurement settings. Violation of these inequalities by singlet state correlations, as has been experimentally observed, brings this assumption into question. A simple measure of the degree of measurement independence is defined for correlation models, and it is shown that all spin correlations of a singlet state can be modeled via giving up a fraction of just 14% of measurement independence. The underlying model is deterministic and no-signalling. It may thus be favourably compared with other underlying models of the singlet state, which require maximum indeterminism or maximum signalling. A local deterministic model is also given that achieves the maximum possible violation of the well known Bell-CHSH inequality, at a cost of only 1/3 of measurement independence.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-07-30T19:27:33Z</published>
+    <arxiv:comment>Title updated to match published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys.Rev.Lett.105:250404,2010</arxiv:journal_ref>
+    <author>
+      <name>Michael J. W. Hall</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.105.250404</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.105.250404" title="doi"/>
+  </entry>
+</feed>

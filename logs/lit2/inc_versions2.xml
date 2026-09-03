@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/MNgQo6up5pmW4WRvrmLkIxT23vQ</id>
+  <title>arXiv Query: search_query=&amp;id_list=2604.18238,2512.17024,2608.28190&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-02T22:17:55Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2604.18238,2512.17024,2608.28190" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.18238v4</id>
+    <title>Ontic Dynamical Locality Reduces to Bell Locality</title>
+    <updated>2026-05-25T17:31:23Z</updated>
+    <link href="https://arxiv.org/abs/2604.18238v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.18238v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bell inequalities exclude a broad class of local hidden-variable explanations of quantum correlations. A recurring objection is that the usual Bell form is static, whereas real measuring devices may contain local memory, stochastic dynamics, and measurement-induced disturbances of their hidden variables. We formulate this objection as a general transition-kernel model for dynamical hidden variables. The only locality assumption is imposed at the ontic level: conditional on the pre-measurement ontic state, the transition kernel and response function in each wing depend on the local setting but not on the distant setting or on distant post-measurement variables. Under measurement independence, all such dynamics can be absorbed into effective local response functions. The resulting probabilities have exactly the static Bell-local form and therefore obey the CHSH inequality. The result identifies the available escape routes for reproducing quantum correlations: violating ontic dynamical locality, violating measurement independence, or abandoning a classical hidden-variable ontology. As a consequence, local classical dynamical complexity cannot by itself spoof Bell-nonlocal statistics in device-independent protocols.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-20T13:23:09Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ming Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.17024v2</id>
+    <title>Subsystems (in)dependence in GIE proposals</title>
+    <updated>2025-12-22T06:31:55Z</updated>
+    <link href="https://arxiv.org/abs/2512.17024v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.17024v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent proposals suggest that detecting entanglement between two spatially superposed masses would establish the quantum nature of gravity. However, these gravitationally induced entanglement (GIE) experiments rely on assumptions about subsystem independence. We sharpen the theoretical underpinnings of such proposals by examining them through the lens of algebraic quantum field theory (AQFT), distinguishing distinct operational and algebraic notions of independence. We argue that state and measurement independence of subsystems, essential to the experimental logic, is nontrivial in the presence of gauge constraints and gravitational dressing. Using gravitationally dressed fields, we recall that commutation relations between spacelike separated observables are nontrivial, undermining strict Hilbert space factorization. We further explore the implications for entanglement witnesses, investigating the Tsirelson bound when subsystem algebras fail to commute, and showing that the Tsirelson bound persists for a suitably symmetrized CHSH observable even though the operational status of such "joint" observables becomes delicate when commensurability fails. Our analysis highlights how even within linearized covariant quantum gravity, violations of microcausality may affect both the interpretation, modelling, and design of proposed laboratory tests of quantum gravity, despite remaining negligible for current experimental regimes. Although we consider GIE-style protocols as a concrete case study, the subsystem-independence issues we highlight are generic to low-energy (perturbative) quantum gravity. Finally, we derive estimates for dressing-induced microcausality violations, which suggest a complementary avenue to current proposals: in principle, bounding dressing-induced microcausality violations themselves as a probe of the quantum nature of gravity.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-18T19:39:19Z</published>
+    <arxiv:comment>Minor revisions and references added. Comments are very welcome!</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. D 114, 025015 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Nicolas Boulle</name>
+    </author>
+    <author>
+      <name>Guilherme Franzmann</name>
+    </author>
+    <arxiv:doi>10.1103/tgjx-y7hl</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/tgjx-y7hl" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.28190v1</id>
+    <title>Postselection-loophole-free Bell test under strict spacetime constraints</title>
+    <updated>2026-08-28T11:04:05Z</updated>
+    <link href="https://arxiv.org/abs/2608.28190v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.28190v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Entanglement gives rise to correlations between distant quantum systems that cannot be explained by local realistic theories. Bell inequality violations provide a direct way to reveal these correlations and certify nonlocality, especially when the relevant experimental loopholes are closed. Time-bin encoding, in which quantum information is encoded into well-defined temporal modes, is a commonly used platform for distributing photonic entanglement in optical fibers. Yet loophole-free Bell tests with time-bin entanglement have received comparatively little attention, owing in part to the postselection loophole introduced by conventional interferometric measurements. Here, we demonstrate a fiber-based platform for Bell tests with time-bin entanglement that simultaneously closes the locality, freedom-of-choice, and postselection loopholes. We observe a CHSH violation of $S=2.583 \pm 0.002$, exceeding the local-realistic bound by over 265 standard deviations. Notably, this rigorous certification of nonlocality is achieved at a separation distance of $49.0 \pm 0.7$ m, substantially shorter than previous photonic Bell tests addressing comparable space-time constraints. Beyond its foundational significance, our results demonstrate time-bin entanglement as a viable route towards practical device-independent quantum communication and a future quantum internet.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-28T11:04:05Z</published>
+    <arxiv:comment>15 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Kannan Vijayadharan</name>
+    </author>
+    <author>
+      <name>Matías Rubén Bolaños</name>
+    </author>
+    <author>
+      <name>Andrea Pompermaier</name>
+    </author>
+    <author>
+      <name>Tommaso Bertapelle</name>
+    </author>
+    <author>
+      <name>Francesco B. L. Santagiustina</name>
+    </author>
+    <author>
+      <name>Costantino Agnesi</name>
+    </author>
+    <author>
+      <name>Giuseppe Vallone</name>
+    </author>
+    <author>
+      <name>Paolo Villoresi</name>
+    </author>
+  </entry>
+</feed>
