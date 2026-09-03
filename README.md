@@ -99,7 +99,14 @@ The model's mathematics held up: every theorem, curve, witness and certificate t
 test was correct.  Its weaknesses were bibliographic (four wrong or fabricated reference details,
 two of them annotated in-file as "verified"), a missed literature thread (Barrett–Gisin 2011, Pütz
 et al. 2014), one wrong quantum target (the CGLMP maximally-entangled value taken for the maximum),
-and a number of wording and record-keeping inconsistencies.  Scientifically the papers are a
+and a number of wording and record-keeping inconsistencies.  The most telling finding came from
+following up the missed thread: the paper's headline for CHSH — S ≤ 2+8F with threshold
+F* = (√2−1)/4 — turned out to be a re-parametrisation (ℓ = 1/4 − F) of the measurement-dependent-
+locality bound 4(1−2ℓ) that Pütz et al. published in 2014, built on the same extremal model.  The
+model derived a known result by a different route, in a new variable, without recognising it.
+Whether that reflects latent recall of training data or independent rediscovery cannot be
+determined from the outside; either way, it is the failure mode to expect from LLM-generated
+research, and the reason the novelty claims are stated as search results rather than as facts.  Scientifically the papers are a
 correct, modest, incremental contribution: an exact, certified answer in one natural metric to a
 question whose qualitative answer was already known.  The full assessment is in the review report.
 

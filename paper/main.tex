@@ -46,10 +46,12 @@ arithmetic, the cost $\lceil N/4\rceil/N$ of reaching the algebraic maximum
 $S=4$ with or without no-signalling (where the unique no-signalling box is
 the PR box), the one-sided value $(\sqrt2-1)/2$, and conversion bounds to
 Hall's measure and to mutual information. The qualitative lesson that
-modest measurement dependence suffices is known; the contribution is an
-exact, certified, model-independent price in one natural metric, together
-with the observation that it can be paid without leaving a trace in the
-observable marginals.
+modest measurement dependence suffices is known, and the four-state value
+coincides, under the change of variable $\ell=\tfrac14-F$, with the
+measurement-dependent-locality bound of P\"utz \emph{et al.}; the
+contribution is the exact, certified treatment in the total-variation metric
+for all $N$ and all source distributions, together with the observation that
+the cost can be paid without leaving a trace in the observable marginals.
 \end{abstract}
 
 \pacs{03.65.Ta, 03.65.Ud}
@@ -100,7 +102,13 @@ P\"utz \emph{et al.} characterised the measurement-dependent local
 correlations as a polytope and showed that, in their parametrisation by
 bounds on the conditional setting probabilities, an arbitrarily small
 amount of residual measurement independence suffices to manifest quantum
-nonlocality for suitable correlations \cite{putz2014,putzgisin2016}.
+nonlocality for suitable correlations \cite{putz2014,putzgisin2016}. For
+the CHSH scenario with uniform inputs and no-signalling they also computed
+the maximal CHSH value of measurement-dependent local correlations as a
+function of the lower bound $\ell$ on $P(x,y\mid\lambda)$,
+$\mathrm{CHSH}_{\max}=4(1-2\ell)$, which quantum theory exceeds only for
+$\ell>(2-\sqrt2)/4$ \cite{putz2014,putzgisin2016}; Sec.~\ref{sec:related}
+relates this to our result.
 Friedman \emph{et al.} derived tight relaxed
 CHSH inequalities for arbitrary per-observer measurement dependence
 \cite{fghk2019}; Hall and Branciard quantified the cost in mutual-information
@@ -171,7 +179,9 @@ prior use was found in arXiv-indexed literature through 2026-09-02, a
 completed sweep we describe in Sec.~\ref{sec:related} --- is (i) the exact
 closed form $F^*=(\sqrt{2}-1)/\min(N,4)$ in the per-setting TV metric, with
 the $N=4$ saturation, the exact curves and cap, and the model-independent
-bound $S\le 2+8F$; (ii) the no-signalling sub-case pinned to the same closed
+bound $S\le 2+8F$ (the $N=4$ value itself is equivalent, under
+$\ell=\tfrac14-F$, to the MDL--CHSH threshold of P\"utz \emph{et al.}; see
+Sec.~\ref{sec:related}); (ii) the no-signalling sub-case pinned to the same closed
 form for all $N\ge 3$, with explicit witnesses, plus the sharp two-state
 impossibility theorem and the algebraic-maximum cap
 $F^*_{\mathrm{NS}}(S{=}4;N)=\lceil N/4\rceil/N$ (the PR box is the unique
@@ -1146,23 +1156,50 @@ general (retrocausal) causal structure of
 Ref.~\onlinecite{hallbranciard2020}, are worked out in
 Sec.~\ref{sec:metric}.
 
-\emph{Metric dependence of the answer.} How much measurement dependence is
-``enough'' is known to depend strongly on both the metric and the target
-correlations. In the polytope parametrisation of P\"utz \emph{et al.}, any
-nonzero residual measurement independence can be detected by suitable
-quantum correlations \cite{putz2014,putzgisin2016}; in Hall's $M$
+\emph{Relation to the MDL--CHSH bound of P\"utz \emph{et al.}} The
+closest prior result is not in a Hall-type metric at all. P\"utz
+\emph{et al.} \cite{putz2014,putzgisin2016} parametrise measurement
+dependence by bounds $\ell\le P(x,y\mid\lambda)\le h$ on the settings given
+the hidden variable, and show that measurement-dependent local
+correlations with no-signalling and uniform inputs reach at most
+$\mathrm{CHSH}=4(1-2\ell)$ (their Eq.~(11), resp.\ Eq.~(31)), so that
+quantum theory can violate the bound only for $\ell>(2-\sqrt2)/4$. Their
+extremal construction distributes the four single-miss strategies, each
+keeping probability $\ell$ on its one wrong input pair and $(1-\ell)/3$ on
+the other three; read in our variables (uniform inputs, $\rho=1/4$) this is
+exactly the round-robin $N=4$ model with every row at total-variation
+distance $\tfrac14-\ell$ from uniform. Substituting $\ell=\tfrac14-F$ turns
+$4(1-2\ell)$ into $2+8F$ and $(2-\sqrt2)/4$ into $(\sqrt2-1)/4$: the
+four-state headline of this paper --- the linear law and the Tsirelson
+threshold --- is a re-parametrisation of their result, reached here by a
+different route (a per-row TV lemma rather than vertex enumeration of the
+MDL polytope). The two metrics are nevertheless not equivalent in general:
+$\ell$ bounds the ratio $p(\lambda\mid x,y)/\bar\rho(\lambda)$ from below,
+$F$ bounds an $L^1$ distance, and a model can sit at different points in
+the two variables (the NS witness of Theorem~\ref{thm:ns} has
+$\ell=(\tfrac14-d)/(1+d)\ne\tfrac14-d$). What Refs.~\onlinecite{putz2014,
+putzgisin2016} do not contain, and this paper adds, is the TV bound for
+arbitrary source distributions and hidden-variable spaces
+(Proposition~\ref{prop:general}), the exact finite-$N$ curves and caps,
+the two-state no-signalling impossibility, the no-signalling cap at $S=4$,
+the one-sided value, and the conversions to Hall's $M$ and to mutual
+information. More broadly, how much measurement dependence is ``enough''
+depends on both the metric and the target correlations: in the
+$\ell$-parametrisation any nonzero residual independence can be detected
+by suitable quantum correlations \cite{putz2014}, whereas in Hall's $M$
 \cite{hall2010}, in mutual information \cite{barrettgisin2011,
-hallbranciard2020}, and in our per-setting TV metric, a modest and
-quantitatively fixed amount reproduces the CHSH Tsirelson value. Our
-result should be read as one exactly solved point in that metric-dependent
-landscape, not as a metric-independent price of the loophole.
+hallbranciard2020} and in our TV metric a fixed modest amount reproduces
+the CHSH Tsirelson value. Our result is one exactly solved point in that
+landscape, not a metric-independent price of the loophole.
 
 \emph{Novelty, stated as a search result.} Within arXiv-indexed literature
 through 2026-09-02, no prior use was found of (i) the per-setting
 TV-from-a-fixed-source metric, (ii) the exact closed forms
 $F^*=(\sqrt2-1)/\min(N,4)$ with $N=4$ saturation together with the exact
-curves and cap $\lceil N/4\rceil/N$, or (iii) an NS-silence result of this
-kind. This is stated as a search result, not ``proven novel'': coverage was
+curves and cap $\lceil N/4\rceil/N$ --- with the important qualification,
+found in review, that the $N=4$ value is equivalent to the MDL--CHSH
+threshold of P\"utz \emph{et al.} discussed above --- or (iii) an
+NS-silence result of this kind. This is stated as a search result, not ``proven novel'': coverage was
 arXiv-centric ($\sim$16 papers read at full or abstract depth, the rest at
 catalogue level); paywalled journal content not mirrored on arXiv, non-arXiv
 repositories, and books/theses are not covered. The closest prior work is
@@ -1474,6 +1511,13 @@ then made by the reviewer:
   certificate (independently re-derived), the sweep cutoff date was
   updated, and the precision of the mutual-information assertions is
   stated.
+\item Sec.~\ref{sec:related}: the reviewer found that the four-state
+  headline --- $S\le2+8F$ and $F^*=(\sqrt2-1)/4$ --- is a
+  re-parametrisation ($\ell=\tfrac14-F$) of the MDL--CHSH bound
+  $4(1-2\ell)$ of P\"utz \emph{et al.}\ (2014, 2016), which the original
+  manuscript did not cite; the correspondence is now stated and the
+  novelty claims in the abstract, introduction and Sec.~\ref{sec:related}
+  were weakened accordingly.
 \end{enumerate}
 The companion paper received analogous corrections, the most important
 being that its CGLMP target was the maximally-entangled-state value rather

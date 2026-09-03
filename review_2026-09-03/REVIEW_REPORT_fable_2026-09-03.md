@@ -154,3 +154,24 @@ Residual points closed — N=9..14 curves independently re-derived (ALL PASS); T
 ## 11. Addendum: appendices, placeholders, release folder
 
 Supplement merged as Appendices A–D; placeholders filled (noaffiliation, acks, concurrent-submission cross-cites, code URL); cosmetics; standalone release folder bell-chsh-certificates/ built (see paper_fixed/CHANGELOG.md fifth pass). Items for the author to confirm: e-mail address, release repo name.
+
+## 12. Addendum: the headline is a re-parametrisation of Pütz et al. (2014)
+
+Following up the positioning gap of Sec. 8, I read the full texts of Barrett–Gisin (arXiv:1008.3612),
+Pütz et al. (arXiv:1407.5634) and Pütz–Gisin (arXiv:1510.09087).  Pütz et al. Eq. (11) and
+Pütz–Gisin Eq. (31) give, for measurement-dependent local correlations with no-signalling and uniform
+inputs and lower bound ℓ on P(x,y|λ), the maximum CHSH = 4(1−2ℓ), with quantum violation only for
+ℓ > (2−√2)/4.  `puetz_correspondence.py` (exact arithmetic) shows: (A) with ℓ = 1/4 − F this is
+identically S = 2+8F and the threshold is F* = (√2−1)/4; (B) their extremal construction (each of the
+four single-miss strategies keeps probability ℓ on its wrong input pair, (1−ℓ)/3 on the others) is the
+paper's round-robin N=4 model with every row at TV exactly 1/4 − ℓ; (C) the metrics are not
+equivalent in general (the paper's NS witness has ℓ = (1/4−d)/(1+d) ≠ 1/4−d); (D) the symmetric
+Pütz-type 4-state model admits no no-signalling response gauge, so the paper's asymmetric NS witness
+is a genuinely different NS realisation.  Consequence: the N=4 headline is a re-parametrisation of a
+2014 PRL result that the manuscript did not cite; the model-independent TV bound for all sources and
+N, the finite-N curves and caps, the N=2 NS impossibility, the S=4 NS cap, the one-sided value and
+the companion extensions remain formally new.  Applied to `paper_fixed/main.tex` (patch_paper5.py:
+abstract, introduction, Sec. VII.3 correspondence paragraph, weakened novelty statement, provenance
+item), to the release changelog and README.  Barrett–Gisin (mutual information, one-sided, all singlet
+correlations) contains none of the paper's quantities.  Severity: S1 for the novelty framing; no
+mathematical result changes.

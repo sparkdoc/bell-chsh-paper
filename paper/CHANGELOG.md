@@ -62,6 +62,18 @@ Takakura et al., Pal et al., Alai, CGLMP, Garza–Hance), checked out against th
   metric-dependent landscape rather than a metric-independent price of the loophole.
 - **Popescu–Rohrlich** was not cited for the PR box, whose uniqueness was presented as a lemma;
   now attributed as a standard fact.
+- **The headline itself has a near-equivalent in the missed literature.**  A follow-up check
+  (`../review_2026-09-03/puetz_correspondence.py`) found that Pütz et al. 2014, Eq. (11) / Pütz &
+  Gisin 2016, Eq. (31) — CHSH ≤ 4(1−2ℓ) for measurement-dependent local models with no-signalling
+  and uniform inputs, where ℓ is the lower bound on P(x,y|λ), with quantum violation only for
+  ℓ > (2−√2)/4 — becomes exactly S ≤ 2+8F with F* = (√2−1)/4 under ℓ = 1/4 − F, and that their
+  extremal construction *is* the paper's round-robin N=4 model.  The metrics are not equivalent in
+  general, so the TV bound for arbitrary sources and N, the finite-N curves and caps, the N=2
+  no-signalling impossibility, the S=4 cap and the extensions remain new; but the four-state number
+  is a re-parametrisation of a 2014 result.  The paper now states this in the abstract,
+  introduction and Sec. VII.3, and its novelty claims were weakened accordingly.  For the
+  experiment this is the most telling defect: the model reproduced a published result in a new
+  variable without recognising or citing it.
 
 ## 5. Statements false or overstated as written
 

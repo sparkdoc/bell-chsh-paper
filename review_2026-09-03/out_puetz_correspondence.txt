@@ -1,0 +1,11 @@
+A: 4(1-2l) == 2+8F under l = 1/4 - F   (exact, identity in F)
+   Puetz threshold l0 = (2-sqrt2)/4 = 0.146447;  1/4 - F* = 1/4 - (sqrt2-1)/4 = 0.146447
+B: l=1/4   S = 2 = 4(1-2l);  per-row TV = 0 = 1/4 - l;  min P(ab|lam) = 1/4 = l
+B: l=1/5   S = 12/5 = 4(1-2l);  per-row TV = 1/20 = 1/4 - l;  min P(ab|lam) = 1/5 = l
+B: l=1/8   S = 3 = 4(1-2l);  per-row TV = 1/8 = 1/4 - l;  min P(ab|lam) = 1/8 = l
+B: l=0     S = 4 = 4(1-2l);  per-row TV = 1/4 = 1/4 - l;  min P(ab|lam) = 0 = l
+C: paper's NS witness at d=1/10: true marginal rho = ['11/40', '11/40', '9/40', '9/40'] (NOT uniform);
+   l = min P(ab|lam) = 3/22 = (1/4-d)/(1+d) = 3/22;  1/4 - d = 3/20  -> different point in Puetz's variable
+D: response gauges realising M_A..M_D that make the Puetz-type model no-signalling: 0 of 16
+
+CONCLUSION: Puetz et al. 2014 Eq. (11) and the paper's N=4 headline describe the same one-parameter family of extremal models (round-robin over the four miss strategies), related by l = 1/4 - F; the linear law and the Tsirelson threshold coincide.  The metrics are not equivalent in general (part C), so the TV bound for arbitrary models and N is formally a different statement, but the headline is a re-parametrisation of a 2014 result.
