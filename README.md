@@ -14,6 +14,19 @@ violations:
 * **Fine-tuning beyond CHSH: minimum measurement dependence for CGLMP, Mermin, and contextuality
   inequalities** (`paper/companion.tex`).
 
+### The papers
+
+| | Qwen3.8-27B original (unreviewed, 2026-09-02) | after review and correction by Claude Fable 5.1 (2026-09-03) |
+|---|---|---|
+| **Main paper** — *Exact minimum measurement dependence for violating the CHSH inequality* | [PDF](paper/original_qwen_2026-09-02/main.pdf) (12 pp.) + [Supplemental Material PDF](paper/original_qwen_2026-09-02/supp.pdf) (3 pp.) | [PDF](paper/main.pdf) (16 pp., supplement folded in as Appendices A–D) · [LaTeX](paper/main.tex) |
+| **Companion paper** — *Fine-tuning beyond CHSH: minimum measurement dependence for CGLMP, Mermin, and contextuality inequalities* | [PDF](paper/original_qwen_2026-09-02/companion.pdf) (10 pp.) | [PDF](paper/companion.pdf) (10 pp.) · [LaTeX](paper/companion.tex) |
+| **What changed between the two columns** | | [`paper/CHANGELOG.md`](paper/CHANGELOG.md) (reader-facing summary) · [full review report](review_2026-09-03/REVIEW_REPORT_fable_2026-09-03.md) |
+
+The left column is the unaltered output of the local model; the right column is what will be
+submitted to arXiv.  The mathematics is the same in both; the differences are a wrong quantum
+target in the companion, bibliography errors, missing prior literature, and wording — see the
+changelog.
+
 The human author directed the process (choice of direction, approval of actions, session
 management) and is the author of record, but supplied minimal scientific or technical input.  On 2026-09-03 the finished manuscripts and the whole verification pipeline were critically
 reviewed by a second, much larger model, Claude Fable 5.1, which confirmed the mathematics and
