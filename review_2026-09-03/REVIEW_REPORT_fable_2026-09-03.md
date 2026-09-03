@@ -48,7 +48,7 @@ observed: the model's *math* is reliable; its *bibliographic provenance claims* 
 
 | id | where | problem | fix |
 |---|---|---|---|
-| **F9** | companion.tex abstract, Sec. III, Sec. VIII | The CGLMP "quantum value" T=(12+8√3)/9≈2.87293 is the *maximally-entangled-state* value, not the quantum maximum.  Acín–Durt–Gisin–Latorre, PRA 65, 052325 (2002) obtain I₃=1+√(11/3)≈2.914854 with the non-maximally entangled state (|00⟩+γ|11⟩+|22⟩)/√(2+γ²), γ=(√11−√3)/2 — reproduced numerically here (`out_cglmp_quantum.txt`; my scan over γ finds no larger value in that family).  The abstract's phrase "the achieved quantum value" is misleading and the Sec. VIII remark about an unconfirmed "≈3.34" shows the authors did not know the ADGL result. | Cite ADGL; either adopt T'=1+√(11/3) as the target (F*(N≥4)=(√(11/3)−1)/8≈0.114357; the formula F*=(T−2)/(2min(N,4)) still applies since T' lies on the slope-8 segment) or state explicitly that T is the maximally-entangled value and give both numbers. |
+| **F9** | companion.tex abstract, Sec. III, Sec. VIII | The CGLMP "quantum value" T=(12+8√3)/9≈2.87293 is the *maximally-entangled-state* value, not the quantum maximum.  Acín–Durt–Gisin–Latorre, PRA 65, 052325 (2002) obtain I₃=1+√(11/3)≈2.914854 with the non-maximally entangled state (\|00⟩+γ\|11⟩+\|22⟩)/√(2+γ²), γ=(√11−√3)/2 — reproduced numerically here (`out_cglmp_quantum.txt`; my scan over γ finds no larger value in that family).  The abstract's phrase "the achieved quantum value" is misleading and the Sec. VIII remark about an unconfirmed "≈3.34" shows the authors did not know the ADGL result. | Cite ADGL; either adopt T'=1+√(11/3) as the target (F*(N≥4)=(√(11/3)−1)/8≈0.114357; the formula F*=(T−2)/(2min(N,4)) still applies since T' lies on the slope-8 segment) or state explicitly that T is the maximally-entangled value and give both numbers. |
 | **F1 / C-1** | main.tex:677 and :838 | `\label{eq:ns4rows}` defined twice.  The reference at :693 ("Substituting Eqs. (15) and (21)") resolves to the S=4 table (21) instead of the NS-witness rows (16) — a wrong cross-reference inside the proof of Theorem 7. | Rename the second label. |
 | **A-3** | refs.bib `tsirelson1974` | Volume, pages, year and key all wrong.  Correct: B. S. Cirel'son, Lett. Math. Phys. **4**, 93–100 (**1980**), doi 10.1007/BF00417500. | Replace entry; cited in the paper's opening paragraph. |
 | **A-5** | refs.bib `shimony1984` | Entry is garbled: title "Bell's theorem and quantum field theory", eds. Mittelstaedt & Michel, Springer, pp. 327–340 — none of these match the source the in-file comment says it was verified against (Todorov quant-ph/9701024 ref. [11], read from the local PDF).  Correct: A. Shimony, "Controllable and uncontrollable non-locality", in *Foundations of Quantum Mechanics in the Light of New Technology*, ed. S. Kamefuchi et al. (Physical Society of Japan, Tokyo, 1984), pp. 225–230. | Rebuild entry; correct the false "C1 RESOLVED" comment and the memory line. |
@@ -143,8 +143,14 @@ verified via Crossref and the arXiv API and added to `paper_fixed/` with a posit
 paragraph (`patch_paper2.py`, see `paper_fixed/CHANGELOG.md`).  Severity: S2 (a referee in
 this subfield would certainly raise it).
 
-## 9. Addendum: abstracts rewritten (user-approved) to lead with the contribution and scope; see paper_fixed/CHANGELOG.md third pass.
+## 9. Addendum: abstracts rewritten
 
-## 10. Addendum: residual points closed — N=9..14 curves independently re-derived (ALL PASS); T_Q confirmed as the I3 quantum maximum to numerical precision from ADGL 2002 + NPA 2008 (rank loop); companion wording strengthened; npa2008 added.
+Abstracts rewritten (user-approved) to lead with the contribution and scope; see paper_fixed/CHANGELOG.md third pass.
 
-## 11. Addendum: supplement merged as Appendices A–D; placeholders filled (noaffiliation, acks, concurrent-submission cross-cites, code URL); cosmetics; standalone release folder bell-chsh-certificates/ built (see paper_fixed/CHANGELOG.md fifth pass). Items for the author to confirm: e-mail address, release repo name.
+## 10. Addendum: residual technical points closed
+
+Residual points closed — N=9..14 curves independently re-derived (ALL PASS); T_Q confirmed as the I3 quantum maximum to numerical precision from ADGL 2002 + NPA 2008 (rank loop); companion wording strengthened; npa2008 added.
+
+## 11. Addendum: appendices, placeholders, release folder
+
+Supplement merged as Appendices A–D; placeholders filled (noaffiliation, acks, concurrent-submission cross-cites, code URL); cosmetics; standalone release folder bell-chsh-certificates/ built (see paper_fixed/CHANGELOG.md fifth pass). Items for the author to confirm: e-mail address, release repo name.

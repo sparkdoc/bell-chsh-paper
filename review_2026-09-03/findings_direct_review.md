@@ -1,3 +1,8 @@
+> **Status.** These are the reviewer's first-pass notes, written after reading both papers and running the
+> independent verification scripts but before the literature and certificate audits reported.  For
+> conclusions and the ranked, consolidated list see `REVIEW_REPORT_fable_2026-09-03.md`, which supersedes
+> this file; it is kept because it records the reviewer's independent reasoning in fuller detail.
+
 # Direct review findings (Claude Fable 5.1, 2026-09-03)
 
 Scope: paper/main.tex, paper/supp.tex, paper/companion.tex, paper/refs.bib, read in full;
