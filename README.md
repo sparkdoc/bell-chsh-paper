@@ -149,4 +149,5 @@ Claude Fable 5.1 and share no code with the certificates.
 
 ## License
 
-No license file has been added yet; the author will choose one before the repository is published.
+MIT (see `LICENSE`).  The license covers the code, logs and documentation in this repository; the
+manuscripts in `paper/` remain the author's copyright pending publication.
