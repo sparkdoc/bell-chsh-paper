@@ -106,7 +106,11 @@ locality bound 4(1−2ℓ) that Pütz et al. published in 2014, built on the sam
 model derived a known result by a different route, in a new variable, without recognising it.
 Whether that reflects latent recall of training data or independent rediscovery cannot be
 determined from the outside; either way, it is the failure mode to expect from LLM-generated
-research, and the reason the novelty claims are stated as search results rather than as facts.  Scientifically the papers are a
+research, and the reason the novelty claims are stated as search results rather than as facts.
+
+**The conclusion of the experiment, in one sentence:** a 27-billion-parameter local model can do
+correct, certified mathematics on a research question, and cannot be trusted to know whether the
+result is new.  Scientifically the papers are a
 correct, modest, incremental contribution: an exact, certified answer in one natural metric to a
 question whose qualitative answer was already known.  The full assessment is in the review report.
 
