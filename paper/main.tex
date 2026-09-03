@@ -26,32 +26,32 @@
 \date{\today}
 
 \begin{abstract}
-We compute the exact minimum measurement dependence that a local
-hidden-variable model needs in order to reproduce the maximal quantum
-violation of the CHSH inequality, measured as the worst-case total-variation
-distance $F=\max_{ab}\,\TV(p(\cdot\mid a,b)\,\Vert\,\rho)$ between the
+How much measurement dependence must a local hidden-variable model have in
+order to reproduce the maximal quantum violation of the CHSH inequality? We
+treat this question in the worst-case total-variation metric
+$F=\max_{ab}\,\TV(p(\cdot\mid a,b)\,\Vert\,\rho)$ between the
 settings-conditioned hidden-variable distribution and a fixed baseline
-$\rho$. Every local model --- on any hidden-variable space, with any source
-distribution and deterministic or stochastic responses --- obeys
-$S\le 2+8F$, so reaching the Tsirelson value $2\sqrt2$ costs at least
-$F^*=(\sqrt2-1)/4\approx0.104$. This floor is attained by an explicit
-four-state model, verified as an exact identity in $\mathbb{Q}(\sqrt2)$,
-and adding hidden states beyond four never lowers the cost: for $N$-state
-uniform-source models $F^*(N)=(\sqrt2-1)/\min(N,4)$. The same minimum is
-achievable without observable signalling for every $N\ge3$, with explicit
-no-signalling witnesses, while no two-state model can violate Bell under
-no-signalling at any fine-tuning level. We further give the exact
-piecewise-linear curves $S_{\max}(N,F)$ for $N\le14$ by exhaustive exact
-arithmetic, the cost $\lceil N/4\rceil/N$ of reaching the algebraic maximum
-$S=4$ with or without no-signalling (where the unique no-signalling box is
-the PR box), the one-sided value $(\sqrt2-1)/2$, and conversion bounds to
-Hall's measure and to mutual information. The qualitative lesson that
-modest measurement dependence suffices is known, and the four-state value
-coincides, under the change of variable $\ell=\tfrac14-F$, with the
-measurement-dependent-locality bound of P\"utz \emph{et al.}; the
-contribution is the exact, certified treatment in the total-variation metric
-for all $N$ and all source distributions, together with the observation that
-the cost can be paid without leaving a trace in the observable marginals.
+$\rho$, and give it a complete, certified answer. Every local model --- on
+any hidden-variable space, with any source distribution and deterministic
+or stochastic responses --- obeys $S\le 2+8F$, so the Tsirelson value
+$2\sqrt2$ costs at least $F^*=(\sqrt2-1)/4\approx0.104$, a floor attained
+by an explicit four-state model. For that four-state case the bound and
+its threshold coincide, under $\ell=\tfrac14-F$, with the
+measurement-dependent-locality bound $4(1-2\ell)$ of P\"utz \emph{et al.};
+the results beyond it are, to our knowledge, new. The bound holds for all
+$N$ and all sources. For $N$-state uniform-source models we give the exact
+piecewise-linear curves $S_{\max}(N,F)$ for $N\le14$, with
+$F^*(N)=(\sqrt2-1)/\min(N,4)$, and the exact cost $\lceil N/4\rceil/N$ of
+the algebraic maximum $S=4$. Under no-signalling the same minima are
+attained for every $N\ge3$ by explicit witnesses, whereas with two hidden
+states no-signalling forbids any violation at any $F$; the no-signalling
+cost of a local decomposition of the PR box is again $\lceil N/4\rceil/N$.
+The one-sided causal structure costs $(\sqrt2-1)/2$ independently of $N$,
+and we give conversion bounds to Hall's measure and to mutual information.
+The qualitative lesson that modest measurement dependence suffices is old;
+the contribution is the exact, certified map of the total-variation metric
+around that point, and the observation that the cost can be paid without
+leaving a trace in the observable marginals.
 \end{abstract}
 
 \pacs{03.65.Ta, 03.65.Ud}
@@ -1425,17 +1425,26 @@ each check, is in Appendix~\ref{supp:verify}.
 \label{sec:conclusion}
 
 We quantified the price of the measurement-dependence escape route for
-Bell/CHSH in a per-setting total-variation metric. The price has a closed
-form: $F^*=(\sqrt2-1)/\min(N,4)$, saturating at four hidden states; the
-global bound $S\le2+8F$ is model-independent and tight; the cap to the
-algebraic maximum is $\lceil N/4\rceil/N$; the no-signalling constraint is
-exactly silent about the minimum for all $N\ge3$ --- at both the Tsirelson
-value and the algebraic maximum, where the unique NS box is the PR box ---
-with explicit algebraic witnesses, while at $N=2$ it forbids any violation;
-and the one-sided causal structure pays exactly twice the full-structure
-cost, flat in $N$. The superdeterminism loophole, in this metric, costs a
-concrete $\approx10.4\%$ of TV per settings block --- and that cost can be
-hidden from the observed marginals. The systematic comparison with
+Bell/CHSH in a per-setting total-variation metric and gave it a complete,
+certified answer. Its centre --- the linear law $S\le2+8F$ and the
+four-state threshold $F^*=(\sqrt2-1)/4$ --- turns out to be a
+re-parametrisation of the measurement-dependent-locality bound of P\"utz
+\emph{et al.}, reached here by a different route; the correspondence is
+stated in Sec.~\ref{sec:related}. What this paper adds, to the extent of
+the literature search reported there, is the map around that point: the
+bound holds model-independently for every source distribution and
+hidden-variable space; the exact finite-$N$ curves, with
+$F^*(N)=(\sqrt2-1)/\min(N,4)$ saturating at four hidden states and the cap
+$\lceil N/4\rceil/N$ to the algebraic maximum; the no-signalling results
+--- the same minima with explicit algebraic witnesses for all $N\ge3$, the
+impossibility of any violation with two hidden states, and the cost
+$\lceil N/4\rceil/N$ of a local no-signalling decomposition of the PR box,
+the unique NS box at $S=4$; the one-sided value $(\sqrt2-1)/2$, exactly
+twice the full-structure cost and flat in $N$; and the conversion bounds
+to Hall's $M$ and to mutual information. The superdeterminism loophole,
+in this metric, costs a concrete $\approx10.4\%$ of TV per settings block
+--- and that cost can be hidden from the observed marginals. The
+systematic comparison with
 Hall's $M$ and the conventions of Refs.~\onlinecite{alai2026a,
 hallbranciard2020} is given in Sec.~\ref{sec:metric}, and the
 generalisation of the program beyond CHSH --- CGLMP, Mermin, and the
@@ -1502,8 +1511,9 @@ then made by the reviewer:
   Palmer's $p$-adic argument; the role of Ref.~\onlinecite{vieira2025}; the
   coincidence of the $N=4$ and $N=8$ curves in Fig.~\ref{fig:curves}; and
   the cross-references to the appendices.
-\item The abstract was rewritten to state the contribution and its
-  scope first.
+\item The abstract and the Conclusion were rewritten to state the
+  contribution and its scope first and, after the finding of the next item
+  but one, to name the P\"utz correspondence before listing what is new.
 \item For arXiv posting the Supplemental Material was merged into this
   paper as Appendices~\ref{supp:patterns}--\ref{supp:sweep}; within it the
   blanket ``no floating point'' statement was qualified, the $N\ge9$
